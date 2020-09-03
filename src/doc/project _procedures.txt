@@ -1,0 +1,67 @@
+bgIM project
+
+1.oracle database create
+   #after the first access to Oracle, set the password of 'SYS' into 1234.
+    seemed the password was not 1234. you can login as SYS as follows. 
+	you can skip the 'enter password' part.
+	
+	DB account info: id|sys    pw|1234 
+					 id|system pw|1234 
+					 id|admin  pw|1234
+	change user: alter user admin identified by 1234;	
+    who is the user: show user;	
+					 
+	C:\Users\inufu>sqlplus
+	Enter user-name: sys as sysdba
+	Enter password:
+	SQL> alter user sys identified by 1234;
+	
+	in oracle, 'system' cannot create DB, while 'SYS' can create DB.
+	
+	because SYS cannot drop a column of a table,
+	I created a new DB account 'admin' through the steps below on Oracle DB.
+  
+  SQL> conn sys as sysdba
+		Enter password:
+		Connected.
+ 
+  SQL> alter session set "_ORACLE_SCRIPT"=true;
+	   Session altered.
+ 
+  SQL> commit;
+	   Commit complete.
+ 
+  SQL> CREATE USER ARADMIN IDENTIFIED BY AR#Admin# DEFAULT TABLESPACE ARSYSTEM TEMPORARY TABLESPACE ARTMPSPC1 QUOTA UNLIMITED ON ARSYSTEM;
+		User created.
+ 
+  SQL> conn ARAdmin/AR#Admin#
+		ERROR: ORA-01045: user ARADMIN lacks CREATE SESSION privilege; logon denied
+ 
+  SQL> create role ARole_arsys not identified;
+		Role created.
+ 
+  SQL> grant alter session, create cluster, create database link, create sequence,
+	2  create session, create synonym, create table, create view, create procedure,
+	3  create trigger, query rewrite to ARole_arsys;
+	   Grant succeeded.
+ 
+  SQL> commit;
+	    Commit complete.
+ 
+  SQL> grant ARole_arsys to aradmin;
+		Grant succeeded.
+ 
+  SQL> commit;
+		Commit complete.
+ 
+2.create springboot project in eclipse
+	execution: project left click -> run as -> springboot app
+3.add JSP into the project	
+    spring default doesn't provide JSP service.
+	you have to add JSP dependency.
+	let's add JSTL tag library dependency, too
+	*add these lines  into application.properties
+	spring.mvc.view.prefix=/WEB-INF/views/
+	spring.mvc.view.suffix=.jsp
+	
+   

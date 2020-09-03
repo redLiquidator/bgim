@@ -1,0 +1,4 @@
+1.regarding spring
+"maven" project  manages dependency through pom.xml file.
+ gradle vs maven: how they work doesn't differ. how to write in the file differs.
+ 

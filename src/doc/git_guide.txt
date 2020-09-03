@@ -1,0 +1,21 @@
+github 에서 repository 생성
+로컬로 가서, 업로드할 폴더로 이동
+git init :커맨더 창에서 아래의 명령어를 통해, 위의 폴더를 git이 추적할 수 있도록 .git 폴더를 생성. 즉,
+local repository를 생성.
+git status :git이 버전관리 대상 파일들의 상태를 파악
+git add . :버전 관리할 파일들을 추가. 변경 모든 파일을 local repository에 추가. git add 파일
+명령어는 특정 파일을 추가하는 명령어
+git commit -m "메시지내용" :commit 메시지를 작성
+git remote add origin {remote repository 주소} :remote repository를 등록.
+origin은 remote repository의 별칭을 의미하며, 매 번 remote repository의 주소를 입력하는
+것이 귀찮으므로 별칭을 사용. 일반적으로 origin을 사용.
+git push origin master:commit 한 내용을 remote repository에 push( 업로드 )
+
+*작업한코드올리기
+ 커맨더 창에서 소스코드가 있는 폴더로 이동한 후, 아래의 명령어를 실행
+ git add .
+ git commit -m "메시지 내용"
+ git push origin {브랜치명}
+
+ *소스 내려받기(처음일때)
+ git clone url
