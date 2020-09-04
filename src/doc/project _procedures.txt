@@ -7,7 +7,7 @@ bgIM project
 	
 	DB account info: id|sys    pw|1234 
 					 id|system pw|1234 
-					 id|admin  pw|1234
+					 id|im  pw|1234
 	change user: alter user admin identified by 1234;	
     who is the user: show user;	
 					 

@@ -15,6 +15,7 @@ public class BgimApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BgimApplication.class, args);
+		System.out.println("bgimapplication");
 	}
 
 	@Bean

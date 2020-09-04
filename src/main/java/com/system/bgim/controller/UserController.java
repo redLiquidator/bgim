@@ -20,7 +20,8 @@ import com.system.bgim.dto.UserDTO;
 	    
 	    @RequestMapping("/users")
 	    public List<UserDTO> users(@RequestParam(value = "country", defaultValue = "") String country) throws Exception {
-	        final UserDTO param = new UserDTO(0, null, country);
+		/* final UserDTO param = new UserDTO(0, null, country); */
+	        final UserDTO param = new UserDTO();
 	        final List<UserDTO> userList = userDAO.selectUsers(param);
 	        return userList;
 	    }
