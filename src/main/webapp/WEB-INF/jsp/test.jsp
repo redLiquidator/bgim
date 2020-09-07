@@ -7,12 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2>manageuser</h2>
- selectListOrgUser(); will be exhibited
+<h2>userMap</h2>
  <div class="container">
 
 		<div class="starter-template">
-			<h2>Message: ${result}</h2>
+			<h5>hello test</h5>
 		</div>
 
 	</div>
