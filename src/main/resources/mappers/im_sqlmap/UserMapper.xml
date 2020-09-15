@@ -8,9 +8,40 @@
           FROM org_user
     </select>
     
-    <select id="userList" resultType="com.system.bgim.mapper.UserMapper">
-        SELECT *
-          FROM org_user
+    <select id="userList" resultType="com.system.bgim.dto.UserDTO">
+        SELECT user_id,domain_id,dept_id,hr_group_id,hr_sync,hr_sync_group,status,is_valid,create_dt,modify_dt,pwd_dt,
+        username,companycode,empid,deptcode,code,login_id,pwd,email,mobile,hired_dt FROM org_user
     </select>
+    
+    <select id="userDetail" parameterType="String" resultType="com.system.bgim.dto.UserDTO">
+        SELECT
+            *
+        FROM org_user
+        WHERE
+            CODE = #{code}
+    </select>
+    
+    <insert id="userInsert" parameterType="com.system.bgim.dto.UserDTO">
+        INSERT INTO
+        org_user (code,username,login_id,create_dt,modify_dt,user_id)
+        VALUES(#{code},#{username},#{login_id},SYSDATE,SYSDATE,0)
+    </insert>
+    
+     <update id="userUpdate" parameterType="com.system.bgim.dto.UserDTO">
+        UPDATE org_user
+            SET
+        <if test="pwd != null">
+            pwd = #{pwd}
+        </if>
+        <if test="pwd != null and deptcode != null"> , </if>
+        <if test="deptcode != null">
+            deptcode = #{deptcode}
+        </if>
+        WHERE code = #{code}
+    </update>
+    
+    <delete id="userDelete" parameterType="String">
+        DELETE FROM org_user WHERE code = #{code}
+    </delete>
  
 </mapper>

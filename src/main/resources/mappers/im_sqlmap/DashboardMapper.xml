@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.system.bgim.mapper.DashboardMapper">
+
+ 	<select id="dashboardCount" resultType="int">
+        SELECT count(*)
+          FROM dashboard
+    </select>
+    
+	<select id="dashboardList" resultType="com.system.bgim.dto.DashboardDTO">
+        SELECT
+            *
+        FROM dashboard
+    </select>
+    
+ 	<select id="dashboardDetail" parameterType="int" resultType="com.system.bgim.dto.DashboardDTO">
+        SELECT
+            *
+        FROM dashboard
+        WHERE
+            BNO = #{bno}
+    </select>
+    
+    <insert id="dashboardInsert" parameterType="com.system.bgim.dto.DashboardDTO">
+        INSERT INTO
+        dashboard (BNO, SUBJECT,CONTENT,WRITER,REG_DATE)
+        VALUES(#{bno},#{subject},#{content},#{writer},SYSDATE) 
+    </insert>
+    
+    <update id="dashboardUpdate" parameterType="com.system.bgim.dto.DashboardDTO">
+        UPDATE dashboard
+            SET
+        <if test="subject != null">
+            SUBJECT = #{subject}
+        </if>
+        <if test="subject != null and content != null"> , </if>
+        <if test="content != null">
+            CONTENT = #{content}
+        </if>
+        WHERE BNO = #{bno}
+    </update> 
+    
+     <delete id="dashboardDelete" parameterType="int">
+        DELETE FROM dashboard WHERE bno = #{bno}
+    </delete>
+    
+</mapper>

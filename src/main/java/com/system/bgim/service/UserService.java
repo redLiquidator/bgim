@@ -19,5 +19,21 @@ public class UserService {
 		 System.out.println("service");
 		 return userMapper.userList();
 	 }
+	 
+	 public UserDTO userDetailService(String code) throws Exception{
+	     return userMapper.userDetail(code);
+	 }
+	 
+	 public int userInsertService(UserDTO user) throws Exception{     
+	     return userMapper.userInsert(user);
+	 }
+	 
+	 
+	 public int userUpdateService(UserDTO user) throws Exception{       
+	     return userMapper.userUpdate(user);
+	    }
 
+	 public int userDeleteService(String code) throws Exception{
+	        return userMapper.userDelete(code);
+	    }
 	}
