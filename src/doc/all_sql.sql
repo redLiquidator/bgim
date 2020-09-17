@@ -54,4 +54,4 @@ CREATE TABLE comments(
   CONSTRAINT cno PRIMARY KEY (cno) );
  
 INSERT INTO comments (cno,bno,content,writer,reg_date) VALUES (1,1,'회원등록완료되었습니다','IM admin','15-SEP-2020');
-
+INSERT INTO comments (cno,bno,content,writer,reg_date) VALUES (2,1,'온라인몰 비밀번호는 도메인.사번 입니다','IM admin','15-SEP-2020');

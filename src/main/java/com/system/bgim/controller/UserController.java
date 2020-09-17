@@ -40,7 +40,7 @@ import com.system.bgim.service.UserService;
 		}
 		
 		@RequestMapping("/insertProc")
-		private String boardInsertProc(HttpServletRequest request) throws Exception{ 
+		private String userInsertProc(HttpServletRequest request) throws Exception{ 
 			
 			UserDTO user= new UserDTO();
 			
@@ -56,7 +56,7 @@ import com.system.bgim.service.UserService;
 		    }
 				
 		@RequestMapping("/update/{code}") //게시글 수정폼 호출  
-	    private String boardUpdateForm(@PathVariable String code, Model model) throws Exception{   
+	    private String userUpdateForm(@PathVariable String code, Model model) throws Exception{   
 	        model.addAttribute("detail", userService.userDetailService(code));	        
 	        return "update";
 	    }
@@ -76,7 +76,7 @@ import com.system.bgim.service.UserService;
 	    }
 		
 		 @RequestMapping("/delete/{code}")
-		    private String boardDelete(@PathVariable String code) throws Exception{      
+		    private String userDelete(@PathVariable String code) throws Exception{      
 			 userService.userDeleteService(code);       
 		        return "redirect:/list";
 		}
