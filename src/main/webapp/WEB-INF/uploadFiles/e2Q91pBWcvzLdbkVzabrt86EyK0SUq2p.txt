@@ -1,0 +1,10 @@
+eclipse shortcut
+한줄 복사 : 커서를 코드 첫칸에 놓고 Ctrl +Alt 를 누르고 방향키(위,아래)로 움직인다. 
+한줄 제거 : 커서를 코드 첫칸에 놓고 Ctrl + D 를 누른다.
+
+
+
+
+
+BGCOMMERCE.tonikroos1
+	

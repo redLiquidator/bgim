@@ -23,8 +23,8 @@
     
     <insert id="userInsert" parameterType="com.system.bgim.dto.UserDTO">
         INSERT INTO
-        org_user (code,username,login_id,create_dt,modify_dt,user_id)
-        VALUES(#{code},#{username},#{login_id},SYSDATE,SYSDATE,0)
+        org_user (code,username,login_id,create_dt,modify_dt,user_id,empid,companycode,deptcode)
+        VALUES(#{code},#{username},#{login_id},SYSDATE,SYSDATE,0,#{empid},#{companycode},#{deptcode})
     </insert>
     
      <update id="userUpdate" parameterType="com.system.bgim.dto.UserDTO">

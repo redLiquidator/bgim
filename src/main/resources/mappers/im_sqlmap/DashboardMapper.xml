@@ -22,7 +22,7 @@
             BNO = #{bno}
     </select>
     
-    <insert id="dashboardInsert" parameterType="com.system.bgim.dto.DashboardDTO">
+    <insert id="dashboardInsert" parameterType="com.system.bgim.dto.DashboardDTO" useGeneratedKeys="true" keyProperty="idx">
         INSERT INTO
         dashboard (BNO, SUBJECT,CONTENT,WRITER,REG_DATE)
         VALUES(#{bno},#{subject},#{content},#{writer},SYSDATE) 
@@ -45,4 +45,21 @@
         DELETE FROM dashboard WHERE bno = #{bno}
     </delete>
     
+        
+    <!--useGeneratedKeys="true" keyProperty="idx"
+                  시퀀스가 자동 증가인 경우 insert 후에 시퀀스 값을 리턴받을 경우에 설정.
+                 게시글 작성 시 게시글 번호가 파일DB에 등록되어야 하기때문에 시퀀스 값을 리턴받아서 파일DB에 등록 -->
+    <insert id="fileInsert" parameterType="com.system.bgim.dto.FileDTO">
+       INSERT INTO
+       files (FNO, BNO, FILENAME, FILEORINAME, FILEURL)
+       VALUES (#{fno},#{bno},#{fileName},#{fileOriName},#{fileUrl})
+	</insert>
+    
+    <select id="fileDetail" parameterType="int" resultType="com.system.bgim.dto.FileDTO">
+    SELECT
+        *
+    FROM files
+    WHERE
+        BNO = #{bno}
+    </select>  
 </mapper>

@@ -12,7 +12,7 @@
 <body>
  
 <div class="container">
-    <form action="/dashboardinsertProc" method="post">
+    <form action="/dashboardinsertProc" method="post" enctype="multipart/form-data">
       <div class="form-group">
         <label for="subject">제목</label>
         <input type="text" class="form-control" id="subject" name="subject" placeholder="제목을 입력하세요.">
@@ -25,7 +25,11 @@
         <label for=content">내용</label>
         <textarea class="form-control" id="content" name="content" rows="3"></textarea>
       </div>
+      
+      <input type="file" name="files"> 
+      
       <button type="submit" class="btn btn-primary">작성</button>
+      <br>
     </form>
 </div>
 </body>

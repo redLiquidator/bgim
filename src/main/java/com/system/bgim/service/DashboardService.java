@@ -7,6 +7,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import com.system.bgim.dto.DashboardDTO;
+import com.system.bgim.dto.FileDTO;
 import com.system.bgim.dto.UserDTO;
 import com.system.bgim.mapper.DashboardMapper;
 
@@ -39,4 +40,12 @@ public class DashboardService {
 	 public int dashboardDeleteService(int bno) throws Exception{
 	        return dashboardMapper.dashboardDelete(bno);
 	 }
+	 
+	 public int fileInsertService(FileDTO file) throws Exception{
+		    return dashboardMapper.fileInsert(file);
+	}
+	 
+	 public FileDTO fileDetailService(int bno) throws Exception{    
+		    return dashboardMapper.fileDetail(bno);
+	}
 }
