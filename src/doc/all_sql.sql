@@ -151,5 +151,8 @@ reg_date date,
 
 INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('BIOCHEM1','biochemistry1','BGLAB','11-SEP-2000');
 INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('SEOULSUPPORT','seoul support','BGCOMMERCE','11-SEP-2000');
+INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('BIOCHEM2','biochemistry2','BGLAB','11-SEP-2001');
+INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('INCHEONSUPPORT','incheon support','BGCOMMERCE','11-SEP-2001');
+
 
 

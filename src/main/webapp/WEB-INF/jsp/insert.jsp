@@ -13,34 +13,42 @@
 //companycode selectbox 의  값에 해당하는  deptcode를 deptcode select box로 불러오기
 $(document).ready(function() {
 	    var companycode = null;
+	    var deptcode = null;
 	$('#companycode').change(function() {
 		companycode = $(this).val()
-        deptDetail();       
+        deptDetail(companycode);       
 	});
 	
 	//deptcode 목록 
-	function deptDetail(){
+	function deptDetail(companycode){
 		console.log(companycode);
 	    $.ajax({
 	        url : '/deptdetail',
-	        type : 'get',
-	        data : {'companycode':companycode},
+	        type : 'post',
+	        data : {'companycode':companycode},  //post방식으로  controller에 @RequestParam을 이용해 전달할 파라미터
 	        success : function(data){
-	            var a =''; 
-	            $.each(data, function(key, value){ 
-	                a += '<div class="commentArea" style="border-bottom:1px solid darkgray; margin-bottom: 15px;">';
-	                a += '<div class="commentInfo'+value.cno+'">'+'댓글번호 : '+value.cno+' / 작성자 : '+value.writer;
-	                a += '<a onclick="commentUpdate('+value.cno+',\''+value.content+'\');"> 수정 </a>';
-	                a += '<a onclick="commentDelete('+value.cno+');"> 삭제 </a> </div>';
-	                a += '<div class="commentContent'+value.cno+'"> <p> 내용 : '+value.content +'</p>';
-	                a += '</div></div>';
+	        	var a =''; 
+	        	 a += '<label for="deptcode">부서코드</label>';
+	        	 a += '<select name="deptcode">';
+	        	 a += '<option value="">select</option>';
+	        	  
+	        	 $.each(data, function(key, value){ 
+	        		 deptcode += value.deptcode;
+	        		 console.log(deptcode);
+	        		 //deptcodelist 에 option항목을 생성한다. 
+	        
+		         a += ' <option value="'+value.deptcode+'">'+value.deptcode+'</option>';
+	             });
+	        	 a += '</select>';
+	        	 $(".deptcodelist").html(a);
+	             
+	        }
 	            });
 	            
-	            $(".commentList").html(a);
-	        }
-	    });
-	}
-});
+	           	}
+	            
+
+	        });
 </script>
 
 <body>
@@ -70,17 +78,16 @@ $(document).ready(function() {
 		    <option value="${list.companycode}">${list.companycode}</option>
 		      </c:forEach>
 		</select>
-
  	 </div>
         <div class="form-group">  
+        <div class="deptcodelist">
        <label for="deptcode">부서코드</label>
-		<select name="deptcode">
-		    <option value="">select</option>
 		  <!--  회사코드를 선택하면, 부서코드를 가져온다.  -->
-		    <c:forEach var="list" items="${deptlist}">
-		    <option value="${list.deptcode}">${list.deptcode}</option>
-		    </c:forEach>
-		</select>
+		 
+		   
+
+		 
+		 </div>
  	 </div>
       <button type="submit" class="btn btn-primary">작성</button>
     </form>

@@ -7,4 +7,10 @@
             *
         FROM org_dept
     </select>
+    <select id="deptDetail" parameterType="String" resultType="com.system.bgim.dto.DeptDTO">
+        SELECT
+            *
+        FROM org_dept
+        WHERE companycode = #{companycode}
+    </select>
 </mapper>

@@ -19,4 +19,7 @@ public class DeptService {
 		return deptMapper.deptList();
 	}
 
+	public List<DeptDTO> deptDetailService(String companycode) throws Exception{
+		return deptMapper.deptDetail(companycode);
+	}
 }
