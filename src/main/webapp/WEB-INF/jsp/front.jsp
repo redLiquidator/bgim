@@ -197,7 +197,8 @@
 		</div>
 		<!--/main-header-->
 
-		<!--Horizontal-main -->
+		<!--Horizontal-main 다른 jsp화면에 이 부분을 변경해주면 메뉴바가 변경된다 -->
+		
 		<div class="sticky">
 			<div class="horizontal-main hor-menu clearfix">
 				<div class="horizontal-mainwrapper container clearfix">
@@ -209,7 +210,7 @@
 								<ul class="sub-menu">
 									<li aria-haspopup="true"><a href="domainlist">domain</a></li>
 									<li aria-haspopup="true"><a href="department">department</a></li>
-									<li aria-haspopup="true"><a href="list">user</a></li>
+									<li aria-haspopup="true"><a href="detail">user</a></li>
 								</ul>
 							</li>
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="bar-chart-2-outline"></i> Synchronization <i class="fe fe-chevron-down horizontal-icon"></i></a>
@@ -251,7 +252,7 @@
 							</li>
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="briefcase-outline"></i> Request <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
-									<li aria-haspopup="true"><a href="dashboard"> Dashboard </a></li>
+									<li aria-haspopup="true"><a href="dashboardlist"> Dashboard </a></li>
 								</ul>
 							</li>
 						</ul>

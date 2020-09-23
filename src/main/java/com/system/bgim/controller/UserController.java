@@ -52,7 +52,8 @@ public class UserController {
 
 	@RequestMapping("/insertProc")
 	private String userInsertProc(HttpServletRequest request) throws Exception {
-
+		//input과 같은 단일값은 getParameter로 받고, selectbox와 같은 복수값은 getParameterValues로 받아야 한다. 
+		System.out.println(request.getParameterValues("companycode")+ " " + request.getParameterValues("deptcode"));
 		UserDTO user = new UserDTO();
 
 		user.setCode(request.getParameter("code"));

@@ -128,6 +128,33 @@ hired_dt date,
   CONSTRAINT sso_user_pk PRIMARY KEY (code)  
 );
 
+-- org_user -> mall_user 로 프로비저닝 한다. 테이블내용은 org_user와 동일하다.
+CREATE TABLE mall_user  
+( 
+user_id number(10), 
+domain_id number(10), 
+dept_id number(10),
+hr_group_id number(10),
+hr_sync number(10),
+hr_sync_group number(10),
+status varchar2(64),
+is_valid varchar2(64),
+create_dt date,
+modify_dt date,
+pwd_dt date,
+username varchar2(64),
+companycode varchar2(64),
+empid varchar2(64),
+deptcode varchar2(64),
+code varchar2(64) NOT null,
+login_id varchar2(64),
+pwd varchar2(64),
+email varchar2(64),
+mobile varchar2(64),
+hired_dt date,
+  CONSTRAINT mall_user_pk PRIMARY KEY (code)  
+);
+
 
 CREATE TABLE org_domain  
 ( 

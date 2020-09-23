@@ -12,8 +12,8 @@
 <script>
 //companycode selectbox 의  값에 해당하는  deptcode를 deptcode select box로 불러오기
 $(document).ready(function() {
-	    var companycode = null;
-	    var deptcode = null;
+	    var companycode = '';
+	    var deptcode = '';
 	$('#companycode').change(function() {
 		companycode = $(this).val()
         deptDetail(companycode);       
@@ -29,7 +29,7 @@ $(document).ready(function() {
 	        success : function(data){
 	        	var a =''; 
 	        	 a += '<label for="deptcode">부서코드</label>';
-	        	 a += '<select name="deptcode">';
+	        	 a += '<select id="deptcode" name="deptcode">';
 	        	 a += '<option value="">select</option>';
 	        	  
 	        	 $.each(data, function(key, value){ 
@@ -72,7 +72,7 @@ $(document).ready(function() {
       </div>
       <div class="form-group">  
        <label for="companycode">회사코드</label>
-		<select id="companycode">
+		<select id="companycode" name="companycode">
 		    <option value="">select</option>
 		      <c:forEach var="list" items="${domainlist}">
 		    <option value="${list.companycode}">${list.companycode}</option>
