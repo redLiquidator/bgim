@@ -16,12 +16,16 @@ public class UserService {
     UserMapper userMapper;
 	
 	 public List<UserDTO> userListService() throws Exception{
-		 System.out.println("service");
+		 System.out.println("userListService");
 		 return userMapper.userList();
 	 }
-	 
+ 
 	 public UserDTO userDetailService(String code) throws Exception{
 	     return userMapper.userDetail(code);
+	 }
+	 
+	 public int countUserService(String code) throws Exception{
+		 return userMapper.countUserService(code);
 	 }
 	 
 	 public int userInsertService(UserDTO user) throws Exception{     

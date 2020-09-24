@@ -54,6 +54,7 @@ $(document).ready(function() {
 <body>
 <div class="container">
     <form action="/insertProc" method="post">
+      <input type="hidden" class="form-control" id="tablename" name="tablename" value="org_user">
       <div class="form-group">
         <label for="code">code</label>
         <input type="text" class="form-control" id="code" name="code" placeholder="도메인.사번 형식으로 입력">

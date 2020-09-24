@@ -21,9 +21,17 @@
             CODE = #{code}
     </select>
     
+     <select id="countUserService" parameterType="String" resultType="Integer">
+        SELECT
+            count(*)
+        FROM mall_user
+        WHERE
+            CODE = #{code}
+    </select>
+    
     <insert id="userInsert" parameterType="com.system.bgim.dto.UserDTO">
         INSERT INTO
-        org_user (code,username,login_id,create_dt,modify_dt,user_id,empid,companycode,deptcode)
+        ${tablename} (code,username,login_id,create_dt,modify_dt,user_id,empid,companycode,deptcode)
         VALUES(#{code},#{username},#{login_id},SYSDATE,SYSDATE,0,#{empid},#{companycode},#{deptcode})
     </insert>
     

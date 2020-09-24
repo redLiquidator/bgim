@@ -40,6 +40,14 @@ public class UserDTO {
 	private String email;
 	private String mobile;
 	private Date hired_dt;
+	private String tablename;
+	
+	public String getTablename() {
+		return tablename;
+	}
+	public void setTablename(String tablename) {
+		this.tablename = tablename;
+	}
 	public int getUser_id() {
 		return user_id;
 	}

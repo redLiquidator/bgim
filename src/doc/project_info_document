@@ -1,5 +1,3 @@
-
-
 ==================================================bgim project info========================================================
 view original template sample -> TemplateSample_Controller.java
 
@@ -11,15 +9,20 @@ click the link below for the info ->
  	4. menu & programs
  	5. tables
  	6. resource(provision objects)
+ 	7. js functions(description of major functions)
 	https://docs.google.com/spreadsheets/d/1f3GHd0_wRZc9gTm0lISsTtBaPklWkzidyQCl6SRvGCk/edit#gid=0
 	
 
-
-	1. program flow
-	2. system map 
+    1. synchronization & provision (table flow)
+	2. synchronization - one user(function flow)
+	3. synchronization - one domain (function flow)
+    4. provision - one user(function flow)
+    5. provision - one domain(function flow)   
 	https://docs.google.com/presentation/d/1hZZj0faVlxJhEEZYnWrl66EtIYuLOg-SAcdCEsN0KvU/edit#slide=id.p
 	
+	
 	1. db schema (name:benjamin  email:forever.moanna@gmail.com  pw:oimbird1! )
+	D:\git_src\bgim\src\doc\Guest Template-dbdesigner.pdf
+							or
 	https://app.dbdesigner.net/designer/schema/354925
-
 

@@ -8,7 +8,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.system.bgim.dto.DeptDTO;
 import com.system.bgim.dto.DomainDTO;
@@ -27,7 +26,6 @@ public class UserController {
 	@Resource(name="com.system.bgim.service.DeptService")
 	DeptService deptService;
 
-	
 	@RequestMapping("/list")
 	private String userList(Model model) throws Exception {
 		System.out.println("/list");
@@ -35,20 +33,11 @@ public class UserController {
 		model.addAttribute("list", list);
 		return "list";
 	}
-	
 
 	@RequestMapping("/detail/{code}")
 	private String boardDetail(@PathVariable String code, Model model) throws Exception {
 		model.addAttribute("detail", userService.userDetailService(code));
 		return "detail";
-	}
-	
-	//해당코드의 사용자 수를 리턴. 0 or 1 을 리턴한다.
-	@RequestMapping("/count/{code}")
-	@ResponseBody
-	private int countUser(@PathVariable String code, Model model) throws Exception {
-		System.out.println(userService.countUserService(code));
-		return  userService.countUserService(code);
 	}
 
 	@RequestMapping("/insert")
@@ -72,10 +61,9 @@ public class UserController {
 		user.setEmpid(request.getParameter("empid"));
 		user.setCompanycode(request.getParameter("companycode"));
 		user.setDeptcode(request.getParameter("deptcode"));
-		user.setTablename(request.getParameter("tablename"));
 		
 		System.out.println("insert user : " + user.getCode() + " " + user.getLogin_id() + " " + user.getUsername()+
-				user.getEmpid()+  " " + user.getCompanycode() + " " + user.getDeptcode()+" " + user.getTablename());
+				user.getEmpid()+  " " + user.getCompanycode() + " " + user.getDeptcode());
 
 		userService.userInsertService(user);
 
@@ -90,16 +78,12 @@ public class UserController {
 	}
 
 	@RequestMapping("/updateProc")
-	private String userUpdateProc(HttpServletRequest request) throws Exception {
+	private String boardUpdateProc(HttpServletRequest request) throws Exception {
 
 		UserDTO user = new UserDTO();
 		user.setPwd(request.getParameter("pwd"));
 		user.setDeptcode(request.getParameter("deptcode"));
 		user.setCode(request.getParameter("code"));
-		
-		
-		
-		
 		System.out.println("update user : " + user.getCode() + " " + user.getPwd() + " " + user.getDeptcode());
 
 		userService.userUpdateService(user);
