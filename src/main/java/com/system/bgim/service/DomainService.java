@@ -15,9 +15,11 @@ public class DomainService {
 	@Resource(name="com.system.bgim.mapper.DomainMapper")
 	DomainMapper domainMapper; 
 	
-	public List<DomainDTO> domainListService() throws Exception{
-		System.out.println("domainListService");
-		return domainMapper.domainList();
+	public List<DomainDTO> domainListService(DomainDTO domain) throws Exception{
+		System.out.println("domainListService(DomainDTO domain)");
+		return domainMapper.domainList(domain);
 	} 
+	
+	
 
 }

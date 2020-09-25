@@ -71,50 +71,25 @@ CREATE SEQUENCE fno START WITH 1 INCREMENT BY 1 MAXVALUE 100 CYCLE NOCACHE;
 -- presync_user를 org_user로 인사동기화한다. 테이블내용은 org_user와 동일하다.
 CREATE TABLE presync_user  
 ( 
-user_id number(10), 
-domain_id number(10), 
-dept_id number(10),
-hr_group_id number(10),
-hr_sync number(10),
-hr_sync_group number(10),
-status varchar2(64),
-is_valid varchar2(64),
-create_dt date,
-modify_dt date,
-pwd_dt date,
 username varchar2(64),
 companycode varchar2(64),
 empid varchar2(64),
 deptcode varchar2(64),
 code varchar2(64) NOT null,
 login_id varchar2(64),
-pwd varchar2(64),
 email varchar2(64),
 mobile varchar2(64),
 hired_dt date,
   CONSTRAINT presync_user_pk PRIMARY KEY (code)  
 );
 
-INSERT INTO presync_user (USER_ID,DOMAIN_ID,DEPT_ID,HR_GROUP_ID,HR_SYNC,HR_SYNC_GROUP,STATUS,IS_VALID,CREATE_DT,MODIFY_DT,PWD_DT,USERNAME,
-COMPANYCODE,EMPID,DEPTCODE,CODE,LOGIN_ID,PWD,EMAIL,MOBILE,HIRED_DT) VALUES 
-(10,1,10,10,1,1,'sync','Y','17-SEP-2020','17-SEP-2020','17-SEP-2020','Jenny Yoon',
-'BGCOMMERCE','jenny11','SALES','BGCOMMERCE.tonikroos11','jenny11@gmail.com','1234','jenny11@gmail.com','010-1113-2299','01-JAN-2020');
+INSERT INTO presync_user (USERNAME,COMPANYCODE,EMPID,DEPTCODE,CODE,LOGIN_ID,EMAIL,MOBILE,HIRED_DT) VALUES 
+('Jenny Yoon','BGCOMMERCE','jenny11','SALES','BGCOMMERCE.tonikroos11','jenny11@gmail.com','jenny11@gmail.com','010-1113-2299','01-JAN-2020');
 
 
 -- org_user -> sso_user 로 프로비저닝 한다. 테이블내용은 org_user와 동일하다.
 CREATE TABLE sso_user  
 ( 
-user_id number(10), 
-domain_id number(10), 
-dept_id number(10),
-hr_group_id number(10),
-hr_sync number(10),
-hr_sync_group number(10),
-status varchar2(64),
-is_valid varchar2(64),
-create_dt date,
-modify_dt date,
-pwd_dt date,
 username varchar2(64),
 companycode varchar2(64),
 empid varchar2(64),
@@ -131,17 +106,6 @@ hired_dt date,
 -- org_user -> mall_user 로 프로비저닝 한다. 테이블내용은 org_user와 동일하다.
 CREATE TABLE mall_user  
 ( 
-user_id number(10), 
-domain_id number(10), 
-dept_id number(10),
-hr_group_id number(10),
-hr_sync number(10),
-hr_sync_group number(10),
-status varchar2(64),
-is_valid varchar2(64),
-create_dt date,
-modify_dt date,
-pwd_dt date,
 username varchar2(64),
 companycode varchar2(64),
 empid varchar2(64),
@@ -181,5 +145,14 @@ INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('SEOULSUPP
 INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('BIOCHEM2','biochemistry2','BGLAB','11-SEP-2001');
 INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('INCHEONSUPPORT','incheon support','BGCOMMERCE','11-SEP-2001');
 
+CREATE TABLE presync_domain  
+( 
+companycode varchar2(64), 
+companyname varchar2(64),
+  CONSTRAINT presynccompanycode_pk PRIMARY KEY (companycode)  
+);
+
+INSERT INTO org_domain (companycode,companyname) VALUES ('BGAGRICULTURE','BG agriculture');
+INSERT INTO org_domain (companycode,companyname) VALUES ('BGSPACE','BG space');
 
 

@@ -208,8 +208,9 @@
 							<li aria-haspopup="true"><a href="front" class="sub-icon"><i class="hor-icon" data-eva="monitor-outline"></i>Main</a></li>
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="cube-outline"></i> Data management <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
+								    <li aria-haspopup="true"><a href="presyncdomainlist">presync data</a></li>
 									<li aria-haspopup="true"><a href="domainlist">domain</a></li>
-									<li aria-haspopup="true"><a href="department">department</a></li>
+									<li aria-haspopup="true"><a href="deptlist">department</a></li>
 									<li aria-haspopup="true"><a href="detail">user</a></li>
 								</ul>
 							</li>

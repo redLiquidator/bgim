@@ -30,21 +30,30 @@
     </select>
     
     <insert id="userInsert" parameterType="com.system.bgim.dto.UserDTO">
-        INSERT INTO
-        ${tablename} (code,username,login_id,create_dt,modify_dt,user_id,empid,companycode,deptcode)
-        VALUES(#{code},#{username},#{login_id},SYSDATE,SYSDATE,0,#{empid},#{companycode},#{deptcode})
+     INSERT INTO
+        ${tablename}        
+	    <choose>
+			<when test = "tablename.equals('org_user')">	
+				(code,username,pwd,login_id,create_dt,modify_dt,user_id,empid,companycode,deptcode)
+	       		 VALUES(#{code},#{username},#{pwd},#{login_id},SYSDATE,SYSDATE,0,#{empid},#{companycode},#{deptcode})	
+			</when>			
+			<otherwise>
+				(code,username,pwd,login_id,empid,companycode,deptcode)
+	      		  VALUES(#{code},#{username},#{pwd},#{login_id},#{empid},#{companycode},#{deptcode})			
+			</otherwise>	
+		</choose> 
     </insert>
     
      <update id="userUpdate" parameterType="com.system.bgim.dto.UserDTO">
-        UPDATE org_user
+        UPDATE ${tablename}
             SET
-        <if test="pwd != null">
-            pwd = #{pwd}
-        </if>
-        <if test="pwd != null and deptcode != null"> , </if>
-        <if test="deptcode != null">
+            username = #{username},
+            pwd = #{pwd},
+            login_id = #{login_id},
+            modify_dt = SYSDATE,
+            empid = #{empid},
+            companycode = #{companycode},
             deptcode = #{deptcode}
-        </if>
         WHERE code = #{code}
     </update>
     

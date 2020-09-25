@@ -54,7 +54,9 @@ public class UserController {
 	@RequestMapping("/insert")
 	private String userInsertForm(Model model) throws Exception {
 		//select box list
-		List<DomainDTO> domainlist = domainService.domainListService();
+		 DomainDTO domain = new DomainDTO();
+		 domain.setTablename("org_user");
+		List<DomainDTO> domainlist = domainService.domainListService(domain);
 		 model.addAttribute("domainlist",domainlist);
 		List<DeptDTO> deptlist = deptService.deptListService(); 
 		 model.addAttribute("deptlist",deptlist);
@@ -68,13 +70,14 @@ public class UserController {
 		UserDTO user = new UserDTO();
 		user.setCode(request.getParameter("code"));
 		user.setLogin_id(request.getParameter("login_id"));
+		user.setPwd(request.getParameter("pwd"));
 		user.setUsername(request.getParameter("username"));
 		user.setEmpid(request.getParameter("empid"));
 		user.setCompanycode(request.getParameter("companycode"));
 		user.setDeptcode(request.getParameter("deptcode"));
 		user.setTablename(request.getParameter("tablename"));
 		
-		System.out.println("insert user : " + user.getCode() + " " + user.getLogin_id() + " " + user.getUsername()+
+		System.out.println("insert user : " + user.getCode() + " " +  user.getPwd() + " " + user.getLogin_id() + " " + user.getUsername()+
 				user.getEmpid()+  " " + user.getCompanycode() + " " + user.getDeptcode()+" " + user.getTablename());
 
 		userService.userInsertService(user);
@@ -93,14 +96,17 @@ public class UserController {
 	private String userUpdateProc(HttpServletRequest request) throws Exception {
 
 		UserDTO user = new UserDTO();
-		user.setPwd(request.getParameter("pwd"));
-		user.setDeptcode(request.getParameter("deptcode"));
 		user.setCode(request.getParameter("code"));
-		
-		
-		
-		
-		System.out.println("update user : " + user.getCode() + " " + user.getPwd() + " " + user.getDeptcode());
+		user.setLogin_id(request.getParameter("login_id"));
+		user.setPwd(request.getParameter("pwd"));
+		user.setUsername(request.getParameter("username"));
+		user.setEmpid(request.getParameter("empid"));
+		user.setCompanycode(request.getParameter("companycode"));
+		user.setDeptcode(request.getParameter("deptcode"));
+		user.setTablename(request.getParameter("tablename"));
+
+		System.out.println("update user : " + user.getCode() + " " +  user.getPwd() + " " + user.getLogin_id() + " " + user.getUsername()+
+				user.getEmpid()+  " " + user.getCompanycode() + " " + user.getDeptcode()+" " + user.getTablename());
 
 		userService.userUpdateService(user);
 

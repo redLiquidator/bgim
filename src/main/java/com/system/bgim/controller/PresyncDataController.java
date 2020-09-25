@@ -9,22 +9,25 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.system.bgim.dto.DomainDTO;
+import com.system.bgim.dto.UserDTO;
 import com.system.bgim.service.DomainService;
 
 @Controller
-public class DomainController {
+public class PresyncDataController {
 	
 	@Resource(name="com.system.bgim.service.DomainService")
 	DomainService domainService;
 	
-	@RequestMapping("/domainlist")
+	@RequestMapping("/presyncdomainlist")
 	private String domainList(Model model) throws Exception{
-		 System.out.println("/domainlist");
+		 System.out.println("/presyncdomainlist");
 		 DomainDTO domain = new DomainDTO();
 		 domain.setTablename("presync_domain");
 		 List<DomainDTO> domainlist = domainService.domainListService(domain);
 		 model.addAttribute("domainlist",domainlist);
-		 return "domainlist";
+		 System.out.println(domainlist);
+		 return "presyncdomainlist";
 	}
+
 
 }

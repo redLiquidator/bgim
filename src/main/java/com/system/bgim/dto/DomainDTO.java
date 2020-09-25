@@ -6,6 +6,14 @@ public class DomainDTO {
 	private String companycode;
 	private String companyname;
 	private Date reg_date;
+	private String tablename;
+	
+	public String getTablename() {
+		return tablename;
+	}
+	public void setTablename(String tablename) {
+		this.tablename = tablename;
+	}
 	public String getCompanycode() {
 		return companycode;
 	}

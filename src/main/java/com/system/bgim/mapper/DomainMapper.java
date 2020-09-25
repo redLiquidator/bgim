@@ -9,5 +9,5 @@ import com.system.bgim.dto.DomainDTO;
 @Repository("com.system.bgim.mapper.DomainMapper")
 public interface DomainMapper {
 
-	public List<DomainDTO> domainList() throws Exception;
+	public List<DomainDTO> domainList(DomainDTO domain) throws Exception;
 }

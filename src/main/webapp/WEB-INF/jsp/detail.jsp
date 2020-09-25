@@ -210,6 +210,7 @@
 							<li aria-haspopup="true"><a href="front" class="sub-icon"><i class="hor-icon" data-eva="monitor-outline"></i>Main</a></li>
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="cube-outline"></i> Data management <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
+									<li aria-haspopup="true"><a href="presyncdomainlist">presync data</a></li>
 									<li aria-haspopup="true"><a href="domainlist">domain</a></li>
 									<li aria-haspopup="true"><a href="department">department</a></li>
 									<li aria-haspopup="true"><a href="list">user</a></li>
@@ -317,12 +318,12 @@
 			</nav>
 			<!-- main-profile-body -->
 			<div class="main-profile-body">
-		<div class="tab-content">
-			<div class="tab-pane show active" id="about">
+		<div class="tab-content"> 
+			<div class="tab-pane active" id="about">
 				
 			<div class="card-body border-top">
 				<!-- <label class="main-content-label tx-13 mg-b-20"></label> -->
-			<div class="table-responsive">
+			<div class="table-responsive"> 
 			<table class="table row table-borderless mb-0">
 			<tbody class="col-lg-12 col-xl-6 p-0">
 				<tr>
@@ -1139,6 +1140,7 @@
 	     $.ajax({
 	        url : '/insertProc',
 	        type : 'post',
+	        data : userData,
 	        success : function(data){
 	            if(data == 1) {
 	   				 console.log("userInsertProvision success");        
@@ -1152,6 +1154,7 @@
 	     $.ajax({
 	        url : '/updateProc',
 	        type : 'post',
+	        data : userData,
 	        success : function(data){
 	            if(data == 1) {
 	   				 console.log("userUpdateProvision success");        
@@ -1184,7 +1187,7 @@
 	    if(userCheck == 1){
 	    	alert("updateProvision");  //만약 사용자가 있으면 update
 	    	userUpdateProvision(userData);
-	    }else if(userExistorNot(code) == 0){
+	    }else if(userCheck == 0){
 	    	alert("insertProvision");
 	    	userInsertProvision(userData);  //만약 사용자가 없으면 insert
 	    }else{
