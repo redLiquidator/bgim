@@ -152,7 +152,7 @@ companyname varchar2(64),
   CONSTRAINT presynccompanycode_pk PRIMARY KEY (companycode)  
 );
 
-INSERT INTO org_domain (companycode,companyname) VALUES ('BGAGRICULTURE','BG agriculture');
-INSERT INTO org_domain (companycode,companyname) VALUES ('BGSPACE','BG space');
+INSERT INTO presync_domain (companycode,companyname) VALUES ('BGAGRICULTURE','BG agriculture');
+INSERT INTO presync_domain (companycode,companyname) VALUES ('BGSPACE','BG space');
 
 

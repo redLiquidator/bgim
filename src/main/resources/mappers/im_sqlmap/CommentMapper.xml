@@ -8,7 +8,7 @@
             *
         FROM comments
     </select> 
-       
+       		
     <insert id="commentInsert" parameterType="com.system.bgim.dto.CommentDTO">
         INSERT INTO
         comments (CNO, BNO, CONTENT, WRITER, REG_DATE)

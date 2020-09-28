@@ -3,7 +3,7 @@
 
 <mapper namespace="com.system.bgim.mapper.DomainMapper">
 
-<select id="domainList" parameterType="String" resultType="com.system.bgim.dto.DomainDTO">
+<select id="domainList" parameterType="com.system.bgim.dto.DomainDTO" resultType="com.system.bgim.dto.DomainDTO">
         SELECT
             *
         FROM ${tablename}

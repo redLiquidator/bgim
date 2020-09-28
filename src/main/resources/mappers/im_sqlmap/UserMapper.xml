@@ -13,6 +13,10 @@
         username,companycode,empid,deptcode,code,login_id,pwd,email,mobile,hired_dt FROM org_user
     </select>
     
+    <select id="userListbyDomain" parameterType="com.system.bgim.dto.UserDTO" resultType="com.system.bgim.dto.UserDTO">
+        SELECT * FROM ${tablename} where companycode= #{companycode}
+    </select>
+    
     <select id="userDetail" parameterType="String" resultType="com.system.bgim.dto.UserDTO">
         SELECT
             *

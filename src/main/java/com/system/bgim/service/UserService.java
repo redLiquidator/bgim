@@ -19,7 +19,12 @@ public class UserService {
 		 System.out.println("userListService");
 		 return userMapper.userList();
 	 }
- 
+	 
+	 public List<UserDTO> userListbyDomainService(UserDTO user) throws Exception{
+		 return userMapper.userList();
+	 }
+
+	 
 	 public UserDTO userDetailService(String code) throws Exception{
 	     return userMapper.userDetail(code);
 	 }
@@ -31,8 +36,7 @@ public class UserService {
 	 public int userInsertService(UserDTO user) throws Exception{     
 	     return userMapper.userInsert(user);
 	 }
-	 
-	 
+	  
 	 public int userUpdateService(UserDTO user) throws Exception{       
 	     return userMapper.userUpdate(user);
 	    }
