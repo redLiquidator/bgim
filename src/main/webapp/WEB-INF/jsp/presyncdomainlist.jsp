@@ -252,15 +252,64 @@
 		</div>
 		<!--Horizontal-main -->
 		<script>
+		//$(document).on('click', '.table-responsive td', function(e){  이렇게 div 안의 td만 지정할수도 있음
+		$(document).on('click', '.companycode', function(e){ 
+		//선택한 도메인의 사용자list를 불러온다. 
+		var companycode = $(this).text();
+		userListbyDomain(companycode);		
+		});
+		
+		
+		 function userListbyDomain(companycode){
+			alert(companycode);	
+				 $.ajax({
+					 url : '/presyncuserlist/'+companycode,
+				        type : 'post',
+				        async: false,
+				        data : {'companycode' : companycode},
+				        success : function(data){
+		 		          var a =''; 
+				            a += '<div class="table-responsive">';
+			                a += '<table class="table table-striped mg-b-0 text-md-nowrap">';
+			                a += '<thead>';
+			                a += '<tr>';
+			                a += '<th>user<br>name</th>';
+			                a += '<th>code<br>&nbsp;</th>';
+			                a += '<th>login_id<br>&nbsp;</th>';
+			                a += '<th>company<br>code</th>';
+			                a += '<th>empid<br>&nbsp;</th>';
+			                a += '<th>email<br>&nbsp;</th>';
+			                a += '<th>mobile<br>&nbsp;</th>';
+			                a += '<th>hired_dt<br>&nbsp;</th>';
+			                a += '<th>synchro<br>nization</th>';
+			                a += '</tr>';
+			                a += '</thead>';
+			                a += '<tbody>';
+			                
+				            $.each(data, function(key, value){ 
+			
+	        				    a += '<tr>'; 
+        					    a += '<td>'+value.username+'</td>';
+       						    a += '<td>'+value.code+'</td>';
+    							a += '<td>'+value.login_id+'</td>';
+    							a += '<td>'+value.companycode+'</td>';
+						        a += '<td>'+value.empid+'</td>';
+							    a += '<td>'+value.email+'</td>';
+								a += '<td>'+value.mobile+'</td>';
+							    a += '<td>'+value.hired_dt.substring(0,10)+'</td>';
+								a += '<td>'+value.synchronization+'</td>';
+								a += '</tr>';	
+				            });
+				            a += '</tbody>';
+			        		a += '</table>';
+			        		a += '</div>';
+				            
+				            $(".commentList").html(a);
+				        }
+				    });			    
+		 }
 	
-	$("td[id=companycode]").each(
-		function(){
-			$(this).click(function(){
-			onclick("hi");
-			});
-			}
-			);
-		}
+		 
 		</script>
 
 		<!--Main Content-->
@@ -286,13 +335,14 @@
 							<div class="card-body p-0">
 								<div class="main-content-left main-content-left-chat">
 									<div class="p-3 pb-0 border-bottom">
-										<div class="input-group">
-											
+										<div class="input-group">			
 								<div class="main-chat-msg-name">
-										<h6>Domain</h6><small>Last synchronized: 1 minute ago | click the name of a domain to see its users</small>
+										<h6>Domain</h6>
+										<small>Last synchronized: 1 minute ago 
+										<br> click the name of a domain to see its users</small>
 									
-							</div>
-										</div>
+								</div>
+								  </div>
 									</div>
 									
 									<div class="tab-pane" id="provision">
@@ -314,22 +364,25 @@
 				<th>synchronization</th>
 			</tr>
 			</thead>
+
 			<tbody>
 			  <c:forEach var="domainlist" items="${domainlist}">
+			 
 			<tr> 
 				<th scope="row">success</th>
-				 <td align="center"><input type="text" value="${domainlist.companycode}" name="book"/></td>
-				<%-- <td>${domainlist.companyname}</td> --%>
-				<td id="companycode">${domainlist.companycode}</td> 
+				<td>${domainlist.companyname}</td>
+				<td class="companycode">${domainlist.companycode}</td>
 				<td>
 					<form name="presyncForm">
 				 		<input type="hidden" name="tablename" value="org_user"/>
 				 		<button type="submit" class="btn btn-sm btn-success" name="presyncForm">execute</button>
 					</form>
-				</td>
+		</td>
 			</tr>
+			
 			 </c:forEach> 
 				</tbody>
+			
 			</table>
 				</div><!-- bd -->
 			</div><!-- bd -->
@@ -361,50 +414,10 @@
 									
 									<!-- table -->							
 	 	<div class="card-body">
-			<!-- <div class="main-content-label mg-b-5">
-				Striped Rows
-			</div>
-			<p class="mg-b-20">Example of redash Striped Rows.</p> -->
-			<c:if test="${not empty userlist}">
-			<div class="table-responsive">
-		<table class="table table-striped mg-b-0 text-md-nowrap">
-			<thead>
-			<tr>
-				<th>username</th>
-				<th>code</th>
-				<th>login_id</th>
-				<th>mobile</th>
-				<th>companycode</th>
-				<th>deptcode</th>
-				<th>pwd</th>
-				<th>email</th>
-				<th>synchronization</th>
-			</tr>
-			</thead>
-			<tbody>
-			
-			 <c:forEach var="list" items="${userlist}">
-			<tr> 
-				<td>${list.username}</td>
-				<td>${list.code}</td> 
-				<td>${list.login_id}</td>
-				<td>${list.mobile}</td> 
-				<td>${list.companycode}</td>
-				<td>${list.deptcode}</td> 
-				<td>${list.pwd}</td>
-				<td>
-					<form name="presyncForm">
-				 		<input type="hidden" name="tablename" value="org_user"/>
-				 		<button type="submit" class="btn btn-sm btn-success" name="presyncForm">execute</button>
-					</form>
-				</td>
-			</tr>
-			 </c:forEach>
-			
-				</tbody>
-			</table>
-				</div><!-- bd -->
-				 </c:if>
+	 	<div class="container">
+        <div class="commentList"></div>
+</div>
+		
 			</div><!-- bd -->
 			<!-- table -->
 							

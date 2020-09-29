@@ -9,8 +9,7 @@
     </select>
     
     <select id="userList" resultType="com.system.bgim.dto.UserDTO">
-        SELECT user_id,domain_id,dept_id,hr_group_id,hr_sync,hr_sync_group,status,is_valid,create_dt,modify_dt,pwd_dt,
-        username,companycode,empid,deptcode,code,login_id,pwd,email,mobile,hired_dt FROM org_user
+        SELECT * FROM org_user
     </select>
     
     <select id="userListbyDomain" parameterType="com.system.bgim.dto.UserDTO" resultType="com.system.bgim.dto.UserDTO">

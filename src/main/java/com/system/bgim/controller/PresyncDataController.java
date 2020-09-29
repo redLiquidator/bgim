@@ -3,14 +3,12 @@ package com.system.bgim.controller;
 import java.util.List;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.system.bgim.dto.CommentDTO;
 import com.system.bgim.dto.DomainDTO;
 import com.system.bgim.dto.UserDTO;
 import com.system.bgim.service.DomainService;
@@ -37,12 +35,13 @@ public class PresyncDataController {
 		 return "presyncdomainlist";
 	}
 	
-	@RequestMapping("/presyncuserlist")
-	private List<UserDTO> userListbyDomain(HttpServletRequest request) throws Exception{
+	
+	@RequestMapping("/presyncuserlist/{companycode}")
+	@ResponseBody
+	private List<UserDTO> userListbyDomain(@RequestParam String companycode) throws Exception{
 		UserDTO user = new UserDTO();
-		user.setCompanycode("BGCOMMERCE");
+		user.setCompanycode(companycode);
 		user.setTablename("presync_user");
 		return userService.userListbyDomainService(user);
 	}
-
 }

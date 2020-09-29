@@ -21,7 +21,7 @@ public class UserService {
 	 }
 	 
 	 public List<UserDTO> userListbyDomainService(UserDTO user) throws Exception{
-		 return userMapper.userList();
+		 return userMapper.userListbyDomain(user);
 	 }
 
 	 

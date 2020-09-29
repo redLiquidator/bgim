@@ -85,7 +85,10 @@ hired_dt date,
 
 INSERT INTO presync_user (USERNAME,COMPANYCODE,EMPID,DEPTCODE,CODE,LOGIN_ID,EMAIL,MOBILE,HIRED_DT) VALUES 
 ('Jenny Yoon','BGCOMMERCE','jenny11','SALES','BGCOMMERCE.tonikroos11','jenny11@gmail.com','jenny11@gmail.com','010-1113-2299','01-JAN-2020');
-
+INSERT INTO presync_user (USERNAME,COMPANYCODE,EMPID,DEPTCODE,CODE,LOGIN_ID,EMAIL,MOBILE,HIRED_DT) VALUES 
+('Hoxy','BGSPACE','hoxy000','ASTRONAUT','BGSPACE.hoxy000','hoxy000@gmail.com','hoxy000@gmail.com','010-9999-2299','01-JAN-2011');
+INSERT INTO presync_user (USERNAME,COMPANYCODE,EMPID,DEPTCODE,CODE,LOGIN_ID,EMAIL,MOBILE,HIRED_DT) VALUES 
+('Ddal','BGSPACE','ddal1','ASTRONAUT','BGSPACE.ddal1','ddal1@gmail.com','ddal1@gmail.com','010-1111-2299','01-APR-2011');
 
 -- org_user -> sso_user 로 프로비저닝 한다. 테이블내용은 org_user와 동일하다.
 CREATE TABLE sso_user  
