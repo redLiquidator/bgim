@@ -29,8 +29,8 @@ public class UserService {
 	     return userMapper.userDetail(code);
 	 }
 	 
-	 public int countUserService(String code) throws Exception{
-		 return userMapper.countUserService(code);
+	 public int countUserService(UserDTO user) throws Exception{
+		 return userMapper.countUserService(user);
 	 }
 	 
 	 public int userInsertService(UserDTO user) throws Exception{     

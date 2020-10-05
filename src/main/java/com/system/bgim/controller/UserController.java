@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.system.bgim.dto.DeptDTO;
@@ -44,11 +45,15 @@ public class UserController {
 	}
 	
 	//해당코드의 사용자 수를 리턴. 0 or 1 을 리턴한다.
-	@RequestMapping("/count/{code}")
+	@RequestMapping("/count")
 	@ResponseBody
-	private int countUser(@PathVariable String code, Model model) throws Exception {
-		System.out.println(userService.countUserService(code));
-		return  userService.countUserService(code);
+	private int countUser(HttpServletRequest request,Model model) throws Exception {
+		UserDTO user = new UserDTO();
+		user.setCode(request.getParameter("code"));
+		user.setTablename(request.getParameter("tablename"));	
+		System.out.println(user.getCode()+" "+user.getTablename());
+		System.out.println(userService.countUserService(user));
+		return  userService.countUserService(user);
 	}
 
 	@RequestMapping("/insert")
@@ -56,11 +61,11 @@ public class UserController {
 		//select box list
 		 DomainDTO domain = new DomainDTO();
 		 domain.setTablename("org_user");
-		List<DomainDTO> domainlist = domainService.domainListService(domain);
+		 List<DomainDTO> domainlist = domainService.domainListService(domain);
 		 model.addAttribute("domainlist",domainlist);
-		List<DeptDTO> deptlist = deptService.deptListService(); 
+		 List<DeptDTO> deptlist = deptService.deptListService(); 
 		 model.addAttribute("deptlist",deptlist);
-		return "insert";
+		 return "insert";
 	}
 
 	@RequestMapping("/insertProc")

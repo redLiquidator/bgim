@@ -14,7 +14,7 @@ import com.system.bgim.dto.UserDTO;
 	    public List<UserDTO> userList(UserDTO user) throws Exception;
 	    public List<UserDTO> userListbyDomain(UserDTO user) throws Exception;
 	    public UserDTO userDetail(String code) throws Exception;
-	    public int countUserService(String code) throws Exception;
+	    public int countUserService(UserDTO user) throws Exception;
 	    public int userInsert(UserDTO user) throws Exception;
 	    public int userUpdate(UserDTO user) throws Exception;
 	    public int userDelete(String code) throws Exception;

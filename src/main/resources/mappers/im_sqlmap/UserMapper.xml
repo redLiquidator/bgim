@@ -27,7 +27,7 @@
      <select id="countUserService" parameterType="String" resultType="Integer">
         SELECT
             count(*)
-        FROM mall_user
+        FROM ${tablename}
         WHERE
             CODE = #{code}
     </select>

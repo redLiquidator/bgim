@@ -51,6 +51,7 @@
 	</head>
 
 	<body class="main-body">
+	$(document.body).append(form);
 
 		<!-- Loader -->
 		<div id="loading">
@@ -252,16 +253,32 @@
 		</div>
 		<!--Horizontal-main -->
 		<script>
+		$(document).off(); //모든 이벤트를 해제해고, 다시 이벤트를 동적으로 할당해 준다.
+		
+		var companycode
+		var code
+		var userCheck		//사용자존재여부
+		var userData
+		 
 		//$(document).on('click', '.table-responsive td', function(e){  이렇게 div 안의 td만 지정할수도 있음
-		$(document).on('click', '.companycode', function(e){ 
+ 		$(document).on('click', '.companycode', function(e){ 
 		//선택한 도메인의 사용자list를 불러온다. 
-		var companycode = $(this).text();
+		companycode = $(this).text();
 		userListbyDomain(companycode);		
-		});
+		}); 
+
+ 		$(document).on('click', '.usersync', function(e){ 
+ 			//선택한 도메인의 사용자list를 불러온다. 
+ 			userListbyDomain(companycode);	
+ 			//해당 사용자의 인사동기화를 실행
+ 			code = this.value;
+ 			userData = $('[name=UserSyncForm]').serialize();
+ 			usersync(code);
+ 			}); 
+
 		
 		
-		 function userListbyDomain(companycode){
-			alert(companycode);	
+		function userListbyDomain(companycode){
 				 $.ajax({
 					 url : '/presyncuserlist/'+companycode,
 				        type : 'post',
@@ -287,17 +304,27 @@
 			                a += '<tbody>';
 			                
 				            $.each(data, function(key, value){ 
-			
+	
 	        				    a += '<tr>'; 
         					    a += '<td>'+value.username+'</td>';
-       						    a += '<td>'+value.code+'</td>';
-    							a += '<td>'+value.login_id+'</td>';
-    							a += '<td>'+value.companycode+'</td>';
-						        a += '<td>'+value.empid+'</td>';
-							    a += '<td>'+value.email+'</td>';
-								a += '<td>'+value.mobile+'</td>';
-							    a += '<td>'+value.hired_dt.substring(0,10)+'</td>';
-								a += '<td>'+value.synchronization+'</td>';
+       						    a += '<td id='+value.code+'>'+value.code+'</td>';
+    							a += '<td id='+value.login_id+'>'+value.login_id+'</td>';
+    							a += '<td id='+value.companycode+'>'+value.companycode+'</td>';
+						        a += '<td id='+value.empid+'>'+value.empid+'</td>';
+							    a += '<td id='+value.email+'>'+value.email+'</td>';
+								a += '<td id='+value.mobile+'>'+value.mobile+'</td>';
+							    a += '<td id='+value.hired_dt+'>'+value.hired_dt.substring(0,10)+'</td>';
+							    a += '<td><form name="UserSyncForm">';
+							    a += '<input type="hidden" name="tablename" value="org_user"/>';
+							    a += '<input type="hidden" name='+value.username+' value='+value.username+'/>';
+							    a += '<input type="hidden" name='+value.code+' value='+value.code+'/>';
+							    a += '<input type="hidden" name='+value.login_id+' value='+value.login_id+'/>';
+							    a += '<input type="hidden" name='+value.companycode+' value='+value.companycode+'/>';
+							    a += '<input type="hidden" name='+value.empid+' value='+value.empid+'/>';
+							    a += '<input type="hidden" name='+value.email+' value='+value.email+'/>';
+							    a += '<input type="hidden" name='+value.mobile+' value='+value.mobile+'/>';
+							    a += '<input type="hidden" name='+value.hired_dt+' value='+value.hired_dt+'/>';
+								a += '<button type="submit" value='+value.code+' class="btn btn-sm btn-success usersync" name="presyncForm">execute</button></form></td>';
 								a += '</tr>';	
 				            });
 				            a += '</tbody>';
@@ -308,7 +335,38 @@
 				        }
 				    });			    
 		 }
-	
+		
+		function usersync(code){
+			//사용자가  org_user에 없으면 insertSync, 있으면 updateSync
+			userExistorNot(code);
+			alert(userCheck);
+		    if(userCheck == 1){
+		    	alert("updateSync");  //만약 사용자가 있으면 update
+		    	userUpdateSync(userData);
+		    }else if(userCheck == 0){
+		    	alert("insertSync");
+		    	userInsertSync(userData);  //만약 사용자가 없으면 insert
+		    }else{
+		    	alert("error: userCheck result is not 0 nor 1");
+		    }
+			
+		}
+		
+		function userExistorNot(code){
+			//사용자정보가 org_user에 없으면 insert, 있으면 update
+			console.log("userExistorNot function starts");
+			$.ajax({
+				 url : '/count',
+			        type : 'post',
+			        data : {'code' : code, 'tablename' : 'org_user'},
+			        success : function(data){
+			        	userCheck = data;
+			        }
+			    });
+ 
+			 return userCheck;
+		}
+		 
 		 
 		</script>
 
@@ -339,7 +397,7 @@
 								<div class="main-chat-msg-name">
 										<h6>Domain</h6>
 										<small>Last synchronized: 1 minute ago 
-										<br> click the name of a domain to see its users</small>
+										<br> click the code of a domain to see its users</small>
 									
 								</div>
 								  </div>
