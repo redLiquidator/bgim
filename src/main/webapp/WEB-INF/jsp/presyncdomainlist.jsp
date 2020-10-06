@@ -259,6 +259,7 @@
 		var code
 		var userCheck		//사용자존재여부
 		var userData
+		var tablename
 		 
 		//$(document).on('click', '.table-responsive td', function(e){  이렇게 div 안의 td만 지정할수도 있음
  		$(document).on('click', '.companycode', function(e){ 
@@ -273,9 +274,30 @@
  			//해당 사용자의 인사동기화를 실행
  			code = this.value;
  			userData = $('[name=UserSyncForm]').serialize();
+ 			userData.replace("%2F","");
+ 			console.log(userData);
+ 			console.log(code);
+
+
  			usersync(code);
  			}); 
-
+		
+ 		function changeSerialize( values, k, v ) {
+ 		    var found = false;
+ 		    for (i = 0; i < values.length && !found; i++) {
+ 		        if ( values[i].name == k ) { 
+ 		            values[i].value = v;
+		            found = true;
+ 		        }
+ 		    }
+ 		    if (!found) {
+ 		        values.push(
+ 		            { name: k,
+ 		              value: v }   
+ 		        );
+ 		    }
+ 		    return values;
+ 		}
 		
 		
 		function userListbyDomain(companycode){
@@ -307,23 +329,25 @@
 	
 	        				    a += '<tr>'; 
         					    a += '<td>'+value.username+'</td>';
-       						    a += '<td id='+value.code+'>'+value.code+'</td>';
-    							a += '<td id='+value.login_id+'>'+value.login_id+'</td>';
-    							a += '<td id='+value.companycode+'>'+value.companycode+'</td>';
-						        a += '<td id='+value.empid+'>'+value.empid+'</td>';
-							    a += '<td id='+value.email+'>'+value.email+'</td>';
-								a += '<td id='+value.mobile+'>'+value.mobile+'</td>';
-							    a += '<td id='+value.hired_dt+'>'+value.hired_dt.substring(0,10)+'</td>';
+       						    a += '<td>'+value.code+'</td>';
+    							a += '<td>'+value.login_id+'</td>';
+    							a += '<td>'+value.companycode+'</td>';
+						        a += '<td>'+value.empid+'</td>';
+							    a += '<td>'+value.email+'</td>';
+								a += '<td>'+value.mobile+'</td>';
+							    a += '<td>'+value.hired_dt.substring(0,10)+'</td>';
 							    a += '<td><form name="UserSyncForm">';
 							    a += '<input type="hidden" name="tablename" value="org_user"/>';
-							    a += '<input type="hidden" name='+value.username+' value='+value.username+'/>';
-							    a += '<input type="hidden" name='+value.code+' value='+value.code+'/>';
-							    a += '<input type="hidden" name='+value.login_id+' value='+value.login_id+'/>';
-							    a += '<input type="hidden" name='+value.companycode+' value='+value.companycode+'/>';
-							    a += '<input type="hidden" name='+value.empid+' value='+value.empid+'/>';
-							    a += '<input type="hidden" name='+value.email+' value='+value.email+'/>';
-							    a += '<input type="hidden" name='+value.mobile+' value='+value.mobile+'/>';
-							    a += '<input type="hidden" name='+value.hired_dt+' value='+value.hired_dt+'/>';
+							    a += '<input type="hidden" name="username" value="'+value.username+'"/>';
+							    a += '<input type="hidden" name="pwd" value="1234"/>';
+							    a += '<input type="hidden" name="code" value="'+value.code+'"/>';
+							    a += '<input type="hidden" name="login_id" value="'+value.login_id+'"/>';
+							    a += '<input type="hidden" name="companycode" value="'+value.companycode+'"/>';
+							    a += '<input type="hidden" name="deptcode" value="testdept"/>';
+							    a += '<input type="hidden" name="empid" value="'+value.empid+'"/>';
+							    a += '<input type="hidden" name="email" value="'+value.email+'"/>';
+							    a += '<input type="hidden" name="mobile" value="'+value.mobile+'"/>';
+							    a += '<input type="hidden" name="hired_dt" value="'+value.hired_dt+'"/>';
 								a += '<button type="submit" value='+value.code+' class="btn btn-sm btn-success usersync" name="presyncForm">execute</button></form></td>';
 								a += '</tr>';	
 				            });
@@ -337,15 +361,62 @@
 		 }
 		
 		function usersync(code){
-			//사용자가  org_user에 없으면 insertSync, 있으면 updateSync
+			//step1: 사용자가  org_user에 없으면 insertSync, 있으면 updateSync			
+			tablename="org_user";
 			userExistorNot(code);
 			alert(userCheck);
+			userData = $('[name=UserSyncForm]').serialize();
+			console.log(userData);
 		    if(userCheck == 1){
-		    	alert("updateSync");  //만약 사용자가 있으면 update
+		    	alert("updateSync");  //만약 사용자가 있으면 updateSync
 		    	userUpdateSync(userData);
+		    	alert("updateSync finished");
+				    	//step2: 사용자가  프로비저닝 테이블에 없으면 insertProvision, 없으면 updateProvision
+				    	tablename="mall_user";
+				    	userExistorNot(code);
+		    	        //userData의 테이블명을 provision할 테이블명으로 변경후, 해당 테이블에 사용자데이터가 존재하는지 확인한다. 일단 mall_user만 구현
+				    	if(userCheck == 1){
+					    	alert("updateProvision");  //만약 사용자가 있으면 update
+				 			
+				 			$('[name=tablename]').val("mall_user");  //tablename 명 변경
+				 			userData = $('[name=UserSyncForm]').serialize();
+				 			console.log(userData);
+					    	userUpdateProvision(userData);
+					    }else if(userCheck == 0){
+					    	alert("insertProvision");
+					    	
+				 			$('[name=tablename]').val("mall_user");  //tablename 명 변경
+				 			userData = $('[name=UserSyncForm]').serialize();
+				 			console.log(userData);
+					    	userInsertProvision(userData);  //만약 사용자가 없으면 insert
+					    }else{
+					    	alert("error: userCheck result is not 0 nor 1");
+					    }
+				    	
 		    }else if(userCheck == 0){
 		    	alert("insertSync");
-		    	userInsertSync(userData);  //만약 사용자가 없으면 insert
+		    	userInsertSync(userData);  //만약 사용자가 없으면 insertSync
+		    	
+				    	//step2: 사용자가  프로비저닝 테이블에 없으면 insertProvision, 없으면 updateProvision
+				    	//userData의 테이블명을 provision할 테이블명으로 변경후, 해당 테이블에 사용자데이터가 존재하는지 확인한다. 일단 mall_user만 구현
+				    	tablename="mall_user";
+				    	userExistorNot(code);
+				    	if(userCheck == 1){
+					    	alert("updateProvision");  //만약 사용자가 있으면 update
+					    	
+					    	var userData = $('[name=UserSyncForm]').serializeArray();   //userData의 tablename변경
+					    	userData = changeSerialize(userData, 'tablename', 'mall_user');
+					    	userUpdateProvision(userData);
+					    }else if(userCheck == 0){
+					    	alert("insertProvision");
+					    	
+					    	var userData = $('[name=UserSyncForm]').serializeArray();   //userData의 tablename변경
+					    	userData = changeSerialize(userData, 'tablename', 'mall_user');
+					    	userInsertProvision(userData);  //만약 사용자가 없으면 insert
+					    }else{
+					    	alert("error: userCheck result is not 0 nor 1");
+					    }
+		    	
 		    }else{
 		    	alert("error: userCheck result is not 0 nor 1");
 		    }
@@ -358,7 +429,7 @@
 			$.ajax({
 				 url : '/count',
 			        type : 'post',
-			        data : {'code' : code, 'tablename' : 'org_user'},
+			        data : {'code' : code, 'tablename' : tablename},
 			        success : function(data){
 			        	userCheck = data;
 			        }
@@ -366,6 +437,65 @@
  
 			 return userCheck;
 		}
+		
+		function userUpdateSync(userData){
+			console.log(userData);
+		    $.ajax({
+		        url : '/updateProc',
+		        type : 'post',
+		        data : userData,
+		        success : function(data){
+		            if(data == 1) {
+		   				 console.log("userUpdateSync success");        
+		            }
+		        }
+		    }); 
+		}
+		
+		function userInsertSync(userData){
+			console.log("userInsertSync function starts");
+			console.log(userData);
+		     $.ajax({
+		        url : '/insertProc',
+		        type : 'post',
+		        data : userData,
+		        success : function(data){
+		            if(data == 1) {
+		   				 console.log("userInsertSync success");        
+		            }
+		        }
+		    }); 
+		}
+		
+		function userInsertProvision(userData){
+			console.log("userInsertProvision function starts");
+		     $.ajax({
+		        url : '/insertProc',
+		        type : 'post',
+		        data : userData,
+		        success : function(data){
+		            if(data == 1) {
+		   				 console.log("userInsertProvision success");        
+		            }
+		        }
+		    }); 
+		}
+		
+		function userUpdateProvision(userData){
+			console.log("userUpdateProvision function starts");
+		     $.ajax({
+		        url : '/updateProc',
+		        type : 'post',
+		        data : userData,
+		        success : function(data){
+		            if(data == 1) {
+		   				 console.log("userUpdateProvision success");        
+		            }
+		        }
+		    }); 
+		}
+			
+		
 		 
 		 
 		</script>

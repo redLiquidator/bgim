@@ -53,7 +53,9 @@
             username = #{username},
             pwd = #{pwd},
             login_id = #{login_id},
-            modify_dt = SYSDATE,
+            <if test="tablename.equals('org_user')">
+               modify_dt = SYSDATE,
+            </if>
             empid = #{empid},
             companycode = #{companycode},
             deptcode = #{deptcode}
