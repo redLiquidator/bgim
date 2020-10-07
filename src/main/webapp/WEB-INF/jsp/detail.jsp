@@ -319,64 +319,66 @@
 			<!-- main-profile-body -->
 			<div class="main-profile-body">
 		<div class="tab-content"> 
-			<div class="tab-pane active" id="about">
+			<div class="tab-pane active show" id="about">
 				
 			<div class="card-body border-top">
 				<!-- <label class="main-content-label tx-13 mg-b-20"></label> -->
-			<div class="table-responsive"> 
-			<table class="table row table-borderless mb-0">
-			<tbody class="col-lg-12 col-xl-6 p-0">
-				<tr>
-					<td class="border-top-0 pt-0"><span class="font-weight-semibold">username : </span>${detail.username}</td>
-				</tr>
-				<tr>
-					<td class="border-top-0"><span class="font-weight-semibold">code : </span> ${detail.code}</td>
-				</tr>
-				<tr>
-					<td class="border-top-0"><span class="font-weight-semibold">empid : </span> ${detail.empid}</td>
-				</tr>
-				<tr>
-					<td class="border-top-0"><span class="font-weight-semibold">login_id : </span>${detail.login_id}</td>
-				</tr>
-				<tr>
-					<td class="border-top-0"><span class="font-weight-semibold">mobile : </span> ${detail.mobile}</td>
-				</tr>
-				<tr>
-					<td class="border-top-0"><span class="font-weight-semibold">status : </span> ${detail.status}</td>
-				</tr>
-				<tr>
-					<td class="border-top-0"><span class="font-weight-semibold">is_valid : </span> ${detail.is_valid}</td>
-				</tr>
-				<tr>
-					<td class="border-top-0"><span class="font-weight-semibold">create_dt : </span> ${detail.create_dt}</td>
-				</tr>
-			</tbody>
-			<tbody class="col-lg-12 col-xl-6 p-0 border-top-0">
-				<tr>
-					<td class="border-top-0 pt-0"><span class="font-weight-semibold">companycode : </span> ${detail.companycode}</td>
-				</tr>
-				<tr>
-					<td class="border-top-0"><span class="font-weight-semibold">deptcode : </span> ${detail.deptcode}</td>
-				</tr>
-				<tr>
-					<td class="border-top-0"><span class="font-weight-semibold">pwd : </span> ${detail.pwd} </td>
-				</tr>
-				<tr>
-					<td class="border-top-0"><span class="font-weight-semibold">email : </span> ${detail.email}</td>
-				</tr>
-				<tr>
-					<td class="border-top-0"><span class="font-weight-semibold">hired_dt : </span> ${detail.hired_dt}</td>
-				</tr>
-				<tr>
-					<td class="border-top-0"><span class="font-weight-semibold">hr_sync : </span> ${detail.hr_sync}</td>
-				</tr>
-					<tr>
-					<td class="border-top-0"><span class="font-weight-semibold">modify_dt : </span> ${detail.modify_dt}</td>
-				</tr>
-				<tr>
-					<td class="border-top-0"><span class="font-weight-semibold">pwd_dt : </span> ${detail.pwd_dt}</td>
-				</tr>
-			</tbody>
+		<div class="table-responsive">
+		<table class="table table-striped mg-b-0 text-md-nowrap">
+			<thead>
+			<tr>
+				<th>attribute</th>
+				<th>value</th>
+				<th>attribute</th>
+				<th>value</th>
+	
+			</tr>
+			</thead>
+			<tbody>
+			<tr> 
+				<td>username</td>
+				<td>${detail.username}</td>
+				<td>companycode</td>
+				<td>${detail.companycode}</td>	
+			</tr>
+			<tr> 
+				<td>empid</td>
+				<td>${detail.username}</td>
+				<td>deptcode</td>
+				<td>${detail.companycode}</td>	
+			</tr>
+			<tr> 
+				<td>code</td>
+				<td>${detail.username}</td>
+				<td>login_id</td>
+				<td>${detail.companycode}</td>	
+			</tr>	
+				<tr> 
+				<td>code</td>
+				<td>${detail.username}</td>
+				<td>login_id</td>
+				<td>${detail.companycode}</td>	
+			</tr>
+				<tr> 
+				<td>code</td>
+				<td>${detail.username}</td>
+				<td>login_id</td>
+				<td>${detail.companycode}</td>	
+			</tr>
+				<tr> 
+				<td>code</td>
+				<td>${detail.username}</td>
+				<td>login_id</td>
+				<td>${detail.companycode}</td>	
+			</tr>
+				<tr> 
+				<td>code</td>
+				<td>${detail.username}</td>
+				<td>login_id</td>
+				<td>${detail.companycode}</td>	
+			</tr>
+			
+				</tbody>
 			</table>
 			</div>
 			</div>

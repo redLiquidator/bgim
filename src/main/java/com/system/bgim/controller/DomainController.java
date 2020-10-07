@@ -3,6 +3,7 @@ package com.system.bgim.controller;
 import java.util.List;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,12 +19,13 @@ public class DomainController {
 	DomainService domainService;
 	
 	@RequestMapping("/domainlist")
-	private String domainList(Model model) throws Exception{
+	private String domainList(Model model,HttpServletRequest request) throws Exception{
 		 System.out.println("/domainlist");
 		 DomainDTO domain = new DomainDTO();
-		 domain.setTablename("presync_domain");
+		 domain.setTablename("org_domain");		 
 		 List<DomainDTO> domainlist = domainService.domainListService(domain);
 		 model.addAttribute("domainlist",domainlist);
+		 System.out.println(domainlist.size());
 		 return "domainlist";
 	}
 

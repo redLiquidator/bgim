@@ -133,6 +133,9 @@ reg_date date,
 
 INSERT INTO org_domain (companycode,companyname,reg_date) VALUES ('BGLAB','BG laboratory','11-SEP-2000');
 INSERT INTO org_domain (companycode,companyname,reg_date) VALUES ('BGCOMMERCE','BG commerce','11-SEP-2000');
+INSERT INTO org_domain (companycode,companyname,reg_date) VALUES ('BGAGRICULTURE','BG agriculture','11-DEC-2000');
+INSERT INTO org_domain (companycode,companyname,reg_date) VALUES ('BGSPACE','BG space','11-SEP-1990');
+INSERT INTO org_domain (companycode,companyname,reg_date) VALUES ('BGFOOD','BG food','01-AUG-2000');
 
 CREATE TABLE org_dept  
 ( 
