@@ -196,10 +196,10 @@
 							<li aria-haspopup="true"><a href="front" class="sub-icon"><i class="hor-icon" data-eva="monitor-outline"></i>Main</a></li>
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="cube-outline"></i> Data management <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
-									<li aria-haspopup="true"><a href="presyncdomainlist">presync data</a></li>
-									<li aria-haspopup="true"><a href="domainlist">domain</a></li>
-									<li aria-haspopup="true"><a href="department">department</a></li>
-									<li aria-haspopup="true"><a href="list">user</a></li>
+									<li aria-haspopup="true"><a href="/presyncdomainlist">presync data</a></li>
+									<li aria-haspopup="true"><a href="/domainlist">domain</a></li>
+									<li aria-haspopup="true"><a href="/department">department</a></li>
+									<li aria-haspopup="true"><a href="/list">user</a></li>
 								</ul>
 							</li>
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="bar-chart-2-outline"></i> Synchronization <i class="fe fe-chevron-down horizontal-icon"></i></a>
@@ -259,13 +259,6 @@
 		var userCheck		//사용자존재여부
 		var userData
 		var tablename
-		 
-		//$(document).on('click', '.table-responsive td', function(e){  이렇게 div 안의 td만 지정할수도 있음
- 		$(document).on('click', '.companycode', function(e){ 
-		//선택한 도메인의 사용자list를 불러온다. 
-		companycode = $(this).text();
-		userListbyDomain(companycode);		
-		}); 
 
  		$(document).on('click', '.usersync', function(e){ 
  			//선택한 도메인의 사용자list를 불러온다. 
@@ -276,8 +269,6 @@
  			userData.replace("%2F","");
  			console.log(userData);
  			console.log(code);
-
-
  			usersync(code);
  			}); 
 		
@@ -297,9 +288,11 @@
  		    }
  		    return values;
  		}
-		
+
+ 		
 		
 		function userListbyDomain(companycode){
+			  
 				 $.ajax({
 					 url : '/presyncuserlist/'+companycode,
 				        type : 'post',
@@ -558,7 +551,7 @@
 			<tr> 
 				<th scope="row">success</th>
 				<td>${domainlist.companyname}</td>
-				<td class="companycode">${domainlist.companycode}</td>
+				<td><a href="#" onclick="userListbyDomain('${domainlist.companycode}')">${domainlist.companycode}</a></td>
 				<td>
 					<form name="presyncForm">
 				 		<input type="hidden" name="tablename" value="org_user"/>
@@ -571,6 +564,7 @@
 				</tbody>
 			
 			</table>
+			
 				</div><!-- bd -->
 			</div><!-- bd -->
 			<!-- table -->	

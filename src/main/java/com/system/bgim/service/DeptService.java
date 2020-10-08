@@ -15,8 +15,8 @@ public class DeptService {
 	@Resource(name="com.system.bgim.mapper.DeptMapper")
 	DeptMapper deptMapper;
 	
-	public List<DeptDTO> deptListService() throws Exception{
-		return deptMapper.deptList();
+	public List<DeptDTO> deptListService(DeptDTO dept) throws Exception{
+		return deptMapper.deptList(dept);
 	}
 
 	public List<DeptDTO> deptDetailService(String companycode) throws Exception{

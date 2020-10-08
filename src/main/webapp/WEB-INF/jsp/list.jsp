@@ -210,10 +210,10 @@
 							<li aria-haspopup="true"><a href="front" class="sub-icon"><i class="hor-icon" data-eva="monitor-outline"></i>Main</a></li>
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="cube-outline"></i> Data management <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
-									<li aria-haspopup="true"><a href="presyncdomainlist">presync data</a></li>
-									<li aria-haspopup="true"><a href="domainlist">domain</a></li>
-									<li aria-haspopup="true"><a href="department">department</a></li>
-									<li aria-haspopup="true"><a href="list">user</a></li>
+									<li aria-haspopup="true"><a href="/presyncdomainlist">presync data</a></li>
+									<li aria-haspopup="true"><a href="/domainlist">domain</a></li>
+									<li aria-haspopup="true"><a href="/deptlist">department</a></li>
+									<li aria-haspopup="true"><a href="/list">user</a></li>
 								</ul>
 							</li>
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="bar-chart-2-outline"></i> Synchronization <i class="fe fe-chevron-down horizontal-icon"></i></a>
@@ -235,20 +235,8 @@
 							</li>
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="book-outline"></i> System Management <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
-									<li aria-haspopup="true" class="sub-menu-sub"><a href="#">account</a>
-										<ul class="sub-menu">
-											<li aria-haspopup="true"><a href="page-profile.html"> Profile </a></li>
-											<li aria-haspopup="true"><a href="page-editprofile.html">Edit Profile</a></li>
-										</ul>
-									</li>
-									<li aria-haspopup="true" class="sub-menu-sub"><a href="#">batch scheduler</a>
-										<ul class="sub-menu">
-											<li aria-haspopup="true"><a href="app-mail.html">Mailbox</a></li>
-											<li aria-haspopup="true"><a href="app-mail-read.html">Mail Read</a></li>
-											<li aria-haspopup="true"><a href="app-mail-information.html">Account Information</a></li>
-											<li aria-haspopup="true"><a href="app-mail-settings.html">Mail Settings</a></li>
-										</ul>
-									</li>
+									<li aria-haspopup="true"><a href="#">account</a></li>
+									<li aria-haspopup="true"><a href="#">batch scheduler</a></li>
 									<li aria-haspopup="true"><a href="page-invoice.html">database</a></li>
 									<li aria-haspopup="true"><a href="blog.html">release info</a></li>
 								</ul>

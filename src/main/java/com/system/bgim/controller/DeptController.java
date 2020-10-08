@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.system.bgim.dto.DeptDTO;
+import com.system.bgim.dto.DomainDTO;
+import com.system.bgim.dto.UserDTO;
 import com.system.bgim.service.DeptService;
 
 @Controller
@@ -18,6 +20,18 @@ public class DeptController {
 	
 	@Resource(name="com.system.bgim.service.DeptService")
     DeptService deptService;
+	
+	
+	@RequestMapping("/deptlist")
+	private String deptList(Model model) throws Exception {
+		DeptDTO dept = new DeptDTO();
+		dept.setTablename("org_dept");
+		System.out.println("/deptlist");
+		List<DeptDTO> deptlist = deptService.deptListService(dept);
+		model.addAttribute("deptlist", deptlist);
+		return "deptlist";
+	}
+	
 	
 	@RequestMapping("/deptdetail")
     @ResponseBody 

@@ -5,7 +5,7 @@
 	<select id="deptList" resultType="com.system.bgim.dto.DeptDTO">
         SELECT
             *
-        FROM org_dept
+        FROM ${tablename}
     </select>
     <select id="deptDetail" parameterType="String" resultType="com.system.bgim.dto.DeptDTO">
         SELECT

@@ -63,7 +63,8 @@ public class UserController {
 		 domain.setTablename("org_user");
 		 List<DomainDTO> domainlist = domainService.domainListService(domain);
 		 model.addAttribute("domainlist",domainlist);
-		 List<DeptDTO> deptlist = deptService.deptListService(); 
+		 DeptDTO dept = new DeptDTO();
+		 List<DeptDTO> deptlist = deptService.deptListService(dept); 
 		 model.addAttribute("deptlist",deptlist);
 		 return "insert";
 	}
