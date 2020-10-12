@@ -214,7 +214,7 @@
 								<ul class="sub-menu">
 									<li aria-haspopup="true"><a href="/presyncdomainlist">presync data</a></li>
 									<li aria-haspopup="true"><a href="/domainlist">domain</a></li>
-									<li aria-haspopup="true"><a href="/department">department</a></li>
+									<li aria-haspopup="true"><a href="/deptlist">department</a></li>
 									<li aria-haspopup="true"><a href="/list">user</a></li>
 								</ul>
 							</li>
@@ -291,10 +291,12 @@
 		<div class="main-content-body main-content-body-profile card mg-b-20">
 			<nav class="nav main-nav-line">
 				<a class="nav-link active" data-toggle="tab" href="#deptlist">dept list</a>
-				<a class="nav-link" data-toggle="tab" href="#depinfo">refresh</a>
+			
+				<a class="nav-link" data-toggle="tab" href="#depinfo" onclick="location.reload()">refresh</a>
 				<a class="nav-link" data-toggle="tab" href="#deptinfo">dept add</a>
 			</nav>
 			<!-- main-profile-body -->
+
 			<div class="main-profile-body">
 		<div class="tab-content"> 
 			<div class="tab-pane active" id="deptlist">

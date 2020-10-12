@@ -1,0 +1,237 @@
+2020-10-12 14:49:33.463  INFO 10952 --- [main] com.system.bgim.BgimApplication          : Starting BgimApplication on DESKTOP-TPI5MRV with PID 10952 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+2020-10-12 14:49:33.466  INFO 10952 --- [main] com.system.bgim.BgimApplication          : No active profile set, falling back to default profiles: default
+2020-10-12 14:49:34.410  INFO 10952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-12 14:49:34.419  INFO 10952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-12 14:49:34.419  INFO 10952 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-12 14:49:34.656  INFO 10952 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-10-12 14:49:34.661  INFO 10952 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-12 14:49:34.661  INFO 10952 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1154 ms
+2020-10-12 14:49:35.075  INFO 10952 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-12 14:49:35.251  INFO 10952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-12 14:49:35.259  INFO 10952 --- [main] com.system.bgim.BgimApplication          : Started BgimApplication in 2.133 seconds (JVM running for 3.03)
+2020-10-12 14:49:41.011  INFO 10952 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-12 14:49:41.012  INFO 10952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-12 14:49:41.018  INFO 10952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-10-12 14:49:41.054  INFO 10952 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-12 14:49:41.056  WARN 10952 --- [http-nio-8080-exec-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2020-10-12 14:49:41.839  INFO 10952 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-12 16:13:26.878  WARN 10952 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=43m44s834ms272µs500ns).
+2020-10-12 16:35:24.326  INFO 10952 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-10-12 16:35:24.639  INFO 10952 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-12 16:35:24.640  INFO 10952 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-12 16:35:24.668  INFO 10952 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-10-12 16:36:05.829  INFO 16916 --- [main] com.system.bgim.BgimApplication          : Starting BgimApplication on DESKTOP-TPI5MRV with PID 16916 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+2020-10-12 16:36:05.831  INFO 16916 --- [main] com.system.bgim.BgimApplication          : No active profile set, falling back to default profiles: default
+2020-10-12 16:36:06.959  INFO 16916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-12 16:36:06.967  INFO 16916 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-12 16:36:06.968  INFO 16916 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-12 16:36:07.197  INFO 16916 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-10-12 16:36:07.201  INFO 16916 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-12 16:36:07.202  INFO 16916 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1330 ms
+2020-10-12 16:36:07.612  INFO 16916 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-12 16:36:07.776  INFO 16916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-12 16:36:07.784  INFO 16916 --- [main] com.system.bgim.BgimApplication          : Started BgimApplication in 2.265 seconds (JVM running for 3.21)
+2020-10-12 16:36:23.569  INFO 16916 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-12 16:36:23.569  INFO 16916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-12 16:36:23.577  INFO 16916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-10-12 16:36:23.688  INFO 16916 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-12 16:36:23.693  WARN 16916 --- [http-nio-8080-exec-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2020-10-12 16:36:24.499  INFO 16916 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-12 16:38:29.652  INFO 16916 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-10-12 16:38:30.046  INFO 16916 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-12 16:38:30.047  INFO 16916 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-12 16:38:30.068  INFO 16916 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-10-12 16:38:52.941  INFO 6612 --- [main] com.system.bgim.BgimApplication          : Starting BgimApplication on DESKTOP-TPI5MRV with PID 6612 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+2020-10-12 16:38:52.944  INFO 6612 --- [main] com.system.bgim.BgimApplication          : No active profile set, falling back to default profiles: default
+2020-10-12 16:38:53.780  INFO 6612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-12 16:38:53.787  INFO 6612 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-12 16:38:53.788  INFO 6612 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-12 16:38:54.001  INFO 6612 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-10-12 16:38:54.005  INFO 6612 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-12 16:38:54.005  INFO 6612 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1023 ms
+2020-10-12 16:38:54.389  INFO 6612 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-12 16:38:54.554  INFO 6612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-12 16:38:54.562  INFO 6612 --- [main] com.system.bgim.BgimApplication          : Started BgimApplication in 1.931 seconds (JVM running for 2.967)
+2020-10-12 16:38:54.589  INFO 6612 --- [main] com.system.bgim.BgimApplication          : Starting BgimApplication on DESKTOP-TPI5MRV with PID 6612 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+2020-10-12 16:38:54.589  INFO 6612 --- [main] com.system.bgim.BgimApplication          : No active profile set, falling back to default profiles: default
+2020-10-12 16:38:54.781  WARN 6612 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+2020-10-12 16:38:54.786  INFO 6612 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-10-12 16:38:54.793 ERROR 6612 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at com.system.bgim.BgimApplication.main(BgimApplication.java:26) [classes/:na]
+Caused by: javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Unknown Source) ~[na:1.8.0_261]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(Unknown Source) ~[na:1.8.0_261]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(Unknown Source) ~[na:1.8.0_261]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(Unknown Source) ~[na:1.8.0_261]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(Unknown Source) ~[na:1.8.0_261]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(Unknown Source) ~[na:1.8.0_261]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar.afterPropertiesSet(SpringApplicationAdminMXBeanRegistrar.java:129) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 14 common frames omitted
+
+2020-10-12 16:39:31.235  INFO 6612 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-10-12 16:39:31.527  INFO 6612 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-12 16:39:42.342  INFO 15692 --- [main] com.system.bgim.BgimApplication          : Starting BgimApplication on DESKTOP-TPI5MRV with PID 15692 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+2020-10-12 16:39:42.344  INFO 15692 --- [main] com.system.bgim.BgimApplication          : No active profile set, falling back to default profiles: default
+2020-10-12 16:39:43.354  INFO 15692 --- [main] com.system.bgim.BgimApplication          : Started BgimApplication in 1.386 seconds (JVM running for 2.337)
+2020-10-12 16:52:06.127 ERROR 15804 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'logging.level.com.system.bgim.controller' to org.springframework.boot.logging.LogLevel
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:363) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:323) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$null$1(Binder.java:411) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withSource(Binder.java:542) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$800(Binder.java:512) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindAggregate$2(Binder.java:412) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.AggregateElementBinder.bind(AggregateElementBinder.java:39) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.MapBinder$EntryBinder.lambda$bindEntries$0(MapBinder.java:157) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at java.util.HashMap.computeIfAbsent(Unknown Source) ~[na:1.8.0_261]
+	at org.springframework.boot.context.properties.bind.MapBinder$EntryBinder.bindEntries(MapBinder.java:157) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.MapBinder.bindAggregate(MapBinder.java:68) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.AggregateBinder.bind(AggregateBinder.java:56) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindAggregate$3(Binder.java:414) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:571) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$100(Binder.java:512) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bindAggregate(Binder.java:414) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:375) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:319) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:308) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:238) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:212) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.setLogLevels(LoggingApplicationListener.java:364) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeFinalLoggingLevels(LoggingApplicationListener.java:331) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:239) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:80) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at com.system.bgim.BgimApplication.main(BgimApplication.java:20) [classes/:na]
+Caused by: org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [org.springframework.boot.logging.LogLevel] for value 'TRACElogging.config=src/main/resources/log4j2.xml'; nested exception is java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.TRACElogging.config=src/main/resources/log4j2.xml
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:191) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.boot.context.properties.bind.BindConverter$CompositeConversionService.convert(BindConverter.java:170) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:96) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:88) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bindProperty(Binder.java:434) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:379) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:319) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	... 35 common frames omitted
+Caused by: java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.TRACElogging.config=src/main/resources/log4j2.xml
+	at org.springframework.boot.convert.LenientObjectToEnumConverterFactory$LenientToEnumConverter.findEnum(LenientObjectToEnumConverterFactory.java:93) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.convert.LenientObjectToEnumConverterFactory$LenientToEnumConverter.convert(LenientObjectToEnumConverterFactory.java:80) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.convert.LenientObjectToEnumConverterFactory$LenientToEnumConverter.convert(LenientObjectToEnumConverterFactory.java:61) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.core.convert.support.GenericConversionService$ConverterFactoryAdapter.convert(GenericConversionService.java:436) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 42 common frames omitted
+
+2020-10-12 16:53:19.747  INFO 14716 --- [main] com.system.bgim.BgimApplication          : Starting BgimApplication on DESKTOP-TPI5MRV with PID 14716 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+2020-10-12 16:53:19.749  INFO 14716 --- [main] com.system.bgim.BgimApplication          : No active profile set, falling back to default profiles: default
+2020-10-12 16:53:20.665  INFO 14716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-12 16:53:20.674  INFO 14716 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-12 16:53:20.674  INFO 14716 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-12 16:53:20.968  INFO 14716 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-10-12 16:53:20.973  INFO 14716 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-12 16:53:20.973  INFO 14716 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1189 ms
+2020-10-12 16:53:21.398  INFO 14716 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-12 16:53:21.580  INFO 14716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-12 16:53:21.588  INFO 14716 --- [main] com.system.bgim.BgimApplication          : Started BgimApplication in 2.137 seconds (JVM running for 3.066)
+2020-10-12 16:54:11.933  INFO 14716 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-10-12 16:54:12.231  INFO 14716 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-12 16:54:39.889  INFO 16984 --- [main] com.system.bgim.BgimApplication          : Starting BgimApplication on DESKTOP-TPI5MRV with PID 16984 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+2020-10-12 16:54:39.892  INFO 16984 --- [main] com.system.bgim.BgimApplication          : No active profile set, falling back to default profiles: default
+2020-10-12 16:54:40.692  INFO 16984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-12 16:54:40.700  INFO 16984 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-12 16:54:40.700  INFO 16984 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-12 16:54:40.918  INFO 16984 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-10-12 16:54:40.922  INFO 16984 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-12 16:54:40.923  INFO 16984 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 993 ms
+2020-10-12 16:54:41.316  INFO 16984 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-12 16:54:41.501  INFO 16984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-12 16:54:41.509  INFO 16984 --- [main] com.system.bgim.BgimApplication          : Started BgimApplication in 1.914 seconds (JVM running for 2.786)
+2020-10-12 16:54:48.695  INFO 16984 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-12 16:54:48.696  INFO 16984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-12 16:54:48.706  INFO 16984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-10-12 16:54:48.833  INFO 16984 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-12 16:54:48.835  WARN 16984 --- [http-nio-8080-exec-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2020-10-12 16:54:49.666  INFO 16984 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-12 16:55:33.687  INFO 16984 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-10-12 16:55:34.012  INFO 16984 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-12 16:55:34.016  INFO 16984 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-12 16:55:34.040  INFO 16984 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-10-12 16:55:48.231  INFO 17468 --- [main] com.system.bgim.BgimApplication          : Starting BgimApplication on DESKTOP-TPI5MRV with PID 17468 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+2020-10-12 16:55:48.234  INFO 17468 --- [main] com.system.bgim.BgimApplication          : No active profile set, falling back to default profiles: default
+2020-10-12 16:55:49.038  INFO 17468 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-12 16:55:49.045  INFO 17468 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-12 16:55:49.045  INFO 17468 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-12 16:55:49.265  INFO 17468 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-10-12 16:55:49.270  INFO 17468 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-12 16:55:49.271  INFO 17468 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 995 ms
+2020-10-12 16:55:49.658  INFO 17468 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-12 16:55:49.841  INFO 17468 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-12 16:55:49.851  INFO 17468 --- [main] com.system.bgim.BgimApplication          : Started BgimApplication in 1.936 seconds (JVM running for 2.944)
+2020-10-12 17:05:25.988  INFO 17468 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-10-12 17:05:26.297  INFO 17468 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-12 17:05:36.769  INFO 23664 --- [main] com.system.bgim.BgimApplication          : Starting BgimApplication on DESKTOP-TPI5MRV with PID 23664 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+2020-10-12 17:05:36.771  INFO 23664 --- [main] com.system.bgim.BgimApplication          : No active profile set, falling back to default profiles: default
+2020-10-12 17:05:37.574  INFO 23664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-12 17:05:37.584  INFO 23664 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-12 17:05:37.584  INFO 23664 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-12 17:05:37.868  INFO 23664 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-10-12 17:05:37.873  INFO 23664 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-12 17:05:37.885  INFO 23664 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1077 ms
+2020-10-12 17:05:38.341  INFO 23664 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-12 17:05:38.527  INFO 23664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-12 17:05:38.535  INFO 23664 --- [main] com.system.bgim.BgimApplication          : Started BgimApplication in 2.062 seconds (JVM running for 2.933)
+2020-10-12 17:05:38.537  INFO 23664 --- [main] com.system.bgim.AppRunner                : ===========
+2020-10-12 17:05:38.537  INFO 23664 --- [main] com.system.bgim.AppRunner                : logger.info
+2020-10-12 17:05:38.537  INFO 23664 --- [main] com.system.bgim.AppRunner                : ===========
+2020-10-12 17:05:38.537  INFO 23664 --- [main] com.system.bgim.AppRunner                : An INFO Message
+2020-10-12 17:05:38.537  WARN 23664 --- [main] com.system.bgim.AppRunner                : A WARN Message
+2020-10-12 17:05:38.538 ERROR 23664 --- [main] com.system.bgim.AppRunner                : An ERROR Message
+2020-10-12 17:05:38.538  INFO 23664 --- [main] com.system.bgim.AppRunner                : new
+2020-10-12 17:06:37.106  INFO 23664 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-10-12 17:06:37.418  INFO 23664 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-12 17:06:50.206  INFO 18896 --- [main] com.system.bgim.BgimApplication          : Starting BgimApplication on DESKTOP-TPI5MRV with PID 18896 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+2020-10-12 17:06:50.209  INFO 18896 --- [main] com.system.bgim.BgimApplication          : No active profile set, falling back to default profiles: default
+2020-10-12 17:06:51.000  INFO 18896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-12 17:06:51.008  INFO 18896 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-12 17:06:51.008  INFO 18896 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-12 17:06:51.228  INFO 18896 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-10-12 17:06:51.232  INFO 18896 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-12 17:06:51.233  INFO 18896 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 984 ms
+2020-10-12 17:06:51.657  INFO 18896 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-12 17:06:51.853  INFO 18896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-12 17:06:51.863  INFO 18896 --- [main] com.system.bgim.BgimApplication          : Started BgimApplication in 1.943 seconds (JVM running for 2.9)
+2020-10-12 17:06:51.865  INFO 18896 --- [main] com.system.bgim.AppRunner                : ===========
+2020-10-12 17:06:51.865  INFO 18896 --- [main] com.system.bgim.AppRunner                : logger.info
+2020-10-12 17:06:51.865  INFO 18896 --- [main] com.system.bgim.AppRunner                : ===========
+2020-10-12 17:06:51.865  INFO 18896 --- [main] com.system.bgim.AppRunner                : An INFO Message
+2020-10-12 17:06:51.865  WARN 18896 --- [main] com.system.bgim.AppRunner                : A WARN Message
+2020-10-12 17:06:51.865 ERROR 18896 --- [main] com.system.bgim.AppRunner                : An ERROR Message

@@ -278,7 +278,7 @@
 		
 			<nav class="nav main-nav-line">
 				<a class="nav-link active" data-toggle="tab" href="#domainlist">user list</a>
-				<a class="nav-link" data-toggle="tab" href="#deptinfo">refresh</a>
+				<a class="nav-link" data-toggle="tab" href="#deptinfo" onclick="location.reload()">refresh</a>
 				<a class="nav-link" data-toggle="tab" href="#domaininfo">user add</a>
 		
 				<br><div class="main-chat-msg-name">

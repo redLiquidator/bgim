@@ -198,7 +198,7 @@
 								<ul class="sub-menu">
 									<li aria-haspopup="true"><a href="/presyncdomainlist">presync data</a></li>
 									<li aria-haspopup="true"><a href="/domainlist">domain</a></li>
-									<li aria-haspopup="true"><a href="/department">department</a></li>
+									<li aria-haspopup="true"><a href="/deptlist">department</a></li>
 									<li aria-haspopup="true"><a href="/list">user</a></li>
 								</ul>
 							</li>
