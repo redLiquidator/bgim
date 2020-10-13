@@ -45,6 +45,9 @@
 	      		  VALUES(#{code},#{username},#{pwd},#{login_id},#{empid},#{companycode},#{deptcode})			
 			</otherwise>	
 		</choose> 
+	
+		</choose>
+		
     </insert>
     
      <update id="userUpdate" parameterType="com.system.bgim.dto.UserDTO">

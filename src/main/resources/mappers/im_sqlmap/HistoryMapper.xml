@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.system.bgim.mapper.UserMapper">
+  
+    <insert id="userInsert" parameterType="com.system.bgim.dto.UserDTO">
+      <choose>
+			<when test = "provision_or_sync.equals('provision')">	
+			INSERT INTO ${tablename} VALUES (#{status})
+				(code,username,pwd,login_id,create_dt,modify_dt,user_id,empid,companycode,deptcode)
+	       		 VALUES(#{code},#{username},#{pwd},#{login_id},SYSDATE,SYSDATE,0,#{empid},#{companycode},#{deptcode})	
+			</when>	
+			<when test = "provision_or_sync.equals('sync')">	
+				(code,username,pwd,login_id,create_dt,modify_dt,user_id,empid,companycode,deptcode)
+	       		 VALUES(#{code},#{username},#{pwd},#{login_id},SYSDATE,SYSDATE,0,#{empid},#{companycode},#{deptcode})	
+			</when>			
+			<otherwise>
+				(code,username,pwd,login_id,empid,companycode,deptcode)
+	      		  VALUES(#{code},#{username},#{pwd},#{login_id},#{empid},#{companycode},#{deptcode})			
+			</otherwise>	
+    </insert>
+		
+</mapper>

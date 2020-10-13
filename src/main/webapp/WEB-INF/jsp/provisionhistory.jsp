@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="EUC-KR"%>
 <%@ include file="bootstrap.jsp" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %> 
+
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -219,7 +222,7 @@
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="bar-chart-2-outline"></i> Synchronization <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
 									<li aria-haspopup="true"><a href="chart-morris.html">resource</a></li>
-									<li aria-haspopup="true"><a href="chart-flot.html">sync history</a></li>
+									<li aria-haspopup="true"><a href="/synchistory">sync history</a></li>
 									<li aria-haspopup="true"><a href="chart-chartjs.html">webservice</a></li>
 									<li aria-haspopup="true"><a href="chart-sparkline.html">log</a></li>
 								</ul>
@@ -274,563 +277,63 @@
 
 			<!--Page Header-->
 			<div class="page-header">
-				<h3 class="page-title">USER</h3>
+				<h3 class="page-title">SYNC HISTORY</h3>
 				<ol class="breadcrumb mb-0">
 					<li class="breadcrumb-item"><a href="#">Data management</a></li>
-					<li class="breadcrumb-item active" aria-current="page">user</li>
+					<li class="breadcrumb-item active" aria-current="page">sync history</li>
 				</ol>
 			</div>
 			<!--Page Header-->
 
 			<!-- Row -->
 			<div class="row row-sm">
-		<div class="col-lg-3">
-			<div class="card mg-b-20">
-			<div class="card-body">
-				<div class="pl-0">
-					<div class="main-profile-overview">
-						<div class="main-img-user profile-user">
-							<img alt="" src="../resources/img/users/male/15.jpg">
-							<a href="JavaScript:void(0);" class="fas fa-camera profile-edit"></a>
-						</div>
-						<div class="justify-content-between mg-b-20 mt-2 text-center">
-							<div>
-								<h5 class="main-profile-name">Peter Hill</h5>
-								<p class="main-profile-name-text text-muted">Administrator</p>
-							
-							</div>
-						</div>
-						<div class="mt-2 text-center">
-							<a href="#" class="btn btn-info">Password Reset</a>
-						</div>
-					</div><!-- main-profile-overview -->
-				</div>
-			</div>
-			</div>
-		</div>
+		
 		<div class="col-lg-9">
 		<div class="main-content-body main-content-body-profile card mg-b-20">
 			<nav class="nav main-nav-line">
-				<a class="nav-link active" data-toggle="tab" href="#about">user info</a>
-				<a class="nav-link" data-toggle="tab" href="#deptinfo">dept info</a>
-				<a class="nav-link" data-toggle="tab" href="#domaininfo">domain info</a>
-				<a class="nav-link" data-toggle="tab" href="#provision">provision</a>
+				<a class="nav-link active" data-toggle="tab" href="#domainlist">domain list</a>
+				<a class="nav-link" data-toggle="tab" href="#deptinfo" onclick="location.reload()">refresh</a>
+				<a class="nav-link" data-toggle="tab" href="#domaininfo">domain add</a>
 			</nav>
 			<!-- main-profile-body -->
 			<div class="main-profile-body">
 		<div class="tab-content"> 
-			<div class="tab-pane active show" id="about">
+			<div class="tab-pane active" id="domainlist">
 				
 			<div class="card-body border-top">
 				<!-- <label class="main-content-label tx-13 mg-b-20"></label> -->
-		<div class="table-responsive">
-		<table class="table table-striped mg-b-0 text-md-nowrap">
-			<thead>
-			<tr>
-				<th>attribute</th>
-				<th>value</th>
-				<th>attribute</th>
-				<th>value</th>
-	
-			</tr>
-			</thead>
-			<tbody>
-			<tr> 
-				<td>username</td>
-				<td>${detail.username}</td>
-				<td>companycode</td>
-				<td>${detail.companycode}</td>	
-			</tr>
-			<tr> 
-				<td>empid</td>
-				<td>${detail.empid}</td>
-				<td>deptcode</td>
-				<td>${detail.deptcode}</td>	
-			</tr>
-			<tr> 
-				<td>code</td>
-				<td>${detail.code}</td>
-				<td>login_id</td>
-				<td>${detail.login_id}</td>	
-			</tr>	
-				<tr> 
-				<td>pwd</td>
-				<td>${detail.pwd}</td>
-				<td>email</td>
-				<td>${detail.email}</td>	
-			</tr>
-				<tr> 
-				<td>mobile</td>
-				<td>${detail.mobile}</td>
-				<td>hired_dt</td>
-				<td>${detail.hired_dt}</td>	
-			</tr>			
-				</tbody>
-			</table>
-			</div>
-			</div>
-
-			</div>
-			
-	<div class="tab-pane" id="provision">
-		<div class="card-body">
-			<!-- <div class="main-content-label mg-b-5">
-				Striped Rows
-			</div>
-			<p class="mg-b-20">Example of redash Striped Rows.</p> -->
 			<div class="table-responsive">
 		<table class="table table-striped mg-b-0 text-md-nowrap">
 			<thead>
 			<tr>
 				<th>status</th>
 				<th>resource</th>
-				<th>code</th>
-				<th>executed by</th>
-				<th>execution time</th>
-				<th>provision</th>
+				<th>content</th>
+				<th>executed time</th>
+
 			</tr>
 			</thead>
 			<tbody>
+			<%-- <c:forEach var="list" items="${provisionhistorylist}"> --%>
 			<tr> 
-				<th scope="row">success(아이콘예정)</th>
+				<th scope="row">success(아이콘)</th>
 				<td>mall</td>
-				<td>${detail.code}</td>
-				<td></td>
-				<td></td>
-				<td>
-					<form name="mallUserProvisionForm">
-				 		<input type="hidden" name="code" value="${detail.code}"/>
-				 		<input type="hidden" name="pwd" value="${detail.pwd}"/>
-				 		<input type="hidden" name="login_id" value="${detail.login_id}"/>
-				 		<input type="hidden" name="username" value="${detail.username}"/>
-				 		<input type="hidden" name="empid" value="${detail.empid}"/>
-				 		<input type="hidden" name="companycode" value="${detail.companycode}"/>
-				 		<input type="hidden" name="deptcode" value="${detail.deptcode}"/>
-				 		<input type="hidden" name="tablename" value="mall_user"/>
-				 		<input type="hidden" name="provision_or_sync" value="provision"/>
-				 		<button type="submit" class="btn btn-sm btn-success" name="mallUserProvisionbtn">execute</button>
-					</form>
-				</td>
+				<td>이현준(leehj@qmail.com)  사용자 작업 (user.updateUser)를 성공했습니다.</td>
+				<td>2020-10-02 14:11:20</td>
+
 			</tr>
-			<tr>
-				<th scope="row">fail</th>
-				<td>SSO</td>
-				<td>${detail.code}</td>
-				<td></td>
-				<td></td>
-				<td><button type="submit" class="btn btn-sm btn-success"></button></td>
-			</tr>
-			<tr>
-				<th scope="row">success</th>
-				<td>library</td>
-				<td>${detail.code}</td>
-				<td></td>
-				<td></td>
-				<td><button type="submit" class="btn btn-sm btn-success"></button></td>
-			</tr>
-					
+			<%--  </c:forEach> --%>
 				</tbody>
 			</table>
 				</div><!-- bd -->
-			</div><!-- bd -->
-			</div><!-- bd -->
+			</div>
+
+			</div>
+			
+	
 						
-			<div class="tab-pane" id="deptinfo">
-				<div class="card-body">
-				<div class="row row-sm">
-				<div class="col-6 col-md-3">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/female/1.jpg">
-						<h6 class="mb-0 mt-3">Lisa Lee</h6>
-						<span class="tx-13 text-muted">Web designer</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-					</div>
-				</div>
-					<div class="col-6 col-md-3">
-						<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/male/11.jpg">
-						<h6 class="mb-0 mt-3">James	Dyer</h6>
-						<span class="tx-13 text-muted">App Developer</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 mg-t-10 mg-md-t-0">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/male/2.jpg">
-						<h6 class="mb-0 mt-3">Matt Scott</h6>
-						<span class="tx-13 text-muted">Web Developer</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fas fa-star-half-alt text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 mg-t-10 mg-md-t-0">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/female/3.jpg">
-						<h6 class="mb-0 mt-3">Audrey MacLeod</h6>
-						<span class="tx-13 text-muted">Manager</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 mg-t-10">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/male/4.jpg">
-						<h6 class="mb-0 mt-3">Trevor Kelly</h6>
-						<span class="tx-13 text-muted">Web designer</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 mg-t-10">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/female/5.jpg">
-						<h6 class="mb-0 mt-3">Kylie	Rees</h6>
-						<span class="tx-13 text-muted">App designer</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fas fa-star-half-alt text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 mg-t-10">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/male/6.jpg">
-						<h6 class="mb-0 mt-3">Piers	Poole</h6>
-						<span class="tx-13 text-muted">Web designer</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fas fa-star-half-alt text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 mg-t-10">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/female/7.jpg">
-						<h6 class="mb-0 mt-3">Tracey Lewis</h6>
-						<span class="tx-13 text-muted">Administrator</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 mg-t-10">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/male/8.jpg">
-						<h6 class="mb-0 mt-3">Warren Jones</h6>
-						<span class="tx-13 text-muted">App Developer</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fas fa-star-half-alt text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 mg-t-10">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/female/8.jpg">
-						<h6 class="mb-0 mt-3">Alison Turner</h6>
-						<span class="tx-13 text-muted">CEO</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 mg-t-10">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/male/10.jpg">
-						<h6 class="mb-0 mt-3">Austin Martin</h6>
-						<span class="tx-13 text-muted">Team Leader</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 mg-t-10">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/female/11.jpg">
-						<h6 class="mb-0 mt-3">Lisa Lee</h6>
-						<span class="tx-13 text-muted">Project manager</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fas fa-star-half-alt text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="tab-pane" id="domaininfo">
-	<div class="card-body">
-		<div class="row row-sm">
-			<div class="col-6 col-md-3">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/female/1.jpg">
-						<h6 class="mb-0 mt-3">Lisa Lee</h6>
-						<span class="tx-13 text-muted">Web designer</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/male/11.jpg">
-						<h6 class="mb-0 mt-3">James	Dyer</h6>
-						<span class="tx-13 text-muted">App Developer</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 mg-t-10 mg-md-t-0">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/male/2.jpg">
-						<h6 class="mb-0 mt-3">Matt Scott</h6>
-						<span class="tx-13 text-muted">Web Developer</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fas fa-star-half-alt text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 mg-t-10 mg-md-t-0">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/female/3.jpg">
-						<h6 class="mb-0 mt-3">Audrey MacLeod</h6>
-						<span class="tx-13 text-muted">Manager</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 mg-t-10">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/male/4.jpg">
-						<h6 class="mb-0 mt-3">Trevor Kelly</h6>
-						<span class="tx-13 text-muted">Web designer</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 mg-t-10">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/female/5.jpg">
-						<h6 class="mb-0 mt-3">Kylie	Rees</h6>
-						<span class="tx-13 text-muted">App designer</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fas fa-star-half-alt text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 mg-t-10">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/male/6.jpg">
-						<h6 class="mb-0 mt-3">Piers	Poole</h6>
-						<span class="tx-13 text-muted">Web designer</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fas fa-star-half-alt text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 mg-t-10">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/female/7.jpg">
-						<h6 class="mb-0 mt-3">Tracey Lewis</h6>
-						<span class="tx-13 text-muted">Administrator</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 mg-t-10">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/male/8.jpg">
-						<h6 class="mb-0 mt-3">Warren Jones</h6>
-						<span class="tx-13 text-muted">App Developer</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fas fa-star-half-alt text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 mg-t-10">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/female/8.jpg">
-						<h6 class="mb-0 mt-3">Alison Turner</h6>
-						<span class="tx-13 text-muted">CEO</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 mg-t-10">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/male/10.jpg">
-						<h6 class="mb-0 mt-3">Austin Martin</h6>
-						<span class="tx-13 text-muted">Team Leader</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 mg-t-10">
-				<div class="card shadow-none">
-					<div class="card-body text-center">
-						<img alt="Responsive image" class="avatar-xxl rounded-circle" src="../resources/img/users/female/11.jpg">
-						<h6 class="mb-0 mt-3">Lisa Lee</h6>
-						<span class="tx-13 text-muted">Project manager</span>
-						<p class="user-info-rating mt-2 tx-11 mb-0">
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fa fa-star text-warning"> </i></a>
-							<a href="#"><i class="fas fa-star-half-alt text-warning"> </i></a>
-							<a href="#"><i class="far fa-star text-warning"> </i></a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-			</div>
-		</div>
+			
+
 	</div>
 	</div>
 				<!-- main-profile-body -->

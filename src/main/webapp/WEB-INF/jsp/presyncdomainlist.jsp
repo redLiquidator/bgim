@@ -205,7 +205,7 @@
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="bar-chart-2-outline"></i> Synchronization <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
 									<li aria-haspopup="true"><a href="chart-morris.html">resource</a></li>
-									<li aria-haspopup="true"><a href="chart-flot.html">sync history</a></li>
+									<li aria-haspopup="true"><a href="/synchistory">sync history</a></li>
 									<li aria-haspopup="true"><a href="chart-chartjs.html">webservice</a></li>
 									<li aria-haspopup="true"><a href="chart-sparkline.html">log</a></li>
 								</ul>
@@ -214,7 +214,7 @@
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="file-text-outline"></i>Provision<i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
 									<li aria-haspopup="true"><a href="form-elements.html">resource</a></li>
-									<li aria-haspopup="true"><a href="form-advanced.html">provision history</a></li>
+									<li aria-haspopup="true"><a href="/provisionhistory">provision history</a></li>
 									<li aria-haspopup="true"><a href="form-layouts.html">provision error</a></li>
 									<li aria-haspopup="true"><a href="form-validation.html">log</a></li>
 								</ul>

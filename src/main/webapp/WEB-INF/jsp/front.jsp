@@ -226,7 +226,7 @@
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="file-text-outline"></i>Provision<i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
 									<li aria-haspopup="true"><a href="form-elements.html">resource</a></li>
-									<li aria-haspopup="true"><a href="form-advanced.html">provision history</a></li>
+									<li aria-haspopup="true"><a href="/provisionhistory">provision history</a></li>
 									<li aria-haspopup="true"><a href="form-layouts.html">provision error</a></li>
 									<li aria-haspopup="true"><a href="form-validation.html">log</a></li>
 								</ul>

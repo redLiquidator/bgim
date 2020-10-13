@@ -61,11 +61,11 @@ public class UserController {
 		//select box list
 		 DomainDTO domain = new DomainDTO();
 		 domain.setTablename("org_user");
-		 List<DomainDTO> domainlist = domainService.domainListService(domain);
+		 List<DomainDTO> domainlist = domainService.domainListService(domain);			 
 		 model.addAttribute("domainlist",domainlist);
 		 DeptDTO dept = new DeptDTO();
 		 List<DeptDTO> deptlist = deptService.deptListService(dept); 
-		 model.addAttribute("deptlist",deptlist);
+		 model.addAttribute("deptlist",deptlist);		 
 		 return "insert";
 	}
 
@@ -87,6 +87,8 @@ public class UserController {
 				user.getEmpid()+  " " + user.getCompanycode() + " " + user.getDeptcode()+" " + user.getTablename());
 
 		userService.userInsertService(user);
+		//프로비전 & sync 로그 생성
+		historyService.ProvisionHistoryInsertService(user);
 
 		return "redirect:/list";
 
