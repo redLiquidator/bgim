@@ -1,5 +1,7 @@
 package com.system.bgim.controller;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -13,9 +15,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.system.bgim.dto.DeptDTO;
 import com.system.bgim.dto.DomainDTO;
+import com.system.bgim.dto.HistoryDTO;
 import com.system.bgim.dto.UserDTO;
 import com.system.bgim.service.DeptService;
 import com.system.bgim.service.DomainService;
+import com.system.bgim.service.HistoryService;
 import com.system.bgim.service.UserService;
 
 @Controller
@@ -27,6 +31,8 @@ public class UserController {
 	DomainService domainService;
 	@Resource(name="com.system.bgim.service.DeptService")
 	DeptService deptService;
+	@Resource(name="com.system.bgim.service.HistoryService")
+	HistoryService historyService;
 
 	
 	@RequestMapping("/list")
@@ -80,15 +86,27 @@ public class UserController {
 		user.setUsername(request.getParameter("username"));
 		user.setEmpid(request.getParameter("empid"));
 		user.setCompanycode(request.getParameter("companycode"));
-		user.setDeptcode(request.getParameter("deptcode"));
+		user.setDeptcode(request.getParameter("dfleptcode"));
 		user.setTablename(request.getParameter("tablename"));
 		
 		System.out.println("insert user : " + user.getCode() + " " +  user.getPwd() + " " + user.getLogin_id() + " " + user.getUsername()+
 				user.getEmpid()+  " " + user.getCompanycode() + " " + user.getDeptcode()+" " + user.getTablename());
 
 		userService.userInsertService(user);
+		
 		//프로비전 & sync 로그 생성
-		historyService.ProvisionHistoryInsertService(user);
+		HistoryDTO history = new HistoryDTO();
+		history.setStatus("success");
+		history.setResource_name("mall");
+		history.setContent("sanders(sanders.8987@tmail.com) 사용자 작업(user.updateUser)를 성공했습니다.");
+		/* SimpleDateFormat format = new SimpleDateFormat ( "yyyy-MM-dd HH:mm:ss"); */	
+		Date time = new Date();
+		/* String presentTime = format.format(time); */
+		history.setExecuted_time(time);
+		
+		history.setUser_id("BGCOMMERCE.sanders8987");
+		
+		historyService.userHistoryInsertService(user);
 
 		return "redirect:/list";
 

@@ -179,7 +179,29 @@ status varchar2(64),
 resource_name varchar2(64),
 content varchar2(300),
 executed_time date,
+domain_id varchar2(64) NOT null,
+CONSTRAINT provision_history_domain_pk PRIMARY KEY (domain_id)  
+);
+
+-- user의 동기화결과를 테이블에 저장한다. 
+CREATE TABLE sync_history_user  
+( 
+status varchar2(64),
+resource_name varchar2(64),
+content varchar2(300),
+executed_time date,
 user_id varchar2(64) NOT null,
-CONSTRAINT provision_history_domain_pk PRIMARY KEY (user_id)  
+CONSTRAINT sync_history_user_pk PRIMARY KEY (user_id)  
+);
+
+-- domain의 동기화결과를 테이블에 저장한다. 
+CREATE TABLE sync_history_domain  
+( 
+status varchar2(64),
+resource_name varchar2(64),
+content varchar2(300),
+executed_time date,
+domain_id varchar2(64) NOT null,
+CONSTRAINT sync_history_domain_pk PRIMARY KEY (domain_id)  
 );
 

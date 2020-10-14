@@ -1,23 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 	<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
-<mapper namespace="com.system.bgim.mapper.UserMapper">
+<mapper namespace="com.system.bgim.mapper.HistoryMapper">
   
-    <insert id="userInsert" parameterType="com.system.bgim.dto.UserDTO">
+    <select id="userHistoryList" parameterType="com.system.bgim.dto.UserDTO" resultType="com.system.bgim.dto.UserDTO">
+       <choose>
+		<when test = "provision_or_sync.equals('provision')">	
+		SELECT * FROM provision_history_user
+		</when>	
+		<when test = "provision_or_sync.equals('sync')">	
+		SELECT * FROM provision_history_user
+		</when>	
+		</choose>
+    </select>
+    
+     <select id="domainHistoryList" parameterType="com.system.bgim.dto.DomainDTO" resultType="com.system.bgim.dto.DomainDTO">
+        <choose>
+		<when test = "provision_or_sync.equals('provision')">	
+		SELECT * FROM provision_history_user
+		</when>	
+		<when test = "provision_or_sync.equals('sync')">	
+		SELECT * FROM provision_history_user
+		</when>	
+		</choose>
+    </select>
+     
+   	<insert id="userHistoryInsert" parameterType="com.system.bgim.dto.UserDTO"> 
+     <choose>
+		<when test = "provision_or_sync.equals('provision')">	
+		INSERT INTO provision_history_user VALUES (#{status},#{resource_name},#{content},SYSDATE,#{user_id})	
+		</when>	
+		<when test = "provision_or_sync.equals('sync')">	
+		INSERT INTO provision_history_user VALUES (#{status},#{resource_name},#{content},SYSDATE,#{user_id})	
+		</when>	
+		</choose>		
+    </insert>
+    
+    <insert id="domainHistoryInsert" parameterType="com.system.bgim.dto.DomainDTO"> 
       <choose>
 			<when test = "provision_or_sync.equals('provision')">	
-			INSERT INTO ${tablename} VALUES (#{status})
-				(code,username,pwd,login_id,create_dt,modify_dt,user_id,empid,companycode,deptcode)
-	       		 VALUES(#{code},#{username},#{pwd},#{login_id},SYSDATE,SYSDATE,0,#{empid},#{companycode},#{deptcode})	
+			INSERT INTO provision_history_domain VALUES (#{status},#{resource_name},#{content},SYSDATE,#{domain_id})	
 			</when>	
 			<when test = "provision_or_sync.equals('sync')">	
-				(code,username,pwd,login_id,create_dt,modify_dt,user_id,empid,companycode,deptcode)
-	       		 VALUES(#{code},#{username},#{pwd},#{login_id},SYSDATE,SYSDATE,0,#{empid},#{companycode},#{deptcode})	
-			</when>			
-			<otherwise>
-				(code,username,pwd,login_id,empid,companycode,deptcode)
-	      		  VALUES(#{code},#{username},#{pwd},#{login_id},#{empid},#{companycode},#{deptcode})			
-			</otherwise>	
-    </insert>
-		
+			INSERT INTO provision_history_domain VALUES (#{status},#{resource_name},#{content},SYSDATE,#{domain_id})	
+			</when>	
+			</choose>		
+    </insert>	
 </mapper>
