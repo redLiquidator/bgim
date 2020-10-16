@@ -130,13 +130,6 @@
             <version>2.5</version>
         </dependency>
         
-		<!-- log4j2  설정 -->
-		<dependency>
-		    <groupId>org.springframework.boot</groupId>
-		    <artifactId>spring-boot-starter-log4j2</artifactId>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-web -->
-
 		<!-- DB logback -->
 		<dependency>
 		    <groupId>org.bgee.log4jdbc-log4j2</groupId>

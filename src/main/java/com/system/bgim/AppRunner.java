@@ -25,7 +25,7 @@ public class AppRunner implements ApplicationRunner{
 
 	public void run(String[] args) {
 		// TODO Auto-generated method stub
-		logger.info("log4j day since 20201012");
+		logger.info("slf4j since 20201012");
 		
 	}
 	

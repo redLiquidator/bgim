@@ -1,42 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
+<configuration debug="true">
 
-    <!--로그 파일 저장 위치-->
-    <property name="LOGS_PATH" value="./logs"/>
+	<!-- Appenders for console querylog-->
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<Pattern>%d %5p [%c] %m%n</Pattern>
+		</encoder>
+	</appender>
 
-    <!--<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-        <layout class="ch.qos.logback.classic.PatternLayout">
-            <Pattern>%d{HH:mm} %-5level %logger{36} - %msg%n</Pattern>
-        </layout>
-    </appender>
-    <appender name="SAMPLE" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <pattern>[%d{yyyy-MM-dd HH:mm:ss}:%-3relative][%thread] %-5level %logger{35} - %msg%n</pattern>
-        </encoder>
-    </appender>-->
-    <appender name="DAILY_ROLLING_FILE_APPENDER" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${LOGS_PATH}/logback.log</file>
-        <encoder>
-            <pattern>[%d{yyyy-MM-dd HH:mm:ss}:%-3relative][%thread] %-5level %logger{35} - %msg%n</pattern>
-        </encoder>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${LOGS_PATH}/logback.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <!-- or whenever the file size reaches 100MB -->
-                <maxFileSize>5MB</maxFileSize>
-                <!-- kb, mb, gb -->
-            </timeBasedFileNamingAndTriggeringPolicy>
-            <maxHistory>30</maxHistory>
-        </rollingPolicy>
-    </appender>
+	<appender name="console-infolog" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<Pattern>%d %5p %m%n</Pattern>
+		</encoder>
+	</appender>
+	
+		
+	<!-- Appender for file querylog-->
+	<appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>./logs/logback.log</file>
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+        <pattern>[%-5level] %d{HH:mm:ss.SSS} %logger{36} - %msg%n</pattern>
+    </encoder>
     
-    <logger name="com.system.bgim" level="DEBUG">
-        <appender-ref ref="SAMPLE" />
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        <fileNamePattern>./logs/logback.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+        <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+            <maxFileSize>50MB</maxFileSize>
+        </timeBasedFileNamingAndTriggeringPolicy>
+        <maxHistory>15</maxHistory>
+    </rollingPolicy>
+	</appender>
+	
+	 <!-- 콘솔 & 파일에 로그 전달-->
+    <logger name="com.system" level="debug" additivity="false">
+        <appender-ref ref="console"/>
+        <appender-ref ref="file" />
     </logger>
-    <logger name="com.system.bgim" level="INFO">
-        <appender-ref ref="DAILY_ROLLING_FILE_APPENDER" />
-    </logger>
-    <root level="INFO">
-        <appender-ref ref="STDOUT" />
+ 
+    <root level="error">
+        <appender-ref ref="console" />
     </root>
+	
+	
+	<!-- Logger specific area -->
+	<logger name="com.system.bgim" level="TRACE"></logger>
+	<!-- console Logger -->
+	<logger name="com.board" level="DEBUG" appender-ref="console" />
+	<logger name="jdbc.sqlonly" level="INFO" appender-ref="console-infolog" />
+	<logger name="jdbc.resultsettable" level="INFO" appender-ref="console-infolog" />
+
+	<!-- Root Logger-->
+	<root level="off">
+		<appender-ref ref="console" />
+		 <appender-ref ref="file" />
+	</root>
+	
+	
+		
+
+
 </configuration>

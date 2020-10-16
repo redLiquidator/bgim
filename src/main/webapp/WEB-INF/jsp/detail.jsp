@@ -295,8 +295,8 @@
 						</div>
 						<div class="justify-content-between mg-b-20 mt-2 text-center">
 							<div>
-								<h5 class="main-profile-name">Peter Hill</h5>
-								<p class="main-profile-name-text text-muted">Administrator</p>
+								<h5 class="main-profile-name">${detail.username}</h5>
+								<p class="main-profile-name-text text-muted">${detail.code}</p>
 							
 							</div>
 						</div>
@@ -1155,11 +1155,13 @@
 	
 	//Ajax 를 통해 값을 리턴받는경우 기본적으로 비동기 방식이때문에  값이 Undefined 가 return이 된다
     //그경우 async: false,  를 추가하여 동기 로 변경하면 Return 값을 얻을수있다
-	function userExistorNot(code){
+	function userExistorNot(userData){
 		console.log("userExistorNot function starts");
+		console.log(userData);
 		 $.ajax({
-	        url : '/count/'+code,
+	        url : '/count/',
 	        type : 'post',
+	        data : userData,
 	        async: false,
 	        success : function(data){
 	        	userCheck = data;
@@ -1170,7 +1172,7 @@
 	
 	$('[name=mallUserProvisionbtn]').click(function(){ //reprovision 버튼 클릭시 mall_user로 프로비저닝
 		console.log("mallUserProvision button clicked");
-		//ajax를 이용. org_user에서 가져온 사용자 정보를  mall_user로 프로비저닝할 것이다. 
+		//ajax를 이용. org_user에서 가져온 사용자 정보를  mall_user로 프로비저닝할 것이다. 	
 	    var userData = $('[name=mallUserProvisionForm]').serialize(); //mallUserProvisionForm의 내용을 가져옴
 	    //mall_user에서  동일 code의 사용자가 있는지 체크.있으면 1,없으면 0 리턴
 	    userExistorNot(code);

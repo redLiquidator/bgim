@@ -1,6 +1,5 @@
 package com.system.bgim.controller;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import javax.annotation.Resource;
@@ -10,7 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.system.bgim.dto.DeptDTO;
@@ -86,10 +84,10 @@ public class UserController {
 		user.setUsername(request.getParameter("username"));
 		user.setEmpid(request.getParameter("empid"));
 		user.setCompanycode(request.getParameter("companycode"));
-		user.setDeptcode(request.getParameter("dfleptcode"));
+		user.setDeptcode(request.getParameter("deptcode"));
 		user.setTablename(request.getParameter("tablename"));
 		
-		System.out.println("insert user : " + user.getCode() + " " +  user.getPwd() + " " + user.getLogin_id() + " " + user.getUsername()+
+		System.out.println("insert user : " + user.getCode() + " " +  user.getUsername() + " " + user.getPwd() + " " + user.getLogin_id()+
 				user.getEmpid()+  " " + user.getCompanycode() + " " + user.getDeptcode()+" " + user.getTablename());
 
 		userService.userInsertService(user);

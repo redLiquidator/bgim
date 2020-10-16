@@ -45,8 +45,6 @@
 	      		  VALUES(#{code},#{username},#{pwd},#{login_id},#{empid},#{companycode},#{deptcode})			
 			</otherwise>	
 		</choose> 
-	
-		</choose>
 		
     </insert>
     
