@@ -7,6 +7,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import com.system.bgim.dto.DomainDTO;
+import com.system.bgim.dto.HistoryDTO;
 import com.system.bgim.dto.UserDTO;
 import com.system.bgim.mapper.HistoryMapper;
 import com.system.bgim.mapper.UserMapper;
@@ -28,14 +29,14 @@ public class HistoryService {
 	 }
 	 
 	 
-	 public List<UserDTO> userHistoryInsertService(UserDTO user) throws Exception{
+	 public List<HistoryDTO> userHistoryInsertService(HistoryDTO history) throws Exception{
 		 System.out.println("userHistoryInsertService");
-		 return historyMapper.userHistoryInsert(user);
+		 return historyMapper.userHistoryInsert(history);
 	 }
 	 
-	 public List<DomainDTO> domainHistoryInsertService(DomainDTO domain) throws Exception{
+	 public List<HistoryDTO> domainHistoryInsertService(HistoryDTO history) throws Exception{
 		 System.out.println("domainHistoryInsertService");
-		 return historyMapper.domainHistoryInsert(domain);
+		 return historyMapper.domainHistoryInsert(history);
 	 }
 	 
 	 

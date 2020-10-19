@@ -1171,11 +1171,11 @@
 	}
 	
 	$('[name=mallUserProvisionbtn]').click(function(){ //reprovision 버튼 클릭시 mall_user로 프로비저닝
-		console.log("mallUserProvision button clicked");
+		alert("mallUserProvision button clicked");
 		//ajax를 이용. org_user에서 가져온 사용자 정보를  mall_user로 프로비저닝할 것이다. 	
 	    var userData = $('[name=mallUserProvisionForm]').serialize(); //mallUserProvisionForm의 내용을 가져옴
 	    //mall_user에서  동일 code의 사용자가 있는지 체크.있으면 1,없으면 0 리턴
-	    userExistorNot(code);
+	    userExistorNot(userData);
 	    if(userCheck == 1){
 	    	alert("updateProvision");  //만약 사용자가 있으면 update
 	    	userUpdateProvision(userData);

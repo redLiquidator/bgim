@@ -3,7 +3,7 @@
  
 <mapper namespace="com.system.bgim.mapper.HistoryMapper">
   
-    <select id="userHistoryList" parameterType="com.system.bgim.dto.UserDTO" resultType="com.system.bgim.dto.UserDTO">
+    <select id="userHistoryList" parameterType="com.system.bgim.dto.HistoryDTO" resultType="com.system.bgim.dto.HistoryDTO">
        <choose>
 		<when test = "provision_or_sync.equals('provision')">	
 		SELECT * FROM provision_history_user
@@ -14,36 +14,38 @@
 		</choose>
     </select>
     
-     <select id="domainHistoryList" parameterType="com.system.bgim.dto.DomainDTO" resultType="com.system.bgim.dto.DomainDTO">
+     <select id="domainHistoryList" parameterType="com.system.bgim.dto.HistoryDTO" resultType="com.system.bgim.dto.HistoryDTO">
         <choose>
 		<when test = "provision_or_sync.equals('provision')">	
-		SELECT * FROM provision_history_user
+		SELECT * FROM provision_history_domain
 		</when>	
 		<when test = "provision_or_sync.equals('sync')">	
-		SELECT * FROM provision_history_user
+		SELECT * FROM provision_history_domain
 		</when>	
 		</choose>
     </select>
      
-   	<insert id="userHistoryInsert" parameterType="com.system.bgim.dto.UserDTO"> 
+   	<insert id="userHistoryInsert" parameterType="com.system.bgim.dto.HistoryDTO"> 
      <choose>
 		<when test = "provision_or_sync.equals('provision')">	
-		INSERT INTO provision_history_user VALUES (#{status},#{resource_name},#{content},SYSDATE,#{user_id})	
+		select history_id.currval from dual;
+		INSERT INTO provision_history_user VALUES (#{history_id},#{status},#{resource_name},#{content},SYSDATE,#{user_id})	
 		</when>	
 		<when test = "provision_or_sync.equals('sync')">	
-		INSERT INTO provision_history_user VALUES (#{status},#{resource_name},#{content},SYSDATE,#{user_id})	
+		INSERT INTO provision_history_user VALUES (#{history_id},#{status},#{resource_name},#{content},SYSDATE,#{user_id})	
 		</when>	
 		</choose>		
     </insert>
     
-    <insert id="domainHistoryInsert" parameterType="com.system.bgim.dto.DomainDTO"> 
+    <insert id="domainHistoryInsert" parameterType="com.system.bgim.dto.HistoryDTO"> 
       <choose>
 			<when test = "provision_or_sync.equals('provision')">	
-			INSERT INTO provision_history_domain VALUES (#{status},#{resource_name},#{content},SYSDATE,#{domain_id})	
+			INSERT INTO provision_history_domain VALUES (#{history_id},#{status},#{resource_name},#{content},SYSDATE,#{domain_id})	
 			</when>	
 			<when test = "provision_or_sync.equals('sync')">	
-			INSERT INTO provision_history_domain VALUES (#{status},#{resource_name},#{content},SYSDATE,#{domain_id})	
+			INSERT INTO provision_history_domain VALUES (#{history_id},#{status},#{resource_name},#{content},SYSDATE,#{domain_id})	
 			</when>	
 			</choose>		
     </insert>	
+    
 </mapper>

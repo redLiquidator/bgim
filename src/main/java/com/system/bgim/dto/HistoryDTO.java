@@ -9,6 +9,8 @@ public class HistoryDTO {
 	private Date executed_time;
 	private String user_id;
 	private String domain_id;
+	private String provision_or_sync;
+	private int history_id;
 	
 	public String getStatus() {
 		return status;
@@ -45,5 +47,17 @@ public class HistoryDTO {
 	}
 	public void setDomain_id(String domain_id) {
 		this.domain_id = domain_id;
+	}
+	public String getProvision_or_sync() {
+		return provision_or_sync;
+	}
+	public void setProvision_or_sync(String provision_or_sync) {
+		this.provision_or_sync = provision_or_sync;
+	}
+	public int getHistory_id() {
+		return history_id;
+	}
+	public void setHistory_id(int history_id) {
+		this.history_id = history_id;
 	}
 }

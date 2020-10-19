@@ -164,23 +164,28 @@ INSERT INTO presync_domain (companycode,companyname) VALUES ('BGSPACE','BG space
 -- user의 프로비전결과를 테이블에 저장한다. 
 CREATE TABLE provision_history_user  
 ( 
+history_id number(10) NOT null, 
 status varchar2(64),
 resource_name varchar2(64),
 content varchar2(300),
 executed_time date,
-user_id varchar2(64) NOT null,
-CONSTRAINT provision_history_user_pk PRIMARY KEY (user_id)  
+user_id varchar2(64),
+CONSTRAINT provision_history_user_pk PRIMARY KEY (history_id)  
 );
+
+-- provision_history_user의  history_id 시퀀스자동증가
+CREATE SEQUENCE user_history_id_seq START WITH 1 INCREMENT BY 1 MAXVALUE 10000000000;
 
 -- domain의 프로비전결과를 테이블에 저장한다. 
 CREATE TABLE provision_history_domain  
 ( 
+history_id number(10) NOT null,
 status varchar2(64),
 resource_name varchar2(64),
 content varchar2(300),
 executed_time date,
 domain_id varchar2(64) NOT null,
-CONSTRAINT provision_history_domain_pk PRIMARY KEY (domain_id)  
+CONSTRAINT provision_history_domain_pk PRIMARY KEY (history_id)  
 );
 
 -- user의 동기화결과를 테이블에 저장한다. 
