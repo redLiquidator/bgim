@@ -7,11 +7,8 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import com.system.bgim.dto.DomainDTO;
-import com.system.bgim.dto.UserDTO;
+import com.system.bgim.dto.HistoryDTO;
 import com.system.bgim.service.HistoryService;
-import com.system.bgim.service.UserService;
 
 @Controller
 public class HistoryController {
@@ -19,14 +16,16 @@ public class HistoryController {
 	@Resource(name = "com.system.bgim.service.HistoryService")
 	HistoryService historyService;
 	
-	@RequestMapping("/provisionhistorylist")
+	@RequestMapping("/provisionhistory")
 	private String userList(Model model) throws Exception {
-		System.out.println("/provisionhistorylist");
-		List<UserDTO> userhistorylist = historyService.userHistoryListService();
+		System.out.println("/provisionhistory");
+
+		HistoryDTO history = new HistoryDTO();
+		history.setProvision_or_sync("provision");
+		List<HistoryDTO> userhistorylist = historyService.userHistoryListService();
+
 		model.addAttribute("userhistorylist", userhistorylist);
-		List<DomainDTO> domainhistorylist = historyService.domainHistoryListService();
-		model.addAttribute("domainhistorylist", domainhistorylist);
-		return "provisionhistorylist";
+		return "provisionhistory";
 	}
 
 }

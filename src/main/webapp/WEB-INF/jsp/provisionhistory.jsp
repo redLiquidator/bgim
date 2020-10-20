@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="EUC-KR"%>
 <%@ include file="bootstrap.jsp" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %> 
 
 
 <!DOCTYPE html>
@@ -222,7 +221,7 @@
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="bar-chart-2-outline"></i> Synchronization <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
 									<li aria-haspopup="true"><a href="chart-morris.html">resource</a></li>
-									<li aria-haspopup="true"><a href="/synchistory">sync history</a></li>
+									<li aria-haspopup="true"><a href="chart-flot.html">sync history</a></li>
 									<li aria-haspopup="true"><a href="chart-chartjs.html">webservice</a></li>
 									<li aria-haspopup="true"><a href="chart-sparkline.html">log</a></li>
 								</ul>
@@ -277,10 +276,10 @@
 
 			<!--Page Header-->
 			<div class="page-header">
-				<h3 class="page-title">SYNC HISTORY</h3>
+				<h3 class="page-title">PROVISION HISTORY</h3>
 				<ol class="breadcrumb mb-0">
-					<li class="breadcrumb-item"><a href="#">Data management</a></li>
-					<li class="breadcrumb-item active" aria-current="page">sync history</li>
+					<li class="breadcrumb-item"><a href="#">Provision</a></li>
+					<li class="breadcrumb-item active" aria-current="page">provision history</li>
 				</ol>
 			</div>
 			<!--Page Header-->
@@ -288,17 +287,12 @@
 			<!-- Row -->
 			<div class="row row-sm">
 		
-		<div class="col-lg-9">
+		<div class="col-lg-11">
 		<div class="main-content-body main-content-body-profile card mg-b-20">
-			<nav class="nav main-nav-line">
-				<a class="nav-link active" data-toggle="tab" href="#domainlist">domain list</a>
-				<a class="nav-link" data-toggle="tab" href="#deptinfo" onclick="location.reload()">refresh</a>
-				<a class="nav-link" data-toggle="tab" href="#domaininfo">domain add</a>
-			</nav>
 			<!-- main-profile-body -->
 			<div class="main-profile-body">
 		<div class="tab-content"> 
-			<div class="tab-pane active" id="domainlist">
+			<div class="tab-pane active" id="deptlist">
 				
 			<div class="card-body border-top">
 				<!-- <label class="main-content-label tx-13 mg-b-20"></label> -->
@@ -306,23 +300,25 @@
 		<table class="table table-striped mg-b-0 text-md-nowrap">
 			<thead>
 			<tr>
+				<th>history_id</th>
 				<th>status</th>
-				<th>resource</th>
+				<th>resource_name</th>
 				<th>content</th>
-				<th>executed time</th>
-
+				<th>executed_time</th>
+				<th>domain_id</th>
 			</tr>
 			</thead>
 			<tbody>
-			<%-- <c:forEach var="list" items="${provisionhistorylist}"> --%>
+			<c:forEach var="list" items="${userhistorylist}">
 			<tr> 
-				<th scope="row">success(아이콘)</th>
-				<td>mall</td>
-				<td>이현준(leehj@qmail.com)  사용자 작업 (user.updateUser)를 성공했습니다.</td>
-				<td>2020-10-02 14:11:20</td>
-
+				<td>${list.history_id}</td>
+				<td>${list.status}</td>
+				<td>${list.resource_name}</td>
+				<td>${list.content}</td>
+				<td>${list.executed_time}</td>
+				<td>${list.domain_id}</td>
 			</tr>
-			<%--  </c:forEach> --%>
+			 </c:forEach>
 				</tbody>
 			</table>
 				</div><!-- bd -->
@@ -623,72 +619,7 @@
 			</div>
 		</div>
 		<!--/Sidebar-right-->
-		
-		<script>
-    var code = '${detail.code}';
-    var userCheck = "";
-    
-	function userInsertProvision(userData){
-		console.log("userInsertProvision function starts");
-	     $.ajax({
-	        url : '/insertProc',
-	        type : 'post',
-	        data : userData,
-	        success : function(data){
-	            if(data == 1) {
-	   				 console.log("userInsertProvision success");        
-	            }
-	        }
-	    }); 
-	}
-	
-	function userUpdateProvision(userData){
-		console.log("userUpdateProvision function starts");
-	     $.ajax({
-	        url : '/updateProc',
-	        type : 'post',
-	        data : userData,
-	        success : function(data){
-	            if(data == 1) {
-	   				 console.log("userUpdateProvision success");        
-	            }
-	        }
-	    }); 
-	}
-	
-	//Ajax 를 통해 값을 리턴받는경우 기본적으로 비동기 방식이때문에  값이 Undefined 가 return이 된다
-    //그경우 async: false,  를 추가하여 동기 로 변경하면 Return 값을 얻을수있다
-	function userExistorNot(code){
-		console.log("userExistorNot function starts");
-		 $.ajax({
-	        url : '/count/'+code,
-	        type : 'post',
-	        async: false,
-	        success : function(data){
-	        	userCheck = data;
-	        }
-	    });  
-		 return userCheck;
-	}
-	
-	$('[name=mallUserProvisionbtn]').click(function(){ //reprovision 버튼 클릭시 mall_user로 프로비저닝
-		console.log("mallUserProvision button clicked");
-		//ajax를 이용. org_user에서 가져온 사용자 정보를  mall_user로 프로비저닝할 것이다. 
-	    var userData = $('[name=mallUserProvisionForm]').serialize(); //mallUserProvisionForm의 내용을 가져옴
-	    //mall_user에서  동일 code의 사용자가 있는지 체크.있으면 1,없으면 0 리턴
-	    userExistorNot(code);
-	    if(userCheck == 1){
-	    	alert("updateProvision");  //만약 사용자가 있으면 update
-	    	userUpdateProvision(userData);
-	    }else if(userCheck == 0){
-	    	alert("insertProvision");
-	    	userInsertProvision(userData);  //만약 사용자가 없으면 insert
-	    }else{
-	    	alert("error: userCheck result is not 0 nor 1");
-	    }
-	    });
-	 
-	</script>
+
 		<!-- JQuery min js -->
 		<script src="../resources/plugins/jquery/jquery.min.js"></script>
 

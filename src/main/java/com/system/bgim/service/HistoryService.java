@@ -18,12 +18,12 @@ public class HistoryService {
 	@Resource(name="com.system.bgim.mapper.HistoryMapper")
     HistoryMapper historyMapper;
 	
-	 public List<UserDTO> userHistoryListService() throws Exception{
+	 public List<HistoryDTO> userHistoryListService() throws Exception{
 		 System.out.println("userHistoryListService");
 		 return historyMapper.userHistoryList();
 	 }
 	 
-	 public List<DomainDTO> domainHistoryListService() throws Exception{
+	 public List<HistoryDTO> domainHistoryListService() throws Exception{
 		 System.out.println("domainHistoryListService");
 		 return historyMapper.domainHistoryList();
 	 }

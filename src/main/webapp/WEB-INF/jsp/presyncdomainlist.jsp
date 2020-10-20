@@ -584,11 +584,7 @@
 										<h6>User</h6><small>Last synchronized: 1 minute ago</small>
 									</div>
 									<nav class="nav">
-										<a class="nav-link" href=""><i class="icon ion-md-more"></i></a>
-										<a class="nav-link" data-toggle="tooltip" href="" title="Call"><i class="icon ion-ios-call"></i></a>
-										<a class="nav-link" data-toggle="tooltip" href="" title="Archive"><i class="icon ion-ios-filing"></i></a>
-										<a class="nav-link" data-toggle="tooltip" href="" title="Trash"><i class="icon ion-md-trash"></i></a>
-										<a class="nav-link" data-toggle="tooltip" href="" title="View Info"><i class="icon ion-md-information-circle"></i></a>
+										
 									</nav>
 								</div><!-- main-chat-header -->
 								<div class="main-chat-body" id="ChatBody">
