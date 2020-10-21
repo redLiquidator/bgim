@@ -11,7 +11,14 @@ public class HistoryDTO {
 	private String domain_id;
 	private String provision_or_sync;
 	private int history_id;
+	private String historytablename;
 	
+	public String getHistorytablename() {
+		return historytablename;
+	}
+	public void setHistorytablename(String historytablename) {
+		this.historytablename = historytablename;
+	}
 	public String getStatus() {
 		return status;
 	}

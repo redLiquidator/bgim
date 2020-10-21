@@ -261,15 +261,14 @@
 		var tablename
 
  		$(document).on('click', '.usersync', function(e){ 
- 			//선택한 도메인의 사용자list를 불러온다. 
- 			userListbyDomain(companycode);	
  			//해당 사용자의 인사동기화를 실행
- 			code = this.value;
+ 			code = $('input[name=code]').val();
+ 			companycode = $('input[name=companycode]').val();
  			userData = $('[name=UserSyncForm]').serialize();
  			userData.replace("%2F","");
- 			console.log(userData);
- 			console.log(code);
  			usersync(code);
+ 			//해당 도메인의 사용자list를 다시한번 불러온다. 
+ 			userListbyDomain(companycode);
  			}); 
 		
  		function changeSerialize( values, k, v ) {
@@ -278,14 +277,12 @@
  		        if ( values[i].name == k ) { 
  		            values[i].value = v;
 		            found = true;
- 		        }
- 		    }
+ 		        }}
  		    if (!found) {
  		        values.push(
  		            { name: k,
  		              value: v }   
- 		        );
- 		    }
+ 		        ); }
  		    return values;
  		}
 
@@ -340,7 +337,9 @@
 							    a += '<input type="hidden" name="email" value="'+value.email+'"/>';
 							    a += '<input type="hidden" name="mobile" value="'+value.mobile+'"/>';
 							    a += '<input type="hidden" name="hired_dt" value="'+value.hired_dt+'"/>';
-								a += '<button type="submit" value='+value.code+' class="btn btn-sm btn-success usersync" name="presyncForm">execute</button></form></td>';
+							    a += '<input type="hidden" name="provision_or_sync" value="sync"/>';
+							    a += '<input type="hidden" name="historytablename" value="sync_history_user"/>';
+								a += '<button type="submit" class="btn btn-sm btn-success usersync" name="presyncForm">execute</button></form></td>';
 								a += '</tr>';	
 				            });
 				            a += '</tbody>';
@@ -364,20 +363,17 @@
 		    	userUpdateSync(userData);
 		    	alert("updateSync finished");
 				    	//step2: 사용자가  프로비저닝 테이블에 없으면 insertProvision, 없으면 updateProvision
-				    	tablename="mall_user";
+				    	$('[name=tablename]').val("mall_user");  //tablename 명 변경
+				    	$('[name=historytablename]').val("provision_history_user");  //historytablename 명 변경
 				    	userExistorNot(code);
 		    	        //userData의 테이블명을 provision할 테이블명으로 변경후, 해당 테이블에 사용자데이터가 존재하는지 확인한다. 일단 mall_user만 구현
 				    	if(userCheck == 1){
 					    	alert("updateProvision");  //만약 사용자가 있으면 update
-				 			
-				 			$('[name=tablename]').val("mall_user");  //tablename 명 변경
 				 			userData = $('[name=UserSyncForm]').serialize();
 				 			console.log(userData);
 					    	userUpdateProvision(userData);
 					    }else if(userCheck == 0){
 					    	alert("insertProvision");
-					    	
-				 			$('[name=tablename]').val("mall_user");  //tablename 명 변경
 				 			userData = $('[name=UserSyncForm]').serialize();
 				 			console.log(userData);
 					    	userInsertProvision(userData);  //만약 사용자가 없으면 insert

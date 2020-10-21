@@ -408,6 +408,7 @@
 				 		<input type="hidden" name="deptcode" value="${detail.deptcode}"/>
 				 		<input type="hidden" name="tablename" value="mall_user"/>
 				 		<input type="hidden" name="provision_or_sync" value="provision"/>
+				 		<input type="hidden" name="historytablename" value="provision_history_user"/>
 				 		<button type="submit" class="btn btn-sm btn-success" name="mallUserProvisionbtn">execute</button>
 					</form>
 				</td>

@@ -89,6 +89,8 @@ INSERT INTO presync_user (USERNAME,COMPANYCODE,EMPID,DEPTCODE,CODE,LOGIN_ID,EMAI
 ('Hoxy','BGSPACE','hoxy000','ASTRONAUT','BGSPACE.hoxy000','hoxy000@gmail.com','hoxy000@gmail.com','010-9999-2299','01-JAN-2011');
 INSERT INTO presync_user (USERNAME,COMPANYCODE,EMPID,DEPTCODE,CODE,LOGIN_ID,EMAIL,MOBILE,HIRED_DT) VALUES 
 ('Ddal','BGSPACE','ddal1','ASTRONAUT','BGSPACE.ddal1','ddal1@gmail.com','ddal1@gmail.com','010-1111-2299','01-APR-2011');
+INSERT INTO presync_user (USERNAME,COMPANYCODE,EMPID,DEPTCODE,CODE,LOGIN_ID,EMAIL,MOBILE,HIRED_DT) VALUES 
+('Stevie','BGCOMMERCE','stevie5','SALES','BGCOMMERCE.stevie5','stevie5@gmail.com','stevie5@gmail.com','010-1441-2109','01-MAR-2011');
 
 -- org_user -> sso_user 로 프로비저닝 한다. 테이블내용은 org_user와 동일하다.
 CREATE TABLE sso_user  
@@ -173,8 +175,6 @@ user_id varchar2(64),
 CONSTRAINT provision_history_user_pk PRIMARY KEY (history_id)  
 );
 
--- provision_history_user의  history_id 시퀀스자동증가
-CREATE SEQUENCE user_history_id_seq START WITH 1 INCREMENT BY 1 MAXVALUE 10000000000;
 
 -- domain의 프로비전결과를 테이블에 저장한다. 
 CREATE TABLE provision_history_domain  
@@ -191,22 +191,26 @@ CONSTRAINT provision_history_domain_pk PRIMARY KEY (history_id)
 -- user의 동기화결과를 테이블에 저장한다. 
 CREATE TABLE sync_history_user  
 ( 
+history_id number(10) NOT null,
 status varchar2(64),
 resource_name varchar2(64),
 content varchar2(300),
 executed_time date,
 user_id varchar2(64) NOT null,
-CONSTRAINT sync_history_user_pk PRIMARY KEY (user_id)  
+CONSTRAINT sync_history_user_pk PRIMARY KEY (history_id)  
 );
 
--- domain의 동기화결과를 테이블에 저장한다. 
+--domain의 동기화결과를 테이블에 저장한다. 
 CREATE TABLE sync_history_domain  
 ( 
+history_id number(10) NOT null,
 status varchar2(64),
 resource_name varchar2(64),
 content varchar2(300),
 executed_time date,
 domain_id varchar2(64) NOT null,
-CONSTRAINT sync_history_domain_pk PRIMARY KEY (domain_id)  
+CONSTRAINT sync_history_domain_pk PRIMARY KEY (history_id)  
 );
+
+
 

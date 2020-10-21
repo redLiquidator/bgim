@@ -135,12 +135,14 @@ public class UserController {
 		//프로비전 & sync 로그 생성
 		HistoryDTO history = new HistoryDTO();
 		history.setProvision_or_sync(request.getParameter("provision_or_sync"));
+		history.setHistorytablename(request.getParameter("historytablename"));
+		System.out.println("historytablename:"+history.getHistorytablename());
 		history.setStatus("success");
 		history.setResource_name("mall");
-		history.setContent("tonikroos(tonikroos.8987@tmail.com) 사용자 작업(user.updateUser)를 성공했습니다.");
+		history.setContent("stevie(stevie5@tmail.com) 사용자 작업(user.updateUser)를 성공했습니다.");
 		Date time = new Date();
 		history.setExecuted_time(time);
-		history.setUser_id("BGCOMMERCE.tonikroos8987");
+		history.setUser_id("BGCOMMERCE.stevie5");
 		
 		historyService.userHistoryInsertService(history);
 

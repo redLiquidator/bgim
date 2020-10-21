@@ -19,15 +19,15 @@
     </select>
      
    	<insert id="userHistoryInsert" parameterType="com.system.bgim.dto.HistoryDTO"> 
-   	<selectKey keyProperty="history_id" resultType="int" order="BEFORE">
-		select max(history_id)+1 from provision_history_user
+		<selectKey keyProperty="history_id" resultType="int" order="BEFORE">
+		select max(history_id)+1 from ${historytablename}
 		</selectKey>
-     <choose>
+     <choose>  
 		<when test = "provision_or_sync.equals('provision')">	
-		INSERT INTO provision_history_user VALUES (#{history_id},#{status},#{resource_name},#{content},SYSDATE,#{user_id})	
+		INSERT INTO ${historytablename} VALUES (#{history_id},#{status},#{resource_name},#{content},SYSDATE,#{user_id})	
 		</when>	
-		<when test = "provision_or_sync.equals('sync')">	
-		INSERT INTO sync_history_user VALUES (#{history_id},#{status},#{resource_name},#{content},SYSDATE,#{user_id})	
+		<when test = "provision_or_sync.equals('sync')">		
+		INSERT INTO ${historytablename} VALUES (#{history_id},#{status},#{resource_name},#{content},SYSDATE,#{user_id})	
 		</when>	
 		</choose>		
     </insert>
@@ -35,10 +35,10 @@
     <insert id="domainHistoryInsert" parameterType="com.system.bgim.dto.HistoryDTO"> 
       <choose>
 			<when test = "provision_or_sync.equals('provision')">	
-			INSERT INTO provision_history_domain VALUES (#{history_id},#{status},#{resource_name},#{content},SYSDATE,#{domain_id})	
+			INSERT INTO ${historytablename} VALUES (#{history_id},#{status},#{resource_name},#{content},SYSDATE,#{domain_id})	
 			</when>	
 			<when test = "provision_or_sync.equals('sync')">	
-			INSERT INTO sync_history_domain VALUES (#{history_id},#{status},#{resource_name},#{content},SYSDATE,#{domain_id})	
+			INSERT INTO ${historytablename} VALUES (#{history_id},#{status},#{resource_name},#{content},SYSDATE,#{domain_id})	
 			</when>	
 			</choose>		
     </insert>	
