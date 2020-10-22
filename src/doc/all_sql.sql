@@ -91,6 +91,8 @@ INSERT INTO presync_user (USERNAME,COMPANYCODE,EMPID,DEPTCODE,CODE,LOGIN_ID,EMAI
 ('Ddal','BGSPACE','ddal1','ASTRONAUT','BGSPACE.ddal1','ddal1@gmail.com','ddal1@gmail.com','010-1111-2299','01-APR-2011');
 INSERT INTO presync_user (USERNAME,COMPANYCODE,EMPID,DEPTCODE,CODE,LOGIN_ID,EMAIL,MOBILE,HIRED_DT) VALUES 
 ('Stevie','BGCOMMERCE','stevie5','SALES','BGCOMMERCE.stevie5','stevie5@gmail.com','stevie5@gmail.com','010-1441-2109','01-MAR-2011');
+INSERT INTO presync_user (USERNAME,COMPANYCODE,EMPID,DEPTCODE,CODE,LOGIN_ID,EMAIL,MOBILE,HIRED_DT) VALUES 
+('Enyo','BGCOMMERCE','Enyo1','SALES','BGCOMMERCE.Enyo1','Enyo1@gmail.com','Enyo1@gmail.com','010-8841-2335','02-APR-2011');
 
 -- org_user -> sso_user 로 프로비저닝 한다. 테이블내용은 org_user와 동일하다.
 CREATE TABLE sso_user  
@@ -193,19 +195,19 @@ CREATE TABLE sync_history_user
 ( 
 history_id number(10) NOT null,
 status varchar2(64),
-resource_name varchar2(64),
 content varchar2(300),
 executed_time date,
 user_id varchar2(64) NOT null,
 CONSTRAINT sync_history_user_pk PRIMARY KEY (history_id)  
 );
 
+INSERT INTO sync_history_user VALUES (0,'success','BGCOMMERCE.stevie1의 인사동기화가 성공하였습니다',SYSDATE,'BGCOMMERCE.stevie1');
+
 --domain의 동기화결과를 테이블에 저장한다. 
 CREATE TABLE sync_history_domain  
 ( 
 history_id number(10) NOT null,
 status varchar2(64),
-resource_name varchar2(64),
 content varchar2(300),
 executed_time date,
 domain_id varchar2(64) NOT null,

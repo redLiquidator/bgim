@@ -4,18 +4,11 @@
 <mapper namespace="com.system.bgim.mapper.HistoryMapper">
   
     <select id="userHistoryList" parameterType="com.system.bgim.dto.HistoryDTO" resultType="com.system.bgim.dto.HistoryDTO">
-		SELECT * FROM provision_history_user
+		SELECT * FROM ${historytablename}
     </select>
     
      <select id="domainHistoryList" parameterType="com.system.bgim.dto.HistoryDTO" resultType="com.system.bgim.dto.HistoryDTO">
-        <choose>
-		<when test = "provision_or_sync.equals('provision')">	
-		SELECT * FROM provision_history_domain
-		</when>	
-		<when test = "provision_or_sync.equals('sync')">	
-		SELECT * FROM sync_history_domain
-		</when>	
-		</choose>
+		SELECT * FROM ${historytablename}		
     </select>
      
    	<insert id="userHistoryInsert" parameterType="com.system.bgim.dto.HistoryDTO"> 
@@ -27,7 +20,7 @@
 		INSERT INTO ${historytablename} VALUES (#{history_id},#{status},#{resource_name},#{content},SYSDATE,#{user_id})	
 		</when>	
 		<when test = "provision_or_sync.equals('sync')">		
-		INSERT INTO ${historytablename} VALUES (#{history_id},#{status},#{resource_name},#{content},SYSDATE,#{user_id})	
+		INSERT INTO ${historytablename} VALUES (#{history_id},#{status},#{content},SYSDATE,#{user_id})	
 		</when>	
 		</choose>		
     </insert>
@@ -38,7 +31,7 @@
 			INSERT INTO ${historytablename} VALUES (#{history_id},#{status},#{resource_name},#{content},SYSDATE,#{domain_id})	
 			</when>	
 			<when test = "provision_or_sync.equals('sync')">	
-			INSERT INTO ${historytablename} VALUES (#{history_id},#{status},#{resource_name},#{content},SYSDATE,#{domain_id})	
+			INSERT INTO ${historytablename} VALUES (#{history_id},#{status},#{content},SYSDATE,#{domain_id})	
 			</when>	
 			</choose>		
     </insert>	

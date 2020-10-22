@@ -31,10 +31,29 @@
     </rollingPolicy>
 	</appender>
 	
+		<appender name="file_sync_provision" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>./logs/logback_sync_provision.log</file>
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+        <pattern>[%-5level] %d{HH:mm:ss.SSS} %logger{36} - %msg%n</pattern>
+    </encoder>
+    
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        <fileNamePattern>./logs/logback_sync_provision.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+        <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+            <maxFileSize>50MB</maxFileSize>
+        </timeBasedFileNamingAndTriggeringPolicy>
+        <maxHistory>15</maxHistory>
+    </rollingPolicy>
+	</appender>
+	
 	 <!-- 콘솔 & 파일에 로그 전달-->
     <logger name="com.system" level="debug" additivity="false">
         <appender-ref ref="console"/>
         <appender-ref ref="file" />
+    </logger>
+    
+    <logger name="com.system.bgim.controller" level="debug" additivity="false">
+        <appender-ref ref="file_sync_provision" />
     </logger>
  
     <root level="error">

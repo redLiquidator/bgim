@@ -97,10 +97,13 @@ public class UserController {
 		history.setProvision_or_sync(request.getParameter("provision_or_sync"));
 		history.setStatus("success");
 		history.setResource_name("mall");
-		history.setContent("tonikroos(tonikroos.8987@tmail.com) 사용자 작업(user.insertUser)를 성공했습니다.");
 		Date time = new Date();
 		history.setExecuted_time(time);
-		history.setUser_id("BGCOMMERCE.tonikroos8987");
+		history.setUser_id(request.getParameter("code"));
+		
+		String content = "";
+		content = request.getParameter("provision_or_sync")+ " : "+history.getUser_id()+"사용자 작업(userInsertProc)을 성공했습니다.";
+		history.setContent(content);
 		
 		historyService.userHistoryInsertService(history);
 
@@ -139,10 +142,13 @@ public class UserController {
 		System.out.println("historytablename:"+history.getHistorytablename());
 		history.setStatus("success");
 		history.setResource_name("mall");
-		history.setContent("stevie(stevie5@tmail.com) 사용자 작업(user.updateUser)를 성공했습니다.");
 		Date time = new Date();
 		history.setExecuted_time(time);
-		history.setUser_id("BGCOMMERCE.stevie5");
+		history.setUser_id(request.getParameter("code"));
+		
+		String content = "";
+		content = request.getParameter("provision_or_sync")+ " : "+history.getUser_id()+"사용자 작업(userUpdateProc)을 성공했습니다.";
+		history.setContent(content);
 		
 		historyService.userHistoryInsertService(history);
 
