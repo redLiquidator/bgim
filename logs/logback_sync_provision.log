@@ -1,0 +1,189 @@
+[INFO ] 14:08:16.400 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 29680 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 14:08:16.407 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 14:08:16.408 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 14:08:18.314 com.system.bgim.BgimApplication - Started BgimApplication in 2.292 seconds (JVM running for 3.332)
+[INFO ] 14:08:18.316 com.system.bgim.AppRunner - ===========
+[INFO ] 14:08:18.316 com.system.bgim.AppRunner - logger.info
+[INFO ] 14:08:18.316 com.system.bgim.AppRunner - ===========
+[TRACE] 14:08:18.316 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 14:08:18.316 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 14:08:18.316 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 14:08:18.316 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 14:08:18.316 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 14:08:18.317 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 14:08:38.969 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 14:08:39.051 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[TRACE] 14:08:39.150 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 14:08:39.150 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 14:08:39.152 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 14:08:39.153 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[DEBUG] 14:08:39.155 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 14:08:39.161 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 14:08:39.161 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[TRACE] 14:08:39.162 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 14:08:39.163 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 14:08:39.163 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 14:08:39.164 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[DEBUG] 14:08:39.165 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 14:08:42.244 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
+[DEBUG] 14:08:42.247 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGSPACE(String)
+[TRACE] 14:08:42.256 c.s.b.m.UserMapper.userListbyDomain - <==    Columns: USERNAME, COMPANYCODE, EMPID, DEPTCODE, CODE, LOGIN_ID, EMAIL, MOBILE, HIRED_DT
+[TRACE] 14:08:42.256 c.s.b.m.UserMapper.userListbyDomain - <==        Row: Hoxy, BGSPACE, hoxy000, ASTRONAUT, BGSPACE.hoxy000, hoxy000@gmail.com, hoxy000@gmail.com, 010-9999-2299, 2011-01-01 00:00:00.0
+[DEBUG] 14:08:42.258 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 1
+[DEBUG] 14:08:43.412 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
+[DEBUG] 14:08:43.412 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGCOMMERCE(String)
+[TRACE] 14:08:43.415 c.s.b.m.UserMapper.userListbyDomain - <==    Columns: USERNAME, COMPANYCODE, EMPID, DEPTCODE, CODE, LOGIN_ID, EMAIL, MOBILE, HIRED_DT
+[TRACE] 14:08:43.415 c.s.b.m.UserMapper.userListbyDomain - <==        Row: Stevie, BGCOMMERCE, stevie5, SALES, BGCOMMERCE.stevie5, stevie5@gmail.com, stevie5@gmail.com, 010-1441-2109, 2011-03-01 00:00:00.0
+[TRACE] 14:08:43.416 c.s.b.m.UserMapper.userListbyDomain - <==        Row: Enyo, BGCOMMERCE, Enyo1, SALES, BGCOMMERCE.Enyo1, Enyo1@gmail.com, Enyo1@gmail.com, 010-8841-2335, 2011-04-02 00:00:00.0
+[DEBUG] 14:08:43.417 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 2
+[DEBUG] 14:08:44.975 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 14:08:44.976 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGCOMMERCE.stevie5(String)
+[TRACE] 14:08:44.987 c.s.b.m.UserMapper.countUserService - <==    Columns: COUNT(*)
+[TRACE] 14:08:44.990 c.s.b.m.UserMapper.countUserService - <==        Row: 1
+[DEBUG] 14:08:44.992 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 14:08:44.993 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 14:08:44.993 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGCOMMERCE.stevie5(String)
+[TRACE] 14:08:44.995 c.s.b.m.UserMapper.countUserService - <==    Columns: COUNT(*)
+[TRACE] 14:08:44.996 c.s.b.m.UserMapper.countUserService - <==        Row: 1
+[DEBUG] 14:08:44.997 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 14:08:46.771 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
+[DEBUG] 14:08:46.772 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGCOMMERCE(String)
+[TRACE] 14:08:46.773 c.s.b.m.UserMapper.userListbyDomain - <==    Columns: USERNAME, COMPANYCODE, EMPID, DEPTCODE, CODE, LOGIN_ID, EMAIL, MOBILE, HIRED_DT
+[TRACE] 14:08:46.774 c.s.b.m.UserMapper.userListbyDomain - <==        Row: Stevie, BGCOMMERCE, stevie5, SALES, BGCOMMERCE.stevie5, stevie5@gmail.com, stevie5@gmail.com, 010-1441-2109, 2011-03-01 00:00:00.0
+[TRACE] 14:08:46.774 c.s.b.m.UserMapper.userListbyDomain - <==        Row: Enyo, BGCOMMERCE, Enyo1, SALES, BGCOMMERCE.Enyo1, Enyo1@gmail.com, Enyo1@gmail.com, 010-8841-2335, 2011-04-02 00:00:00.0
+[DEBUG] 14:08:46.776 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 2
+[DEBUG] 14:08:48.523 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 14:08:48.523 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGCOMMERCE.stevie5(String)
+[TRACE] 14:08:48.525 c.s.b.m.UserMapper.countUserService - <==    Columns: COUNT(*)
+[TRACE] 14:08:48.525 c.s.b.m.UserMapper.countUserService - <==        Row: 1
+[DEBUG] 14:08:48.526 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 14:08:48.527 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 14:08:48.528 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGCOMMERCE.stevie5(String)
+[TRACE] 14:08:48.530 c.s.b.m.UserMapper.countUserService - <==    Columns: COUNT(*)
+[TRACE] 14:08:48.530 c.s.b.m.UserMapper.countUserService - <==        Row: 1
+[DEBUG] 14:08:48.531 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 14:08:49.963 c.s.b.mapper.UserMapper.userUpdate - ==>  Preparing: UPDATE org_user SET username = ?, pwd = ?, login_id = ?, modify_dt = SYSDATE, empid = ?, companycode = ?, deptcode = ? WHERE code = ? 
+[DEBUG] 14:08:49.964 c.s.b.mapper.UserMapper.userUpdate - ==> Parameters: Stevie(String), 1234(String), stevie5@gmail.com(String), stevie5(String), BGCOMMERCE(String), testdept(String), BGCOMMERCE.stevie5(String)
+[DEBUG] 14:08:49.978 c.s.b.mapper.UserMapper.userUpdate - <==    Updates: 1
+[DEBUG] 14:08:49.980 c.s.b.m.H.userHistoryInsert!selectKey - ==>  Preparing: select max(history_id)+1 from sync_history_user 
+[DEBUG] 14:08:49.980 c.s.b.m.H.userHistoryInsert!selectKey - ==> Parameters: 
+[TRACE] 14:08:49.987 c.s.b.m.H.userHistoryInsert!selectKey - <==    Columns: MAX(HISTORY_ID)+1
+[TRACE] 14:08:49.987 c.s.b.m.H.userHistoryInsert!selectKey - <==        Row: 9
+[DEBUG] 14:08:49.988 c.s.b.m.H.userHistoryInsert!selectKey - <==      Total: 1
+[DEBUG] 14:08:49.988 c.s.b.m.H.userHistoryInsert - ==>  Preparing: INSERT INTO sync_history_user VALUES (?,?,?,SYSDATE,?) 
+[DEBUG] 14:08:49.991 c.s.b.m.H.userHistoryInsert - ==> Parameters: 9(Integer), success(String), sync : BGCOMMERCE.stevie5사용자 작업(userUpdateProc)을 성공했습니다.(String), BGCOMMERCE.stevie5(String)
+[DEBUG] 14:08:49.996 c.s.b.m.H.userHistoryInsert - <==    Updates: 1
+[DEBUG] 14:08:50.514 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 14:08:50.514 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGCOMMERCE.stevie5(String)
+[TRACE] 14:08:50.515 c.s.b.m.UserMapper.countUserService - <==    Columns: COUNT(*)
+[TRACE] 14:08:50.515 c.s.b.m.UserMapper.countUserService - <==        Row: 1
+[DEBUG] 14:08:50.516 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 14:08:50.517 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 14:08:50.517 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGCOMMERCE.stevie5(String)
+[TRACE] 14:08:50.518 c.s.b.m.UserMapper.countUserService - <==    Columns: COUNT(*)
+[TRACE] 14:08:50.518 c.s.b.m.UserMapper.countUserService - <==        Row: 1
+[DEBUG] 14:08:50.518 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 14:08:51.077 c.s.b.mapper.UserMapper.userUpdate - ==>  Preparing: UPDATE mall_user SET username = ?, pwd = ?, login_id = ?, empid = ?, companycode = ?, deptcode = ? WHERE code = ? 
+[DEBUG] 14:08:51.078 c.s.b.mapper.UserMapper.userUpdate - ==> Parameters: Stevie(String), 1234(String), stevie5@gmail.com(String), stevie5(String), BGCOMMERCE(String), testdept(String), BGCOMMERCE.stevie5(String)
+[DEBUG] 14:08:51.079 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
+[DEBUG] 14:08:51.080 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGCOMMERCE(String)
+[TRACE] 14:08:51.081 c.s.b.m.UserMapper.userListbyDomain - <==    Columns: USERNAME, COMPANYCODE, EMPID, DEPTCODE, CODE, LOGIN_ID, EMAIL, MOBILE, HIRED_DT
+[TRACE] 14:08:51.081 c.s.b.m.UserMapper.userListbyDomain - <==        Row: Stevie, BGCOMMERCE, stevie5, SALES, BGCOMMERCE.stevie5, stevie5@gmail.com, stevie5@gmail.com, 010-1441-2109, 2011-03-01 00:00:00.0
+[TRACE] 14:08:51.082 c.s.b.m.UserMapper.userListbyDomain - <==        Row: Enyo, BGCOMMERCE, Enyo1, SALES, BGCOMMERCE.Enyo1, Enyo1@gmail.com, Enyo1@gmail.com, 010-8841-2335, 2011-04-02 00:00:00.0
+[DEBUG] 14:08:51.083 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 2
+[DEBUG] 14:08:51.083 c.s.b.mapper.UserMapper.userUpdate - <==    Updates: 1
+[DEBUG] 14:08:51.083 c.s.b.m.H.userHistoryInsert!selectKey - ==>  Preparing: select max(history_id)+1 from provision_history_user 
+[DEBUG] 14:08:51.084 c.s.b.m.H.userHistoryInsert!selectKey - ==> Parameters: 
+[TRACE] 14:08:51.093 c.s.b.m.H.userHistoryInsert!selectKey - <==    Columns: MAX(HISTORY_ID)+1
+[TRACE] 14:08:51.094 c.s.b.m.H.userHistoryInsert!selectKey - <==        Row: 12
+[DEBUG] 14:08:51.094 c.s.b.m.H.userHistoryInsert!selectKey - <==      Total: 1
+[DEBUG] 14:08:51.095 c.s.b.m.H.userHistoryInsert - ==>  Preparing: INSERT INTO provision_history_user VALUES (?,?,?,?,SYSDATE,?) 
+[DEBUG] 14:08:51.095 c.s.b.m.H.userHistoryInsert - ==> Parameters: 12(Integer), success(String), mall(String), provision : BGCOMMERCE.stevie5사용자 작업(userUpdateProc)을 성공했습니다.(String), BGCOMMERCE.stevie5(String)
+[DEBUG] 14:08:51.098 c.s.b.m.H.userHistoryInsert - <==    Updates: 1
+[DEBUG] 14:12:56.111 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
+[DEBUG] 14:12:56.115 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGSPACE(String)
+[DEBUG] 14:12:56.120 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 1
+[DEBUG] 14:12:57.596 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 14:12:57.597 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGSPACE.hoxy000(String)
+[DEBUG] 14:12:57.607 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 14:12:57.608 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 14:12:57.608 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGSPACE.hoxy000(String)
+[DEBUG] 14:12:57.610 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 14:12:59.270 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
+[DEBUG] 14:12:59.271 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGSPACE(String)
+[DEBUG] 14:12:59.273 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 1
+[DEBUG] 14:13:00.771 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 14:13:00.772 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGSPACE.hoxy000(String)
+[DEBUG] 14:13:00.774 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 14:13:00.775 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 14:13:00.775 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGSPACE.hoxy000(String)
+[DEBUG] 14:13:00.777 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 14:13:02.762 c.s.b.mapper.UserMapper.userUpdate - ==>  Preparing: UPDATE org_user SET username = ?, pwd = ?, login_id = ?, modify_dt = SYSDATE, empid = ?, companycode = ?, deptcode = ? WHERE code = ? 
+[DEBUG] 14:13:02.763 c.s.b.mapper.UserMapper.userUpdate - ==> Parameters: Hoxy(String), 1234(String), hoxy000@gmail.com(String), hoxy000(String), BGSPACE(String), testdept(String), BGSPACE.hoxy000(String)
+[DEBUG] 14:13:02.767 c.s.b.mapper.UserMapper.userUpdate - <==    Updates: 1
+[DEBUG] 14:13:03.828 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 14:13:03.829 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGSPACE.hoxy000(String)
+[DEBUG] 14:13:03.830 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 14:13:03.831 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 14:13:03.831 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGSPACE.hoxy000(String)
+[DEBUG] 14:13:03.833 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 14:13:04.415 c.s.b.mapper.UserMapper.userUpdate - ==>  Preparing: UPDATE mall_user SET username = ?, pwd = ?, login_id = ?, empid = ?, companycode = ?, deptcode = ? WHERE code = ? 
+[DEBUG] 14:13:04.416 c.s.b.mapper.UserMapper.userUpdate - ==> Parameters: Hoxy(String), 1234(String), hoxy000@gmail.com(String), hoxy000(String), BGSPACE(String), testdept(String), BGSPACE.hoxy000(String)
+[DEBUG] 14:13:04.416 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
+[DEBUG] 14:13:04.416 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGSPACE(String)
+[DEBUG] 14:13:04.417 c.s.b.mapper.UserMapper.userUpdate - <==    Updates: 1
+[DEBUG] 14:13:04.419 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 1
+[DEBUG] 15:03:30.541 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
+[DEBUG] 15:03:30.545 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGSPACE(String)
+[DEBUG] 15:03:30.552 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 1
+[DEBUG] 15:03:31.799 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 15:03:31.800 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGSPACE.hoxy000(String)
+[DEBUG] 15:03:31.812 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 15:03:31.813 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 15:03:31.813 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGSPACE.hoxy000(String)
+[DEBUG] 15:03:31.815 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 15:03:33.342 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
+[DEBUG] 15:03:33.343 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGSPACE(String)
+[DEBUG] 15:03:33.345 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 1
+[DEBUG] 15:03:35.018 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 15:03:35.018 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGSPACE.hoxy000(String)
+[DEBUG] 15:03:35.021 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 15:03:35.021 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 15:03:35.022 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGSPACE.hoxy000(String)
+[DEBUG] 15:03:35.024 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 15:03:36.459 c.s.b.mapper.UserMapper.userUpdate - ==>  Preparing: UPDATE org_user SET username = ?, pwd = ?, login_id = ?, modify_dt = SYSDATE, empid = ?, companycode = ?, deptcode = ? WHERE code = ? 
+[DEBUG] 15:03:36.460 c.s.b.mapper.UserMapper.userUpdate - ==> Parameters: Hoxy(String), 1234(String), hoxy000@gmail.com(String), hoxy000(String), BGSPACE(String), testdept(String), BGSPACE.hoxy000(String)
+[DEBUG] 15:03:36.466 c.s.b.mapper.UserMapper.userUpdate - <==    Updates: 1
+[DEBUG] 15:03:57.270 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 15:03:57.271 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGSPACE.hoxy000(String)
+[DEBUG] 15:03:57.273 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 15:03:57.273 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 15:03:57.274 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGSPACE.hoxy000(String)
+[DEBUG] 15:03:57.275 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 15:03:57.875 c.s.b.mapper.UserMapper.userUpdate - ==>  Preparing: UPDATE mall_user SET username = ?, pwd = ?, login_id = ?, empid = ?, companycode = ?, deptcode = ? WHERE code = ? 
+[DEBUG] 15:03:57.876 c.s.b.mapper.UserMapper.userUpdate - ==> Parameters: Hoxy(String), 1234(String), hoxy000@gmail.com(String), hoxy000(String), BGSPACE(String), testdept(String), BGSPACE.hoxy000(String)
+[DEBUG] 15:03:57.877 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
+[DEBUG] 15:03:57.877 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGSPACE(String)
+[DEBUG] 15:03:57.879 c.s.b.mapper.UserMapper.userUpdate - <==    Updates: 1
+[DEBUG] 15:03:57.880 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 1
+[DEBUG] 15:04:53.239 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 15:04:53.240 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGSPACE.hoxy000(String)
+[DEBUG] 15:04:53.242 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 15:04:53.243 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 15:04:53.243 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGSPACE.hoxy000(String)
+[DEBUG] 15:04:53.246 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 15:04:54.779 c.s.b.mapper.UserMapper.userUpdate - ==>  Preparing: UPDATE org_user SET username = ?, pwd = ?, login_id = ?, modify_dt = SYSDATE, empid = ?, companycode = ?, deptcode = ? WHERE code = ? 
+[DEBUG] 15:04:54.779 c.s.b.mapper.UserMapper.userUpdate - ==> Parameters: Hoxy(String), 1234(String), hoxy000@gmail.com(String), hoxy000(String), BGSPACE(String), testdept(String), BGSPACE.hoxy000(String)
+[DEBUG] 15:04:54.781 c.s.b.mapper.UserMapper.userUpdate - <==    Updates: 1
+[DEBUG] 15:04:56.323 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 15:04:56.324 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGSPACE.hoxy000(String)
+[DEBUG] 15:04:56.325 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 15:04:56.326 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 15:04:56.326 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGSPACE.hoxy000(String)
+[DEBUG] 15:04:56.328 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 15:04:56.882 c.s.b.mapper.UserMapper.userUpdate - ==>  Preparing: UPDATE mall_user SET username = ?, pwd = ?, login_id = ?, empid = ?, companycode = ?, deptcode = ? WHERE code = ? 
+[DEBUG] 15:04:56.883 c.s.b.mapper.UserMapper.userUpdate - ==> Parameters: Hoxy(String), 1234(String), hoxy000@gmail.com(String), hoxy000(String), BGSPACE(String), testdept(String), BGSPACE.hoxy000(String)
+[DEBUG] 15:04:56.883 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
+[DEBUG] 15:04:56.883 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGSPACE(String)
+[DEBUG] 15:04:56.884 c.s.b.mapper.UserMapper.userUpdate - <==    Updates: 1
+[DEBUG] 15:04:56.887 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 1

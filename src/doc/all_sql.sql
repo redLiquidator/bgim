@@ -214,5 +214,16 @@ domain_id varchar2(64) NOT null,
 CONSTRAINT sync_history_domain_pk PRIMARY KEY (history_id)  
 );
 
+-- 업로드및 다운로드할 file정보를 저장 
+CREATE TABLE files  
+( 
+file_id number(10) NOT null, 
+menu varchar2(64),
+file_name varchar2(64),
+file_path varchar2(300),
+executed_time date,
+CONSTRAINT files_pk PRIMARY KEY (file_id)  
+);
+
 
 

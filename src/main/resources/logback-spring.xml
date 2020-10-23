@@ -52,7 +52,7 @@
         <appender-ref ref="file" />
     </logger>
     
-    <logger name="com.system.bgim.controller" level="debug" additivity="false">
+    <logger name="com.system.bgim.mapper.UserMapper" level="debug" additivity="false">
         <appender-ref ref="file_sync_provision" />
     </logger>
  
@@ -60,7 +60,7 @@
         <appender-ref ref="console" />
     </root>
 	
-	
+	 
 	<!-- Logger specific area -->
 	<logger name="com.system.bgim" level="TRACE"></logger>
 	<!-- console Logger -->
