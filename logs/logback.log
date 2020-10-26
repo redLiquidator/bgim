@@ -1,21 +1,27 @@
-[INFO ] 14:07:56.987 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 20144 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 14:07:56.993 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 14:07:56.994 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 14:07:58.900 com.system.bgim.BgimApplication - Started BgimApplication in 2.302 seconds (JVM running for 3.304)
-[INFO ] 14:07:58.901 com.system.bgim.AppRunner - ===========
-[INFO ] 14:07:58.901 com.system.bgim.AppRunner - logger.info
-[INFO ] 14:07:58.901 com.system.bgim.AppRunner - ===========
-[TRACE] 14:07:58.902 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 14:07:58.902 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 14:07:58.902 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 14:07:58.902 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 14:07:58.902 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 14:07:58.902 com.system.bgim.AppRunner - slf4j since 20201012
-[INFO ] 14:08:39.052 jdbc.sqlonly - SELECT
+[INFO ] 11:09:02.061 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 17832 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:09:02.068 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:09:02.069 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:09:04.283 com.system.bgim.BgimApplication - Started BgimApplication in 3.004 seconds (JVM running for 3.899)
+[INFO ] 11:09:04.284 com.system.bgim.AppRunner - ===========
+[INFO ] 11:09:04.285 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:09:04.285 com.system.bgim.AppRunner - ===========
+[TRACE] 11:09:04.285 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:09:04.285 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:09:04.285 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:09:04.285 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:09:04.285 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:09:04.286 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:10:35.113 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:10:35.227 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:10:35.227 jdbc.sqlonly - SELECT
             *
         FROM presync_domain
 
-[INFO ] 14:08:39.154 jdbc.resultsettable - 
+[TRACE] 11:10:35.331 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:10:35.331 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:10:35.333 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:10:35.334 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:10:35.335 jdbc.resultsettable - 
 |--------------|---------------|
 |companycode   |companyname    |
 |--------------|---------------|
@@ -24,11 +30,18 @@
 |BGCOMMERCE    |BG commerce    |
 |--------------|---------------|
 
-[INFO ] 14:08:39.161 jdbc.sqlonly - SELECT
+[DEBUG] 11:10:35.336 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:10:35.343 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:10:35.343 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:10:35.343 jdbc.sqlonly - SELECT
             *
         FROM presync_domain
 
-[INFO ] 14:08:39.165 jdbc.resultsettable - 
+[TRACE] 11:10:35.344 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:10:35.344 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:10:35.345 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:10:35.345 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:10:35.345 jdbc.resultsettable - 
 |--------------|---------------|
 |companycode   |companyname    |
 |--------------|---------------|
@@ -37,193 +50,18 @@
 |BGCOMMERCE    |BG commerce    |
 |--------------|---------------|
 
-[INFO ] 14:08:42.247 jdbc.sqlonly - SELECT * FROM presync_user where companycode= 'BGSPACE'
-
-[INFO ] 14:08:42.258 jdbc.resultsettable - 
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-|username |companycode |empid   |deptcode  |code            |login_id          |email             |mobile        |hired_dt              |
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-|Hoxy     |BGSPACE     |hoxy000 |ASTRONAUT |BGSPACE.hoxy000 |hoxy000@gmail.com |hoxy000@gmail.com |010-9999-2299 |2011-01-01 00:00:00.0 |
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-
-[INFO ] 14:08:43.413 jdbc.sqlonly - SELECT * FROM presync_user where companycode= 'BGCOMMERCE'
-
-[INFO ] 14:08:43.417 jdbc.resultsettable - 
-|---------|------------|--------|---------|-------------------|------------------|------------------|--------------|----------------------|
-|username |companycode |empid   |deptcode |code               |login_id          |email             |mobile        |hired_dt              |
-|---------|------------|--------|---------|-------------------|------------------|------------------|--------------|----------------------|
-|Stevie   |BGCOMMERCE  |stevie5 |SALES    |BGCOMMERCE.stevie5 |stevie5@gmail.com |stevie5@gmail.com |010-1441-2109 |2011-03-01 00:00:00.0 |
-|Enyo     |BGCOMMERCE  |Enyo1   |SALES    |BGCOMMERCE.Enyo1   |Enyo1@gmail.com   |Enyo1@gmail.com   |010-8841-2335 |2011-04-02 00:00:00.0 |
-|---------|------------|--------|---------|-------------------|------------------|------------------|--------------|----------------------|
-
-[INFO ] 14:08:44.976 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGCOMMERCE.stevie5'
-
-[INFO ] 14:08:44.992 jdbc.resultsettable - 
-|---------|
-|count(*) |
-|---------|
-|1        |
-|---------|
-
-[INFO ] 14:08:44.993 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGCOMMERCE.stevie5'
-
-[INFO ] 14:08:44.996 jdbc.resultsettable - 
-|---------|
-|count(*) |
-|---------|
-|1        |
-|---------|
-
-[INFO ] 14:08:46.772 jdbc.sqlonly - SELECT * FROM presync_user where companycode= 'BGCOMMERCE'
-
-[INFO ] 14:08:46.775 jdbc.resultsettable - 
-|---------|------------|--------|---------|-------------------|------------------|------------------|--------------|----------------------|
-|username |companycode |empid   |deptcode |code               |login_id          |email             |mobile        |hired_dt              |
-|---------|------------|--------|---------|-------------------|------------------|------------------|--------------|----------------------|
-|Stevie   |BGCOMMERCE  |stevie5 |SALES    |BGCOMMERCE.stevie5 |stevie5@gmail.com |stevie5@gmail.com |010-1441-2109 |2011-03-01 00:00:00.0 |
-|Enyo     |BGCOMMERCE  |Enyo1   |SALES    |BGCOMMERCE.Enyo1   |Enyo1@gmail.com   |Enyo1@gmail.com   |010-8841-2335 |2011-04-02 00:00:00.0 |
-|---------|------------|--------|---------|-------------------|------------------|------------------|--------------|----------------------|
-
-[INFO ] 14:08:48.523 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGCOMMERCE.stevie5'
-
-[INFO ] 14:08:48.525 jdbc.resultsettable - 
-|---------|
-|count(*) |
-|---------|
-|1        |
-|---------|
-
-[INFO ] 14:08:48.529 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGCOMMERCE.stevie5'
-
-[INFO ] 14:08:48.531 jdbc.resultsettable - 
-|---------|
-|count(*) |
-|---------|
-|1        |
-|---------|
-
-[INFO ] 14:08:49.964 jdbc.sqlonly - UPDATE org_user
-            SET
-            username = 'Stevie',
-            pwd = '1234',
-            login_id = 'stevie5@gmail.com',
-
-               modify_dt = SYSDATE,
-
-            empid = 'stevie5',
-            companycode = 'BGCOMMERCE',
-            deptcode = 'testdept'
-        WHERE code = 'BGCOMMERCE.stevie5'
-
-[INFO ] 14:08:49.981 jdbc.sqlonly - select max(history_id)+1 from sync_history_user
-
-[INFO ] 14:08:49.987 jdbc.resultsettable - 
-|------------------|
-|max(history_id)+1 |
-|------------------|
-|9                 |
-|------------------|
-
-[INFO ] 14:08:49.992 jdbc.sqlonly - INSERT INTO sync_history_user VALUES (9,'success','sync : BGCOMMERCE.stevie5사용자 작업(userUpdateProc)을 성공했습니다.',SYSDATE,'BGCOMMERCE.stevie5')
-
-[INFO ] 14:08:50.514 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGCOMMERCE.stevie5'
-
-[INFO ] 14:08:50.516 jdbc.resultsettable - 
-|---------|
-|count(*) |
-|---------|
-|1        |
-|---------|
-
-[INFO ] 14:08:50.517 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGCOMMERCE.stevie5'
-
-[INFO ] 14:08:50.518 jdbc.resultsettable - 
-|---------|
-|count(*) |
-|---------|
-|1        |
-|---------|
-
-[INFO ] 14:08:51.078 jdbc.sqlonly - UPDATE mall_user
-            SET
-            username = 'Stevie',
-            pwd = '1234',
-            login_id = 'stevie5@gmail.com',
-
-            empid = 'stevie5',
-            companycode = 'BGCOMMERCE',
-            deptcode = 'testdept'
-        WHERE code = 'BGCOMMERCE.stevie5'
-
-[INFO ] 14:08:51.080 jdbc.sqlonly - SELECT * FROM presync_user where companycode= 'BGCOMMERCE'
-
-[INFO ] 14:08:51.083 jdbc.resultsettable - 
-|---------|------------|--------|---------|-------------------|------------------|------------------|--------------|----------------------|
-|username |companycode |empid   |deptcode |code               |login_id          |email             |mobile        |hired_dt              |
-|---------|------------|--------|---------|-------------------|------------------|------------------|--------------|----------------------|
-|Stevie   |BGCOMMERCE  |stevie5 |SALES    |BGCOMMERCE.stevie5 |stevie5@gmail.com |stevie5@gmail.com |010-1441-2109 |2011-03-01 00:00:00.0 |
-|Enyo     |BGCOMMERCE  |Enyo1   |SALES    |BGCOMMERCE.Enyo1   |Enyo1@gmail.com   |Enyo1@gmail.com   |010-8841-2335 |2011-04-02 00:00:00.0 |
-|---------|------------|--------|---------|-------------------|------------------|------------------|--------------|----------------------|
-
-[INFO ] 14:08:51.084 jdbc.sqlonly - select max(history_id)+1 from provision_history_user
-
-[INFO ] 14:08:51.094 jdbc.resultsettable - 
-|------------------|
-|max(history_id)+1 |
-|------------------|
-|12                |
-|------------------|
-
-[INFO ] 14:08:51.095 jdbc.sqlonly - INSERT INTO provision_history_user VALUES (12,'success','mall','provision : BGCOMMERCE.stevie5사용자 작업(userUpdateProc)을 성공했습니다.',SYSDATE,'BGCOMMERCE.stevie5')
-
-[INFO ] 14:10:59.455 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 33756 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 14:10:59.458 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 14:10:59.458 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 14:11:01.398 com.system.bgim.BgimApplication - Started BgimApplication in 2.318 seconds (JVM running for 3.246)
-[INFO ] 14:11:01.400 com.system.bgim.AppRunner - ===========
-[INFO ] 14:11:01.400 com.system.bgim.AppRunner - logger.info
-[INFO ] 14:11:01.400 com.system.bgim.AppRunner - ===========
-[TRACE] 14:11:01.400 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 14:11:01.400 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 14:11:01.400 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 14:11:01.400 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 14:11:01.400 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 14:11:01.400 com.system.bgim.AppRunner - slf4j since 20201012
-[DEBUG] 14:11:16.449 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
-[DEBUG] 14:11:16.535 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
-[INFO ] 14:11:16.536 jdbc.sqlonly - SELECT
+[DEBUG] 11:10:35.345 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:10:54.827 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:10:54.827 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:10:54.827 jdbc.sqlonly - SELECT
             *
         FROM presync_domain
 
-[TRACE] 14:11:16.625 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
-[TRACE] 14:11:16.626 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
-[TRACE] 14:11:16.629 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
-[TRACE] 14:11:16.629 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
-[INFO ] 14:11:16.630 jdbc.resultsettable - 
+[TRACE] 11:10:54.829 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:10:54.829 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:10:54.829 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:10:54.830 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:10:54.830 jdbc.resultsettable - 
 |--------------|---------------|
 |companycode   |companyname    |
 |--------------|---------------|
@@ -232,18 +70,18 @@
 |BGCOMMERCE    |BG commerce    |
 |--------------|---------------|
 
-[DEBUG] 14:11:16.631 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
-[DEBUG] 14:11:16.635 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
-[DEBUG] 14:11:16.635 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
-[INFO ] 14:11:16.636 jdbc.sqlonly - SELECT
+[DEBUG] 11:10:54.831 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:10:54.831 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:10:54.832 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:10:54.832 jdbc.sqlonly - SELECT
             *
         FROM presync_domain
 
-[TRACE] 14:11:16.637 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
-[TRACE] 14:11:16.637 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
-[TRACE] 14:11:16.637 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
-[TRACE] 14:11:16.637 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
-[INFO ] 14:11:16.638 jdbc.resultsettable - 
+[TRACE] 11:10:54.834 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:10:54.835 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:10:54.836 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:10:54.836 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:10:54.837 jdbc.resultsettable - 
 |--------------|---------------|
 |companycode   |companyname    |
 |--------------|---------------|
@@ -252,705 +90,1530 @@
 |BGCOMMERCE    |BG commerce    |
 |--------------|---------------|
 
-[DEBUG] 14:11:16.638 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
-[DEBUG] 14:11:26.162 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
-[DEBUG] 14:11:26.165 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGSPACE(String)
-[INFO ] 14:11:26.165 jdbc.sqlonly - SELECT * FROM presync_user where companycode= 'BGSPACE'
+[DEBUG] 11:10:54.837 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 11:19:58.285 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 23488 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:19:58.288 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:19:58.289 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:20:00.074 com.system.bgim.BgimApplication - Started BgimApplication in 2.153 seconds (JVM running for 3.092)
+[INFO ] 11:20:00.078 com.system.bgim.AppRunner - ===========
+[INFO ] 11:20:00.078 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:20:00.078 com.system.bgim.AppRunner - ===========
+[TRACE] 11:20:00.078 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:20:00.078 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:20:00.078 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:20:00.078 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:20:00.078 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:20:00.079 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 11:20:50.369 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 32696 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:20:50.371 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:20:50.372 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:20:52.232 com.system.bgim.BgimApplication - Started BgimApplication in 2.243 seconds (JVM running for 3.165)
+[INFO ] 11:20:52.234 com.system.bgim.AppRunner - ===========
+[INFO ] 11:20:52.234 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:20:52.234 com.system.bgim.AppRunner - ===========
+[TRACE] 11:20:52.234 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:20:52.234 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:20:52.234 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:20:52.234 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:20:52.234 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:20:52.235 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 11:24:17.969 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 21692 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:24:17.972 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:24:17.972 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:24:19.726 com.system.bgim.BgimApplication - Started BgimApplication in 2.127 seconds (JVM running for 3.004)
+[INFO ] 11:24:19.727 com.system.bgim.AppRunner - ===========
+[INFO ] 11:24:19.728 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:24:19.728 com.system.bgim.AppRunner - ===========
+[TRACE] 11:24:19.728 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:24:19.728 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:24:19.728 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:24:19.728 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:24:19.728 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:24:19.729 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 11:24:55.657 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 3940 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:24:55.660 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:24:55.660 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:24:57.297 com.system.bgim.BgimApplication - Started BgimApplication in 2.003 seconds (JVM running for 2.961)
+[INFO ] 11:24:57.298 com.system.bgim.AppRunner - ===========
+[INFO ] 11:24:57.299 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:24:57.299 com.system.bgim.AppRunner - ===========
+[TRACE] 11:24:57.299 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:24:57.299 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:24:57.299 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:24:57.299 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:24:57.299 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:24:57.299 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 11:26:33.083 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 8740 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:26:33.085 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:26:33.085 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:26:34.888 com.system.bgim.BgimApplication - Started BgimApplication in 2.282 seconds (JVM running for 3.131)
+[INFO ] 11:26:34.891 com.system.bgim.AppRunner - ===========
+[INFO ] 11:26:34.891 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:26:34.891 com.system.bgim.AppRunner - ===========
+[TRACE] 11:26:34.891 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:26:34.892 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:26:34.892 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:26:34.892 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:26:34.892 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:26:34.892 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 11:29:30.612 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 9136 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:29:30.614 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:29:30.615 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:29:32.153 com.system.bgim.BgimApplication - Started BgimApplication in 1.935 seconds (JVM running for 2.847)
+[INFO ] 11:29:32.155 com.system.bgim.AppRunner - ===========
+[INFO ] 11:29:32.155 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:29:32.155 com.system.bgim.AppRunner - ===========
+[TRACE] 11:29:32.155 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:29:32.156 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:29:32.156 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:29:32.156 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:29:32.156 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:29:32.156 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 14:52:03.701 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 31256 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 14:52:03.704 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 14:52:03.704 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 14:52:03.702 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 11632 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 14:52:03.705 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 14:52:03.706 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 14:52:05.913 com.system.bgim.BgimApplication - Started BgimApplication in 2.645 seconds (JVM running for 3.796)
+[INFO ] 14:52:05.915 com.system.bgim.AppRunner - ===========
+[INFO ] 14:52:05.915 com.system.bgim.AppRunner - logger.info
+[INFO ] 14:52:05.915 com.system.bgim.AppRunner - ===========
+[TRACE] 14:52:05.916 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 14:52:05.916 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 14:52:05.916 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 14:52:05.916 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 14:52:05.916 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 14:52:05.917 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 14:52:56.645 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 8624 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 14:52:56.647 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 14:52:56.648 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 14:52:58.658 com.system.bgim.BgimApplication - Started BgimApplication in 2.377 seconds (JVM running for 3.265)
+[INFO ] 14:52:58.660 com.system.bgim.AppRunner - ===========
+[INFO ] 14:52:58.660 com.system.bgim.AppRunner - logger.info
+[INFO ] 14:52:58.660 com.system.bgim.AppRunner - ===========
+[TRACE] 14:52:58.660 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 14:52:58.660 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 14:52:58.661 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 14:52:58.661 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 14:52:58.661 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 14:52:58.661 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 14:53:23.398 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 7432 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 14:53:23.400 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 14:53:23.401 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 14:53:25.147 com.system.bgim.BgimApplication - Started BgimApplication in 2.106 seconds (JVM running for 2.989)
+[INFO ] 14:53:25.149 com.system.bgim.AppRunner - ===========
+[INFO ] 14:53:25.149 com.system.bgim.AppRunner - logger.info
+[INFO ] 14:53:25.149 com.system.bgim.AppRunner - ===========
+[TRACE] 14:53:25.149 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 14:53:25.149 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 14:53:25.149 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 14:53:25.149 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 14:53:25.149 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 14:53:25.150 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 15:28:45.086 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 25064 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 15:28:45.088 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 15:28:45.089 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 15:28:46.817 com.system.bgim.BgimApplication - Started BgimApplication in 2.11 seconds (JVM running for 2.987)
+[INFO ] 15:28:46.819 com.system.bgim.AppRunner - ===========
+[INFO ] 15:28:46.819 com.system.bgim.AppRunner - logger.info
+[INFO ] 15:28:46.819 com.system.bgim.AppRunner - ===========
+[TRACE] 15:28:46.820 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 15:28:46.820 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 15:28:46.820 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 15:28:46.820 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 15:28:46.820 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 15:28:46.821 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 15:29:50.802 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 5588 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 15:29:50.804 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 15:29:50.805 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 15:29:52.373 com.system.bgim.BgimApplication - Started BgimApplication in 1.922 seconds (JVM running for 2.78)
+[INFO ] 15:29:52.375 com.system.bgim.AppRunner - ===========
+[INFO ] 15:29:52.375 com.system.bgim.AppRunner - logger.info
+[INFO ] 15:29:52.375 com.system.bgim.AppRunner - ===========
+[TRACE] 15:29:52.375 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 15:29:52.375 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 15:29:52.375 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 15:29:52.375 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 15:29:52.375 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 15:29:52.376 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 15:30:20.811 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files 
+[DEBUG] 15:30:20.901 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: 
+[INFO ] 15:30:20.902 jdbc.sqlonly - SELECT count(*) FROM log_files
 
-[TRACE] 14:11:26.169 c.s.b.m.UserMapper.userListbyDomain - <==    Columns: USERNAME, COMPANYCODE, EMPID, DEPTCODE, CODE, LOGIN_ID, EMAIL, MOBILE, HIRED_DT
-[TRACE] 14:11:26.169 c.s.b.m.UserMapper.userListbyDomain - <==        Row: Hoxy, BGSPACE, hoxy000, ASTRONAUT, BGSPACE.hoxy000, hoxy000@gmail.com, hoxy000@gmail.com, 010-9999-2299, 2011-01-01 00:00:00.0
-[INFO ] 14:11:26.172 jdbc.resultsettable - 
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-|username |companycode |empid   |deptcode  |code            |login_id          |email             |mobile        |hired_dt              |
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-|Hoxy     |BGSPACE     |hoxy000 |ASTRONAUT |BGSPACE.hoxy000 |hoxy000@gmail.com |hoxy000@gmail.com |010-9999-2299 |2011-01-01 00:00:00.0 |
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
+[TRACE] 15:30:20.993 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 15:30:20.996 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 15:30:21.000 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
 
-[DEBUG] 14:11:26.172 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 1
-[INFO ] 14:12:40.144 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 31192 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 14:12:40.146 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 14:12:40.147 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 14:12:41.753 com.system.bgim.BgimApplication - Started BgimApplication in 1.986 seconds (JVM running for 2.835)
-[INFO ] 14:12:41.755 com.system.bgim.AppRunner - ===========
-[INFO ] 14:12:41.755 com.system.bgim.AppRunner - logger.info
-[INFO ] 14:12:41.755 com.system.bgim.AppRunner - ===========
-[TRACE] 14:12:41.755 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 14:12:41.756 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 14:12:41.756 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 14:12:41.756 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 14:12:41.756 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 14:12:41.756 com.system.bgim.AppRunner - slf4j since 20201012
-[DEBUG] 14:12:52.822 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
-[DEBUG] 14:12:52.910 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
-[INFO ] 14:12:52.911 jdbc.sqlonly - SELECT
-            *
-        FROM presync_domain
+[DEBUG] 15:30:21.000 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 15:30:21.006 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files 
+[DEBUG] 15:30:21.006 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: 
+[INFO ] 15:30:21.007 jdbc.sqlonly - SELECT count(*) FROM log_files
 
-[TRACE] 14:12:52.996 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
-[TRACE] 14:12:52.996 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
-[TRACE] 14:12:52.998 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
-[TRACE] 14:12:52.998 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
-[INFO ] 14:12:53.001 jdbc.resultsettable - 
-|--------------|---------------|
-|companycode   |companyname    |
-|--------------|---------------|
-|BGSPACE       |BG space       |
-|BGAGRICULTURE |BG agriculture |
-|BGCOMMERCE    |BG commerce    |
-|--------------|---------------|
+[TRACE] 15:30:21.008 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 15:30:21.008 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 15:30:21.008 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
 
-[DEBUG] 14:12:53.001 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
-[DEBUG] 14:12:53.005 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
-[DEBUG] 14:12:53.005 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
-[INFO ] 14:12:53.006 jdbc.sqlonly - SELECT
-            *
-        FROM presync_domain
+[DEBUG] 15:30:21.008 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 15:30:21.009 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files 
+[DEBUG] 15:30:21.009 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: 
+[INFO ] 15:30:21.009 jdbc.sqlonly - SELECT count(*) FROM log_files
 
-[TRACE] 14:12:53.007 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
-[TRACE] 14:12:53.007 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
-[TRACE] 14:12:53.007 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
-[TRACE] 14:12:53.007 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
-[INFO ] 14:12:53.008 jdbc.resultsettable - 
-|--------------|---------------|
-|companycode   |companyname    |
-|--------------|---------------|
-|BGSPACE       |BG space       |
-|BGAGRICULTURE |BG agriculture |
-|BGCOMMERCE    |BG commerce    |
-|--------------|---------------|
+[TRACE] 15:30:21.010 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 15:30:21.010 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 15:30:21.011 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
 
-[DEBUG] 14:12:53.008 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
-[INFO ] 14:12:56.115 jdbc.sqlonly - SELECT * FROM presync_user where companycode= 'BGSPACE'
+[DEBUG] 15:30:21.011 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 15:30:21.012 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files 
+[DEBUG] 15:30:21.012 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: 
+[INFO ] 15:30:21.012 jdbc.sqlonly - SELECT count(*) FROM log_files
 
-[INFO ] 14:12:56.120 jdbc.resultsettable - 
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-|username |companycode |empid   |deptcode  |code            |login_id          |email             |mobile        |hired_dt              |
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-|Hoxy     |BGSPACE     |hoxy000 |ASTRONAUT |BGSPACE.hoxy000 |hoxy000@gmail.com |hoxy000@gmail.com |010-9999-2299 |2011-01-01 00:00:00.0 |
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
+[TRACE] 15:30:21.013 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 15:30:21.013 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 15:30:21.014 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
 
-[INFO ] 14:12:57.597 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGSPACE.hoxy000'
+[DEBUG] 15:30:21.014 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[INFO ] 15:43:09.996 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 23300 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 15:43:09.999 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 15:43:10.000 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 16:47:07.760 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 33436 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 16:47:07.763 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 16:47:07.763 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 16:47:09.720 com.system.bgim.BgimApplication - Started BgimApplication in 2.321 seconds (JVM running for 3.205)
+[INFO ] 16:47:09.723 com.system.bgim.AppRunner - ===========
+[INFO ] 16:47:09.723 com.system.bgim.AppRunner - logger.info
+[INFO ] 16:47:09.723 com.system.bgim.AppRunner - ===========
+[TRACE] 16:47:09.724 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 16:47:09.724 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 16:47:09.724 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 16:47:09.724 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 16:47:09.724 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 16:47:09.726 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 16:47:11.352 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files 
+[DEBUG] 16:47:11.439 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: 
+[INFO ] 16:47:11.439 jdbc.sqlonly - SELECT count(*) FROM log_files
 
-[INFO ] 14:12:57.607 jdbc.resultsettable - 
+[TRACE] 16:47:11.522 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 16:47:11.525 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 16:47:11.528 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 16:47:11.528 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 16:47:11.533 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files 
+[DEBUG] 16:47:11.533 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: 
+[INFO ] 16:47:11.533 jdbc.sqlonly - SELECT count(*) FROM log_files
+
+[TRACE] 16:47:11.534 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 16:47:11.534 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 16:47:11.534 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 16:47:11.534 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 16:47:11.535 c.s.b.m.H.logFileInfoInsert - ==>  Preparing: INSERT INTO log_files VALUES (?,?,?,?,SYSDATE) 
+[ERROR] 16:47:11.539 jdbc.sqlonly - 1. PreparedStatement.setNull(2, 1111)
+java.sql.SQLException: 부적합한 열 유형: 1111
+	at oracle.jdbc.driver.OracleStatement.getInternalType(OracleStatement.java:3978)
+	at oracle.jdbc.driver.OraclePreparedStatement.setNullCritical(OraclePreparedStatement.java:4472)
+	at oracle.jdbc.driver.OraclePreparedStatement.setNull(OraclePreparedStatement.java:4456)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setNull(OraclePreparedStatementWrapper.java:1008)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.setNull(PreparedStatementSpy.java:266)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setNull(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:67)
+	at com.sun.proxy.$Proxy81.setNull(Unknown Source)
+	at org.apache.ibatis.type.BaseTypeHandler.setParameter(BaseTypeHandler.java:45)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:87)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:93)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434)
+	at com.sun.proxy.$Proxy55.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:279)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy66.logFileInfoInsert(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy67.logFileInfoInsert(Unknown Source)
+	at com.system.bgim.service.HistoryService.logFileInfoInsertService(HistoryService.java:45)
+	at com.system.bgim.controller.HistoryController.uploadFiles(HistoryController.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ] 16:48:18.400 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 33100 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 16:48:18.402 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 16:48:18.402 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 16:48:20.180 com.system.bgim.BgimApplication - Started BgimApplication in 2.282 seconds (JVM running for 3.19)
+[INFO ] 16:48:20.182 com.system.bgim.AppRunner - ===========
+[INFO ] 16:48:20.182 com.system.bgim.AppRunner - logger.info
+[INFO ] 16:48:20.182 com.system.bgim.AppRunner - ===========
+[TRACE] 16:48:20.182 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 16:48:20.182 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 16:48:20.183 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 16:48:20.183 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 16:48:20.183 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 16:48:20.183 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 16:48:23.510 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files 
+[DEBUG] 16:48:23.606 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: 
+[INFO ] 16:48:23.607 jdbc.sqlonly - SELECT count(*) FROM log_files
+
+[TRACE] 16:48:23.704 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 16:48:23.707 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 16:48:23.711 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 16:48:23.711 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 16:48:23.717 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files 
+[DEBUG] 16:48:23.717 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: 
+[INFO ] 16:48:23.718 jdbc.sqlonly - SELECT count(*) FROM log_files
+
+[TRACE] 16:48:23.718 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 16:48:23.719 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 16:48:23.719 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 16:48:23.719 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 16:48:23.720 c.s.b.m.H.logFileInfoInsert - ==>  Preparing: INSERT INTO log_files VALUES (?,?,?,?,SYSDATE) 
+[ERROR] 16:48:23.728 jdbc.sqlonly - 1. PreparedStatement.setNull(2, 1111)
+java.sql.SQLException: 부적합한 열 유형: 1111
+	at oracle.jdbc.driver.OracleStatement.getInternalType(OracleStatement.java:3978)
+	at oracle.jdbc.driver.OraclePreparedStatement.setNullCritical(OraclePreparedStatement.java:4472)
+	at oracle.jdbc.driver.OraclePreparedStatement.setNull(OraclePreparedStatement.java:4456)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setNull(OraclePreparedStatementWrapper.java:1008)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.setNull(PreparedStatementSpy.java:266)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setNull(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:67)
+	at com.sun.proxy.$Proxy81.setNull(Unknown Source)
+	at org.apache.ibatis.type.BaseTypeHandler.setParameter(BaseTypeHandler.java:45)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:87)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:93)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434)
+	at com.sun.proxy.$Proxy55.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:279)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy66.logFileInfoInsert(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy67.logFileInfoInsert(Unknown Source)
+	at com.system.bgim.service.HistoryService.logFileInfoInsertService(HistoryService.java:45)
+	at com.system.bgim.controller.HistoryController.uploadFiles(HistoryController.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ] 16:48:37.196 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 30140 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 16:48:37.198 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 16:48:37.198 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 16:48:38.752 com.system.bgim.BgimApplication - Started BgimApplication in 1.906 seconds (JVM running for 2.747)
+[INFO ] 16:48:38.753 com.system.bgim.AppRunner - ===========
+[INFO ] 16:48:38.754 com.system.bgim.AppRunner - logger.info
+[INFO ] 16:48:38.754 com.system.bgim.AppRunner - ===========
+[TRACE] 16:48:38.754 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 16:48:38.754 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 16:48:38.754 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 16:48:38.754 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 16:48:38.754 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 16:48:38.755 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 16:48:41.468 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files 
+[DEBUG] 16:48:41.551 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: 
+[INFO ] 16:48:41.552 jdbc.sqlonly - SELECT count(*) FROM log_files
+
+[TRACE] 16:48:41.620 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 16:48:41.623 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 16:48:41.627 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 16:48:41.627 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 16:48:41.632 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files 
+[DEBUG] 16:48:41.633 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: 
+[INFO ] 16:48:41.633 jdbc.sqlonly - SELECT count(*) FROM log_files
+
+[TRACE] 16:48:41.635 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 16:48:41.635 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 16:48:41.636 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 16:48:41.636 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 16:48:41.637 c.s.b.m.H.logFileInfoInsert - ==>  Preparing: INSERT INTO log_files VALUES (?,?,?,?,SYSDATE) 
+[ERROR] 16:48:41.643 jdbc.sqlonly - 1. PreparedStatement.setNull(2, 1111)
+java.sql.SQLException: 부적합한 열 유형: 1111
+	at oracle.jdbc.driver.OracleStatement.getInternalType(OracleStatement.java:3978)
+	at oracle.jdbc.driver.OraclePreparedStatement.setNullCritical(OraclePreparedStatement.java:4472)
+	at oracle.jdbc.driver.OraclePreparedStatement.setNull(OraclePreparedStatement.java:4456)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setNull(OraclePreparedStatementWrapper.java:1008)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.setNull(PreparedStatementSpy.java:266)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setNull(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:67)
+	at com.sun.proxy.$Proxy81.setNull(Unknown Source)
+	at org.apache.ibatis.type.BaseTypeHandler.setParameter(BaseTypeHandler.java:45)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:87)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:93)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434)
+	at com.sun.proxy.$Proxy55.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:279)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy66.logFileInfoInsert(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy67.logFileInfoInsert(Unknown Source)
+	at com.system.bgim.service.HistoryService.logFileInfoInsertService(HistoryService.java:45)
+	at com.system.bgim.controller.HistoryController.uploadFiles(HistoryController.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ] 16:48:52.218 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 29568 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 16:48:52.222 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 16:48:52.223 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 16:48:59.013 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files 
+[DEBUG] 16:48:59.013 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: 
+[INFO ] 16:48:59.013 jdbc.sqlonly - SELECT count(*) FROM log_files
+
+[TRACE] 16:48:59.015 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 16:48:59.015 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 16:48:59.016 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 16:48:59.016 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 16:48:59.016 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files 
+[DEBUG] 16:48:59.016 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: 
+[INFO ] 16:48:59.017 jdbc.sqlonly - SELECT count(*) FROM log_files
+
+[TRACE] 16:48:59.017 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 16:48:59.018 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 16:48:59.019 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 16:48:59.019 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 16:48:59.020 c.s.b.m.H.logFileInfoInsert - ==>  Preparing: INSERT INTO log_files VALUES (?,?,?,?,SYSDATE) 
+[ERROR] 16:48:59.020 jdbc.sqlonly - 1. PreparedStatement.setNull(2, 1111)
+java.sql.SQLException: 부적합한 열 유형: 1111
+	at oracle.jdbc.driver.OracleStatement.getInternalType(OracleStatement.java:3978)
+	at oracle.jdbc.driver.OraclePreparedStatement.setNullCritical(OraclePreparedStatement.java:4472)
+	at oracle.jdbc.driver.OraclePreparedStatement.setNull(OraclePreparedStatement.java:4456)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setNull(OraclePreparedStatementWrapper.java:1008)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.setNull(PreparedStatementSpy.java:266)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setNull(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:67)
+	at com.sun.proxy.$Proxy81.setNull(Unknown Source)
+	at org.apache.ibatis.type.BaseTypeHandler.setParameter(BaseTypeHandler.java:45)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:87)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:93)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434)
+	at com.sun.proxy.$Proxy55.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:279)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy66.logFileInfoInsert(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy67.logFileInfoInsert(Unknown Source)
+	at com.system.bgim.service.HistoryService.logFileInfoInsertService(HistoryService.java:45)
+	at com.system.bgim.controller.HistoryController.uploadFiles(HistoryController.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+[DEBUG] 16:49:03.420 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files 
+[DEBUG] 16:49:03.420 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: 
+[INFO ] 16:49:03.421 jdbc.sqlonly - SELECT count(*) FROM log_files
+
+[TRACE] 16:49:03.421 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 16:49:03.421 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 16:49:03.422 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 16:49:03.422 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 16:49:03.422 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files 
+[DEBUG] 16:49:03.422 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: 
+[INFO ] 16:49:03.422 jdbc.sqlonly - SELECT count(*) FROM log_files
+
+[TRACE] 16:49:03.423 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 16:49:03.424 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 16:49:03.424 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 16:49:03.424 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 16:49:03.425 c.s.b.m.H.logFileInfoInsert - ==>  Preparing: INSERT INTO log_files VALUES (?,?,?,?,SYSDATE) 
+[ERROR] 16:49:03.425 jdbc.sqlonly - 1. PreparedStatement.setNull(2, 1111)
+java.sql.SQLException: 부적합한 열 유형: 1111
+	at oracle.jdbc.driver.OracleStatement.getInternalType(OracleStatement.java:3978)
+	at oracle.jdbc.driver.OraclePreparedStatement.setNullCritical(OraclePreparedStatement.java:4472)
+	at oracle.jdbc.driver.OraclePreparedStatement.setNull(OraclePreparedStatement.java:4456)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setNull(OraclePreparedStatementWrapper.java:1008)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.setNull(PreparedStatementSpy.java:266)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.setNull(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:67)
+	at com.sun.proxy.$Proxy81.setNull(Unknown Source)
+	at org.apache.ibatis.type.BaseTypeHandler.setParameter(BaseTypeHandler.java:45)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:87)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:93)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434)
+	at com.sun.proxy.$Proxy55.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:279)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy66.logFileInfoInsert(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy67.logFileInfoInsert(Unknown Source)
+	at com.system.bgim.service.HistoryService.logFileInfoInsertService(HistoryService.java:45)
+	at com.system.bgim.controller.HistoryController.uploadFiles(HistoryController.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+[INFO ] 16:50:09.783 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 8776 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 16:50:09.786 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 16:50:09.786 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 16:50:11.812 com.system.bgim.BgimApplication - Started BgimApplication in 2.455 seconds (JVM running for 3.486)
+[INFO ] 16:50:11.814 com.system.bgim.AppRunner - ===========
+[INFO ] 16:50:11.815 com.system.bgim.AppRunner - logger.info
+[INFO ] 16:50:11.815 com.system.bgim.AppRunner - ===========
+[TRACE] 16:50:11.815 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 16:50:11.815 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 16:50:11.815 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 16:50:11.815 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 16:50:11.815 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 16:50:11.816 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 17:02:57.191 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 15656 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 17:02:57.196 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 17:02:57.197 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 17:02:59.242 com.system.bgim.BgimApplication - Started BgimApplication in 2.492 seconds (JVM running for 3.494)
+[INFO ] 17:02:59.245 com.system.bgim.AppRunner - ===========
+[INFO ] 17:02:59.246 com.system.bgim.AppRunner - logger.info
+[INFO ] 17:02:59.246 com.system.bgim.AppRunner - ===========
+[TRACE] 17:02:59.246 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 17:02:59.247 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 17:02:59.247 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 17:02:59.247 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 17:02:59.247 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 17:02:59.249 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 17:03:11.313 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 8740 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 17:03:11.316 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 17:03:11.317 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 17:03:13.277 com.system.bgim.BgimApplication - Started BgimApplication in 2.452 seconds (JVM running for 3.412)
+[INFO ] 17:03:13.280 com.system.bgim.AppRunner - ===========
+[INFO ] 17:03:13.280 com.system.bgim.AppRunner - logger.info
+[INFO ] 17:03:13.280 com.system.bgim.AppRunner - ===========
+[TRACE] 17:03:13.280 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 17:03:13.281 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 17:03:13.281 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 17:03:13.281 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 17:03:13.281 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 17:03:13.283 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 17:03:29.918 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files 
+[DEBUG] 17:03:30.050 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: 
+[INFO ] 17:03:30.051 jdbc.sqlonly - SELECT count(*) FROM log_files
+
+[TRACE] 17:03:30.154 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:03:30.156 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 1
+[INFO ] 17:03:30.161 jdbc.resultsettable - 
 |---------|
 |count(*) |
 |---------|
 |1        |
 |---------|
 
-[INFO ] 14:12:57.608 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGSPACE.hoxy000'
+[DEBUG] 17:03:30.161 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:03:30.169 c.s.b.m.H.logFileInfoUpdate - ==>  Preparing: UPDATE log_files SET file_id=?, menu=?, file_name=?, file_path=?, executed_time=SYSDATE 
+[DEBUG] 17:03:30.173 c.s.b.m.H.logFileInfoUpdate - ==> Parameters: 0(Integer), log files(String), logback_sync_provision.log(String), D:\git_src\bgim\logs\logback_sync_provision.log(String)
+[INFO ] 17:03:30.173 jdbc.sqlonly - UPDATE log_files SET file_id=0, menu='log files', file_name='logback_sync_provision.log', file_path='D:\git_src\bgim\logs\logback_sync_provision.log', executed_time=SYSDATE
 
-[INFO ] 14:12:57.609 jdbc.resultsettable - 
+[DEBUG] 17:03:30.178 c.s.b.m.H.logFileInfoUpdate - <==    Updates: 1
+[DEBUG] 17:03:30.180 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files 
+[DEBUG] 17:03:30.181 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: 
+[INFO ] 17:03:30.182 jdbc.sqlonly - SELECT count(*) FROM log_files
+
+[TRACE] 17:03:30.183 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:03:30.183 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 1
+[INFO ] 17:03:30.184 jdbc.resultsettable - 
 |---------|
 |count(*) |
 |---------|
 |1        |
 |---------|
 
-[INFO ] 14:12:59.271 jdbc.sqlonly - SELECT * FROM presync_user where companycode= 'BGSPACE'
+[DEBUG] 17:03:30.184 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:03:30.184 c.s.b.m.H.logFileInfoUpdate - ==>  Preparing: UPDATE log_files SET file_id=?, menu=?, file_name=?, file_path=?, executed_time=SYSDATE 
+[DEBUG] 17:03:30.185 c.s.b.m.H.logFileInfoUpdate - ==> Parameters: 0(Integer), log files(String), logback_sync_provision.2020-10-22.0.log.gz(String), D:\git_src\bgim\logs\logback_sync_provision.2020-10-22.0.log.gz(String)
+[INFO ] 17:03:30.185 jdbc.sqlonly - UPDATE log_files SET file_id=0, menu='log files', file_name='logback_sync_provision.2020-10-22.0.log.gz', file_path='D:\git_src\bgim\logs\logback_sync_provision.2020-10-22.0.log.gz', executed_time=SYSDATE
 
-[INFO ] 14:12:59.273 jdbc.resultsettable - 
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-|username |companycode |empid   |deptcode  |code            |login_id          |email             |mobile        |hired_dt              |
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-|Hoxy     |BGSPACE     |hoxy000 |ASTRONAUT |BGSPACE.hoxy000 |hoxy000@gmail.com |hoxy000@gmail.com |010-9999-2299 |2011-01-01 00:00:00.0 |
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
+[DEBUG] 17:03:30.187 c.s.b.m.H.logFileInfoUpdate - <==    Updates: 1
+[INFO ] 17:06:03.807 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 316 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 17:06:03.811 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 17:06:03.812 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 17:06:05.675 com.system.bgim.BgimApplication - Started BgimApplication in 2.291 seconds (JVM running for 3.342)
+[INFO ] 17:06:05.677 com.system.bgim.AppRunner - ===========
+[INFO ] 17:06:05.677 com.system.bgim.AppRunner - logger.info
+[INFO ] 17:06:05.677 com.system.bgim.AppRunner - ===========
+[TRACE] 17:06:05.677 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 17:06:05.678 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 17:06:05.678 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 17:06:05.678 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 17:06:05.678 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 17:06:05.679 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 17:06:10.568 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files where file_name=? 
+[DEBUG] 17:06:10.681 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: logback_sync_provision.log(String)
+[INFO ] 17:06:10.681 jdbc.sqlonly - SELECT count(*) FROM log_files where file_name='logback_sync_provision.log'
 
-[INFO ] 14:13:00.772 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGSPACE.hoxy000'
+[TRACE] 17:06:10.795 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:06:10.797 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 17:06:10.800 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
 
-[INFO ] 14:13:00.774 jdbc.resultsettable - 
+[DEBUG] 17:06:10.801 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:06:10.806 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files where file_name=? 
+[DEBUG] 17:06:10.806 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: logback_sync_provision.log(String)
+[INFO ] 17:06:10.806 jdbc.sqlonly - SELECT count(*) FROM log_files where file_name='logback_sync_provision.log'
+
+[TRACE] 17:06:10.809 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:06:10.809 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 17:06:10.810 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 17:06:10.810 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:06:10.811 c.s.b.m.H.logFileInfoInsert!selectKey - ==>  Preparing: select max(file_id)+1 from log_files 
+[DEBUG] 17:06:10.811 c.s.b.m.H.logFileInfoInsert!selectKey - ==> Parameters: 
+[INFO ] 17:06:10.812 jdbc.sqlonly - select max(file_id)+1 from log_files
+
+[TRACE] 17:06:10.814 c.s.b.m.H.logFileInfoInsert!selectKey - <==    Columns: MAX(FILE_ID)+1
+[TRACE] 17:06:10.814 c.s.b.m.H.logFileInfoInsert!selectKey - <==        Row: 1
+[INFO ] 17:06:10.815 jdbc.resultsettable - 
+|---------------|
+|max(file_id)+1 |
+|---------------|
+|1              |
+|---------------|
+
+[DEBUG] 17:06:10.815 c.s.b.m.H.logFileInfoInsert!selectKey - <==      Total: 1
+[DEBUG] 17:06:12.686 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files where file_name=? 
+[DEBUG] 17:06:12.686 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: logback_sync_provision.log(String)
+[INFO ] 17:06:12.687 jdbc.sqlonly - SELECT count(*) FROM log_files where file_name='logback_sync_provision.log'
+
+[TRACE] 17:06:12.688 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:06:12.688 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 17:06:12.688 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 17:06:12.688 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:06:12.689 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files where file_name=? 
+[DEBUG] 17:06:12.689 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: logback_sync_provision.log(String)
+[INFO ] 17:06:12.689 jdbc.sqlonly - SELECT count(*) FROM log_files where file_name='logback_sync_provision.log'
+
+[TRACE] 17:06:12.690 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:06:12.691 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 17:06:12.691 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 17:06:12.691 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:06:12.692 c.s.b.m.H.logFileInfoInsert!selectKey - ==>  Preparing: select max(file_id)+1 from log_files 
+[DEBUG] 17:06:12.692 c.s.b.m.H.logFileInfoInsert!selectKey - ==> Parameters: 
+[INFO ] 17:06:12.692 jdbc.sqlonly - select max(file_id)+1 from log_files
+
+[TRACE] 17:06:12.694 c.s.b.m.H.logFileInfoInsert!selectKey - <==    Columns: MAX(FILE_ID)+1
+[TRACE] 17:06:12.694 c.s.b.m.H.logFileInfoInsert!selectKey - <==        Row: 1
+[INFO ] 17:06:12.695 jdbc.resultsettable - 
+|---------------|
+|max(file_id)+1 |
+|---------------|
+|1              |
+|---------------|
+
+[DEBUG] 17:06:12.695 c.s.b.m.H.logFileInfoInsert!selectKey - <==      Total: 1
+[DEBUG] 17:06:21.283 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files where file_name=? 
+[DEBUG] 17:06:21.283 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: logback_sync_provision.log(String)
+[INFO ] 17:06:21.283 jdbc.sqlonly - SELECT count(*) FROM log_files where file_name='logback_sync_provision.log'
+
+[TRACE] 17:06:21.284 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:06:21.284 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 17:06:21.284 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 17:06:21.284 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:06:21.285 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files where file_name=? 
+[DEBUG] 17:06:21.285 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: logback_sync_provision.log(String)
+[INFO ] 17:06:21.285 jdbc.sqlonly - SELECT count(*) FROM log_files where file_name='logback_sync_provision.log'
+
+[TRACE] 17:06:21.286 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:06:21.287 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 17:06:21.287 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 17:06:21.287 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:06:21.288 c.s.b.m.H.logFileInfoInsert!selectKey - ==>  Preparing: select max(file_id)+1 from log_files 
+[DEBUG] 17:06:21.288 c.s.b.m.H.logFileInfoInsert!selectKey - ==> Parameters: 
+[INFO ] 17:06:21.288 jdbc.sqlonly - select max(file_id)+1 from log_files
+
+[TRACE] 17:06:21.289 c.s.b.m.H.logFileInfoInsert!selectKey - <==    Columns: MAX(FILE_ID)+1
+[TRACE] 17:06:21.290 c.s.b.m.H.logFileInfoInsert!selectKey - <==        Row: 1
+[INFO ] 17:06:21.291 jdbc.resultsettable - 
+|---------------|
+|max(file_id)+1 |
+|---------------|
+|1              |
+|---------------|
+
+[DEBUG] 17:06:21.291 c.s.b.m.H.logFileInfoInsert!selectKey - <==      Total: 1
+[INFO ] 17:08:25.229 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 22672 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 17:08:25.233 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 17:08:25.233 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 17:08:27.317 com.system.bgim.BgimApplication - Started BgimApplication in 2.521 seconds (JVM running for 3.489)
+[INFO ] 17:08:27.323 com.system.bgim.AppRunner - ===========
+[INFO ] 17:08:27.323 com.system.bgim.AppRunner - logger.info
+[INFO ] 17:08:27.323 com.system.bgim.AppRunner - ===========
+[TRACE] 17:08:27.323 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 17:08:27.323 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 17:08:27.324 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 17:08:27.324 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 17:08:27.324 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 17:08:27.325 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 17:08:29.815 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files where file_name=? 
+[DEBUG] 17:08:29.920 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: logback_sync_provision.log(String)
+[INFO ] 17:08:29.921 jdbc.sqlonly - SELECT count(*) FROM log_files where file_name='logback_sync_provision.log'
+
+[TRACE] 17:08:30.018 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:08:30.022 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 17:08:30.029 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 17:08:30.029 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:08:30.036 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files where file_name=? 
+[DEBUG] 17:08:30.036 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: logback_sync_provision.log(String)
+[INFO ] 17:08:30.036 jdbc.sqlonly - SELECT count(*) FROM log_files where file_name='logback_sync_provision.log'
+
+[TRACE] 17:08:30.037 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:08:30.038 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 17:08:30.038 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 17:08:30.038 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:08:30.039 c.s.b.m.H.logFileInfoInsert!selectKey - ==>  Preparing: select max(file_id)+1 from log_files 
+[DEBUG] 17:08:30.039 c.s.b.m.H.logFileInfoInsert!selectKey - ==> Parameters: 
+[INFO ] 17:08:30.039 jdbc.sqlonly - select max(file_id)+1 from log_files
+
+[TRACE] 17:08:30.040 c.s.b.m.H.logFileInfoInsert!selectKey - <==    Columns: MAX(FILE_ID)+1
+[TRACE] 17:08:30.040 c.s.b.m.H.logFileInfoInsert!selectKey - <==        Row: 1
+[INFO ] 17:08:30.041 jdbc.resultsettable - 
+|---------------|
+|max(file_id)+1 |
+|---------------|
+|1              |
+|---------------|
+
+[DEBUG] 17:08:30.041 c.s.b.m.H.logFileInfoInsert!selectKey - <==      Total: 1
+[DEBUG] 17:08:35.558 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files where file_name=? 
+[DEBUG] 17:08:35.559 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: logback_sync_provision.log(String)
+[INFO ] 17:08:35.559 jdbc.sqlonly - SELECT count(*) FROM log_files where file_name='logback_sync_provision.log'
+
+[TRACE] 17:08:35.560 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:08:35.561 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 17:08:35.561 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 17:08:35.562 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:08:35.563 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files where file_name=? 
+[DEBUG] 17:08:35.563 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: logback_sync_provision.log(String)
+[INFO ] 17:08:35.564 jdbc.sqlonly - SELECT count(*) FROM log_files where file_name='logback_sync_provision.log'
+
+[TRACE] 17:08:35.565 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:08:35.565 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 17:08:35.566 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 17:08:35.566 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:08:35.567 c.s.b.m.H.logFileInfoInsert!selectKey - ==>  Preparing: select max(file_id)+1 from log_files 
+[DEBUG] 17:08:35.568 c.s.b.m.H.logFileInfoInsert!selectKey - ==> Parameters: 
+[INFO ] 17:08:35.569 jdbc.sqlonly - select max(file_id)+1 from log_files
+
+[TRACE] 17:08:35.570 c.s.b.m.H.logFileInfoInsert!selectKey - <==    Columns: MAX(FILE_ID)+1
+[TRACE] 17:08:35.570 c.s.b.m.H.logFileInfoInsert!selectKey - <==        Row: 1
+[INFO ] 17:08:35.570 jdbc.resultsettable - 
+|---------------|
+|max(file_id)+1 |
+|---------------|
+|1              |
+|---------------|
+
+[DEBUG] 17:08:35.570 c.s.b.m.H.logFileInfoInsert!selectKey - <==      Total: 1
+[DEBUG] 17:08:42.600 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files where file_name=? 
+[DEBUG] 17:08:42.601 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: logback_sync_provision.log(String)
+[INFO ] 17:08:42.601 jdbc.sqlonly - SELECT count(*) FROM log_files where file_name='logback_sync_provision.log'
+
+[TRACE] 17:08:42.602 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:08:42.602 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 17:08:42.603 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 17:08:42.603 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:08:42.603 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files where file_name=? 
+[DEBUG] 17:08:42.603 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: logback_sync_provision.log(String)
+[INFO ] 17:08:42.604 jdbc.sqlonly - SELECT count(*) FROM log_files where file_name='logback_sync_provision.log'
+
+[TRACE] 17:08:42.605 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:08:42.606 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 17:08:42.608 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 17:08:42.609 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:08:42.610 c.s.b.m.H.logFileInfoInsert!selectKey - ==>  Preparing: select max(file_id)+1 from log_files 
+[DEBUG] 17:08:42.610 c.s.b.m.H.logFileInfoInsert!selectKey - ==> Parameters: 
+[INFO ] 17:08:42.610 jdbc.sqlonly - select max(file_id)+1 from log_files
+
+[TRACE] 17:08:42.611 c.s.b.m.H.logFileInfoInsert!selectKey - <==    Columns: MAX(FILE_ID)+1
+[TRACE] 17:08:42.611 c.s.b.m.H.logFileInfoInsert!selectKey - <==        Row: 1
+[INFO ] 17:08:42.612 jdbc.resultsettable - 
+|---------------|
+|max(file_id)+1 |
+|---------------|
+|1              |
+|---------------|
+
+[DEBUG] 17:08:42.612 c.s.b.m.H.logFileInfoInsert!selectKey - <==      Total: 1
+[INFO ] 17:10:21.472 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 7784 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 17:10:21.476 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 17:10:21.476 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 17:10:23.662 com.system.bgim.BgimApplication - Started BgimApplication in 2.616 seconds (JVM running for 3.571)
+[INFO ] 17:10:23.664 com.system.bgim.AppRunner - ===========
+[INFO ] 17:10:23.664 com.system.bgim.AppRunner - logger.info
+[INFO ] 17:10:23.664 com.system.bgim.AppRunner - ===========
+[TRACE] 17:10:23.664 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 17:10:23.664 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 17:10:23.664 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 17:10:23.664 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 17:10:23.664 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 17:10:23.665 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 17:10:45.423 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files where file_name=? 
+[DEBUG] 17:10:45.530 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: logback_sync_provision.log(String)
+[INFO ] 17:10:45.530 jdbc.sqlonly - SELECT count(*) FROM log_files where file_name='logback_sync_provision.log'
+
+[TRACE] 17:10:45.638 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:10:45.642 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 17:10:45.646 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 17:10:45.647 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:10:45.653 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files where file_name=? 
+[DEBUG] 17:10:45.653 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: logback_sync_provision.log(String)
+[INFO ] 17:10:45.653 jdbc.sqlonly - SELECT count(*) FROM log_files where file_name='logback_sync_provision.log'
+
+[TRACE] 17:10:45.654 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:10:45.654 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 17:10:45.655 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 17:10:45.655 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:10:45.656 c.s.b.m.H.logFileInfoInsert!selectKey - ==>  Preparing: select max(file_id)+1 from log_files 
+[DEBUG] 17:10:45.656 c.s.b.m.H.logFileInfoInsert!selectKey - ==> Parameters: 
+[INFO ] 17:10:45.656 jdbc.sqlonly - select max(file_id)+1 from log_files
+
+[TRACE] 17:10:45.657 c.s.b.m.H.logFileInfoInsert!selectKey - <==    Columns: MAX(FILE_ID)+1
+[TRACE] 17:10:45.657 c.s.b.m.H.logFileInfoInsert!selectKey - <==        Row: 1
+[INFO ] 17:10:45.658 jdbc.resultsettable - 
+|---------------|
+|max(file_id)+1 |
+|---------------|
+|1              |
+|---------------|
+
+[DEBUG] 17:10:45.658 c.s.b.m.H.logFileInfoInsert!selectKey - <==      Total: 1
+[INFO ] 17:11:46.228 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 27708 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 17:11:46.231 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 17:11:46.232 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 17:11:48.231 com.system.bgim.BgimApplication - Started BgimApplication in 2.442 seconds (JVM running for 3.523)
+[INFO ] 17:11:48.234 com.system.bgim.AppRunner - ===========
+[INFO ] 17:11:48.234 com.system.bgim.AppRunner - logger.info
+[INFO ] 17:11:48.234 com.system.bgim.AppRunner - ===========
+[TRACE] 17:11:48.234 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 17:11:48.234 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 17:11:48.234 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 17:11:48.234 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 17:11:48.234 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 17:11:48.235 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 17:12:03.936 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files where file_name=? 
+[DEBUG] 17:12:04.043 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: logback_sync_provision.log(String)
+[INFO ] 17:12:04.044 jdbc.sqlonly - SELECT count(*) FROM log_files where file_name='logback_sync_provision.log'
+
+[TRACE] 17:12:04.149 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:12:04.151 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 17:12:04.154 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 17:12:04.154 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:12:04.160 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files where file_name=? 
+[DEBUG] 17:12:04.160 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: logback_sync_provision.log(String)
+[INFO ] 17:12:04.160 jdbc.sqlonly - SELECT count(*) FROM log_files where file_name='logback_sync_provision.log'
+
+[TRACE] 17:12:04.161 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:12:04.162 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 0
+[INFO ] 17:12:04.162 jdbc.resultsettable - 
+|---------|
+|count(*) |
+|---------|
+|0        |
+|---------|
+
+[DEBUG] 17:12:04.162 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:12:23.451 c.s.b.m.H.logFileInfoInsert!selectKey - ==>  Preparing: select max(file_id)+1 from log_files 
+[DEBUG] 17:12:23.452 c.s.b.m.H.logFileInfoInsert!selectKey - ==> Parameters: 
+[INFO ] 17:12:23.452 jdbc.sqlonly - select max(file_id)+1 from log_files
+
+[TRACE] 17:12:23.453 c.s.b.m.H.logFileInfoInsert!selectKey - <==    Columns: MAX(FILE_ID)+1
+[TRACE] 17:12:23.454 c.s.b.m.H.logFileInfoInsert!selectKey - <==        Row: 1
+[INFO ] 17:12:23.455 jdbc.resultsettable - 
+|---------------|
+|max(file_id)+1 |
+|---------------|
+|1              |
+|---------------|
+
+[DEBUG] 17:12:23.455 c.s.b.m.H.logFileInfoInsert!selectKey - <==      Total: 1
+[DEBUG] 17:12:23.456 c.s.b.m.H.logFileInfoInsert - ==>  Preparing: INSERT INTO log_files VALUES (?,?,?,?,SYSDATE) 
+[DEBUG] 17:12:23.457 c.s.b.m.H.logFileInfoInsert - ==> Parameters: 1(Integer), log files(String), logback_sync_provision.log(String), D:\git_src\bgim\logs\logback_sync_provision.log(String)
+[INFO ] 17:12:23.457 jdbc.sqlonly - INSERT INTO log_files VALUES (1,'log files','logback_sync_provision.log','D:\git_src\bgim\logs\logback_sync_provision.log',SYSDATE)
+
+[DEBUG] 17:12:23.474 c.s.b.m.H.logFileInfoInsert - <==    Updates: 1
+[DEBUG] 17:12:40.392 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files where file_name=? 
+[DEBUG] 17:12:40.393 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: logback_sync_provision.2020-10-22.0.log.gz(String)
+[INFO ] 17:12:40.393 jdbc.sqlonly - SELECT count(*) FROM log_files where file_name='logback_sync_provision.2020-10-22.0.log.gz'
+
+[TRACE] 17:12:40.397 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:12:40.398 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 1
+[INFO ] 17:12:40.398 jdbc.resultsettable - 
 |---------|
 |count(*) |
 |---------|
 |1        |
 |---------|
 
-[INFO ] 14:13:00.775 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGSPACE.hoxy000'
+[DEBUG] 17:12:40.398 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:12:40.399 c.s.b.m.H.logFileInfoUpdate - ==>  Preparing: UPDATE log_files SET file_id=?, menu=?, file_name=?, file_path=?, executed_time=SYSDATE 
+[DEBUG] 17:12:40.400 c.s.b.m.H.logFileInfoUpdate - ==> Parameters: 1(Integer), log files(String), logback_sync_provision.2020-10-22.0.log.gz(String), D:\git_src\bgim\logs\logback_sync_provision.2020-10-22.0.log.gz(String)
+[INFO ] 17:12:40.400 jdbc.sqlonly - UPDATE log_files SET file_id=1, menu='log files', file_name='logback_sync_provision.2020-10-22.0.log.gz', file_path='D:\git_src\bgim\logs\logback_sync_provision.2020-10-22.0.log.gz', executed_time=SYSDATE
 
-[INFO ] 14:13:00.776 jdbc.resultsettable - 
+[ERROR] 17:12:40.410 jdbc.sqlonly - 1. PreparedStatement.execute() UPDATE log_files SET file_id=1, menu='log files', file_name='logback_sync_provision.2020-10-22.0.log.gz', file_path='D:\git_src\bgim\logs\logback_sync_provision.2020-10-22.0.log.gz', executed_time=SYSDATE
+
+java.sql.SQLIntegrityConstraintViolationException: ORA-00001: 무결성 제약 조건(IM.FILES_PK)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:910)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1119)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3887)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1079)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy81.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434)
+	at com.sun.proxy.$Proxy55.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:295)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:63)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy66.logFileInfoUpdate(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy67.logFileInfoUpdate(Unknown Source)
+	at com.system.bgim.service.HistoryService.logFileInfoUpdateService(HistoryService.java:50)
+	at com.system.bgim.controller.HistoryController.uploadFiles(HistoryController.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00001: 무결성 제약 조건(IM.FILES_PK)에 위배됩니다
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498)
+	... 101 common frames omitted
+[INFO ] 17:17:16.429 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 1472 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 17:17:16.432 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 17:17:16.433 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 17:17:18.345 com.system.bgim.BgimApplication - Started BgimApplication in 2.366 seconds (JVM running for 3.442)
+[INFO ] 17:17:18.347 com.system.bgim.AppRunner - ===========
+[INFO ] 17:17:18.348 com.system.bgim.AppRunner - logger.info
+[INFO ] 17:17:18.348 com.system.bgim.AppRunner - ===========
+[TRACE] 17:17:18.348 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 17:17:18.348 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 17:17:18.348 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 17:17:18.348 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 17:17:18.348 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 17:17:18.349 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 17:17:42.563 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files where file_name=? 
+[DEBUG] 17:17:42.675 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: logback_sync_provision.log(String)
+[INFO ] 17:17:42.676 jdbc.sqlonly - SELECT count(*) FROM log_files where file_name='logback_sync_provision.log'
+
+[TRACE] 17:17:42.773 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:17:42.777 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 1
+[INFO ] 17:17:42.780 jdbc.resultsettable - 
 |---------|
 |count(*) |
 |---------|
 |1        |
 |---------|
 
-[INFO ] 14:13:02.764 jdbc.sqlonly - UPDATE org_user
-            SET
-            username = 'Hoxy',
-            pwd = '1234',
-            login_id = 'hoxy000@gmail.com',
+[DEBUG] 17:17:42.780 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:17:42.785 c.s.b.m.H.logFileInfoUpdate - ==>  Preparing: UPDATE log_files SET menu=?, file_path=?, executed_time=SYSDATE where file_name=? 
+[DEBUG] 17:17:42.786 c.s.b.m.H.logFileInfoUpdate - ==> Parameters: log files(String), D:\git_src\bgim\logs\logback_sync_provision.log(String), logback_sync_provision.log(String)
+[INFO ] 17:17:42.786 jdbc.sqlonly - UPDATE log_files SET  menu='log files', file_path='D:\git_src\bgim\logs\logback_sync_provision.log', executed_time=SYSDATE where file_name='logback_sync_provision.log'
 
-               modify_dt = SYSDATE,
+[DEBUG] 17:17:42.790 c.s.b.m.H.logFileInfoUpdate - <==    Updates: 1
+[DEBUG] 17:18:14.656 c.s.b.m.H.CheckIflogFileNameExists - ==>  Preparing: SELECT count(*) FROM log_files where file_name=? 
+[DEBUG] 17:18:14.657 c.s.b.m.H.CheckIflogFileNameExists - ==> Parameters: logback_sync_provision.2020-10-22.0.log.gz(String)
+[INFO ] 17:18:14.658 jdbc.sqlonly - SELECT count(*) FROM log_files where file_name='logback_sync_provision.2020-10-22.0.log.gz'
 
-            empid = 'hoxy000',
-            companycode = 'BGSPACE',
-            deptcode = 'testdept'
-        WHERE code = 'BGSPACE.hoxy000'
-
-[DEBUG] 14:13:02.768 c.s.b.m.H.userHistoryInsert!selectKey - ==>  Preparing: select max(history_id)+1 from sync_history_user 
-[DEBUG] 14:13:02.768 c.s.b.m.H.userHistoryInsert!selectKey - ==> Parameters: 
-[INFO ] 14:13:02.769 jdbc.sqlonly - select max(history_id)+1 from sync_history_user
-
-[TRACE] 14:13:02.769 c.s.b.m.H.userHistoryInsert!selectKey - <==    Columns: MAX(HISTORY_ID)+1
-[TRACE] 14:13:02.772 c.s.b.m.H.userHistoryInsert!selectKey - <==        Row: 10
-[INFO ] 14:13:02.772 jdbc.resultsettable - 
-|------------------|
-|max(history_id)+1 |
-|------------------|
-|10                |
-|------------------|
-
-[DEBUG] 14:13:02.773 c.s.b.m.H.userHistoryInsert!selectKey - <==      Total: 1
-[DEBUG] 14:13:02.773 c.s.b.m.H.userHistoryInsert - ==>  Preparing: INSERT INTO sync_history_user VALUES (?,?,?,SYSDATE,?) 
-[DEBUG] 14:13:02.776 c.s.b.m.H.userHistoryInsert - ==> Parameters: 10(Integer), success(String), sync : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다.(String), BGSPACE.hoxy000(String)
-[INFO ] 14:13:02.776 jdbc.sqlonly - INSERT INTO sync_history_user VALUES (10,'success','sync : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다.',SYSDATE,'BGSPACE.hoxy000')
-
-[DEBUG] 14:13:02.778 c.s.b.m.H.userHistoryInsert - <==    Updates: 1
-[INFO ] 14:13:03.829 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGSPACE.hoxy000'
-
-[INFO ] 14:13:03.830 jdbc.resultsettable - 
+[TRACE] 17:18:14.659 c.s.b.m.H.CheckIflogFileNameExists - <==    Columns: COUNT(*)
+[TRACE] 17:18:14.659 c.s.b.m.H.CheckIflogFileNameExists - <==        Row: 1
+[INFO ] 17:18:14.660 jdbc.resultsettable - 
 |---------|
 |count(*) |
 |---------|
 |1        |
 |---------|
 
-[INFO ] 14:13:03.831 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGSPACE.hoxy000'
-
-[INFO ] 14:13:03.833 jdbc.resultsettable - 
-|---------|
-|count(*) |
-|---------|
-|1        |
-|---------|
-
-[INFO ] 14:13:04.416 jdbc.sqlonly - UPDATE mall_user
-            SET
-            username = 'Hoxy',
-            pwd = '1234',
-            login_id = 'hoxy000@gmail.com',
-
-            empid = 'hoxy000',
-            companycode = 'BGSPACE',
-            deptcode = 'testdept'
-        WHERE code = 'BGSPACE.hoxy000'
-
-[INFO ] 14:13:04.416 jdbc.sqlonly - SELECT * FROM presync_user where companycode= 'BGSPACE'
-
-[DEBUG] 14:13:04.417 c.s.b.m.H.userHistoryInsert!selectKey - ==>  Preparing: select max(history_id)+1 from provision_history_user 
-[DEBUG] 14:13:04.418 c.s.b.m.H.userHistoryInsert!selectKey - ==> Parameters: 
-[INFO ] 14:13:04.418 jdbc.sqlonly - select max(history_id)+1 from provision_history_user
-
-[INFO ] 14:13:04.419 jdbc.resultsettable - 
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-|username |companycode |empid   |deptcode  |code            |login_id          |email             |mobile        |hired_dt              |
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-|Hoxy     |BGSPACE     |hoxy000 |ASTRONAUT |BGSPACE.hoxy000 |hoxy000@gmail.com |hoxy000@gmail.com |010-9999-2299 |2011-01-01 00:00:00.0 |
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-
-[TRACE] 14:13:04.419 c.s.b.m.H.userHistoryInsert!selectKey - <==    Columns: MAX(HISTORY_ID)+1
-[TRACE] 14:13:04.419 c.s.b.m.H.userHistoryInsert!selectKey - <==        Row: 13
-[INFO ] 14:13:04.420 jdbc.resultsettable - 
-|------------------|
-|max(history_id)+1 |
-|------------------|
-|13                |
-|------------------|
-
-[DEBUG] 14:13:04.420 c.s.b.m.H.userHistoryInsert!selectKey - <==      Total: 1
-[DEBUG] 14:13:04.420 c.s.b.m.H.userHistoryInsert - ==>  Preparing: INSERT INTO provision_history_user VALUES (?,?,?,?,SYSDATE,?) 
-[DEBUG] 14:13:04.421 c.s.b.m.H.userHistoryInsert - ==> Parameters: 13(Integer), success(String), mall(String), provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다.(String), BGSPACE.hoxy000(String)
-[INFO ] 14:13:04.421 jdbc.sqlonly - INSERT INTO provision_history_user VALUES (13,'success','mall','provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다.',SYSDATE,'BGSPACE.hoxy000')
-
-[DEBUG] 14:13:04.425 c.s.b.m.H.userHistoryInsert - <==    Updates: 1
-[INFO ] 15:01:54.760 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 21676 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 15:01:54.762 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 15:01:54.763 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 15:01:56.629 com.system.bgim.BgimApplication - Started BgimApplication in 2.262 seconds (JVM running for 3.154)
-[INFO ] 15:01:56.631 com.system.bgim.AppRunner - ===========
-[INFO ] 15:01:56.631 com.system.bgim.AppRunner - logger.info
-[INFO ] 15:01:56.631 com.system.bgim.AppRunner - ===========
-[TRACE] 15:01:56.632 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 15:01:56.632 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 15:01:56.632 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 15:01:56.632 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 15:01:56.632 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 15:01:56.633 com.system.bgim.AppRunner - slf4j since 20201012
-[DEBUG] 15:03:25.788 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
-[DEBUG] 15:03:25.906 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
-[INFO ] 15:03:25.907 jdbc.sqlonly - SELECT
-            *
-        FROM presync_domain
-
-[TRACE] 15:03:26.013 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
-[TRACE] 15:03:26.014 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
-[TRACE] 15:03:26.016 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
-[TRACE] 15:03:26.016 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
-[INFO ] 15:03:26.018 jdbc.resultsettable - 
-|--------------|---------------|
-|companycode   |companyname    |
-|--------------|---------------|
-|BGSPACE       |BG space       |
-|BGAGRICULTURE |BG agriculture |
-|BGCOMMERCE    |BG commerce    |
-|--------------|---------------|
-
-[DEBUG] 15:03:26.019 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
-[DEBUG] 15:03:26.026 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
-[DEBUG] 15:03:26.026 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
-[INFO ] 15:03:26.026 jdbc.sqlonly - SELECT
-            *
-        FROM presync_domain
-
-[TRACE] 15:03:26.027 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
-[TRACE] 15:03:26.028 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
-[TRACE] 15:03:26.028 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
-[TRACE] 15:03:26.028 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
-[INFO ] 15:03:26.029 jdbc.resultsettable - 
-|--------------|---------------|
-|companycode   |companyname    |
-|--------------|---------------|
-|BGSPACE       |BG space       |
-|BGAGRICULTURE |BG agriculture |
-|BGCOMMERCE    |BG commerce    |
-|--------------|---------------|
-
-[DEBUG] 15:03:26.029 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
-[INFO ] 15:03:30.545 jdbc.sqlonly - SELECT * FROM presync_user where companycode= 'BGSPACE'
-
-[INFO ] 15:03:30.551 jdbc.resultsettable - 
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-|username |companycode |empid   |deptcode  |code            |login_id          |email             |mobile        |hired_dt              |
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-|Hoxy     |BGSPACE     |hoxy000 |ASTRONAUT |BGSPACE.hoxy000 |hoxy000@gmail.com |hoxy000@gmail.com |010-9999-2299 |2011-01-01 00:00:00.0 |
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-
-[INFO ] 15:03:31.800 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGSPACE.hoxy000'
-
-[INFO ] 15:03:31.812 jdbc.resultsettable - 
-|---------|
-|count(*) |
-|---------|
-|1        |
-|---------|
-
-[INFO ] 15:03:31.813 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGSPACE.hoxy000'
-
-[INFO ] 15:03:31.815 jdbc.resultsettable - 
-|---------|
-|count(*) |
-|---------|
-|1        |
-|---------|
-
-[INFO ] 15:03:33.343 jdbc.sqlonly - SELECT * FROM presync_user where companycode= 'BGSPACE'
-
-[INFO ] 15:03:33.345 jdbc.resultsettable - 
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-|username |companycode |empid   |deptcode  |code            |login_id          |email             |mobile        |hired_dt              |
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-|Hoxy     |BGSPACE     |hoxy000 |ASTRONAUT |BGSPACE.hoxy000 |hoxy000@gmail.com |hoxy000@gmail.com |010-9999-2299 |2011-01-01 00:00:00.0 |
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-
-[INFO ] 15:03:35.019 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGSPACE.hoxy000'
-
-[INFO ] 15:03:35.020 jdbc.resultsettable - 
-|---------|
-|count(*) |
-|---------|
-|1        |
-|---------|
-
-[INFO ] 15:03:35.022 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGSPACE.hoxy000'
-
-[INFO ] 15:03:35.024 jdbc.resultsettable - 
-|---------|
-|count(*) |
-|---------|
-|1        |
-|---------|
-
-[INFO ] 15:03:36.461 jdbc.sqlonly - UPDATE org_user
-            SET
-            username = 'Hoxy',
-            pwd = '1234',
-            login_id = 'hoxy000@gmail.com',
-
-               modify_dt = SYSDATE,
-
-            empid = 'hoxy000',
-            companycode = 'BGSPACE',
-            deptcode = 'testdept'
-        WHERE code = 'BGSPACE.hoxy000'
-
-[DEBUG] 15:03:36.469 c.s.b.m.H.userHistoryInsert!selectKey - ==>  Preparing: select max(history_id)+1 from sync_history_user 
-[DEBUG] 15:03:36.469 c.s.b.m.H.userHistoryInsert!selectKey - ==> Parameters: 
-[INFO ] 15:03:36.470 jdbc.sqlonly - select max(history_id)+1 from sync_history_user
-
-[TRACE] 15:03:36.471 c.s.b.m.H.userHistoryInsert!selectKey - <==    Columns: MAX(HISTORY_ID)+1
-[TRACE] 15:03:36.474 c.s.b.m.H.userHistoryInsert!selectKey - <==        Row: 11
-[INFO ] 15:03:36.475 jdbc.resultsettable - 
-|------------------|
-|max(history_id)+1 |
-|------------------|
-|11                |
-|------------------|
-
-[DEBUG] 15:03:36.475 c.s.b.m.H.userHistoryInsert!selectKey - <==      Total: 1
-[DEBUG] 15:03:36.476 c.s.b.m.H.userHistoryInsert - ==>  Preparing: INSERT INTO sync_history_user VALUES (?,?,?,SYSDATE,?) 
-[DEBUG] 15:03:36.476 c.s.b.m.H.userHistoryInsert - ==> Parameters: 11(Integer), success(String), sync : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다.(String), BGSPACE.hoxy000(String)
-[INFO ] 15:03:36.476 jdbc.sqlonly - INSERT INTO sync_history_user VALUES (11,'success','sync : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다.',SYSDATE,'BGSPACE.hoxy000')
-
-[DEBUG] 15:03:36.479 c.s.b.m.H.userHistoryInsert - <==    Updates: 1
-[INFO ] 15:03:57.271 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGSPACE.hoxy000'
-
-[INFO ] 15:03:57.273 jdbc.resultsettable - 
-|---------|
-|count(*) |
-|---------|
-|1        |
-|---------|
-
-[INFO ] 15:03:57.274 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGSPACE.hoxy000'
-
-[INFO ] 15:03:57.275 jdbc.resultsettable - 
-|---------|
-|count(*) |
-|---------|
-|1        |
-|---------|
-
-[INFO ] 15:03:57.876 jdbc.sqlonly - UPDATE mall_user
-            SET
-            username = 'Hoxy',
-            pwd = '1234',
-            login_id = 'hoxy000@gmail.com',
-
-            empid = 'hoxy000',
-            companycode = 'BGSPACE',
-            deptcode = 'testdept'
-        WHERE code = 'BGSPACE.hoxy000'
-
-[INFO ] 15:03:57.877 jdbc.sqlonly - SELECT * FROM presync_user where companycode= 'BGSPACE'
-
-[DEBUG] 15:03:57.880 c.s.b.m.H.userHistoryInsert!selectKey - ==>  Preparing: select max(history_id)+1 from provision_history_user 
-[INFO ] 15:03:57.880 jdbc.resultsettable - 
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-|username |companycode |empid   |deptcode  |code            |login_id          |email             |mobile        |hired_dt              |
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-|Hoxy     |BGSPACE     |hoxy000 |ASTRONAUT |BGSPACE.hoxy000 |hoxy000@gmail.com |hoxy000@gmail.com |010-9999-2299 |2011-01-01 00:00:00.0 |
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-
-[DEBUG] 15:03:57.880 c.s.b.m.H.userHistoryInsert!selectKey - ==> Parameters: 
-[INFO ] 15:03:57.881 jdbc.sqlonly - select max(history_id)+1 from provision_history_user
-
-[TRACE] 15:03:57.882 c.s.b.m.H.userHistoryInsert!selectKey - <==    Columns: MAX(HISTORY_ID)+1
-[TRACE] 15:03:57.882 c.s.b.m.H.userHistoryInsert!selectKey - <==        Row: 14
-[INFO ] 15:03:57.883 jdbc.resultsettable - 
-|------------------|
-|max(history_id)+1 |
-|------------------|
-|14                |
-|------------------|
-
-[DEBUG] 15:03:57.883 c.s.b.m.H.userHistoryInsert!selectKey - <==      Total: 1
-[DEBUG] 15:03:57.884 c.s.b.m.H.userHistoryInsert - ==>  Preparing: INSERT INTO provision_history_user VALUES (?,?,?,?,SYSDATE,?) 
-[DEBUG] 15:03:57.885 c.s.b.m.H.userHistoryInsert - ==> Parameters: 14(Integer), success(String), mall(String), provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다.(String), BGSPACE.hoxy000(String)
-[INFO ] 15:03:57.885 jdbc.sqlonly - INSERT INTO provision_history_user VALUES (14,'success','mall','provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다.',SYSDATE,'BGSPACE.hoxy000')
-
-[DEBUG] 15:03:57.888 c.s.b.m.H.userHistoryInsert - <==    Updates: 1
-[INFO ] 15:04:53.240 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGSPACE.hoxy000'
-
-[INFO ] 15:04:53.242 jdbc.resultsettable - 
-|---------|
-|count(*) |
-|---------|
-|1        |
-|---------|
-
-[INFO ] 15:04:53.243 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGSPACE.hoxy000'
-
-[INFO ] 15:04:53.245 jdbc.resultsettable - 
-|---------|
-|count(*) |
-|---------|
-|1        |
-|---------|
-
-[INFO ] 15:04:54.780 jdbc.sqlonly - UPDATE org_user
-            SET
-            username = 'Hoxy',
-            pwd = '1234',
-            login_id = 'hoxy000@gmail.com',
-
-               modify_dt = SYSDATE,
-
-            empid = 'hoxy000',
-            companycode = 'BGSPACE',
-            deptcode = 'testdept'
-        WHERE code = 'BGSPACE.hoxy000'
-
-[DEBUG] 15:04:54.781 c.s.b.m.H.userHistoryInsert!selectKey - ==>  Preparing: select max(history_id)+1 from sync_history_user 
-[DEBUG] 15:04:54.782 c.s.b.m.H.userHistoryInsert!selectKey - ==> Parameters: 
-[INFO ] 15:04:54.783 jdbc.sqlonly - select max(history_id)+1 from sync_history_user
-
-[TRACE] 15:04:54.785 c.s.b.m.H.userHistoryInsert!selectKey - <==    Columns: MAX(HISTORY_ID)+1
-[TRACE] 15:04:54.785 c.s.b.m.H.userHistoryInsert!selectKey - <==        Row: 12
-[INFO ] 15:04:54.786 jdbc.resultsettable - 
-|------------------|
-|max(history_id)+1 |
-|------------------|
-|12                |
-|------------------|
-
-[DEBUG] 15:04:54.786 c.s.b.m.H.userHistoryInsert!selectKey - <==      Total: 1
-[DEBUG] 15:04:54.787 c.s.b.m.H.userHistoryInsert - ==>  Preparing: INSERT INTO sync_history_user VALUES (?,?,?,SYSDATE,?) 
-[DEBUG] 15:04:54.787 c.s.b.m.H.userHistoryInsert - ==> Parameters: 12(Integer), success(String), sync : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다.(String), BGSPACE.hoxy000(String)
-[INFO ] 15:04:54.788 jdbc.sqlonly - INSERT INTO sync_history_user VALUES (12,'success','sync : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다.',SYSDATE,'BGSPACE.hoxy000')
-
-[DEBUG] 15:04:54.790 c.s.b.m.H.userHistoryInsert - <==    Updates: 1
-[INFO ] 15:04:56.324 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGSPACE.hoxy000'
-
-[INFO ] 15:04:56.325 jdbc.resultsettable - 
-|---------|
-|count(*) |
-|---------|
-|1        |
-|---------|
-
-[INFO ] 15:04:56.326 jdbc.sqlonly - SELECT
-            count(*)
-        FROM org_user
-        WHERE
-            CODE = 'BGSPACE.hoxy000'
-
-[INFO ] 15:04:56.327 jdbc.resultsettable - 
-|---------|
-|count(*) |
-|---------|
-|1        |
-|---------|
-
-[INFO ] 15:04:56.883 jdbc.sqlonly - UPDATE mall_user
-            SET
-            username = 'Hoxy',
-            pwd = '1234',
-            login_id = 'hoxy000@gmail.com',
-
-            empid = 'hoxy000',
-            companycode = 'BGSPACE',
-            deptcode = 'testdept'
-        WHERE code = 'BGSPACE.hoxy000'
-
-[INFO ] 15:04:56.884 jdbc.sqlonly - SELECT * FROM presync_user where companycode= 'BGSPACE'
-
-[DEBUG] 15:04:56.885 c.s.b.m.H.userHistoryInsert!selectKey - ==>  Preparing: select max(history_id)+1 from provision_history_user 
-[DEBUG] 15:04:56.885 c.s.b.m.H.userHistoryInsert!selectKey - ==> Parameters: 
-[INFO ] 15:04:56.885 jdbc.sqlonly - select max(history_id)+1 from provision_history_user
-
-[TRACE] 15:04:56.886 c.s.b.m.H.userHistoryInsert!selectKey - <==    Columns: MAX(HISTORY_ID)+1
-[INFO ] 15:04:56.886 jdbc.resultsettable - 
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-|username |companycode |empid   |deptcode  |code            |login_id          |email             |mobile        |hired_dt              |
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-|Hoxy     |BGSPACE     |hoxy000 |ASTRONAUT |BGSPACE.hoxy000 |hoxy000@gmail.com |hoxy000@gmail.com |010-9999-2299 |2011-01-01 00:00:00.0 |
-|---------|------------|--------|----------|----------------|------------------|------------------|--------------|----------------------|
-
-[TRACE] 15:04:56.887 c.s.b.m.H.userHistoryInsert!selectKey - <==        Row: 15
-[INFO ] 15:04:56.887 jdbc.resultsettable - 
-|------------------|
-|max(history_id)+1 |
-|------------------|
-|15                |
-|------------------|
-
-[DEBUG] 15:04:56.887 c.s.b.m.H.userHistoryInsert!selectKey - <==      Total: 1
-[DEBUG] 15:04:56.888 c.s.b.m.H.userHistoryInsert - ==>  Preparing: INSERT INTO provision_history_user VALUES (?,?,?,?,SYSDATE,?) 
-[DEBUG] 15:04:56.889 c.s.b.m.H.userHistoryInsert - ==> Parameters: 15(Integer), success(String), mall(String), provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다.(String), BGSPACE.hoxy000(String)
-[INFO ] 15:04:56.889 jdbc.sqlonly - INSERT INTO provision_history_user VALUES (15,'success','mall','provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다.',SYSDATE,'BGSPACE.hoxy000')
-
-[DEBUG] 15:04:56.898 c.s.b.m.H.userHistoryInsert - <==    Updates: 1
-[INFO ] 17:01:19.996 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 17516 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 17:01:19.998 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 17:01:19.998 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 17:01:21.946 com.system.bgim.BgimApplication - Started BgimApplication in 2.397 seconds (JVM running for 3.443)
-[INFO ] 17:01:21.948 com.system.bgim.AppRunner - ===========
-[INFO ] 17:01:21.948 com.system.bgim.AppRunner - logger.info
-[INFO ] 17:01:21.948 com.system.bgim.AppRunner - ===========
-[TRACE] 17:01:21.948 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 17:01:21.948 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 17:01:21.948 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 17:01:21.948 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 17:01:21.948 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 17:01:21.949 com.system.bgim.AppRunner - slf4j since 20201012
-[INFO ] 17:01:52.560 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 27352 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 17:01:52.562 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 17:01:52.563 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 17:01:54.172 com.system.bgim.BgimApplication - Started BgimApplication in 1.977 seconds (JVM running for 2.889)
-[INFO ] 17:01:54.174 com.system.bgim.AppRunner - ===========
-[INFO ] 17:01:54.174 com.system.bgim.AppRunner - logger.info
-[INFO ] 17:01:54.174 com.system.bgim.AppRunner - ===========
-[TRACE] 17:01:54.175 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 17:01:54.175 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 17:01:54.175 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 17:01:54.175 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 17:01:54.175 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 17:01:54.175 com.system.bgim.AppRunner - slf4j since 20201012
-[INFO ] 17:03:57.626 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 29376 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 17:03:57.628 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 17:03:57.629 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 17:03:59.221 com.system.bgim.BgimApplication - Started BgimApplication in 2.03 seconds (JVM running for 2.884)
-[INFO ] 17:03:59.223 com.system.bgim.AppRunner - ===========
-[INFO ] 17:03:59.223 com.system.bgim.AppRunner - logger.info
-[INFO ] 17:03:59.223 com.system.bgim.AppRunner - ===========
-[TRACE] 17:03:59.223 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 17:03:59.223 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 17:03:59.223 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 17:03:59.223 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 17:03:59.223 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 17:03:59.224 com.system.bgim.AppRunner - slf4j since 20201012
-[INFO ] 17:04:47.899 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 17488 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 17:04:47.901 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 17:04:47.901 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 17:04:49.479 com.system.bgim.BgimApplication - Started BgimApplication in 1.934 seconds (JVM running for 2.905)
-[INFO ] 17:04:49.481 com.system.bgim.AppRunner - ===========
-[INFO ] 17:04:49.481 com.system.bgim.AppRunner - logger.info
-[INFO ] 17:04:49.481 com.system.bgim.AppRunner - ===========
-[TRACE] 17:04:49.481 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 17:04:49.481 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 17:04:49.482 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 17:04:49.482 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 17:04:49.482 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 17:04:49.482 com.system.bgim.AppRunner - slf4j since 20201012
-[INFO ] 17:08:05.470 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 28840 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 17:08:05.472 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 17:08:05.472 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 17:08:07.276 com.system.bgim.BgimApplication - Started BgimApplication in 2.195 seconds (JVM running for 3.092)
-[INFO ] 17:08:07.278 com.system.bgim.AppRunner - ===========
-[INFO ] 17:08:07.278 com.system.bgim.AppRunner - logger.info
-[INFO ] 17:08:07.278 com.system.bgim.AppRunner - ===========
-[TRACE] 17:08:07.278 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 17:08:07.278 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 17:08:07.278 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 17:08:07.278 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 17:08:07.278 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 17:08:07.279 com.system.bgim.AppRunner - slf4j since 20201012
-[INFO ] 17:26:16.484 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 19796 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 17:26:16.487 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 17:26:16.488 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 17:28:12.066 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 29268 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 17:28:12.069 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 17:28:12.069 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 17:31:53.383 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 11288 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 17:31:53.387 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 17:31:53.388 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 17:31:54.984 com.system.bgim.BgimApplication - Started BgimApplication in 2.049 seconds (JVM running for 2.924)
-[INFO ] 17:31:54.986 com.system.bgim.AppRunner - ===========
-[INFO ] 17:31:54.986 com.system.bgim.AppRunner - logger.info
-[INFO ] 17:31:54.986 com.system.bgim.AppRunner - ===========
-[TRACE] 17:31:54.987 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 17:31:54.987 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 17:31:54.987 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 17:31:54.987 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 17:31:54.987 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 17:31:54.987 com.system.bgim.AppRunner - slf4j since 20201012
-[DEBUG] 17:33:41.242 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
-[DEBUG] 17:33:41.338 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
-[INFO ] 17:33:41.339 jdbc.sqlonly - SELECT
-            *
-        FROM presync_domain
-
-[TRACE] 17:33:41.458 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
-[TRACE] 17:33:41.458 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
-[TRACE] 17:33:41.459 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
-[TRACE] 17:33:41.460 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
-[INFO ] 17:33:41.461 jdbc.resultsettable - 
-|--------------|---------------|
-|companycode   |companyname    |
-|--------------|---------------|
-|BGSPACE       |BG space       |
-|BGAGRICULTURE |BG agriculture |
-|BGCOMMERCE    |BG commerce    |
-|--------------|---------------|
-
-[DEBUG] 17:33:41.461 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
-[DEBUG] 17:33:41.465 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
-[DEBUG] 17:33:41.466 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
-[INFO ] 17:33:41.466 jdbc.sqlonly - SELECT
-            *
-        FROM presync_domain
-
-[TRACE] 17:33:41.467 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
-[TRACE] 17:33:41.467 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
-[TRACE] 17:33:41.467 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
-[TRACE] 17:33:41.468 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
-[INFO ] 17:33:41.468 jdbc.resultsettable - 
-|--------------|---------------|
-|companycode   |companyname    |
-|--------------|---------------|
-|BGSPACE       |BG space       |
-|BGAGRICULTURE |BG agriculture |
-|BGCOMMERCE    |BG commerce    |
-|--------------|---------------|
-
-[DEBUG] 17:33:41.468 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 17:18:14.660 c.s.b.m.H.CheckIflogFileNameExists - <==      Total: 1
+[DEBUG] 17:18:14.660 c.s.b.m.H.logFileInfoUpdate - ==>  Preparing: UPDATE log_files SET menu=?, file_path=?, executed_time=SYSDATE where file_name=? 
+[DEBUG] 17:18:14.661 c.s.b.m.H.logFileInfoUpdate - ==> Parameters: log files(String), D:\git_src\bgim\logs\logback_sync_provision.2020-10-22.0.log.gz(String), logback_sync_provision.2020-10-22.0.log.gz(String)
+[INFO ] 17:18:14.661 jdbc.sqlonly - UPDATE log_files SET  menu='log files', file_path='D:\git_src\bgim\logs\logback_sync_provision.2020-10-22.0.log.gz', executed_time=SYSDATE where file_name='logback_sync_provision.2020-10-22.0.log.gz'
+
+[DEBUG] 17:18:14.666 c.s.b.m.H.logFileInfoUpdate - <==    Updates: 1

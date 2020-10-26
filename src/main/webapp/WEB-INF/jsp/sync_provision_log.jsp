@@ -276,10 +276,10 @@
 
 			<!--Page Header-->
 			<div class="page-header">
-				<h3 class="page-title">DOMAIN</h3>
+				<h3 class="page-title">LOG FILES</h3>
 				<ol class="breadcrumb mb-0">
-					<li class="breadcrumb-item"><a href="#">Data management</a></li>
-					<li class="breadcrumb-item active" aria-current="page">domain</li>
+					<li class="breadcrumb-item"><a href="#">System Management</a></li>
+					<li class="breadcrumb-item active" aria-current="page">log files</li>
 				</ol>
 			</div>
 			<!--Page Header-->
@@ -289,11 +289,11 @@
 		
 		<div class="col-lg-9">
 		<div class="main-content-body main-content-body-profile card mg-b-20">
-			<nav class="nav main-nav-line">
-				<a class="nav-link active" data-toggle="tab" href="#domainlist">domain list</a>
+			<!-- <nav class="nav main-nav-line">
+				<a class="nav-link active" data-toggle="tab" href="#domainlist"> list</a>
 				<a class="nav-link" data-toggle="tab" href="#deptinfo" onclick="location.reload()">refresh</a>
-				<a class="nav-link" data-toggle="tab" href="#domaininfo">domain add</a>
-			</nav>
+				<a class="nav-link" data-toggle="tab" href="#domaininfo">domain add</a> 
+			</nav> -->
 			<!-- main-profile-body -->
 			<div class="main-profile-body">
 		<div class="tab-content"> 
@@ -306,19 +306,17 @@
 			<thead>
 			<tr>
 				<th>체크박스</th>
-				<th>companycode</th>
-				<th>companyname</th>
-				<th>reg_date</th>
+				<th>file name</th>
+				<th>다운로드버튼</th>
 
 			</tr>
 			</thead>
 			<tbody>
-			<c:forEach var="list" items="${domainlist}">
+			<c:forEach var="dirList" items="${dirList}">
 			<tr> 
-				<th scope="row">success(아이콘)</th>
-				<td>${list.companycode}</td>
-				<td>${list.companyname}</td>
-				<td>${list.reg_date}</td>
+				<th scope="row">체크박스</th>
+				<td>${dirList}</td>
+				<td>다운로드버튼</td>
 
 			</tr>
 			 </c:forEach>

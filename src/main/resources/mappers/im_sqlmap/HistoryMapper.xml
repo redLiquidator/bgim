@@ -33,7 +33,21 @@
 			<when test = "provision_or_sync.equals('sync')">	
 			INSERT INTO ${historytablename} VALUES (#{history_id},#{status},#{content},SYSDATE,#{domain_id})	
 			</when>	
-			</choose>		
-    </insert>	
+		</choose>		
+    </insert>
     
+     <insert id="logFileInfoInsert" parameterType="com.system.bgim.dto.LogFilesDTO"> 
+    	<selectKey keyProperty="file_id" resultType="int" order="BEFORE">
+			select max(file_id)+1 from log_files
+		</selectKey>
+   		INSERT INTO log_files VALUES (#{file_id},#{menu},#{file_name},#{file_path},SYSDATE)
+    </insert>
+     
+     <update id="logFileInfoUpdate" parameterType="com.system.bgim.dto.LogFilesDTO"> 
+	   	UPDATE log_files SET  menu=#{menu}, file_path=#{file_path}, executed_time=SYSDATE where file_name=#{file_name}</update>
+    
+	<select id="CheckIflogFileNameExists" parameterType="String" resultType="Integer">
+		SELECT count(*) FROM log_files where file_name=#{file_name}
+    </select>
+ 
 </mapper>
