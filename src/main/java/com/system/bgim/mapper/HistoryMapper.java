@@ -19,5 +19,5 @@ public interface HistoryMapper {
 		
 		public int logFileInfoInsert(LogFilesDTO logFiles) throws Exception;
 		public int logFileInfoUpdate(LogFilesDTO logFiles) throws Exception;
-		public int CheckIflogFileNameExists(String fileName);
+		public int CheckIflogFileNameExists(String file_name);
 }

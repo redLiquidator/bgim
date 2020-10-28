@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="EUC-KR"%>
 <%@ include file="bootstrap.jsp" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %> 
+
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -10,32 +13,6 @@
 		<meta name="author" content="Spruko Technologies Private Limited">
 		<meta name="keywords" content="dashboard template,admin template,bootstrap dashboard,financial dashboard,personal finance dashboard,power bi financial dashboard,cfo dashboard,balance sheet dashboard,dashboard financial reporting,bootstrap admin template,admin dashboard html template,admin dashboard bootstrap 4,admin portal template,admin template design,best admin dashboard,best dashboard templates">
 
-		<style>
-		.drop {
-			background-color: #eee !important;
-			border: 1px dotted #333;
-		}
-		.bar {
-			border-bottom: 1px dotted blue;
-		}
-
-		.float {
-			float: left;
-			border: 1px solid #aaa;
-			margin: 10px;
-			padding: 10px;
-		}
-
-		div.treeview-helper {
-			border: 1px solid #aaa;
-			background: #fff;
-			padding: 5px;
-			padding-left: 25px;
-		}
-
-	</style>
-
-	
 		<!-- Favicon -->
 		<link rel="icon" href="../resources/img/brand/favicon.ico" type="image/x-icon"/>
 
@@ -88,20 +65,7 @@
 		<!--Flag Css -->
 		<link href="../resources/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
 
-		<!-- tree view -->
-		<link rel="stylesheet" href="../resources/treeview_source/jquery.treeview.css" />
-		<link rel="stylesheet" href="../resources/treeview_source/demo/screen.css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-		<script src="../resources/treeview_source/demo/jquery.cookie.js"></script>
-		<script src="../resources/treeview_source/jquery.treeview.js" type="text/javascript"></script>
-		<script src="../resources/treeview_source/jquery.treeview.edit.js" type="text/javascript"></script>
-		<script src="../../../resources/treeview_source/ui/ui.core.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../../../resources/treeview_source/ui/ui.droppable.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../resources/treeview_source/jquery.treeview.sortable.js" type="text/javascript"></script>
-
 	</head>
-	
-		
 	
 	<body class="main-body">
 
@@ -312,7 +276,7 @@
 
 			<!--Page Header-->
 			<div class="page-header">
-				<h3 class="page-title">log files</h3>
+				<h3 class="page-title">LOG FILES</h3>
 				<ol class="breadcrumb mb-0">
 					<li class="breadcrumb-item"><a href="#">System Management</a></li>
 					<li class="breadcrumb-item active" aria-current="page">log files</li>
@@ -322,61 +286,14 @@
 
 			<!-- Row -->
 			<div class="row row-sm">
-		<div class="col-lg-4">
-			<div class="card mg-b-20">
-			<div class="card-body">
-				<div class="pl-0">
-					<div class="main-profile-overview">
-					
-	<div id="main">
-
-<div class="float">
-	<ul id="browser" class="filetree">
-		<li><span class="folder">Folder 13</span>
-			<ul>
-				<li><span class="file">Item 1.1</span></li>
-			</ul>
-		</li>
-		<li><span class="folder">Folder 2</span>
-			<ul>
-				<li><span class="folder">Subfolder 2.1</span>
-					<ul id="folder21">
-						<li><span class="file">File 2.1.1</span></li>
-						<li><span class="file">File 2.1.2</span></li>
-						<li><span class="file">File 2.1.3</span></li>
-						<li class="closed"><span class="folder">Folder 3 (closed at start)</span>
-							<ul>
-								<li><span class="file">File 3.1</span></li>
-							</ul>
-						</li>
-						<li><span class="file">File 2.1.4</span></li>
-						<li><span class="file">File 2.1.5</span></li>
-						<li><span class="file">File 2.1.6</span></li>
-					</ul>
-				</li>
-				<li><span class="file">File 2.2</span></li>
-			</ul>
-		</li>
-		<li class="closed"><span class="folder">Folder 3 (closed at start)</span>
-			<ul>
-				<li><span class="file">File 3.1</span></li>
-			</ul>
-		</li>
-		<li><span class="file">File 4</span></li>
-	</ul>
-</div>
-
-	</div>
-					
-					</div><!-- main-profile-overview -->
-				</div>
-			</div>
-			</div>
-		</div>
 		
-		<div class="col-lg-8">
+		<div class="col-lg-9">
 		<div class="main-content-body main-content-body-profile card mg-b-20">
-
+			<!-- <nav class="nav main-nav-line">
+				<a class="nav-link active" data-toggle="tab" href="#domainlist"> list</a>
+				<a class="nav-link" data-toggle="tab" href="#deptinfo" onclick="location.reload()">refresh</a>
+				<a class="nav-link" data-toggle="tab" href="#domaininfo">domain add</a> 
+			</nav> -->
 			<!-- main-profile-body -->
 			<div class="main-profile-body">
 		<div class="tab-content"> 
@@ -398,19 +315,24 @@
 			<c:forEach var="dirList" items="${dirList}">
 			<tr> 
 				<th scope="row">체크박스</th>
-				<td><a href="/logFileDown/${dirList}">${dirList}</a></td>
+				<td>${dirList}</td>
 				<td>다운로드버튼</td>
+
 			</tr>
 			 </c:forEach>
 				</tbody>
 			</table>
 				</div><!-- bd -->
 			</div>
+
 			</div>
+			
+	
+						
+			
 
 	</div>
 	</div>
-		
 				<!-- main-profile-body -->
 		</div>
 	</div>
@@ -699,8 +621,71 @@
 		</div>
 		<!--/Sidebar-right-->
 		
-
-
+		<script>
+    var code = '${detail.code}';
+    var userCheck = "";
+    
+	function userInsertProvision(userData){
+		console.log("userInsertProvision function starts");
+	     $.ajax({
+	        url : '/insertProc',
+	        type : 'post',
+	        data : userData,
+	        success : function(data){
+	            if(data == 1) {
+	   				 console.log("userInsertProvision success");        
+	            }
+	        }
+	    }); 
+	}
+	
+	function userUpdateProvision(userData){
+		console.log("userUpdateProvision function starts");
+	     $.ajax({
+	        url : '/updateProc',
+	        type : 'post',
+	        data : userData,
+	        success : function(data){
+	            if(data == 1) {
+	   				 console.log("userUpdateProvision success");        
+	            }
+	        }
+	    }); 
+	}
+	
+	//Ajax 를 통해 값을 리턴받는경우 기본적으로 비동기 방식이때문에  값이 Undefined 가 return이 된다
+    //그경우 async: false,  를 추가하여 동기 로 변경하면 Return 값을 얻을수있다
+	function userExistorNot(code){
+		console.log("userExistorNot function starts");
+		 $.ajax({
+	        url : '/count/'+code,
+	        type : 'post',
+	        async: false,
+	        success : function(data){
+	        	userCheck = data;
+	        }
+	    });  
+		 return userCheck;
+	}
+	
+	$('[name=mallUserProvisionbtn]').click(function(){ //reprovision 버튼 클릭시 mall_user로 프로비저닝
+		console.log("mallUserProvision button clicked");
+		//ajax를 이용. org_user에서 가져온 사용자 정보를  mall_user로 프로비저닝할 것이다. 
+	    var userData = $('[name=mallUserProvisionForm]').serialize(); //mallUserProvisionForm의 내용을 가져옴
+	    //mall_user에서  동일 code의 사용자가 있는지 체크.있으면 1,없으면 0 리턴
+	    userExistorNot(code);
+	    if(userCheck == 1){
+	    	alert("updateProvision");  //만약 사용자가 있으면 update
+	    	userUpdateProvision(userData);
+	    }else if(userCheck == 0){
+	    	alert("insertProvision");
+	    	userInsertProvision(userData);  //만약 사용자가 없으면 insert
+	    }else{
+	    	alert("error: userCheck result is not 0 nor 1");
+	    }
+	    });
+	 
+	</script>
 		<!-- JQuery min js -->
 		<script src="../resources/plugins/jquery/jquery.min.js"></script>
 

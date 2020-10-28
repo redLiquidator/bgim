@@ -1,16 +1,24 @@
 package com.system.bgim.controller;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.system.bgim.dto.FileDTO;
 import com.system.bgim.dto.HistoryDTO;
 import com.system.bgim.dto.LogFilesDTO;
 import com.system.bgim.service.HistoryService;
@@ -48,47 +56,88 @@ public class HistoryController {
 	// 인사동기화&프로비전 쿼리로그파일 다운로드 메뉴
 	@RequestMapping("/sync_provision_log")
 	public String uploadFiles(Model model) throws Exception {
-		System.out.println("uploadFiles()");
 		// bgim.logs디렉토리에서 파일명이 file_sync_provision으로 시작하는 파일명만 logfiles.jsp화면으로 불러온다.
 		//파일정보를 읽어서 db 에 insert
-		  LogFilesDTO logFiles = new LogFilesDTO();
-		  List<File> dirAllList = getAllDirFileList("D:/git_src/bgim/logs/");
-		  List<String> dirList = new ArrayList<String>();
-		  for(int i=0;i<dirAllList.size();++i) {
-		  if(dirAllList.get(i).toString().contains("logback_sync_provision")) {
-			  //log_files테이블에 파일정보저장. 파일정보가 테이블에 있으면 update, 없으면  insert
-			  logFiles.setFile_path((dirAllList.get(i).toString()));
-			  System.out.println((dirAllList.get(i).toString().substring(21)));
-			  logFiles.setFile_name((dirAllList.get(i).toString().substring(21)));
-			  logFiles.setMenu("log files");
-			  if(CheckIfFilenameExists(logFiles.getFile_name()) == 1){
-				  System.out.println("로그파일이 존재");					
-				  historyService.logFileInfoUpdateService(logFiles);					 
-			  }else if(CheckIfFilenameExists(logFiles.getFile_name()) == 0){
-				  System.out.println("로그파일이 미존재");		
-				  historyService.logFileInfoInsertService(logFiles);					 
-			  }
-			  dirList.add(dirAllList.get(i).toString().substring(21));
-		  } } 
-		  model.addAttribute("dirList", dirList);
-		 
+		System.out.println("/sync_provision_log");
+		model.addAttribute("dirList", historyService.uploadFilesService());
+
 		return "sync_provision_log";
 	}
+	
+	 @RequestMapping("/logFileDown/{file_name}")
+	 private void fileDown(@PathVariable String file_name, HttpServletRequest request, HttpServletResponse response) throws Exception{
+			System.out.println("------------------"+file_name);
+			 request.setCharacterEncoding("UTF-8");
+			 
+			//파일 업로드된 경로 
+		        try{
+		        	 String fileUrl = "D:/git_src/bgim/logs/"+file_name;
+		        	 fileUrl += "/";
+		        	 String savePath = fileUrl;
+		        	 String fileName = file_name;
+		        	 
+		        	//실제 내보낼 파일명
+		        	 String oriFileName = file_name;
+		        	 InputStream in = null;
+		             OutputStream os = null;
+		             File file = null;
+		             boolean skip = false;
+		             String client = "";
 
-	public int CheckIfFilenameExists(String File_name) {
-		return historyService.CheckIflogFileNameExistsService(File_name);
-	}
-	public static List<File> getAllDirFileList(String dirPath) {
-		// 디렉토리 파일 리스트
-		List<File> dirFileList = null;
-		File dir = new File(dirPath);
+		           //파일을 읽어 스트림에 담기  
+		             try{
+		            	 file = new File(savePath, fileName);
+		            	 in = new FileInputStream(file);
+		             } catch (FileNotFoundException fe) {
+		                 skip = true;
+		             }
 
-		if (dir.exists()) {
-			// 파일 목록을 구함
-			File[] files = dir.listFiles();
-			// 파일 배열을 파일 리스트로 변화함
-			dirFileList = Arrays.asList(files);
-		}
-		return dirFileList;
+		             client = request.getHeader("User-Agent");
+		             
+		             //파일 다운로드 헤더 지정 
+		             response.reset();
+		             response.setContentType("application/octet-stream");
+		             response.setHeader("Content-Description", "JSP Generated Data");
+
+		             if (!skip) {
+		            	// IE
+		            	 if (client.indexOf("MSIE") != -1) {
+		            		 response.setHeader("Content-Disposition", "attachment; filename=\""
+		            				 + java.net.URLEncoder.encode(oriFileName, "UTF-8").replaceAll("\\+", "\\ ") + "\"");
+		            		// IE 11 이상
+		            	 } else if (client.indexOf("Trident") != -1) {
+		            		 response.setHeader("Content-Disposition", "attachment; filename=\""
+		            				 + java.net.URLEncoder.encode(oriFileName, "UTF-8").replaceAll("\\+", "\\ ") + "\"");
+		            	 } else {
+		                     // 한글 파일명 처리
+		                     response.setHeader("Content-Disposition",
+		                             "attachment; filename=\"" + new String(oriFileName.getBytes("UTF-8"), "ISO8859_1") + "\"");
+		                     response.setHeader("Content-Type", "application/octet-stream; charset=utf-8");
+		                 }
+		            	 response.setHeader("Content-Length", "" + file.length());
+		            	 os = response.getOutputStream();
+		            	 byte b[] = new byte[(int) file.length()];
+		                 int leng = 0;
+		                 while ((leng = in.read(b)) > 0) {
+		                     os.write(b, 0, leng);
+		                 }
+		             } else {
+		            	 response.setContentType("text/html;charset=UTF-8");
+		                 System.out.println("<script language='javascript'>alert('파일을 찾을 수 없습니다');history.back();</script>");
+		             }
+		             in.close();
+		             os.close();
+		         } catch (Exception e) {
+		             System.out.println("ERROR : " + e.getMessage());
+		         }
+		 
+	         }
+	
+	@RequestMapping("/treeview")
+	public String treeview() throws Exception {	 
+		return "treeview";
 	}
+
+
+	
 }
