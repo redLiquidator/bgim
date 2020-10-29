@@ -18,4 +18,5 @@ import com.system.bgim.dto.UserDTO;
 	    public int userInsert(UserDTO user) throws Exception;
 	    public int userUpdate(UserDTO user) throws Exception;
 	    public int userDelete(String code) throws Exception;
+		public int pwdReset(UserDTO user) throws Exception;
 	}

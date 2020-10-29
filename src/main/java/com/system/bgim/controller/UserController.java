@@ -160,4 +160,14 @@ public class UserController {
 		userService.userDeleteService(code);
 		return "redirect:/list";
 	}
+	
+	
+	@RequestMapping("/pwdReset")
+	@ResponseBody
+	private int pwdReset(HttpServletRequest request) throws Exception {
+		UserDTO user = new UserDTO();
+		user.setCode(request.getParameter("code"));
+		
+		return userService.pwdResetService(user); 
+	}
 }

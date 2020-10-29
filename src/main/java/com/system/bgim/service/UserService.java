@@ -44,4 +44,8 @@ public class UserService {
 	 public int userDeleteService(String code) throws Exception{
 	        return userMapper.userDelete(code);
 	    }
+
+	public int pwdResetService(UserDTO user) throws Exception {
+			return userMapper.pwdReset(user);
+	}
 	}

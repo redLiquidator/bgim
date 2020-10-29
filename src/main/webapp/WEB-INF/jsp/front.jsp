@@ -232,20 +232,7 @@
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="book-outline"></i> System Management <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
 									<li aria-haspopup="true"><a href="/sync_provision_log">log files</a></li>
-									<li aria-haspopup="true" class="sub-menu-sub"><a href="#">account</a>
-										<ul class="sub-menu">
-											<li aria-haspopup="true"><a href="page-profile.html"> Profile </a></li>
-											<li aria-haspopup="true"><a href="page-editprofile.html">Edit Profile</a></li>
-										</ul>
-									</li>
-									<li aria-haspopup="true" class="sub-menu-sub"><a href="#">batch scheduler</a>
-										<ul class="sub-menu">
-											<li aria-haspopup="true"><a href="app-mail.html">Mailbox</a></li>
-											<li aria-haspopup="true"><a href="app-mail-read.html">Mail Read</a></li>
-											<li aria-haspopup="true"><a href="app-mail-information.html">Account Information</a></li>
-											<li aria-haspopup="true"><a href="app-mail-settings.html">Mail Settings</a></li>
-										</ul>
-									</li>
+									<li aria-haspopup="true" class="sub-menu-sub"><a href="#">account</a></li>
 									<li aria-haspopup="true"><a href="page-invoice.html">database</a></li>
 									<li aria-haspopup="true"><a href="blog.html">release info</a></li>
 								</ul>

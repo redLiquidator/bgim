@@ -66,5 +66,13 @@
     <delete id="userDelete" parameterType="String">
         DELETE FROM org_user WHERE code = #{code}
     </delete>
- 
+    
+     <update id="pwdReset" parameterType="com.system.bgim.dto.UserDTO">
+        UPDATE org_user
+            SET
+            pwd = #{code},
+            modify_dt = SYSDATE
+        WHERE code = #{code}
+    </update>
+
 </mapper>

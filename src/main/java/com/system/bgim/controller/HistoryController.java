@@ -71,7 +71,7 @@ public class HistoryController {
 			 
 			//파일 업로드된 경로 
 		        try{
-		        	 String fileUrl = "D:/git_src/bgim/logs/"+file_name;
+		        	 String fileUrl = "D:/git_src/bgim/logs/";
 		        	 fileUrl += "/";
 		        	 String savePath = fileUrl;
 		        	 String fileName = file_name;

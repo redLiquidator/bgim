@@ -10,32 +10,6 @@
 		<meta name="author" content="Spruko Technologies Private Limited">
 		<meta name="keywords" content="dashboard template,admin template,bootstrap dashboard,financial dashboard,personal finance dashboard,power bi financial dashboard,cfo dashboard,balance sheet dashboard,dashboard financial reporting,bootstrap admin template,admin dashboard html template,admin dashboard bootstrap 4,admin portal template,admin template design,best admin dashboard,best dashboard templates">
 
-		<style>
-		.drop {
-			background-color: #eee !important;
-			border: 1px dotted #333;
-		}
-		.bar {
-			border-bottom: 1px dotted blue;
-		}
-
-		.float {
-			float: left;
-			border: 1px solid #aaa;
-			margin: 10px;
-			padding: 10px;
-		}
-
-		div.treeview-helper {
-			border: 1px solid #aaa;
-			background: #fff;
-			padding: 5px;
-			padding-left: 25px;
-		}
-
-	</style>
-
-	
 		<!-- Favicon -->
 		<link rel="icon" href="../resources/img/brand/favicon.ico" type="image/x-icon"/>
 
@@ -90,14 +64,7 @@
 
 		<!-- tree view -->
 		<link rel="stylesheet" href="../resources/treeview_source/jquery.treeview.css" />
-		<link rel="stylesheet" href="../resources/treeview_source/demo/screen.css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-		<script src="../resources/treeview_source/demo/jquery.cookie.js"></script>
-		<script src="../resources/treeview_source/jquery.treeview.js" type="text/javascript"></script>
-		<script src="../resources/treeview_source/jquery.treeview.edit.js" type="text/javascript"></script>
-		<script src="../../../resources/treeview_source/ui/ui.core.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../../../resources/treeview_source/ui/ui.droppable.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../resources/treeview_source/jquery.treeview.sortable.js" type="text/javascript"></script>
+
 
 	</head>
 	
@@ -273,20 +240,7 @@
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="book-outline"></i> System Management <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
 									<li aria-haspopup="true"><a href="/sync_provision_log">log files</a></li>
-									<li aria-haspopup="true" class="sub-menu-sub"><a href="#">account</a>
-										<ul class="sub-menu">
-											<li aria-haspopup="true"><a href="page-profile.html"> Profile </a></li>
-											<li aria-haspopup="true"><a href="page-editprofile.html">Edit Profile</a></li>
-										</ul>
-									</li>
-									<li aria-haspopup="true" class="sub-menu-sub"><a href="#">batch scheduler</a>
-										<ul class="sub-menu">
-											<li aria-haspopup="true"><a href="app-mail.html">Mailbox</a></li>
-											<li aria-haspopup="true"><a href="app-mail-read.html">Mail Read</a></li>
-											<li aria-haspopup="true"><a href="app-mail-information.html">Account Information</a></li>
-											<li aria-haspopup="true"><a href="app-mail-settings.html">Mail Settings</a></li>
-										</ul>
-									</li>
+									<li aria-haspopup="true" class="sub-menu-sub"><a href="#">account</a></li>
 									<li aria-haspopup="true"><a href="page-invoice.html">database</a></li>
 									<li aria-haspopup="true"><a href="blog.html">release info</a></li>
 								</ul>
@@ -326,43 +280,39 @@
 			<div class="card mg-b-20">
 			<div class="card-body">
 				<div class="pl-0">
-					<div class="main-profile-overview">
-					
+					<div class="main-profile-overview">			
 	<div id="main">
-
-<div class="float">
+	<div class="float">
 	<ul id="browser" class="filetree">
-		<li><span class="folder">Folder 13</span>
-			<ul>
+		<li style="list-style:none;padding-left:0px;"><span class="folder">2019</span>
+			<ul style="list-style:none;padding-left:0px;">
 				<li><span class="file">Item 1.1</span></li>
 			</ul>
 		</li>
-		<li><span class="folder">Folder 2</span>
-			<ul>
-				<li><span class="folder">Subfolder 2.1</span>
-					<ul id="folder21">
-						<li><span class="file">File 2.1.1</span></li>
-						<li><span class="file">File 2.1.2</span></li>
-						<li><span class="file">File 2.1.3</span></li>
-						<li class="closed"><span class="folder">Folder 3 (closed at start)</span>
-							<ul>
-								<li><span class="file">File 3.1</span></li>
-							</ul>
-						</li>
-						<li><span class="file">File 2.1.4</span></li>
-						<li><span class="file">File 2.1.5</span></li>
-						<li><span class="file">File 2.1.6</span></li>
+		<li style="list-style:none;padding-left:0px;"><span class="folder">2020</span>
+			<ul style="list-style:none;padding-left:0px;">
+				<li><span class="folder">OCT</span>
+					<ul style="list-style:none;padding-left:0px;" id="folder21">
+					 <%-- <% if()만약 dirList.executed_time이 2020-11을 포함하면%> --%>					
+						<c:forEach var="dirList" items="${dirList}">
+						<c:if test="${fn:contains(dirList, '2020-10')}">		
+						<li><span class="file">${dirList}</span></li>	
+						</c:if>					
+						</c:forEach>		
+						
 					</ul>
 				</li>
-				<li><span class="file">File 2.2</span></li>
+				<li><span class="folder">NOV</span>
+					<ul style="list-style:none;padding-left:0px;" id="folder21">
+						<c:forEach var="dirList" items="${dirList}">
+						<c:if test="${fn:contains(dirList, '2020-11')}">	
+						<li><span class="file">${dirList}</span></li>
+						</c:if>	
+						</c:forEach>
+					</ul>
+				</li>
 			</ul>
 		</li>
-		<li class="closed"><span class="folder">Folder 3 (closed at start)</span>
-			<ul>
-				<li><span class="file">File 3.1</span></li>
-			</ul>
-		</li>
-		<li><span class="file">File 4</span></li>
 	</ul>
 </div>
 

@@ -1,9 +1,102 @@
-[DEBUG] 14:07:24.857 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 14:07:25.035 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 14:07:25.168 c.s.bgim.mapper.UserMapper.userList - <==      Total: 4
-[DEBUG] 14:07:35.444 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 14:07:35.445 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 14:07:35.457 c.s.bgim.mapper.UserMapper.userList - <==      Total: 4
-[DEBUG] 14:07:37.945 c.s.b.mapper.UserMapper.userDetail - ==>  Preparing: SELECT * FROM org_user WHERE CODE = ? 
-[DEBUG] 14:07:37.945 c.s.b.mapper.UserMapper.userDetail - ==> Parameters: BGCOMMERCE.tonikroos1(String)
-[DEBUG] 14:07:37.951 c.s.b.mapper.UserMapper.userDetail - <==      Total: 1
+[DEBUG] 15:26:54.184 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
+[DEBUG] 15:26:54.325 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
+[DEBUG] 15:26:54.451 c.s.bgim.mapper.UserMapper.userList - <==      Total: 4
+[DEBUG] 15:26:58.317 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
+[DEBUG] 15:26:58.318 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
+[DEBUG] 15:26:58.328 c.s.bgim.mapper.UserMapper.userList - <==      Total: 4
+[DEBUG] 15:27:00.572 c.s.b.mapper.UserMapper.userDetail - ==>  Preparing: SELECT * FROM org_user WHERE CODE = ? 
+[DEBUG] 15:27:00.572 c.s.b.mapper.UserMapper.userDetail - ==> Parameters: BGCOMMERCE.tonikroos1(String)
+[DEBUG] 15:27:00.581 c.s.b.mapper.UserMapper.userDetail - <==      Total: 1
+[DEBUG] 15:33:43.523 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
+[DEBUG] 15:33:43.524 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
+[DEBUG] 15:33:43.542 c.s.bgim.mapper.UserMapper.userList - <==      Total: 4
+[DEBUG] 15:33:45.607 c.s.b.mapper.UserMapper.userDetail - ==>  Preparing: SELECT * FROM org_user WHERE CODE = ? 
+[DEBUG] 15:33:45.607 c.s.b.mapper.UserMapper.userDetail - ==> Parameters: BGCOMMERCE.tonikroos1(String)
+[DEBUG] 15:33:45.618 c.s.b.mapper.UserMapper.userDetail - <==      Total: 1
+[DEBUG] 15:36:27.428 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
+[DEBUG] 15:36:27.429 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
+[DEBUG] 15:36:27.448 c.s.bgim.mapper.UserMapper.userList - <==      Total: 4
+[DEBUG] 15:36:33.415 c.s.b.mapper.UserMapper.userDetail - ==>  Preparing: SELECT * FROM org_user WHERE CODE = ? 
+[DEBUG] 15:36:33.416 c.s.b.mapper.UserMapper.userDetail - ==> Parameters: BGCOMMERCE.tonikroos1(String)
+[DEBUG] 15:36:33.425 c.s.b.mapper.UserMapper.userDetail - <==      Total: 1
+[DEBUG] 15:36:45.816 c.s.b.mapper.UserMapper.userDetail - ==>  Preparing: SELECT * FROM org_user WHERE CODE = ? 
+[DEBUG] 15:36:45.817 c.s.b.mapper.UserMapper.userDetail - ==> Parameters: BGCOMMERCE.tonikroos1(String)
+[DEBUG] 15:36:45.821 c.s.b.mapper.UserMapper.userDetail - <==      Total: 1
+[DEBUG] 15:37:22.602 c.s.b.mapper.UserMapper.userDetail - ==>  Preparing: SELECT * FROM org_user WHERE CODE = ? 
+[DEBUG] 15:37:22.697 c.s.b.mapper.UserMapper.userDetail - ==> Parameters: BGCOMMERCE.tonikroos1(String)
+[DEBUG] 15:37:22.799 c.s.b.mapper.UserMapper.userDetail - <==      Total: 1
+[DEBUG] 15:53:38.793 c.s.b.mapper.UserMapper.userDetail - ==>  Preparing: SELECT * FROM org_user WHERE CODE = ? 
+[DEBUG] 15:53:38.913 c.s.b.mapper.UserMapper.userDetail - ==> Parameters: BGCOMMERCE.tonikroos1(String)
+[DEBUG] 15:53:39.026 c.s.b.mapper.UserMapper.userDetail - <==      Total: 1
+[DEBUG] 15:58:31.782 c.s.b.mapper.UserMapper.userDetail - ==>  Preparing: SELECT * FROM org_user WHERE CODE = ? 
+[DEBUG] 15:58:31.887 c.s.b.mapper.UserMapper.userDetail - ==> Parameters: BGCOMMERCE.tonikroos1(String)
+[DEBUG] 15:58:31.998 c.s.b.mapper.UserMapper.userDetail - <==      Total: 1
+[DEBUG] 15:58:37.873 c.s.bgim.mapper.UserMapper.pwdReset - ==>  Preparing: UPDATE org_user SET pwd = ?, modify_dt = SYSDATE WHERE code = ? 
+[DEBUG] 15:58:37.874 c.s.bgim.mapper.UserMapper.pwdReset - ==> Parameters: BGCOMMERCE.tonikroos1(String), BGCOMMERCE.tonikroos1(String)
+[DEBUG] 15:58:37.890 c.s.bgim.mapper.UserMapper.pwdReset - <==    Updates: 1
+[DEBUG] 15:59:53.701 c.s.b.mapper.UserMapper.userDetail - ==>  Preparing: SELECT * FROM org_user WHERE CODE = ? 
+[DEBUG] 15:59:53.828 c.s.b.mapper.UserMapper.userDetail - ==> Parameters: BGCOMMERCE.tonikroos1(String)
+[DEBUG] 15:59:53.961 c.s.b.mapper.UserMapper.userDetail - <==      Total: 1
+[DEBUG] 16:00:21.273 c.s.b.mapper.UserMapper.userDetail - ==>  Preparing: SELECT * FROM org_user WHERE CODE = ? 
+[DEBUG] 16:00:21.361 c.s.b.mapper.UserMapper.userDetail - ==> Parameters: BGCOMMERCE.tonikroos1(String)
+[DEBUG] 16:00:21.453 c.s.b.mapper.UserMapper.userDetail - <==      Total: 1
+[DEBUG] 16:00:23.068 c.s.b.mapper.UserMapper.userDetail - ==>  Preparing: SELECT * FROM org_user WHERE CODE = ? 
+[DEBUG] 16:00:23.068 c.s.b.mapper.UserMapper.userDetail - ==> Parameters: BGCOMMERCE.tonikroos1(String)
+[DEBUG] 16:00:23.078 c.s.b.mapper.UserMapper.userDetail - <==      Total: 1
+[DEBUG] 16:00:25.357 c.s.bgim.mapper.UserMapper.pwdReset - ==>  Preparing: UPDATE org_user SET pwd = ?, modify_dt = SYSDATE WHERE code = ? 
+[DEBUG] 16:00:25.358 c.s.bgim.mapper.UserMapper.pwdReset - ==> Parameters: BGCOMMERCE.tonikroos1(String), BGCOMMERCE.tonikroos1(String)
+[DEBUG] 16:00:25.368 c.s.bgim.mapper.UserMapper.pwdReset - <==    Updates: 1
+[DEBUG] 16:02:39.965 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
+[DEBUG] 16:02:39.965 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
+[DEBUG] 16:02:39.973 c.s.bgim.mapper.UserMapper.userList - <==      Total: 4
+[DEBUG] 16:04:16.021 c.s.b.mapper.UserMapper.userDetail - ==>  Preparing: SELECT * FROM org_user WHERE CODE = ? 
+[DEBUG] 16:04:16.022 c.s.b.mapper.UserMapper.userDetail - ==> Parameters: BGCOMMERCE.stevie5(String)
+[DEBUG] 16:04:16.028 c.s.b.mapper.UserMapper.userDetail - <==      Total: 1
+[DEBUG] 16:04:17.646 c.s.bgim.mapper.UserMapper.pwdReset - ==>  Preparing: UPDATE org_user SET pwd = ?, modify_dt = SYSDATE WHERE code = ? 
+[DEBUG] 16:04:17.646 c.s.bgim.mapper.UserMapper.pwdReset - ==> Parameters: BGCOMMERCE.stevie5(String), BGCOMMERCE.stevie5(String)
+[DEBUG] 16:04:17.648 c.s.bgim.mapper.UserMapper.pwdReset - <==    Updates: 1
+[DEBUG] 16:08:38.487 c.s.b.mapper.UserMapper.userDetail - ==>  Preparing: SELECT * FROM org_user WHERE CODE = ? 
+[DEBUG] 16:08:38.588 c.s.b.mapper.UserMapper.userDetail - ==> Parameters: BGCOMMERCE.tonikroos1(String)
+[DEBUG] 16:08:38.705 c.s.b.mapper.UserMapper.userDetail - <==      Total: 1
+[DEBUG] 16:08:44.173 c.s.bgim.mapper.UserMapper.pwdReset - ==>  Preparing: UPDATE org_user SET pwd = ?, modify_dt = SYSDATE WHERE code = ? 
+[DEBUG] 16:08:44.174 c.s.bgim.mapper.UserMapper.pwdReset - ==> Parameters: BGCOMMERCE.tonikroos1(String), BGCOMMERCE.tonikroos1(String)
+[DEBUG] 16:08:44.179 c.s.bgim.mapper.UserMapper.pwdReset - <==    Updates: 1
+[DEBUG] 16:09:52.180 c.s.b.mapper.UserMapper.userDetail - ==>  Preparing: SELECT * FROM org_user WHERE CODE = ? 
+[DEBUG] 16:09:52.270 c.s.b.mapper.UserMapper.userDetail - ==> Parameters: BGCOMMERCE.tonikroos1(String)
+[DEBUG] 16:09:52.361 c.s.b.mapper.UserMapper.userDetail - <==      Total: 1
+[DEBUG] 16:09:58.941 c.s.bgim.mapper.UserMapper.pwdReset - ==>  Preparing: UPDATE org_user SET pwd = ?, modify_dt = SYSDATE WHERE code = ? 
+[DEBUG] 16:09:58.941 c.s.bgim.mapper.UserMapper.pwdReset - ==> Parameters: BGCOMMERCE.tonikroos1(String), BGCOMMERCE.tonikroos1(String)
+[DEBUG] 16:09:58.946 c.s.bgim.mapper.UserMapper.pwdReset - <==    Updates: 1
+[DEBUG] 16:10:39.095 c.s.b.mapper.UserMapper.userDetail - ==>  Preparing: SELECT * FROM org_user WHERE CODE = ? 
+[DEBUG] 16:10:39.200 c.s.b.mapper.UserMapper.userDetail - ==> Parameters: BGCOMMERCE.tonikroos1(String)
+[DEBUG] 16:10:39.294 c.s.b.mapper.UserMapper.userDetail - <==      Total: 1
+[DEBUG] 16:10:42.450 c.s.bgim.mapper.UserMapper.pwdReset - ==>  Preparing: UPDATE org_user SET pwd = ?, modify_dt = SYSDATE WHERE code = ? 
+[DEBUG] 16:10:42.450 c.s.bgim.mapper.UserMapper.pwdReset - ==> Parameters: BGCOMMERCE.tonikroos1(String), BGCOMMERCE.tonikroos1(String)
+[DEBUG] 16:10:42.454 c.s.bgim.mapper.UserMapper.pwdReset - <==    Updates: 1
+[DEBUG] 16:15:07.129 c.s.b.mapper.UserMapper.userDetail - ==>  Preparing: SELECT * FROM org_user WHERE CODE = ? 
+[DEBUG] 16:15:07.221 c.s.b.mapper.UserMapper.userDetail - ==> Parameters: BGCOMMERCE.tonikroos1(String)
+[DEBUG] 16:15:07.315 c.s.b.mapper.UserMapper.userDetail - <==      Total: 1
+[DEBUG] 16:15:10.116 c.s.bgim.mapper.UserMapper.pwdReset - ==>  Preparing: UPDATE org_user SET pwd = ?, modify_dt = SYSDATE WHERE code = ? 
+[DEBUG] 16:15:10.116 c.s.bgim.mapper.UserMapper.pwdReset - ==> Parameters: BGCOMMERCE.tonikroos1(String), BGCOMMERCE.tonikroos1(String)
+[DEBUG] 16:15:10.120 c.s.bgim.mapper.UserMapper.pwdReset - <==    Updates: 1
+[DEBUG] 16:15:12.582 c.s.bgim.mapper.UserMapper.pwdReset - ==>  Preparing: UPDATE org_user SET pwd = ?, modify_dt = SYSDATE WHERE code = ? 
+[DEBUG] 16:15:12.583 c.s.bgim.mapper.UserMapper.pwdReset - ==> Parameters: BGCOMMERCE.tonikroos1(String), BGCOMMERCE.tonikroos1(String)
+[DEBUG] 16:15:12.584 c.s.bgim.mapper.UserMapper.pwdReset - <==    Updates: 1
+[DEBUG] 16:15:13.313 c.s.bgim.mapper.UserMapper.pwdReset - ==>  Preparing: UPDATE org_user SET pwd = ?, modify_dt = SYSDATE WHERE code = ? 
+[DEBUG] 16:15:13.314 c.s.bgim.mapper.UserMapper.pwdReset - ==> Parameters: BGCOMMERCE.tonikroos1(String), BGCOMMERCE.tonikroos1(String)
+[DEBUG] 16:15:13.317 c.s.bgim.mapper.UserMapper.pwdReset - <==    Updates: 1
+[DEBUG] 16:15:14.208 c.s.bgim.mapper.UserMapper.pwdReset - ==>  Preparing: UPDATE org_user SET pwd = ?, modify_dt = SYSDATE WHERE code = ? 
+[DEBUG] 16:15:14.209 c.s.bgim.mapper.UserMapper.pwdReset - ==> Parameters: BGCOMMERCE.tonikroos1(String), BGCOMMERCE.tonikroos1(String)
+[DEBUG] 16:15:14.211 c.s.bgim.mapper.UserMapper.pwdReset - <==    Updates: 1
+[DEBUG] 16:15:14.968 c.s.bgim.mapper.UserMapper.pwdReset - ==>  Preparing: UPDATE org_user SET pwd = ?, modify_dt = SYSDATE WHERE code = ? 
+[DEBUG] 16:15:14.969 c.s.bgim.mapper.UserMapper.pwdReset - ==> Parameters: BGCOMMERCE.tonikroos1(String), BGCOMMERCE.tonikroos1(String)
+[DEBUG] 16:15:14.970 c.s.bgim.mapper.UserMapper.pwdReset - <==    Updates: 1
+[DEBUG] 16:15:15.951 c.s.bgim.mapper.UserMapper.pwdReset - ==>  Preparing: UPDATE org_user SET pwd = ?, modify_dt = SYSDATE WHERE code = ? 
+[DEBUG] 16:15:15.951 c.s.bgim.mapper.UserMapper.pwdReset - ==> Parameters: BGCOMMERCE.tonikroos1(String), BGCOMMERCE.tonikroos1(String)
+[DEBUG] 16:15:15.953 c.s.bgim.mapper.UserMapper.pwdReset - <==    Updates: 1
+[DEBUG] 16:15:57.014 c.s.b.mapper.UserMapper.userDetail - ==>  Preparing: SELECT * FROM org_user WHERE CODE = ? 
+[DEBUG] 16:15:57.123 c.s.b.mapper.UserMapper.userDetail - ==> Parameters: BGCOMMERCE.tonikroos1(String)
+[DEBUG] 16:15:57.254 c.s.b.mapper.UserMapper.userDetail - <==      Total: 1
+[DEBUG] 16:16:06.778 c.s.bgim.mapper.UserMapper.pwdReset - ==>  Preparing: UPDATE org_user SET pwd = ?, modify_dt = SYSDATE WHERE code = ? 
+[DEBUG] 16:16:06.779 c.s.bgim.mapper.UserMapper.pwdReset - ==> Parameters: BGCOMMERCE.tonikroos1(String), BGCOMMERCE.tonikroos1(String)
+[DEBUG] 16:16:06.783 c.s.bgim.mapper.UserMapper.pwdReset - <==    Updates: 1
