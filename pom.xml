@@ -103,13 +103,28 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.18.2</version>
-			<scope>provided</scope>
+		<dependency> 
+			<groupId>org.springframework.boot</groupId> 
+			<artifactId>spring-boot-starter-security</artifactId> 
 		</dependency>
 		
+		<dependency> 
+			<groupId>org.springframework.boot</groupId> 
+			<artifactId>spring-boot-starter-web-services</artifactId> 
+		</dependency>
+		
+		<dependency> 
+			<groupId>org.springframework.boot</groupId> 
+			<artifactId>spring-boot-starter-test</artifactId> 
+			<scope>test</scope> 
+		</dependency> 
+		
+		<dependency> 
+			<groupId>org.springframework.security</groupId> 
+			<artifactId>spring-security-test</artifactId> 
+			<scope>test</scope> 
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc8 -->
 		<dependency>
 		    <groupId>com.oracle.database.jdbc</groupId>
@@ -136,6 +151,15 @@
 		    <artifactId>log4jdbc-log4j2-jdbc4.1</artifactId>
 		    <version>1.16</version>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok-maven -->
+		<dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok-maven</artifactId>
+		    <version>1.16.20.0</version>
+		    <type>pom</type>
+		</dependency>
+		
 
 	</dependencies>
 

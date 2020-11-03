@@ -10,6 +10,10 @@
     </select> 
        		
     <insert id="commentInsert" parameterType="com.system.bgim.dto.CommentDTO">
+    <selectKey keyProperty="cno" resultType="int" order="BEFORE">
+		select max(cno)+1 from comments
+	</selectKey>
+    
         INSERT INTO
         comments (CNO, BNO, CONTENT, WRITER, REG_DATE)
         VALUES(#{cno},#{bno},#{content},#{writer},SYSDATE) 

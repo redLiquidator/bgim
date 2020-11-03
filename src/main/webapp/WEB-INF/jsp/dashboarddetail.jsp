@@ -287,7 +287,7 @@
 									<div class="card-invoice">
 										<div class="card-body p-0">
 											<div class="invoice-header">
-												<h1 class="invoice-title">Invoice</h1>
+												
 												<label class="tx-gray-600">reg_date | <fmt:formatDate value="${detail.reg_date}" pattern="yyyy.MM.dd HH:mm:ss"/>
 												<br> bno | ${detail.bno}</label>
 											</div><!-- invoice-header -->
@@ -317,21 +317,14 @@
 	  <h6>comment</h6>
 	</div>
 	 <div class="container">
-        <form name="commentInsertForm1">
+        <form name="commentInsertForm">
             <div class="input-group">
+               <input type="hidden" name="writer" value="${detail.writer}"/>
                <input type="hidden" name="bno" value="${detail.bno}"/>
                <input type="text" class="form-control" id="content" name="content" placeholder="내용을 입력하세요.">
-               <div class="btn-icon-list"><button type="submit" class="btn btn-primary btn-icon" onclick="commentInsert()">등록</button></div>
+               <div class="btn-icon-list"><button type="submit" class="btn btn-primary btn-icon" name="commentInsertBtn">등록</button></div>
               </div>
         </form>
-        <form name="commentInsertForm">
-				 		<input type="hidden" name="bno" value="${detail.bno}"/>
-				 		<input type="text" name="content"/>
-				 		<button type="submit" class="btn btn-sm btn-success" name="commentInsertBtn">execute</button>
-					</form>
-        
-    
-        
 	</div>
 											<div class="table-responsive mg-t-40">
 												<table class="table table-invoice border text-md-nowrap mb-0">
@@ -339,7 +332,7 @@
 														<tr>
 															<th class="wd-5p">cno</th>
 															<th class="wd-70p">contents</th>
-															<th class="tx-center">write</th>
+															<th class="tx-center">writer</th>
 															<th class="tx-center">update</th>
 															<th class="tx-center">delete</th>
 														</tr>
@@ -371,6 +364,97 @@
 	</div>
 	</div>
 <!--Main Content-->
+
+ 
+<script>
+var bno = '${detail.bno}'; //게시글 번호
+ 
+ $('[name=commentInsertBtn]').click(function(){ //댓글 등록 버튼 클릭시 
+	alert("commentInsertBtn clicked");
+    var insertData = $('[name=commentInsertForm]').serialize(); //commentInsertForm의 내용을 가져옴
+    insertData = decodeURIComponent(insertData); //한글깨짐현상 해결
+    commentInsert(insertData); //Insert 함수호출(아래)
+});
+ 
+
+
+//댓글 목록 
+function commentList(){
+    $.ajax({
+        url : '/comment/list',
+        type : 'get',
+        data : {'bno':bno},
+        success : function(data){
+            var a =''; 
+            $.each(data, function(key, value){ 
+            	a += '<tr>';
+            	a += '<td>'+value.cno+'</td>';
+            	a += '<td class="tx-12"><div class="commentContent'+value.cno+'">'+value.content+'</div></td>';
+            	a += '<td class="tx-center">'+value.writer+'</td>';
+            	a += '<td class="tx-center" onclick="commentUpdate('+value.cno+',\''+value.content+'\');"><div class="commentupdateBtn'+value.cno+'">수정</div></td>';
+            	a += '<td class="tx-center" onclick="commentDelete('+value.cno+');">삭제</td>';
+            	a += '</tr>';
+            });
+            
+            $(".commentList").html(a);
+        }
+    });
+}
+ 
+//댓글추가 
+function commentInsert(insertData){
+	$.ajax({
+		url : '/comment/insert',
+		type: 'post',
+		data: insertData,
+		success: function(data){
+			 if(data == 1) commentList(bno); 
+		}
+	});
+}
+
+//댓글 수정 - 댓글 내용 출력을 input 폼으로 변경 
+function commentUpdate(cno, content){
+	 var a =''; 
+	 a += '<input type="text" class="form-control" name="content_'+cno+'" value="'+content+'"/>';
+	 $('.commentContent'+cno).html(a);
+	 
+	 var b='';
+	 b += '<span class="input-group-btn"><button class="btn btn-default" type="button" onclick="commentUpdateProc('+cno+');">수정</button> </span>';
+	 $('.commentupdateBtn'+cno).html(b);
+	 
+}
+ 
+//댓글 수정
+function commentUpdateProc(cno){
+	var updateContent = $('[name=content_'+cno+']').val();
+	 $.ajax({
+		 url : '/comment/update',
+	        type : 'post',
+	        data : {'content' : updateContent, 'cno' : cno},
+	        success : function(data){
+	            if(data == 1) commentList(bno); //댓글 수정후 목록 출력 
+	        }
+	    });
+	 }
+	 
+//댓글 삭제 
+function commentDelete(cno){
+	   $.ajax({
+		   url : '/comment/delete/'+cno,
+		   type : 'post',
+		   success : function(data){
+			   if(data == 1) commentList(bno); //댓글 삭제후 목록 출력
+		   }
+	    });
+	}
+
+$(document).ready(function(){
+    commentList(); //페이지 로딩시 댓글 목록 출력 
+});
+
+</script>
+
 
 <!--footer-->
 <div class="main-footer mg-t-auto">
