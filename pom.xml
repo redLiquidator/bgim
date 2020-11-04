@@ -154,12 +154,11 @@
 		
 		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok-maven -->
 		<dependency>
-		    <groupId>org.projectlombok</groupId>
-		    <artifactId>lombok-maven</artifactId>
-		    <version>1.16.20.0</version>
-		    <type>pom</type>
+		   <groupId>org.projectlombok</groupId>
+		   <artifactId>lombok</artifactId>
+		   <version>1.18.8</version>
+		   <scope>provided</scope>
 		</dependency>
-		
 
 	</dependencies>
 
