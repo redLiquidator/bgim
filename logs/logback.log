@@ -1,92 +1,84 @@
-[INFO ] 11:08:58.751 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 18680 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 11:08:58.758 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 11:08:58.758 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 11:09:01.171 com.system.bgim.BgimApplication - Started BgimApplication in 3.098 seconds (JVM running for 4.03)
-[INFO ] 11:09:01.174 com.system.bgim.AppRunner - ===========
-[INFO ] 11:09:01.174 com.system.bgim.AppRunner - logger.info
-[INFO ] 11:09:01.174 com.system.bgim.AppRunner - ===========
-[TRACE] 11:09:01.174 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 11:09:01.174 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 11:09:01.175 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 11:09:01.175 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 11:09:01.175 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 11:09:01.176 com.system.bgim.AppRunner - slf4j since 20201012
-[INFO ] 11:09:21.860 jdbc.sqlonly - SELECT * FROM org_user
-
-[INFO ] 11:09:21.996 jdbc.resultsettable - 
-|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
-|user_id |domain_id |dept_id |hr_group_id |hr_sync |hr_sync_group |status |is_valid |create_dt             |modify_dt             |pwd_dt                |username   |companycode |empid      |deptcode         |code                  |login_id             |pwd                   |email                |mobile        |hired_dt              |
-|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
-|10      |1         |10      |10          |1       |1             |sync   |Y        |2020-09-07 00:00:00.0 |2020-10-29 16:16:06.0 |2020-09-07 00:00:00.0 |toni kroos |BGCOMMERCE  |tonikroos1 |CUSTOMER SUPPORT |BGCOMMERCE.tonikroos1 |tonikroos1@gmail.com |BGCOMMERCE.tonikroos1 |tonikroos1@gmail.com |010-8223-2221 |2020-02-01 00:00:00.0 |
-|0       |[null]    |[null]  |[null]      |[null]  |[null]        |[null] |[null]   |2020-10-21 16:02:13.0 |2020-10-29 16:04:17.0 |[null]                |Stevie     |BGCOMMERCE  |stevie5    |testdept         |BGCOMMERCE.stevie5    |stevie5@gmail.com    |BGCOMMERCE.stevie5    |[null]               |[null]        |[null]                |
-|[null]  |[null]    |[null]  |[null]      |[null]  |[null]        |[null] |[null]   |[null]                |[null]                |[null]                |Ddal       |BGSPACE     |ddal1      |ASTRONAUT        |BGSPACE.ddal1         |ddal1@gmail.com      |1234                  |ddal1@gmail.com      |010-1111-2299 |2011-04-01 00:00:00.0 |
-|0       |[null]    |[null]  |[null]      |[null]  |[null]        |[null] |[null]   |2020-10-06 16:25:58.0 |2020-10-23 15:04:54.0 |[null]                |Hoxy       |BGSPACE     |hoxy000    |testdept         |BGSPACE.hoxy000       |hoxy000@gmail.com    |1234                  |[null]               |[null]        |[null]                |
-|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
-
-[INFO ] 11:09:30.439 jdbc.sqlonly - SELECT
-            *
-        FROM org_user
-        WHERE
-            CODE = 'BGCOMMERCE.tonikroos1'
-
-[INFO ] 11:09:30.446 jdbc.resultsettable - 
-|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
-|user_id |domain_id |dept_id |hr_group_id |hr_sync |hr_sync_group |status |is_valid |create_dt             |modify_dt             |pwd_dt                |username   |companycode |empid      |deptcode         |code                  |login_id             |pwd                   |email                |mobile        |hired_dt              |
-|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
-|10      |1         |10      |10          |1       |1             |sync   |Y        |2020-09-07 00:00:00.0 |2020-10-29 16:16:06.0 |2020-09-07 00:00:00.0 |toni kroos |BGCOMMERCE  |tonikroos1 |CUSTOMER SUPPORT |BGCOMMERCE.tonikroos1 |tonikroos1@gmail.com |BGCOMMERCE.tonikroos1 |tonikroos1@gmail.com |010-8223-2221 |2020-02-01 00:00:00.0 |
-|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
-
-[INFO ] 11:09:32.738 jdbc.sqlonly - UPDATE org_user
-            SET
-            pwd = 'BGCOMMERCE.tonikroos1',
-            modify_dt = SYSDATE
-        WHERE code = 'BGCOMMERCE.tonikroos1'
-
-[DEBUG] 11:09:36.736 c.s.b.m.H.userHistoryList - ==>  Preparing: SELECT * FROM provision_history_user 
-[DEBUG] 11:09:36.736 c.s.b.m.H.userHistoryList - ==> Parameters: 
-[INFO ] 11:09:36.736 jdbc.sqlonly - SELECT * FROM provision_history_user
-
-[TRACE] 11:09:36.742 c.s.b.m.H.userHistoryList - <==    Columns: HISTORY_ID, STATUS, RESOURCE_NAME, CONTENT, EXECUTED_TIME, USER_ID
-[TRACE] 11:09:36.745 c.s.b.m.H.userHistoryList - <==        Row: 1, success, mall, tonikroos(tonikroos.8987@tmail.com) 사용자 작업(user.updateUser)를 성공했습니다., 2020-10-20 15:06:27.0, BGCOMMERCE.tonikroos8987
-[TRACE] 11:09:36.747 c.s.b.m.H.userHistoryList - <==        Row: 2, success, mall, tonikroos(tonikroos.8987@tmail.com) 사용자 작업(user.updateUser)를 성공했습니다., 2020-10-20 15:06:56.0, BGCOMMERCE.tonikroos8987
-[TRACE] 11:09:36.748 c.s.b.m.H.userHistoryList - <==        Row: 3, success, mall, tonikroos(tonikroos.8987@tmail.com) 사용자 작업(user.updateUser)를 성공했습니다., 2020-10-20 16:20:22.0, BGCOMMERCE.tonikroos8987
-[TRACE] 11:09:36.749 c.s.b.m.H.userHistoryList - <==        Row: 16, success, mall, provision : BGCOMMERCE.tonikroos1사용자 작업(userUpdateProc)을 성공했습니다., 2020-11-03 10:22:33.0, BGCOMMERCE.tonikroos1
-[TRACE] 11:09:36.749 c.s.b.m.H.userHistoryList - <==        Row: 17, success, mall, provision : BGCOMMERCE.tonikroos1사용자 작업(userUpdateProc)을 성공했습니다., 2020-11-03 10:23:03.0, BGCOMMERCE.tonikroos1
-[TRACE] 11:09:36.750 c.s.b.m.H.userHistoryList - <==        Row: 0, success, mall, tonikroos(tonikroos.8987@tmail.com) 사용자 작업(user.updateUser)를 성공했습니다., 2020-10-19 17:28:12.0, BGCOMMERCE.tonikroos8987
-[TRACE] 11:09:36.750 c.s.b.m.H.userHistoryList - <==        Row: 4, success, mall, stevie(stevie5@tmail.com) 사용자 작업(user.updateUser)를 성공했습니다., 2020-10-21 17:22:31.0, BGCOMMERCE.stevie5
-[TRACE] 11:09:36.751 c.s.b.m.H.userHistoryList - <==        Row: 5, success, mall, BGCOMMERCE.stevie5사용자 작업(userUpdateProc)을 성공했습니다., 2020-10-22 13:40:23.0, BGCOMMERCE.stevie5
-[TRACE] 11:09:36.751 c.s.b.m.H.userHistoryList - <==        Row: 6, success, mall, BGCOMMERCE.stevie5사용자 작업(userUpdateProc)을 성공했습니다., 2020-10-22 13:42:02.0, BGCOMMERCE.stevie5
-[TRACE] 11:09:36.751 c.s.b.m.H.userHistoryList - <==        Row: 7, success, mall, provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다., 2020-10-22 13:57:51.0, BGSPACE.hoxy000
-[TRACE] 11:09:36.753 c.s.b.m.H.userHistoryList - <==        Row: 8, success, mall, provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다., 2020-10-22 14:55:35.0, BGSPACE.hoxy000
-[TRACE] 11:09:36.753 c.s.b.m.H.userHistoryList - <==        Row: 9, success, mall, provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다., 2020-10-22 14:57:03.0, BGSPACE.hoxy000
-[TRACE] 11:09:36.754 c.s.b.m.H.userHistoryList - <==        Row: 10, success, mall, provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다., 2020-10-22 14:59:25.0, BGSPACE.hoxy000
-[TRACE] 11:09:36.754 c.s.b.m.H.userHistoryList - <==        Row: 11, success, mall, provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다., 2020-10-22 15:01:18.0, BGSPACE.hoxy000
-[TRACE] 11:09:36.754 c.s.b.m.H.userHistoryList - <==        Row: 13, success, mall, provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다., 2020-10-23 14:13:04.0, BGSPACE.hoxy000
-[TRACE] 11:09:36.755 c.s.b.m.H.userHistoryList - <==        Row: 12, success, mall, provision : BGCOMMERCE.stevie5사용자 작업(userUpdateProc)을 성공했습니다., 2020-10-23 14:08:51.0, BGCOMMERCE.stevie5
-[TRACE] 11:09:36.756 c.s.b.m.H.userHistoryList - <==        Row: 14, success, mall, provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다., 2020-10-23 15:03:57.0, BGSPACE.hoxy000
-[TRACE] 11:09:36.757 c.s.b.m.H.userHistoryList - <==        Row: 15, success, mall, provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다., 2020-10-23 15:04:56.0, BGSPACE.hoxy000
-[INFO ] 11:09:36.758 jdbc.resultsettable - 
-|-----------|--------|--------------|---------------------------------------------------------------------|----------------------|-------------------------|
-|history_id |status  |resource_name |content                                                              |executed_time         |user_id                  |
-|-----------|--------|--------------|---------------------------------------------------------------------|----------------------|-------------------------|
-|1          |success |mall          |tonikroos(tonikroos.8987@tmail.com) 사용자 작업(user.updateUser)를 성공했습니다. |2020-10-20 15:06:27.0 |BGCOMMERCE.tonikroos8987 |
-|2          |success |mall          |tonikroos(tonikroos.8987@tmail.com) 사용자 작업(user.updateUser)를 성공했습니다. |2020-10-20 15:06:56.0 |BGCOMMERCE.tonikroos8987 |
-|3          |success |mall          |tonikroos(tonikroos.8987@tmail.com) 사용자 작업(user.updateUser)를 성공했습니다. |2020-10-20 16:20:22.0 |BGCOMMERCE.tonikroos8987 |
-|16         |success |mall          |provision : BGCOMMERCE.tonikroos1사용자 작업(userUpdateProc)을 성공했습니다.     |2020-11-03 10:22:33.0 |BGCOMMERCE.tonikroos1    |
-|17         |success |mall          |provision : BGCOMMERCE.tonikroos1사용자 작업(userUpdateProc)을 성공했습니다.     |2020-11-03 10:23:03.0 |BGCOMMERCE.tonikroos1    |
-|0          |success |mall          |tonikroos(tonikroos.8987@tmail.com) 사용자 작업(user.updateUser)를 성공했습니다. |2020-10-19 17:28:12.0 |BGCOMMERCE.tonikroos8987 |
-|4          |success |mall          |stevie(stevie5@tmail.com) 사용자 작업(user.updateUser)를 성공했습니다.           |2020-10-21 17:22:31.0 |BGCOMMERCE.stevie5       |
-|5          |success |mall          |BGCOMMERCE.stevie5사용자 작업(userUpdateProc)을 성공했습니다.                    |2020-10-22 13:40:23.0 |BGCOMMERCE.stevie5       |
-|6          |success |mall          |BGCOMMERCE.stevie5사용자 작업(userUpdateProc)을 성공했습니다.                    |2020-10-22 13:42:02.0 |BGCOMMERCE.stevie5       |
-|7          |success |mall          |provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다.           |2020-10-22 13:57:51.0 |BGSPACE.hoxy000          |
-|8          |success |mall          |provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다.           |2020-10-22 14:55:35.0 |BGSPACE.hoxy000          |
-|9          |success |mall          |provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다.           |2020-10-22 14:57:03.0 |BGSPACE.hoxy000          |
-|10         |success |mall          |provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다.           |2020-10-22 14:59:25.0 |BGSPACE.hoxy000          |
-|11         |success |mall          |provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다.           |2020-10-22 15:01:18.0 |BGSPACE.hoxy000          |
-|13         |success |mall          |provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다.           |2020-10-23 14:13:04.0 |BGSPACE.hoxy000          |
-|12         |success |mall          |provision : BGCOMMERCE.stevie5사용자 작업(userUpdateProc)을 성공했습니다.        |2020-10-23 14:08:51.0 |BGCOMMERCE.stevie5       |
-|14         |success |mall          |provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다.           |2020-10-23 15:03:57.0 |BGSPACE.hoxy000          |
-|15         |success |mall          |provision : BGSPACE.hoxy000사용자 작업(userUpdateProc)을 성공했습니다.           |2020-10-23 15:04:56.0 |BGSPACE.hoxy000          |
-|-----------|--------|--------------|---------------------------------------------------------------------|----------------------|-------------------------|
-
-[DEBUG] 11:09:36.758 c.s.b.m.H.userHistoryList - <==      Total: 18
+[INFO ] 15:22:49.233 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 14976 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 15:22:49.240 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 15:22:49.240 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 15:25:40.437 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 9980 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 15:25:40.440 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 15:25:40.440 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 15:25:42.396 com.system.bgim.BgimApplication - Started BgimApplication in 2.312 seconds (JVM running for 3.212)
+[INFO ] 15:25:42.398 com.system.bgim.AppRunner - ===========
+[INFO ] 15:25:42.398 com.system.bgim.AppRunner - logger.info
+[INFO ] 15:25:42.398 com.system.bgim.AppRunner - ===========
+[TRACE] 15:25:42.398 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 15:25:42.398 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 15:25:42.398 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 15:25:42.398 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 15:25:42.398 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 15:25:42.399 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 15:29:04.123 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 14864 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 15:29:04.124 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 15:29:04.125 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 17:00:20.745 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 16084 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 17:00:20.750 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 17:00:20.751 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 17:00:22.904 com.system.bgim.BgimApplication - Started BgimApplication in 2.732 seconds (JVM running for 3.695)
+[INFO ] 17:00:22.906 com.system.bgim.AppRunner - ===========
+[INFO ] 17:00:22.906 com.system.bgim.AppRunner - logger.info
+[INFO ] 17:00:22.906 com.system.bgim.AppRunner - ===========
+[TRACE] 17:00:22.907 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 17:00:22.907 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 17:00:22.907 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 17:00:22.907 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 17:00:22.907 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 17:00:22.908 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 17:02:20.960 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 19392 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 17:02:20.962 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 17:02:20.963 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 17:02:23.170 com.system.bgim.BgimApplication - Started BgimApplication in 2.613 seconds (JVM running for 3.625)
+[INFO ] 17:02:23.173 com.system.bgim.AppRunner - ===========
+[INFO ] 17:02:23.173 com.system.bgim.AppRunner - logger.info
+[INFO ] 17:02:23.174 com.system.bgim.AppRunner - ===========
+[TRACE] 17:02:23.174 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 17:02:23.174 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 17:02:23.174 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 17:02:23.174 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 17:02:23.174 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 17:02:23.175 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 17:02:51.066 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 18296 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 17:02:51.068 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 17:02:51.069 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 17:02:52.973 com.system.bgim.BgimApplication - Started BgimApplication in 2.257 seconds (JVM running for 3.23)
+[INFO ] 17:02:52.975 com.system.bgim.AppRunner - ===========
+[INFO ] 17:02:52.975 com.system.bgim.AppRunner - logger.info
+[INFO ] 17:02:52.975 com.system.bgim.AppRunner - ===========
+[TRACE] 17:02:52.975 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 17:02:52.975 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 17:02:52.975 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 17:02:52.975 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 17:02:52.975 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 17:02:52.976 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 17:17:18.467 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 15836 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 17:17:18.470 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 17:17:18.470 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 17:17:20.774 com.system.bgim.BgimApplication - Started BgimApplication in 2.73 seconds (JVM running for 3.658)
+[INFO ] 17:17:20.776 com.system.bgim.AppRunner - ===========
+[INFO ] 17:17:20.776 com.system.bgim.AppRunner - logger.info
+[INFO ] 17:17:20.776 com.system.bgim.AppRunner - ===========
+[TRACE] 17:17:20.776 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 17:17:20.776 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 17:17:20.776 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 17:17:20.776 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 17:17:20.777 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 17:17:20.777 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 17:27:31.097 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 18816 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 17:27:31.100 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 17:27:31.100 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 17:27:33.173 com.system.bgim.BgimApplication - Started BgimApplication in 2.568 seconds (JVM running for 3.713)
+[INFO ] 17:27:33.175 com.system.bgim.AppRunner - ===========
+[INFO ] 17:27:33.175 com.system.bgim.AppRunner - logger.info
+[INFO ] 17:27:33.175 com.system.bgim.AppRunner - ===========
+[TRACE] 17:27:33.175 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 17:27:33.175 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 17:27:33.175 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 17:27:33.175 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 17:27:33.175 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 17:27:33.176 com.system.bgim.AppRunner - slf4j since 20201012

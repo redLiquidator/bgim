@@ -126,7 +126,6 @@ hired_dt date,
   CONSTRAINT mall_user_pk PRIMARY KEY (code)  
 );
 
-
 CREATE TABLE org_domain  
 ( 
 companycode varchar2(64), 
@@ -177,7 +176,6 @@ user_id varchar2(64),
 CONSTRAINT provision_history_user_pk PRIMARY KEY (history_id)  
 );
 
-
 -- domain의 프로비전결과를 테이블에 저장한다. 
 CREATE TABLE provision_history_domain  
 ( 
@@ -225,5 +223,24 @@ executed_time date,
 CONSTRAINT files_pk PRIMARY KEY (file_id)  
 );
 
+--로그인 사용자정보
+create table user_info (
+	id varchar(15),
+	password varchar(500),
+	isAccountNonexpired int,
+	isAccountNonLocked int,
+	isCredentialsNonExpired int,
+	isEnabled int
+);
+
+--로그인 권한정보
+create table authority (
+	username varchar(20),
+	authority_name varchar(20)
+);
+
+INSERT INTO USER_INFO VALUES ( 'TEST' , '1234' , '1','1','1','1' );
+INSERT INTO AUTHORITY VALUES ( 'TEST' , 'ROLE_ADMIN' );
+INSERT INTO AUTHORITY VALUES ( 'TEST' , 'ROLE_MEMBER' );
 
 
