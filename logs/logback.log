@@ -1,84 +1,193 @@
-[INFO ] 15:22:49.233 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 14976 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 15:22:49.240 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 15:22:49.240 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 15:25:40.437 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 9980 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 15:25:40.440 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 15:25:40.440 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 15:25:42.396 com.system.bgim.BgimApplication - Started BgimApplication in 2.312 seconds (JVM running for 3.212)
-[INFO ] 15:25:42.398 com.system.bgim.AppRunner - ===========
-[INFO ] 15:25:42.398 com.system.bgim.AppRunner - logger.info
-[INFO ] 15:25:42.398 com.system.bgim.AppRunner - ===========
-[TRACE] 15:25:42.398 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 15:25:42.398 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 15:25:42.398 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 15:25:42.398 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 15:25:42.398 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 15:25:42.399 com.system.bgim.AppRunner - slf4j since 20201012
-[INFO ] 15:29:04.123 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 14864 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 15:29:04.124 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 15:29:04.125 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 17:00:20.745 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 16084 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 17:00:20.750 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 17:00:20.751 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 17:00:22.904 com.system.bgim.BgimApplication - Started BgimApplication in 2.732 seconds (JVM running for 3.695)
-[INFO ] 17:00:22.906 com.system.bgim.AppRunner - ===========
-[INFO ] 17:00:22.906 com.system.bgim.AppRunner - logger.info
-[INFO ] 17:00:22.906 com.system.bgim.AppRunner - ===========
-[TRACE] 17:00:22.907 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 17:00:22.907 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 17:00:22.907 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 17:00:22.907 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 17:00:22.907 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 17:00:22.908 com.system.bgim.AppRunner - slf4j since 20201012
-[INFO ] 17:02:20.960 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 19392 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 17:02:20.962 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 17:02:20.963 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 17:02:23.170 com.system.bgim.BgimApplication - Started BgimApplication in 2.613 seconds (JVM running for 3.625)
-[INFO ] 17:02:23.173 com.system.bgim.AppRunner - ===========
-[INFO ] 17:02:23.173 com.system.bgim.AppRunner - logger.info
-[INFO ] 17:02:23.174 com.system.bgim.AppRunner - ===========
-[TRACE] 17:02:23.174 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 17:02:23.174 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 17:02:23.174 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 17:02:23.174 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 17:02:23.174 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 17:02:23.175 com.system.bgim.AppRunner - slf4j since 20201012
-[INFO ] 17:02:51.066 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 18296 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 17:02:51.068 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 17:02:51.069 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 17:02:52.973 com.system.bgim.BgimApplication - Started BgimApplication in 2.257 seconds (JVM running for 3.23)
-[INFO ] 17:02:52.975 com.system.bgim.AppRunner - ===========
-[INFO ] 17:02:52.975 com.system.bgim.AppRunner - logger.info
-[INFO ] 17:02:52.975 com.system.bgim.AppRunner - ===========
-[TRACE] 17:02:52.975 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 17:02:52.975 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 17:02:52.975 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 17:02:52.975 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 17:02:52.975 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 17:02:52.976 com.system.bgim.AppRunner - slf4j since 20201012
-[INFO ] 17:17:18.467 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 15836 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 17:17:18.470 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 17:17:18.470 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 17:17:20.774 com.system.bgim.BgimApplication - Started BgimApplication in 2.73 seconds (JVM running for 3.658)
-[INFO ] 17:17:20.776 com.system.bgim.AppRunner - ===========
-[INFO ] 17:17:20.776 com.system.bgim.AppRunner - logger.info
-[INFO ] 17:17:20.776 com.system.bgim.AppRunner - ===========
-[TRACE] 17:17:20.776 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 17:17:20.776 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 17:17:20.776 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 17:17:20.776 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 17:17:20.777 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 17:17:20.777 com.system.bgim.AppRunner - slf4j since 20201012
-[INFO ] 17:27:31.097 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 18816 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 17:27:31.100 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 17:27:31.100 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 17:27:33.173 com.system.bgim.BgimApplication - Started BgimApplication in 2.568 seconds (JVM running for 3.713)
-[INFO ] 17:27:33.175 com.system.bgim.AppRunner - ===========
-[INFO ] 17:27:33.175 com.system.bgim.AppRunner - logger.info
-[INFO ] 17:27:33.175 com.system.bgim.AppRunner - ===========
-[TRACE] 17:27:33.175 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 17:27:33.175 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 17:27:33.175 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 17:27:33.175 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 17:27:33.175 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 17:27:33.176 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 11:36:24.648 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 19952 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:36:24.657 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:36:24.658 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:36:27.000 com.system.bgim.BgimApplication - Started BgimApplication in 2.936 seconds (JVM running for 4.017)
+[INFO ] 11:36:27.003 com.system.bgim.AppRunner - ===========
+[INFO ] 11:36:27.003 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:36:27.003 com.system.bgim.AppRunner - ===========
+[TRACE] 11:36:27.003 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:36:27.003 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:36:27.004 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:36:27.004 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:36:27.004 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:36:27.005 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 11:39:46.957 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 6020 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:39:46.960 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:39:46.960 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:40:17.438 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 22156 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:40:17.441 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:40:17.442 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:40:19.516 com.system.bgim.BgimApplication - Started BgimApplication in 2.575 seconds (JVM running for 3.529)
+[INFO ] 11:40:19.518 com.system.bgim.AppRunner - ===========
+[INFO ] 11:40:19.518 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:40:19.518 com.system.bgim.AppRunner - ===========
+[TRACE] 11:40:19.518 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:40:19.518 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:40:19.518 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:40:19.518 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:40:19.518 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:40:19.519 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 11:47:54.410 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 15072 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:47:54.412 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:47:54.413 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:47:56.220 com.system.bgim.BgimApplication - Started BgimApplication in 2.199 seconds (JVM running for 3.118)
+[INFO ] 11:47:56.222 com.system.bgim.AppRunner - ===========
+[INFO ] 11:47:56.222 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:47:56.222 com.system.bgim.AppRunner - ===========
+[TRACE] 11:47:56.222 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:47:56.222 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:47:56.222 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:47:56.222 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:47:56.223 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:47:56.223 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 12:29:15.410 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 25088 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 12:29:15.412 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 12:29:15.413 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 12:29:17.420 com.system.bgim.BgimApplication - Started BgimApplication in 2.379 seconds (JVM running for 3.255)
+[INFO ] 12:29:17.423 com.system.bgim.AppRunner - ===========
+[INFO ] 12:29:17.424 com.system.bgim.AppRunner - logger.info
+[INFO ] 12:29:17.424 com.system.bgim.AppRunner - ===========
+[TRACE] 12:29:17.424 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 12:29:17.424 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 12:29:17.424 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 12:29:17.424 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 12:29:17.424 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 12:29:17.425 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 12:29:22.034 jdbc.sqlonly - SELECT * FROM org_user
+
+[INFO ] 12:29:22.152 jdbc.resultsettable - 
+|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
+|user_id |domain_id |dept_id |hr_group_id |hr_sync |hr_sync_group |status |is_valid |create_dt             |modify_dt             |pwd_dt                |username   |companycode |empid      |deptcode         |code                  |login_id             |pwd                   |email                |mobile        |hired_dt              |
+|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
+|10      |1         |10      |10          |1       |1             |sync   |Y        |2020-09-07 00:00:00.0 |2020-11-04 11:09:32.0 |2020-09-07 00:00:00.0 |toni kroos |BGCOMMERCE  |tonikroos1 |CUSTOMER SUPPORT |BGCOMMERCE.tonikroos1 |tonikroos1@gmail.com |BGCOMMERCE.tonikroos1 |tonikroos1@gmail.com |010-8223-2221 |2020-02-01 00:00:00.0 |
+|0       |[null]    |[null]  |[null]      |[null]  |[null]        |[null] |[null]   |2020-10-21 16:02:13.0 |2020-10-29 16:04:17.0 |[null]                |Stevie     |BGCOMMERCE  |stevie5    |testdept         |BGCOMMERCE.stevie5    |stevie5@gmail.com    |BGCOMMERCE.stevie5    |[null]               |[null]        |[null]                |
+|[null]  |[null]    |[null]  |[null]      |[null]  |[null]        |[null] |[null]   |[null]                |[null]                |[null]                |Ddal       |BGSPACE     |ddal1      |ASTRONAUT        |BGSPACE.ddal1         |ddal1@gmail.com      |1234                  |ddal1@gmail.com      |010-1111-2299 |2011-04-01 00:00:00.0 |
+|0       |[null]    |[null]  |[null]      |[null]  |[null]        |[null] |[null]   |2020-10-06 16:25:58.0 |2020-10-23 15:04:54.0 |[null]                |Hoxy       |BGSPACE     |hoxy000    |testdept         |BGSPACE.hoxy000       |hoxy000@gmail.com    |1234                  |[null]               |[null]        |[null]                |
+|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
+
+[INFO ] 14:13:30.018 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 1288 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 14:13:30.020 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 14:13:30.021 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 14:28:47.197 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 17484 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 14:28:47.199 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 14:28:47.200 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 14:28:49.249 com.system.bgim.BgimApplication - Started BgimApplication in 2.408 seconds (JVM running for 3.287)
+[INFO ] 14:28:49.251 com.system.bgim.AppRunner - ===========
+[INFO ] 14:28:49.251 com.system.bgim.AppRunner - logger.info
+[INFO ] 14:28:49.251 com.system.bgim.AppRunner - ===========
+[TRACE] 14:28:49.251 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 14:28:49.251 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 14:28:49.251 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 14:28:49.251 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 14:28:49.251 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 14:28:49.252 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 14:32:23.149 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 17100 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 14:32:23.151 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 14:32:23.151 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 14:32:25.156 com.system.bgim.BgimApplication - Started BgimApplication in 2.395 seconds (JVM running for 3.363)
+[INFO ] 14:32:25.159 com.system.bgim.AppRunner - ===========
+[INFO ] 14:32:25.159 com.system.bgim.AppRunner - logger.info
+[INFO ] 14:32:25.159 com.system.bgim.AppRunner - ===========
+[TRACE] 14:32:25.159 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 14:32:25.159 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 14:32:25.159 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 14:32:25.159 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 14:32:25.159 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 14:32:25.160 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 14:40:23.731 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 23120 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 14:40:23.734 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 14:40:23.734 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 14:40:25.648 com.system.bgim.BgimApplication - Started BgimApplication in 2.308 seconds (JVM running for 3.178)
+[INFO ] 14:40:25.650 com.system.bgim.AppRunner - ===========
+[INFO ] 14:40:25.650 com.system.bgim.AppRunner - logger.info
+[INFO ] 14:40:25.650 com.system.bgim.AppRunner - ===========
+[TRACE] 14:40:25.650 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 14:40:25.650 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 14:40:25.650 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 14:40:25.650 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 14:40:25.650 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 14:40:25.651 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 15:21:34.099 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 16228 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 15:21:34.100 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 15:21:34.101 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 15:21:35.959 com.system.bgim.BgimApplication - Started BgimApplication in 2.221 seconds (JVM running for 3.586)
+[INFO ] 15:21:35.962 com.system.bgim.AppRunner - ===========
+[INFO ] 15:21:35.962 com.system.bgim.AppRunner - logger.info
+[INFO ] 15:21:35.962 com.system.bgim.AppRunner - ===========
+[TRACE] 15:21:35.962 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 15:21:35.962 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 15:21:35.962 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 15:21:35.962 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 15:21:35.962 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 15:21:35.963 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 15:21:40.074 c.s.b.mapper.MemberMapper.readUser - ==>  Preparing: SELECT * FROM login_user WHERE username = ? 
+[DEBUG] 15:21:40.168 c.s.b.mapper.MemberMapper.readUser - ==> Parameters: abc(String)
+[INFO ] 15:21:40.169 jdbc.sqlonly - SELECT * FROM login_user WHERE username = 'abc'
+
+[TRACE] 15:21:40.273 c.s.b.mapper.MemberMapper.readUser - <==    Columns: USERNAME, PASSWORD, NAME, ISACCOUNTNONEXPIRED, ISACCOUNTNONLOCKED, ISCREDENTIALSNONEXPIRED, ISENABLED
+[TRACE] 15:21:40.276 c.s.b.mapper.MemberMapper.readUser - <==        Row: abc, $2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G, ABC, 1, 1, 1, 1
+[INFO ] 15:21:40.281 jdbc.resultsettable - 
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+|username |password                                                     |name |isaccountnonexpired |isaccountnonlocked |iscredentialsnonexpired |isenabled |
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+|abc      |$2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G |ABC  |true                |true               |true                    |true      |
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+
+[DEBUG] 15:21:40.281 c.s.b.mapper.MemberMapper.readUser - <==      Total: 1
+[DEBUG] 15:23:53.956 c.s.b.mapper.MemberMapper.readUser - ==>  Preparing: SELECT * FROM login_user WHERE username = ? 
+[DEBUG] 15:23:53.957 c.s.b.mapper.MemberMapper.readUser - ==> Parameters: abc(String)
+[INFO ] 15:23:53.957 jdbc.sqlonly - SELECT * FROM login_user WHERE username = 'abc'
+
+[TRACE] 15:23:53.960 c.s.b.mapper.MemberMapper.readUser - <==    Columns: USERNAME, PASSWORD, NAME, ISACCOUNTNONEXPIRED, ISACCOUNTNONLOCKED, ISCREDENTIALSNONEXPIRED, ISENABLED
+[TRACE] 15:23:53.961 c.s.b.mapper.MemberMapper.readUser - <==        Row: abc, $2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G, ABC, 1, 1, 1, 1
+[INFO ] 15:23:53.964 jdbc.resultsettable - 
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+|username |password                                                     |name |isaccountnonexpired |isaccountnonlocked |iscredentialsnonexpired |isenabled |
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+|abc      |$2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G |ABC  |true                |true               |true                    |true      |
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+
+[DEBUG] 15:23:53.965 c.s.b.mapper.MemberMapper.readUser - <==      Total: 1
+[INFO ] 15:35:45.798 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 18108 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 15:35:45.800 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 15:35:45.800 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 15:35:47.442 com.system.bgim.BgimApplication - Started BgimApplication in 1.998 seconds (JVM running for 2.965)
+[INFO ] 15:35:47.443 com.system.bgim.AppRunner - ===========
+[INFO ] 15:35:47.443 com.system.bgim.AppRunner - logger.info
+[INFO ] 15:35:47.443 com.system.bgim.AppRunner - ===========
+[TRACE] 15:35:47.443 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 15:35:47.444 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 15:35:47.444 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 15:35:47.444 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 15:35:47.444 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 15:35:47.444 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 15:35:52.216 c.s.b.mapper.MemberMapper.readUser - ==>  Preparing: SELECT * FROM login_user WHERE username = ? 
+[DEBUG] 15:35:52.307 c.s.b.mapper.MemberMapper.readUser - ==> Parameters: abc(String)
+[INFO ] 15:35:52.307 jdbc.sqlonly - SELECT * FROM login_user WHERE username = 'abc'
+
+[TRACE] 15:35:52.398 c.s.b.mapper.MemberMapper.readUser - <==    Columns: USERNAME, PASSWORD, NAME, ISACCOUNTNONEXPIRED, ISACCOUNTNONLOCKED, ISCREDENTIALSNONEXPIRED, ISENABLED
+[TRACE] 15:35:52.400 c.s.b.mapper.MemberMapper.readUser - <==        Row: abc, $2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G, ABC, 1, 1, 1, 1
+[INFO ] 15:35:52.405 jdbc.resultsettable - 
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+|username |password                                                     |name |isaccountnonexpired |isaccountnonlocked |iscredentialsnonexpired |isenabled |
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+|abc      |$2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G |ABC  |true                |true               |true                    |true      |
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+
+[DEBUG] 15:35:52.405 c.s.b.mapper.MemberMapper.readUser - <==      Total: 1
+[DEBUG] 15:35:58.489 c.s.b.m.MemberMapper.readAuthority - ==>  Preparing: SELECT authority_name FROM authority WHERE username = ? 
+[DEBUG] 15:35:58.490 c.s.b.m.MemberMapper.readAuthority - ==> Parameters: abc(String)
+[INFO ] 15:35:58.491 jdbc.sqlonly - SELECT authority_name FROM authority WHERE username = 'abc'
+
+[TRACE] 15:35:58.498 c.s.b.m.MemberMapper.readAuthority - <==    Columns: AUTHORITY_NAME
+[TRACE] 15:35:58.499 c.s.b.m.MemberMapper.readAuthority - <==        Row: ADMIN
+[TRACE] 15:35:58.501 c.s.b.m.MemberMapper.readAuthority - <==        Row: USER
+[INFO ] 15:35:58.502 jdbc.resultsettable - 
+|---------------|
+|authority_name |
+|---------------|
+|ADMIN          |
+|USER           |
+|---------------|
+
+[DEBUG] 15:35:58.502 c.s.b.m.MemberMapper.readAuthority - <==      Total: 2

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.system.bgim.mapper.MemberMapper">
+    <select id="readUser" parameterType="String" resultType="com.system.bgim.dto.MemberDTO">
+        SELECT * FROM login_user WHERE username = #{username}
+    </select>
+    <select id="readAuthority" parameterType="String" resultType="String">
+        SELECT authority_name FROM authority WHERE username = #{username}
+    </select>
+</mapper>

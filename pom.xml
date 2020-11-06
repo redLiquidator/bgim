@@ -103,11 +103,7 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		
-		<dependency> 
-			<groupId>org.springframework.boot</groupId> 
-			<artifactId>spring-boot-starter-security</artifactId> 
-		</dependency>
-		
+
 		<dependency> 
 			<groupId>org.springframework.boot</groupId> 
 			<artifactId>spring-boot-starter-web-services</artifactId> 
@@ -118,20 +114,7 @@
 			<artifactId>spring-boot-starter-test</artifactId> 
 			<scope>test</scope> 
 		</dependency> 
-		
-		<dependency> 
-			<groupId>org.springframework.security</groupId> 
-			<artifactId>spring-security-test</artifactId> 
-			<scope>test</scope> 
-		</dependency>
-		
-		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
-		<dependency>
-		    <groupId>org.springframework.security</groupId>
-		    <artifactId>spring-security-core</artifactId>
-		    <version>5.3.3.RELEASE</version>
-		</dependency>
-				
+
 
 		<!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc8 -->
 		<dependency>
@@ -160,14 +143,13 @@
 		    <version>1.16</version>
 		</dependency>
 		
-		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok-maven -->
-		<dependency>
-		   <groupId>org.projectlombok</groupId>
-		   <artifactId>lombok</artifactId>
-		   <version>1.18.8</version>
-		   <scope>provided</scope>
-		</dependency>
-		
+		 <!-- SECURITY -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <!-- SECURITY -->
+
 	</dependencies>
 
 	<build>

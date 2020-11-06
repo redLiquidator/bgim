@@ -223,24 +223,23 @@ executed_time date,
 CONSTRAINT files_pk PRIMARY KEY (file_id)  
 );
 
---로그인 사용자정보
-create table user_info (
-	id varchar(15),
-	password varchar(500),
-	isAccountNonexpired int,
-	isAccountNonLocked int,
-	isCredentialsNonExpired int,
-	isEnabled int
+-- 로그인 유저정보
+CREATE TABLE login_user (
+username VARCHAR(20),
+    password VARCHAR(500),
+    name VARCHAR(20),
+    isAccountNonExpired number(1),
+    isAccountNonLocked number(1),
+    isCredentialsNonExpired number(1),
+    isEnabled number(1)
 );
 
---로그인 권한정보
-create table authority (
-	username varchar(20),
-	authority_name varchar(20)
+-- 로그인 권한정보
+CREATE TABLE authority (
+    username VARCHAR(20),
+    authority_name VARCHAR(20)
 );
 
-INSERT INTO USER_INFO VALUES ( 'TEST' , '1234' , '1','1','1','1' );
-INSERT INTO AUTHORITY VALUES ( 'TEST' , 'ROLE_ADMIN' );
-INSERT INTO AUTHORITY VALUES ( 'TEST' , 'ROLE_MEMBER' );
-
-
+INSERT INTO authority VALUES('abc', 'ADMIN');
+INSERT INTO authority VALUES('abc', 'USER');
+INSERT INTO user_info VALUES('abc', '$2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G', 'ABC', 1, 1, 1, 1);
