@@ -30,6 +30,7 @@ public class PresyncDataController {
 		 domain.setTablename("presync_domain");
 		 List<DomainDTO> domainlist = domainService.domainListService(domain);
 		 System.out.println(domainService.domainListService(domain));
+		
 		 model.addAttribute("domainlist",domainlist);
 		 
 		 return "presyncdomainlist";

@@ -1,3 +1,15 @@
-[DEBUG] 12:29:21.946 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 12:29:22.034 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 12:29:22.152 c.s.bgim.mapper.UserMapper.userList - <==      Total: 4
+[DEBUG] 11:21:55.954 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
+[DEBUG] 11:21:55.958 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
+[DEBUG] 11:21:56.257 c.s.bgim.mapper.UserMapper.userList - <==      Total: 4
+[DEBUG] 11:22:20.707 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
+[DEBUG] 11:22:20.709 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
+[DEBUG] 11:22:20.715 c.s.bgim.mapper.UserMapper.userList - <==      Total: 4
+[DEBUG] 11:34:20.630 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
+[DEBUG] 11:34:20.630 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
+[DEBUG] 11:34:20.639 c.s.bgim.mapper.UserMapper.userList - <==      Total: 4
+[DEBUG] 11:35:49.842 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
+[DEBUG] 11:35:49.926 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
+[DEBUG] 11:35:50.022 c.s.bgim.mapper.UserMapper.userList - <==      Total: 4
+[DEBUG] 11:35:56.893 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
+[DEBUG] 11:35:56.893 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
+[DEBUG] 11:35:56.904 c.s.bgim.mapper.UserMapper.userList - <==      Total: 4

@@ -1,61 +1,169 @@
-[INFO ] 11:36:24.648 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 19952 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 11:36:24.657 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 11:36:24.658 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 11:36:27.000 com.system.bgim.BgimApplication - Started BgimApplication in 2.936 seconds (JVM running for 4.017)
-[INFO ] 11:36:27.003 com.system.bgim.AppRunner - ===========
-[INFO ] 11:36:27.003 com.system.bgim.AppRunner - logger.info
-[INFO ] 11:36:27.003 com.system.bgim.AppRunner - ===========
-[TRACE] 11:36:27.003 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 11:36:27.003 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 11:36:27.004 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 11:36:27.004 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 11:36:27.004 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 11:36:27.005 com.system.bgim.AppRunner - slf4j since 20201012
-[INFO ] 11:39:46.957 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 6020 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 11:39:46.960 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 11:39:46.960 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 11:40:17.438 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 22156 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 11:40:17.441 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 11:40:17.442 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 11:40:19.516 com.system.bgim.BgimApplication - Started BgimApplication in 2.575 seconds (JVM running for 3.529)
-[INFO ] 11:40:19.518 com.system.bgim.AppRunner - ===========
-[INFO ] 11:40:19.518 com.system.bgim.AppRunner - logger.info
-[INFO ] 11:40:19.518 com.system.bgim.AppRunner - ===========
-[TRACE] 11:40:19.518 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 11:40:19.518 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 11:40:19.518 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 11:40:19.518 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 11:40:19.518 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 11:40:19.519 com.system.bgim.AppRunner - slf4j since 20201012
-[INFO ] 11:47:54.410 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 15072 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 11:47:54.412 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 11:47:54.413 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 11:47:56.220 com.system.bgim.BgimApplication - Started BgimApplication in 2.199 seconds (JVM running for 3.118)
-[INFO ] 11:47:56.222 com.system.bgim.AppRunner - ===========
-[INFO ] 11:47:56.222 com.system.bgim.AppRunner - logger.info
-[INFO ] 11:47:56.222 com.system.bgim.AppRunner - ===========
-[TRACE] 11:47:56.222 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 11:47:56.222 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 11:47:56.222 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 11:47:56.222 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 11:47:56.223 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 11:47:56.223 com.system.bgim.AppRunner - slf4j since 20201012
-[INFO ] 12:29:15.410 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 25088 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 12:29:15.412 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 12:29:15.413 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 12:29:17.420 com.system.bgim.BgimApplication - Started BgimApplication in 2.379 seconds (JVM running for 3.255)
-[INFO ] 12:29:17.423 com.system.bgim.AppRunner - ===========
-[INFO ] 12:29:17.424 com.system.bgim.AppRunner - logger.info
-[INFO ] 12:29:17.424 com.system.bgim.AppRunner - ===========
-[TRACE] 12:29:17.424 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 12:29:17.424 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 12:29:17.424 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 12:29:17.424 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 12:29:17.424 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 12:29:17.425 com.system.bgim.AppRunner - slf4j since 20201012
-[INFO ] 12:29:22.034 jdbc.sqlonly - SELECT * FROM org_user
+[INFO ] 11:18:08.688 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 11600 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:18:08.695 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:18:08.696 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:18:11.376 com.system.bgim.BgimApplication - Started BgimApplication in 3.579 seconds (JVM running for 4.805)
+[INFO ] 11:18:11.378 com.system.bgim.AppRunner - ===========
+[INFO ] 11:18:11.378 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:18:11.378 com.system.bgim.AppRunner - ===========
+[TRACE] 11:18:11.378 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:18:11.378 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:18:11.378 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:18:11.378 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:18:11.378 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:18:11.379 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:19:35.235 c.s.b.mapper.MemberMapper.readUser - ==>  Preparing: SELECT * FROM login_user WHERE username = ? 
+[DEBUG] 11:19:35.362 c.s.b.mapper.MemberMapper.readUser - ==> Parameters: abc(String)
+[INFO ] 11:19:35.362 jdbc.sqlonly - SELECT * FROM login_user WHERE username = 'abc'
 
-[INFO ] 12:29:22.152 jdbc.resultsettable - 
+[TRACE] 11:19:35.494 c.s.b.mapper.MemberMapper.readUser - <==    Columns: USERNAME, PASSWORD, NAME, ISACCOUNTNONEXPIRED, ISACCOUNTNONLOCKED, ISCREDENTIALSNONEXPIRED, ISENABLED
+[TRACE] 11:19:35.497 c.s.b.mapper.MemberMapper.readUser - <==        Row: abc, $2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G, ABC, 1, 1, 1, 1
+[INFO ] 11:19:35.504 jdbc.resultsettable - 
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+|username |password                                                     |name |isaccountnonexpired |isaccountnonlocked |iscredentialsnonexpired |isenabled |
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+|abc      |$2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G |ABC  |true                |true               |true                    |true      |
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+
+[DEBUG] 11:19:35.505 c.s.b.mapper.MemberMapper.readUser - <==      Total: 1
+[DEBUG] 11:19:35.511 c.s.b.m.MemberMapper.readAuthority - ==>  Preparing: SELECT authority_name FROM authority WHERE username = ? 
+[DEBUG] 11:19:35.512 c.s.b.m.MemberMapper.readAuthority - ==> Parameters: abc(String)
+[INFO ] 11:19:35.512 jdbc.sqlonly - SELECT authority_name FROM authority WHERE username = 'abc'
+
+[TRACE] 11:19:35.520 c.s.b.m.MemberMapper.readAuthority - <==    Columns: AUTHORITY_NAME
+[TRACE] 11:19:35.520 c.s.b.m.MemberMapper.readAuthority - <==        Row: ADMIN
+[TRACE] 11:19:35.522 c.s.b.m.MemberMapper.readAuthority - <==        Row: USER
+[INFO ] 11:19:35.522 jdbc.resultsettable - 
+|---------------|
+|authority_name |
+|---------------|
+|ADMIN          |
+|USER           |
+|---------------|
+
+[DEBUG] 11:19:35.523 c.s.b.m.MemberMapper.readAuthority - <==      Total: 2
+[DEBUG] 11:20:47.588 c.s.b.mapper.MemberMapper.readUser - ==>  Preparing: SELECT * FROM login_user WHERE username = ? 
+[DEBUG] 11:20:47.588 c.s.b.mapper.MemberMapper.readUser - ==> Parameters: ABC(String)
+[INFO ] 11:20:47.589 jdbc.sqlonly - SELECT * FROM login_user WHERE username = 'ABC'
+
+[INFO ] 11:20:47.595 jdbc.resultsettable - 
+|---------|---------|-----|--------------------|-------------------|------------------------|----------|
+|username |password |name |isaccountnonexpired |isaccountnonlocked |iscredentialsnonexpired |isenabled |
+|---------|---------|-----|--------------------|-------------------|------------------------|----------|
+|---------|---------|-----|--------------------|-------------------|------------------------|----------|
+
+[DEBUG] 11:20:47.596 c.s.b.mapper.MemberMapper.readUser - <==      Total: 0
+[DEBUG] 11:20:54.375 c.s.b.mapper.MemberMapper.readUser - ==>  Preparing: SELECT * FROM login_user WHERE username = ? 
+[DEBUG] 11:20:54.376 c.s.b.mapper.MemberMapper.readUser - ==> Parameters: ABC(String)
+[INFO ] 11:20:54.377 jdbc.sqlonly - SELECT * FROM login_user WHERE username = 'ABC'
+
+[INFO ] 11:20:54.379 jdbc.resultsettable - 
+|---------|---------|-----|--------------------|-------------------|------------------------|----------|
+|username |password |name |isaccountnonexpired |isaccountnonlocked |iscredentialsnonexpired |isenabled |
+|---------|---------|-----|--------------------|-------------------|------------------------|----------|
+|---------|---------|-----|--------------------|-------------------|------------------------|----------|
+
+[DEBUG] 11:20:54.380 c.s.b.mapper.MemberMapper.readUser - <==      Total: 0
+[DEBUG] 11:21:02.686 c.s.b.mapper.MemberMapper.readUser - ==>  Preparing: SELECT * FROM login_user WHERE username = ? 
+[DEBUG] 11:21:02.687 c.s.b.mapper.MemberMapper.readUser - ==> Parameters: ABC(String)
+[INFO ] 11:21:02.687 jdbc.sqlonly - SELECT * FROM login_user WHERE username = 'ABC'
+
+[INFO ] 11:21:02.690 jdbc.resultsettable - 
+|---------|---------|-----|--------------------|-------------------|------------------------|----------|
+|username |password |name |isaccountnonexpired |isaccountnonlocked |iscredentialsnonexpired |isenabled |
+|---------|---------|-----|--------------------|-------------------|------------------------|----------|
+|---------|---------|-----|--------------------|-------------------|------------------------|----------|
+
+[DEBUG] 11:21:02.690 c.s.b.mapper.MemberMapper.readUser - <==      Total: 0
+[DEBUG] 11:21:11.383 c.s.b.mapper.MemberMapper.readUser - ==>  Preparing: SELECT * FROM login_user WHERE username = ? 
+[DEBUG] 11:21:11.384 c.s.b.mapper.MemberMapper.readUser - ==> Parameters: abc(String)
+[INFO ] 11:21:11.385 jdbc.sqlonly - SELECT * FROM login_user WHERE username = 'abc'
+
+[TRACE] 11:21:11.386 c.s.b.mapper.MemberMapper.readUser - <==    Columns: USERNAME, PASSWORD, NAME, ISACCOUNTNONEXPIRED, ISACCOUNTNONLOCKED, ISCREDENTIALSNONEXPIRED, ISENABLED
+[TRACE] 11:21:11.386 c.s.b.mapper.MemberMapper.readUser - <==        Row: abc, $2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G, ABC, 1, 1, 1, 1
+[INFO ] 11:21:11.388 jdbc.resultsettable - 
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+|username |password                                                     |name |isaccountnonexpired |isaccountnonlocked |iscredentialsnonexpired |isenabled |
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+|abc      |$2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G |ABC  |true                |true               |true                    |true      |
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+
+[DEBUG] 11:21:11.388 c.s.b.mapper.MemberMapper.readUser - <==      Total: 1
+[DEBUG] 11:21:11.389 c.s.b.m.MemberMapper.readAuthority - ==>  Preparing: SELECT authority_name FROM authority WHERE username = ? 
+[DEBUG] 11:21:11.389 c.s.b.m.MemberMapper.readAuthority - ==> Parameters: abc(String)
+[INFO ] 11:21:11.389 jdbc.sqlonly - SELECT authority_name FROM authority WHERE username = 'abc'
+
+[TRACE] 11:21:11.394 c.s.b.m.MemberMapper.readAuthority - <==    Columns: AUTHORITY_NAME
+[TRACE] 11:21:11.394 c.s.b.m.MemberMapper.readAuthority - <==        Row: ADMIN
+[TRACE] 11:21:11.394 c.s.b.m.MemberMapper.readAuthority - <==        Row: USER
+[INFO ] 11:21:11.394 jdbc.resultsettable - 
+|---------------|
+|authority_name |
+|---------------|
+|ADMIN          |
+|USER           |
+|---------------|
+
+[DEBUG] 11:21:11.395 c.s.b.m.MemberMapper.readAuthority - <==      Total: 2
+[INFO ] 11:21:27.965 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 22936 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:21:27.967 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:21:27.968 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:21:30.073 com.system.bgim.BgimApplication - Started BgimApplication in 2.472 seconds (JVM running for 3.408)
+[INFO ] 11:21:30.076 com.system.bgim.AppRunner - ===========
+[INFO ] 11:21:30.076 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:21:30.076 com.system.bgim.AppRunner - ===========
+[TRACE] 11:21:30.076 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:21:30.076 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:21:30.076 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:21:30.076 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:21:30.077 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:21:30.077 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:21:44.928 c.s.b.mapper.MemberMapper.readUser - ==>  Preparing: SELECT * FROM login_user WHERE username = ? 
+[DEBUG] 11:21:45.019 c.s.b.mapper.MemberMapper.readUser - ==> Parameters: abc(String)
+[INFO ] 11:21:45.019 jdbc.sqlonly - SELECT * FROM login_user WHERE username = 'abc'
+
+[TRACE] 11:21:45.126 c.s.b.mapper.MemberMapper.readUser - <==    Columns: USERNAME, PASSWORD, NAME, ISACCOUNTNONEXPIRED, ISACCOUNTNONLOCKED, ISCREDENTIALSNONEXPIRED, ISENABLED
+[TRACE] 11:21:45.129 c.s.b.mapper.MemberMapper.readUser - <==        Row: abc, $2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G, ABC, 1, 1, 1, 1
+[INFO ] 11:21:45.138 jdbc.resultsettable - 
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+|username |password                                                     |name |isaccountnonexpired |isaccountnonlocked |iscredentialsnonexpired |isenabled |
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+|abc      |$2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G |ABC  |true                |true               |true                    |true      |
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+
+[DEBUG] 11:21:45.138 c.s.b.mapper.MemberMapper.readUser - <==      Total: 1
+[DEBUG] 11:21:55.841 c.s.b.mapper.MemberMapper.readUser - ==>  Preparing: SELECT * FROM login_user WHERE username = ? 
+[DEBUG] 11:21:55.842 c.s.b.mapper.MemberMapper.readUser - ==> Parameters: abc(String)
+[INFO ] 11:21:55.842 jdbc.sqlonly - SELECT * FROM login_user WHERE username = 'abc'
+
+[TRACE] 11:21:55.843 c.s.b.mapper.MemberMapper.readUser - <==    Columns: USERNAME, PASSWORD, NAME, ISACCOUNTNONEXPIRED, ISACCOUNTNONLOCKED, ISCREDENTIALSNONEXPIRED, ISENABLED
+[TRACE] 11:21:55.844 c.s.b.mapper.MemberMapper.readUser - <==        Row: abc, $2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G, ABC, 1, 1, 1, 1
+[INFO ] 11:21:55.845 jdbc.resultsettable - 
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+|username |password                                                     |name |isaccountnonexpired |isaccountnonlocked |iscredentialsnonexpired |isenabled |
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+|abc      |$2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G |ABC  |true                |true               |true                    |true      |
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+
+[DEBUG] 11:21:55.846 c.s.b.mapper.MemberMapper.readUser - <==      Total: 1
+[DEBUG] 11:21:55.846 c.s.b.m.MemberMapper.readAuthority - ==>  Preparing: SELECT authority_name FROM authority WHERE username = ? 
+[DEBUG] 11:21:55.847 c.s.b.m.MemberMapper.readAuthority - ==> Parameters: abc(String)
+[INFO ] 11:21:55.847 jdbc.sqlonly - SELECT authority_name FROM authority WHERE username = 'abc'
+
+[TRACE] 11:21:55.848 c.s.b.m.MemberMapper.readAuthority - <==    Columns: AUTHORITY_NAME
+[TRACE] 11:21:55.848 c.s.b.m.MemberMapper.readAuthority - <==        Row: ADMIN
+[TRACE] 11:21:55.849 c.s.b.m.MemberMapper.readAuthority - <==        Row: USER
+[INFO ] 11:21:55.849 jdbc.resultsettable - 
+|---------------|
+|authority_name |
+|---------------|
+|ADMIN          |
+|USER           |
+|---------------|
+
+[DEBUG] 11:21:55.849 c.s.b.m.MemberMapper.readAuthority - <==      Total: 2
+[INFO ] 11:21:55.959 jdbc.sqlonly - SELECT * FROM org_user
+
+[INFO ] 11:21:56.256 jdbc.resultsettable - 
 |--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
 |user_id |domain_id |dept_id |hr_group_id |hr_sync |hr_sync_group |status |is_valid |create_dt             |modify_dt             |pwd_dt                |username   |companycode |empid      |deptcode         |code                  |login_id             |pwd                   |email                |mobile        |hired_dt              |
 |--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
@@ -65,124 +173,99 @@
 |0       |[null]    |[null]  |[null]      |[null]  |[null]        |[null] |[null]   |2020-10-06 16:25:58.0 |2020-10-23 15:04:54.0 |[null]                |Hoxy       |BGSPACE     |hoxy000    |testdept         |BGSPACE.hoxy000       |hoxy000@gmail.com    |1234                  |[null]               |[null]        |[null]                |
 |--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
 
-[INFO ] 14:13:30.018 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 1288 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 14:13:30.020 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 14:13:30.021 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 14:28:47.197 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 17484 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 14:28:47.199 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 14:28:47.200 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 14:28:49.249 com.system.bgim.BgimApplication - Started BgimApplication in 2.408 seconds (JVM running for 3.287)
-[INFO ] 14:28:49.251 com.system.bgim.AppRunner - ===========
-[INFO ] 14:28:49.251 com.system.bgim.AppRunner - logger.info
-[INFO ] 14:28:49.251 com.system.bgim.AppRunner - ===========
-[TRACE] 14:28:49.251 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 14:28:49.251 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 14:28:49.251 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 14:28:49.251 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 14:28:49.251 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 14:28:49.252 com.system.bgim.AppRunner - slf4j since 20201012
-[INFO ] 14:32:23.149 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 17100 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 14:32:23.151 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 14:32:23.151 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 14:32:25.156 com.system.bgim.BgimApplication - Started BgimApplication in 2.395 seconds (JVM running for 3.363)
-[INFO ] 14:32:25.159 com.system.bgim.AppRunner - ===========
-[INFO ] 14:32:25.159 com.system.bgim.AppRunner - logger.info
-[INFO ] 14:32:25.159 com.system.bgim.AppRunner - ===========
-[TRACE] 14:32:25.159 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 14:32:25.159 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 14:32:25.159 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 14:32:25.159 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 14:32:25.159 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 14:32:25.160 com.system.bgim.AppRunner - slf4j since 20201012
-[INFO ] 14:40:23.731 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 23120 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 14:40:23.734 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 14:40:23.734 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 14:40:25.648 com.system.bgim.BgimApplication - Started BgimApplication in 2.308 seconds (JVM running for 3.178)
-[INFO ] 14:40:25.650 com.system.bgim.AppRunner - ===========
-[INFO ] 14:40:25.650 com.system.bgim.AppRunner - logger.info
-[INFO ] 14:40:25.650 com.system.bgim.AppRunner - ===========
-[TRACE] 14:40:25.650 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 14:40:25.650 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 14:40:25.650 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 14:40:25.650 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 14:40:25.650 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 14:40:25.651 com.system.bgim.AppRunner - slf4j since 20201012
-[INFO ] 15:21:34.099 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 16228 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 15:21:34.100 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 15:21:34.101 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 15:21:35.959 com.system.bgim.BgimApplication - Started BgimApplication in 2.221 seconds (JVM running for 3.586)
-[INFO ] 15:21:35.962 com.system.bgim.AppRunner - ===========
-[INFO ] 15:21:35.962 com.system.bgim.AppRunner - logger.info
-[INFO ] 15:21:35.962 com.system.bgim.AppRunner - ===========
-[TRACE] 15:21:35.962 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 15:21:35.962 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 15:21:35.962 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 15:21:35.962 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 15:21:35.962 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 15:21:35.963 com.system.bgim.AppRunner - slf4j since 20201012
-[DEBUG] 15:21:40.074 c.s.b.mapper.MemberMapper.readUser - ==>  Preparing: SELECT * FROM login_user WHERE username = ? 
-[DEBUG] 15:21:40.168 c.s.b.mapper.MemberMapper.readUser - ==> Parameters: abc(String)
-[INFO ] 15:21:40.169 jdbc.sqlonly - SELECT * FROM login_user WHERE username = 'abc'
+[INFO ] 11:22:20.709 jdbc.sqlonly - SELECT * FROM org_user
 
-[TRACE] 15:21:40.273 c.s.b.mapper.MemberMapper.readUser - <==    Columns: USERNAME, PASSWORD, NAME, ISACCOUNTNONEXPIRED, ISACCOUNTNONLOCKED, ISCREDENTIALSNONEXPIRED, ISENABLED
-[TRACE] 15:21:40.276 c.s.b.mapper.MemberMapper.readUser - <==        Row: abc, $2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G, ABC, 1, 1, 1, 1
-[INFO ] 15:21:40.281 jdbc.resultsettable - 
+[INFO ] 11:22:20.715 jdbc.resultsettable - 
+|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
+|user_id |domain_id |dept_id |hr_group_id |hr_sync |hr_sync_group |status |is_valid |create_dt             |modify_dt             |pwd_dt                |username   |companycode |empid      |deptcode         |code                  |login_id             |pwd                   |email                |mobile        |hired_dt              |
+|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
+|10      |1         |10      |10          |1       |1             |sync   |Y        |2020-09-07 00:00:00.0 |2020-11-04 11:09:32.0 |2020-09-07 00:00:00.0 |toni kroos |BGCOMMERCE  |tonikroos1 |CUSTOMER SUPPORT |BGCOMMERCE.tonikroos1 |tonikroos1@gmail.com |BGCOMMERCE.tonikroos1 |tonikroos1@gmail.com |010-8223-2221 |2020-02-01 00:00:00.0 |
+|0       |[null]    |[null]  |[null]      |[null]  |[null]        |[null] |[null]   |2020-10-21 16:02:13.0 |2020-10-29 16:04:17.0 |[null]                |Stevie     |BGCOMMERCE  |stevie5    |testdept         |BGCOMMERCE.stevie5    |stevie5@gmail.com    |BGCOMMERCE.stevie5    |[null]               |[null]        |[null]                |
+|[null]  |[null]    |[null]  |[null]      |[null]  |[null]        |[null] |[null]   |[null]                |[null]                |[null]                |Ddal       |BGSPACE     |ddal1      |ASTRONAUT        |BGSPACE.ddal1         |ddal1@gmail.com      |1234                  |ddal1@gmail.com      |010-1111-2299 |2011-04-01 00:00:00.0 |
+|0       |[null]    |[null]  |[null]      |[null]  |[null]        |[null] |[null]   |2020-10-06 16:25:58.0 |2020-10-23 15:04:54.0 |[null]                |Hoxy       |BGSPACE     |hoxy000    |testdept         |BGSPACE.hoxy000       |hoxy000@gmail.com    |1234                  |[null]               |[null]        |[null]                |
+|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
+
+[DEBUG] 11:22:22.854 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM org_domain 
+[DEBUG] 11:22:22.855 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:22:22.855 jdbc.sqlonly - SELECT
+            *
+        FROM org_domain
+
+[TRACE] 11:22:22.860 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME, REG_DATE
+[TRACE] 11:22:22.860 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce, 2000-12-01 00:00:00.0
+[TRACE] 11:22:22.861 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGLAB, BG laboratory, 2000-09-11 00:00:00.0
+[TRACE] 11:22:22.861 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGFOOD, BG food, 2000-08-01 00:00:00.0
+[TRACE] 11:22:22.861 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture, null
+[TRACE] 11:22:22.861 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space, null
+[INFO ] 11:22:22.862 jdbc.resultsettable - 
+|--------------|---------------|----------------------|
+|companycode   |companyname    |reg_date              |
+|--------------|---------------|----------------------|
+|BGCOMMERCE    |BG commerce    |2000-12-01 00:00:00.0 |
+|BGLAB         |BG laboratory  |2000-09-11 00:00:00.0 |
+|BGFOOD        |BG food        |2000-08-01 00:00:00.0 |
+|BGAGRICULTURE |BG agriculture |[null]                |
+|BGSPACE       |BG space       |[null]                |
+|--------------|---------------|----------------------|
+
+[DEBUG] 11:22:22.862 c.s.b.mapper.DomainMapper.domainList - <==      Total: 5
+[DEBUG] 11:22:25.671 c.s.bgim.mapper.DeptMapper.deptList - ==>  Preparing: SELECT * FROM org_dept 
+[DEBUG] 11:22:25.672 c.s.bgim.mapper.DeptMapper.deptList - ==> Parameters: 
+[INFO ] 11:22:25.672 jdbc.sqlonly - SELECT
+            *
+        FROM org_dept
+
+[TRACE] 11:22:25.678 c.s.bgim.mapper.DeptMapper.deptList - <==    Columns: DEPTCODE, DEPTNAME, COMPANYCODE, REG_DATE
+[TRACE] 11:22:25.678 c.s.bgim.mapper.DeptMapper.deptList - <==        Row: BIOCHEM1, biochemistry1, BGLAB, 2000-09-11 00:00:00.0
+[TRACE] 11:22:25.678 c.s.bgim.mapper.DeptMapper.deptList - <==        Row: SEOULSUPPORT, seoul support, BGCOMMERCE, 2000-09-11 00:00:00.0
+[TRACE] 11:22:25.679 c.s.bgim.mapper.DeptMapper.deptList - <==        Row: BIOCHEM2, biochemistry2, BGLAB, 2001-09-11 00:00:00.0
+[TRACE] 11:22:25.679 c.s.bgim.mapper.DeptMapper.deptList - <==        Row: INCHEONSUPPORT, incheon support, BGCOMMERCE, 2001-09-11 00:00:00.0
+[INFO ] 11:22:25.680 jdbc.resultsettable - 
+|---------------|----------------|------------|----------------------|
+|deptcode       |deptname        |companycode |reg_date              |
+|---------------|----------------|------------|----------------------|
+|BIOCHEM1       |biochemistry1   |BGLAB       |2000-09-11 00:00:00.0 |
+|SEOULSUPPORT   |seoul support   |BGCOMMERCE  |2000-09-11 00:00:00.0 |
+|BIOCHEM2       |biochemistry2   |BGLAB       |2001-09-11 00:00:00.0 |
+|INCHEONSUPPORT |incheon support |BGCOMMERCE  |2001-09-11 00:00:00.0 |
+|---------------|----------------|------------|----------------------|
+
+[DEBUG] 11:22:25.680 c.s.bgim.mapper.DeptMapper.deptList - <==      Total: 4
+[INFO ] 11:28:47.933 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 7404 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:28:47.936 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:28:47.936 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:28:49.846 com.system.bgim.BgimApplication - Started BgimApplication in 2.25 seconds (JVM running for 3.109)
+[INFO ] 11:28:49.848 com.system.bgim.AppRunner - ===========
+[INFO ] 11:28:49.848 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:28:49.848 com.system.bgim.AppRunner - ===========
+[TRACE] 11:28:49.848 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:28:49.848 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:28:49.848 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:28:49.848 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:28:49.848 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:28:49.849 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:29:03.666 c.s.b.mapper.MemberMapper.readUser - ==>  Preparing: SELECT * FROM login_user WHERE username = ? 
+[DEBUG] 11:29:03.755 c.s.b.mapper.MemberMapper.readUser - ==> Parameters: abc(String)
+[INFO ] 11:29:03.755 jdbc.sqlonly - SELECT * FROM login_user WHERE username = 'abc'
+
+[TRACE] 11:29:03.839 c.s.b.mapper.MemberMapper.readUser - <==    Columns: USERNAME, PASSWORD, NAME, ISACCOUNTNONEXPIRED, ISACCOUNTNONLOCKED, ISCREDENTIALSNONEXPIRED, ISENABLED
+[TRACE] 11:29:03.843 c.s.b.mapper.MemberMapper.readUser - <==        Row: abc, $2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G, ABC, 1, 1, 1, 1
+[INFO ] 11:29:03.850 jdbc.resultsettable - 
 |---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
 |username |password                                                     |name |isaccountnonexpired |isaccountnonlocked |iscredentialsnonexpired |isenabled |
 |---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
 |abc      |$2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G |ABC  |true                |true               |true                    |true      |
 |---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
 
-[DEBUG] 15:21:40.281 c.s.b.mapper.MemberMapper.readUser - <==      Total: 1
-[DEBUG] 15:23:53.956 c.s.b.mapper.MemberMapper.readUser - ==>  Preparing: SELECT * FROM login_user WHERE username = ? 
-[DEBUG] 15:23:53.957 c.s.b.mapper.MemberMapper.readUser - ==> Parameters: abc(String)
-[INFO ] 15:23:53.957 jdbc.sqlonly - SELECT * FROM login_user WHERE username = 'abc'
+[DEBUG] 11:29:03.850 c.s.b.mapper.MemberMapper.readUser - <==      Total: 1
+[DEBUG] 11:29:03.856 c.s.b.m.MemberMapper.readAuthority - ==>  Preparing: SELECT authority_name FROM authority WHERE username = ? 
+[DEBUG] 11:29:03.856 c.s.b.m.MemberMapper.readAuthority - ==> Parameters: abc(String)
+[INFO ] 11:29:03.856 jdbc.sqlonly - SELECT authority_name FROM authority WHERE username = 'abc'
 
-[TRACE] 15:23:53.960 c.s.b.mapper.MemberMapper.readUser - <==    Columns: USERNAME, PASSWORD, NAME, ISACCOUNTNONEXPIRED, ISACCOUNTNONLOCKED, ISCREDENTIALSNONEXPIRED, ISENABLED
-[TRACE] 15:23:53.961 c.s.b.mapper.MemberMapper.readUser - <==        Row: abc, $2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G, ABC, 1, 1, 1, 1
-[INFO ] 15:23:53.964 jdbc.resultsettable - 
-|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
-|username |password                                                     |name |isaccountnonexpired |isaccountnonlocked |iscredentialsnonexpired |isenabled |
-|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
-|abc      |$2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G |ABC  |true                |true               |true                    |true      |
-|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
-
-[DEBUG] 15:23:53.965 c.s.b.mapper.MemberMapper.readUser - <==      Total: 1
-[INFO ] 15:35:45.798 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 18108 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
-[DEBUG] 15:35:45.800 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
-[INFO ] 15:35:45.800 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
-[INFO ] 15:35:47.442 com.system.bgim.BgimApplication - Started BgimApplication in 1.998 seconds (JVM running for 2.965)
-[INFO ] 15:35:47.443 com.system.bgim.AppRunner - ===========
-[INFO ] 15:35:47.443 com.system.bgim.AppRunner - logger.info
-[INFO ] 15:35:47.443 com.system.bgim.AppRunner - ===========
-[TRACE] 15:35:47.443 com.system.bgim.AppRunner - A TRACE Message
-[DEBUG] 15:35:47.444 com.system.bgim.AppRunner - A DEBUG Message
-[INFO ] 15:35:47.444 com.system.bgim.AppRunner - An INFO Message
-[WARN ] 15:35:47.444 com.system.bgim.AppRunner - A WARN Message
-[ERROR] 15:35:47.444 com.system.bgim.AppRunner - An ERROR Message
-[INFO ] 15:35:47.444 com.system.bgim.AppRunner - slf4j since 20201012
-[DEBUG] 15:35:52.216 c.s.b.mapper.MemberMapper.readUser - ==>  Preparing: SELECT * FROM login_user WHERE username = ? 
-[DEBUG] 15:35:52.307 c.s.b.mapper.MemberMapper.readUser - ==> Parameters: abc(String)
-[INFO ] 15:35:52.307 jdbc.sqlonly - SELECT * FROM login_user WHERE username = 'abc'
-
-[TRACE] 15:35:52.398 c.s.b.mapper.MemberMapper.readUser - <==    Columns: USERNAME, PASSWORD, NAME, ISACCOUNTNONEXPIRED, ISACCOUNTNONLOCKED, ISCREDENTIALSNONEXPIRED, ISENABLED
-[TRACE] 15:35:52.400 c.s.b.mapper.MemberMapper.readUser - <==        Row: abc, $2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G, ABC, 1, 1, 1, 1
-[INFO ] 15:35:52.405 jdbc.resultsettable - 
-|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
-|username |password                                                     |name |isaccountnonexpired |isaccountnonlocked |iscredentialsnonexpired |isenabled |
-|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
-|abc      |$2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G |ABC  |true                |true               |true                    |true      |
-|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
-
-[DEBUG] 15:35:52.405 c.s.b.mapper.MemberMapper.readUser - <==      Total: 1
-[DEBUG] 15:35:58.489 c.s.b.m.MemberMapper.readAuthority - ==>  Preparing: SELECT authority_name FROM authority WHERE username = ? 
-[DEBUG] 15:35:58.490 c.s.b.m.MemberMapper.readAuthority - ==> Parameters: abc(String)
-[INFO ] 15:35:58.491 jdbc.sqlonly - SELECT authority_name FROM authority WHERE username = 'abc'
-
-[TRACE] 15:35:58.498 c.s.b.m.MemberMapper.readAuthority - <==    Columns: AUTHORITY_NAME
-[TRACE] 15:35:58.499 c.s.b.m.MemberMapper.readAuthority - <==        Row: ADMIN
-[TRACE] 15:35:58.501 c.s.b.m.MemberMapper.readAuthority - <==        Row: USER
-[INFO ] 15:35:58.502 jdbc.resultsettable - 
+[TRACE] 11:29:03.857 c.s.b.m.MemberMapper.readAuthority - <==    Columns: AUTHORITY_NAME
+[TRACE] 11:29:03.858 c.s.b.m.MemberMapper.readAuthority - <==        Row: ADMIN
+[TRACE] 11:29:03.858 c.s.b.m.MemberMapper.readAuthority - <==        Row: USER
+[INFO ] 11:29:03.859 jdbc.resultsettable - 
 |---------------|
 |authority_name |
 |---------------|
@@ -190,4 +273,2314 @@
 |USER           |
 |---------------|
 
-[DEBUG] 15:35:58.502 c.s.b.m.MemberMapper.readAuthority - <==      Total: 2
+[DEBUG] 11:29:03.859 c.s.b.m.MemberMapper.readAuthority - <==      Total: 2
+[DEBUG] 11:29:03.997 c.s.bgim.mapper.DeptMapper.deptList - ==>  Preparing: SELECT * FROM org_dept 
+[DEBUG] 11:29:03.998 c.s.bgim.mapper.DeptMapper.deptList - ==> Parameters: 
+[INFO ] 11:29:03.998 jdbc.sqlonly - SELECT
+            *
+        FROM org_dept
+
+[TRACE] 11:29:04.002 c.s.bgim.mapper.DeptMapper.deptList - <==    Columns: DEPTCODE, DEPTNAME, COMPANYCODE, REG_DATE
+[TRACE] 11:29:04.003 c.s.bgim.mapper.DeptMapper.deptList - <==        Row: BIOCHEM1, biochemistry1, BGLAB, 2000-09-11 00:00:00.0
+[TRACE] 11:29:04.005 c.s.bgim.mapper.DeptMapper.deptList - <==        Row: SEOULSUPPORT, seoul support, BGCOMMERCE, 2000-09-11 00:00:00.0
+[TRACE] 11:29:04.007 c.s.bgim.mapper.DeptMapper.deptList - <==        Row: BIOCHEM2, biochemistry2, BGLAB, 2001-09-11 00:00:00.0
+[TRACE] 11:29:04.007 c.s.bgim.mapper.DeptMapper.deptList - <==        Row: INCHEONSUPPORT, incheon support, BGCOMMERCE, 2001-09-11 00:00:00.0
+[INFO ] 11:29:04.010 jdbc.resultsettable - 
+|---------------|----------------|------------|----------------------|
+|deptcode       |deptname        |companycode |reg_date              |
+|---------------|----------------|------------|----------------------|
+|BIOCHEM1       |biochemistry1   |BGLAB       |2000-09-11 00:00:00.0 |
+|SEOULSUPPORT   |seoul support   |BGCOMMERCE  |2000-09-11 00:00:00.0 |
+|BIOCHEM2       |biochemistry2   |BGLAB       |2001-09-11 00:00:00.0 |
+|INCHEONSUPPORT |incheon support |BGCOMMERCE  |2001-09-11 00:00:00.0 |
+|---------------|----------------|------------|----------------------|
+
+[DEBUG] 11:29:04.010 c.s.bgim.mapper.DeptMapper.deptList - <==      Total: 4
+[INFO ] 11:33:54.018 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 22800 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:33:54.021 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:33:54.022 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:33:56.448 com.system.bgim.BgimApplication - Started BgimApplication in 2.839 seconds (JVM running for 3.933)
+[INFO ] 11:33:56.450 com.system.bgim.AppRunner - ===========
+[INFO ] 11:33:56.450 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:33:56.451 com.system.bgim.AppRunner - ===========
+[TRACE] 11:33:56.451 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:33:56.451 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:33:56.451 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:33:56.451 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:33:56.451 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:33:56.453 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:34:06.390 c.s.b.mapper.MemberMapper.readUser - ==>  Preparing: SELECT * FROM login_user WHERE username = ? 
+[DEBUG] 11:34:06.495 c.s.b.mapper.MemberMapper.readUser - ==> Parameters: abc(String)
+[INFO ] 11:34:06.495 jdbc.sqlonly - SELECT * FROM login_user WHERE username = 'abc'
+
+[TRACE] 11:34:06.597 c.s.b.mapper.MemberMapper.readUser - <==    Columns: USERNAME, PASSWORD, NAME, ISACCOUNTNONEXPIRED, ISACCOUNTNONLOCKED, ISCREDENTIALSNONEXPIRED, ISENABLED
+[TRACE] 11:34:06.605 c.s.b.mapper.MemberMapper.readUser - <==        Row: abc, $2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G, ABC, 1, 1, 1, 1
+[INFO ] 11:34:06.615 jdbc.resultsettable - 
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+|username |password                                                     |name |isaccountnonexpired |isaccountnonlocked |iscredentialsnonexpired |isenabled |
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+|abc      |$2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G |ABC  |true                |true               |true                    |true      |
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+
+[DEBUG] 11:34:06.615 c.s.b.mapper.MemberMapper.readUser - <==      Total: 1
+[INFO ] 11:34:20.630 jdbc.sqlonly - SELECT * FROM org_user
+
+[INFO ] 11:34:20.638 jdbc.resultsettable - 
+|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
+|user_id |domain_id |dept_id |hr_group_id |hr_sync |hr_sync_group |status |is_valid |create_dt             |modify_dt             |pwd_dt                |username   |companycode |empid      |deptcode         |code                  |login_id             |pwd                   |email                |mobile        |hired_dt              |
+|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
+|10      |1         |10      |10          |1       |1             |sync   |Y        |2020-09-07 00:00:00.0 |2020-11-04 11:09:32.0 |2020-09-07 00:00:00.0 |toni kroos |BGCOMMERCE  |tonikroos1 |CUSTOMER SUPPORT |BGCOMMERCE.tonikroos1 |tonikroos1@gmail.com |BGCOMMERCE.tonikroos1 |tonikroos1@gmail.com |010-8223-2221 |2020-02-01 00:00:00.0 |
+|0       |[null]    |[null]  |[null]      |[null]  |[null]        |[null] |[null]   |2020-10-21 16:02:13.0 |2020-10-29 16:04:17.0 |[null]                |Stevie     |BGCOMMERCE  |stevie5    |testdept         |BGCOMMERCE.stevie5    |stevie5@gmail.com    |BGCOMMERCE.stevie5    |[null]               |[null]        |[null]                |
+|[null]  |[null]    |[null]  |[null]      |[null]  |[null]        |[null] |[null]   |[null]                |[null]                |[null]                |Ddal       |BGSPACE     |ddal1      |ASTRONAUT        |BGSPACE.ddal1         |ddal1@gmail.com      |1234                  |ddal1@gmail.com      |010-1111-2299 |2011-04-01 00:00:00.0 |
+|0       |[null]    |[null]  |[null]      |[null]  |[null]        |[null] |[null]   |2020-10-06 16:25:58.0 |2020-10-23 15:04:54.0 |[null]                |Hoxy       |BGSPACE     |hoxy000    |testdept         |BGSPACE.hoxy000       |hoxy000@gmail.com    |1234                  |[null]               |[null]        |[null]                |
+|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
+
+[INFO ] 11:35:46.755 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 21988 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:35:46.757 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:35:46.757 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:35:48.994 com.system.bgim.BgimApplication - Started BgimApplication in 2.627 seconds (JVM running for 3.76)
+[INFO ] 11:35:48.996 com.system.bgim.AppRunner - ===========
+[INFO ] 11:35:48.996 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:35:48.997 com.system.bgim.AppRunner - ===========
+[TRACE] 11:35:48.997 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:35:48.997 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:35:48.997 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:35:48.997 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:35:48.997 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:35:48.998 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 11:35:49.926 jdbc.sqlonly - SELECT * FROM org_user
+
+[INFO ] 11:35:50.021 jdbc.resultsettable - 
+|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
+|user_id |domain_id |dept_id |hr_group_id |hr_sync |hr_sync_group |status |is_valid |create_dt             |modify_dt             |pwd_dt                |username   |companycode |empid      |deptcode         |code                  |login_id             |pwd                   |email                |mobile        |hired_dt              |
+|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
+|10      |1         |10      |10          |1       |1             |sync   |Y        |2020-09-07 00:00:00.0 |2020-11-04 11:09:32.0 |2020-09-07 00:00:00.0 |toni kroos |BGCOMMERCE  |tonikroos1 |CUSTOMER SUPPORT |BGCOMMERCE.tonikroos1 |tonikroos1@gmail.com |BGCOMMERCE.tonikroos1 |tonikroos1@gmail.com |010-8223-2221 |2020-02-01 00:00:00.0 |
+|0       |[null]    |[null]  |[null]      |[null]  |[null]        |[null] |[null]   |2020-10-21 16:02:13.0 |2020-10-29 16:04:17.0 |[null]                |Stevie     |BGCOMMERCE  |stevie5    |testdept         |BGCOMMERCE.stevie5    |stevie5@gmail.com    |BGCOMMERCE.stevie5    |[null]               |[null]        |[null]                |
+|[null]  |[null]    |[null]  |[null]      |[null]  |[null]        |[null] |[null]   |[null]                |[null]                |[null]                |Ddal       |BGSPACE     |ddal1      |ASTRONAUT        |BGSPACE.ddal1         |ddal1@gmail.com      |1234                  |ddal1@gmail.com      |010-1111-2299 |2011-04-01 00:00:00.0 |
+|0       |[null]    |[null]  |[null]      |[null]  |[null]        |[null] |[null]   |2020-10-06 16:25:58.0 |2020-10-23 15:04:54.0 |[null]                |Hoxy       |BGSPACE     |hoxy000    |testdept         |BGSPACE.hoxy000       |hoxy000@gmail.com    |1234                  |[null]               |[null]        |[null]                |
+|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
+
+[INFO ] 11:35:56.893 jdbc.sqlonly - SELECT * FROM org_user
+
+[INFO ] 11:35:56.903 jdbc.resultsettable - 
+|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
+|user_id |domain_id |dept_id |hr_group_id |hr_sync |hr_sync_group |status |is_valid |create_dt             |modify_dt             |pwd_dt                |username   |companycode |empid      |deptcode         |code                  |login_id             |pwd                   |email                |mobile        |hired_dt              |
+|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
+|10      |1         |10      |10          |1       |1             |sync   |Y        |2020-09-07 00:00:00.0 |2020-11-04 11:09:32.0 |2020-09-07 00:00:00.0 |toni kroos |BGCOMMERCE  |tonikroos1 |CUSTOMER SUPPORT |BGCOMMERCE.tonikroos1 |tonikroos1@gmail.com |BGCOMMERCE.tonikroos1 |tonikroos1@gmail.com |010-8223-2221 |2020-02-01 00:00:00.0 |
+|0       |[null]    |[null]  |[null]      |[null]  |[null]        |[null] |[null]   |2020-10-21 16:02:13.0 |2020-10-29 16:04:17.0 |[null]                |Stevie     |BGCOMMERCE  |stevie5    |testdept         |BGCOMMERCE.stevie5    |stevie5@gmail.com    |BGCOMMERCE.stevie5    |[null]               |[null]        |[null]                |
+|[null]  |[null]    |[null]  |[null]      |[null]  |[null]        |[null] |[null]   |[null]                |[null]                |[null]                |Ddal       |BGSPACE     |ddal1      |ASTRONAUT        |BGSPACE.ddal1         |ddal1@gmail.com      |1234                  |ddal1@gmail.com      |010-1111-2299 |2011-04-01 00:00:00.0 |
+|0       |[null]    |[null]  |[null]      |[null]  |[null]        |[null] |[null]   |2020-10-06 16:25:58.0 |2020-10-23 15:04:54.0 |[null]                |Hoxy       |BGSPACE     |hoxy000    |testdept         |BGSPACE.hoxy000       |hoxy000@gmail.com    |1234                  |[null]               |[null]        |[null]                |
+|--------|----------|--------|------------|--------|--------------|-------|---------|----------------------|----------------------|----------------------|-----------|------------|-----------|-----------------|----------------------|---------------------|----------------------|---------------------|--------------|----------------------|
+
+[DEBUG] 11:36:03.870 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:36:03.871 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:36:03.871 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:36:03.879 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:36:03.880 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:36:03.881 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:36:03.882 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:36:03.883 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:36:03.883 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:36:03.883 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:36:03.884 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:36:03.884 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:36:03.885 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:36:03.885 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:36:03.885 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:36:03.886 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:36:03.886 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:36:03.886 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 11:36:28.594 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 19480 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:36:28.596 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:36:28.596 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:36:30.832 com.system.bgim.BgimApplication - Started BgimApplication in 2.65 seconds (JVM running for 3.616)
+[INFO ] 11:36:30.835 com.system.bgim.AppRunner - ===========
+[INFO ] 11:36:30.835 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:36:30.836 com.system.bgim.AppRunner - ===========
+[TRACE] 11:36:30.836 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:36:30.836 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:36:30.836 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:36:30.836 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:36:30.836 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:36:30.837 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:36:47.754 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:36:47.842 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:36:47.843 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:36:47.932 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:36:47.932 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:36:47.933 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:36:47.934 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:36:47.935 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:36:47.935 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:36:47.939 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:36:47.940 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:36:47.940 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:36:47.942 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:36:47.942 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:36:47.942 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:36:47.943 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:36:47.944 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:36:47.944 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 11:37:13.822 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 23152 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:37:13.824 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:37:13.824 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:37:15.944 com.system.bgim.BgimApplication - Started BgimApplication in 2.465 seconds (JVM running for 3.352)
+[INFO ] 11:37:15.947 com.system.bgim.AppRunner - ===========
+[INFO ] 11:37:15.948 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:37:15.948 com.system.bgim.AppRunner - ===========
+[TRACE] 11:37:15.948 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:37:15.948 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:37:15.948 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:37:15.948 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:37:15.948 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:37:15.949 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:37:21.255 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:37:21.357 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:37:21.358 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:37:21.446 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:37:21.447 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:37:21.448 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:37:21.448 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:37:21.450 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:37:21.450 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:37:21.454 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:37:21.455 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:37:21.455 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:37:21.456 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:37:21.456 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:37:21.456 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:37:21.457 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:37:21.457 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:37:21.457 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 11:39:13.374 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 21416 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:39:13.378 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:39:13.379 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:39:15.719 com.system.bgim.BgimApplication - Started BgimApplication in 2.74 seconds (JVM running for 3.724)
+[INFO ] 11:39:15.722 com.system.bgim.AppRunner - ===========
+[INFO ] 11:39:15.722 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:39:15.722 com.system.bgim.AppRunner - ===========
+[TRACE] 11:39:15.722 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:39:15.722 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:39:15.722 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:39:15.722 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:39:15.722 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:39:15.723 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:39:16.673 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:39:16.798 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:39:16.799 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:39:16.954 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:39:16.955 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:39:16.961 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:39:16.962 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:39:16.967 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:39:16.967 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:39:16.977 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:39:16.978 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:39:16.979 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:39:16.980 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:39:16.981 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:39:16.981 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:39:16.981 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:39:16.982 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:39:16.982 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 11:41:58.792 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 7808 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:41:58.794 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:41:58.794 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:42:00.921 com.system.bgim.BgimApplication - Started BgimApplication in 2.52 seconds (JVM running for 3.48)
+[INFO ] 11:42:00.923 com.system.bgim.AppRunner - ===========
+[INFO ] 11:42:00.924 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:42:00.924 com.system.bgim.AppRunner - ===========
+[TRACE] 11:42:00.924 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:42:00.924 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:42:00.924 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:42:00.924 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:42:00.924 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:42:00.925 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:42:03.176 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:42:03.260 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:42:03.260 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:42:03.335 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:42:03.336 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:42:03.338 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:42:03.338 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:42:03.340 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:42:03.340 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:42:03.346 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:42:03.346 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:42:03.347 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:42:03.349 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:42:03.349 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:42:03.349 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:42:03.350 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:42:03.351 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:42:03.351 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 11:44:20.850 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 14516 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:44:20.854 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:44:20.855 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:44:23.038 com.system.bgim.BgimApplication - Started BgimApplication in 2.638 seconds (JVM running for 3.599)
+[INFO ] 11:44:23.040 com.system.bgim.AppRunner - ===========
+[INFO ] 11:44:23.040 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:44:23.040 com.system.bgim.AppRunner - ===========
+[TRACE] 11:44:23.040 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:44:23.040 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:44:23.040 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:44:23.040 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:44:23.040 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:44:23.041 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:44:23.756 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:44:23.833 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:44:23.834 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:44:23.907 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:44:23.907 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:44:23.909 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:44:23.909 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:44:23.910 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:44:23.911 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:44:23.916 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:44:23.916 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:44:23.917 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:44:23.918 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:44:23.919 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:44:23.919 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:44:23.919 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:44:23.920 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:44:23.920 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 11:45:13.670 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 17876 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:45:13.673 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:45:13.673 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:45:15.671 com.system.bgim.BgimApplication - Started BgimApplication in 2.388 seconds (JVM running for 3.306)
+[INFO ] 11:45:15.673 com.system.bgim.AppRunner - ===========
+[INFO ] 11:45:15.673 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:45:15.673 com.system.bgim.AppRunner - ===========
+[TRACE] 11:45:15.673 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:45:15.673 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:45:15.673 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:45:15.673 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:45:15.673 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:45:15.675 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:45:16.490 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:45:16.601 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:45:16.602 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:45:16.693 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:45:16.694 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:45:16.696 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:45:16.697 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:45:16.698 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:45:16.698 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:45:16.703 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:45:16.703 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:45:16.703 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:45:16.704 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:45:16.705 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:45:16.705 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:45:16.705 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:45:16.706 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:45:16.706 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 11:47:48.646 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 20252 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:47:48.649 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:47:48.650 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:47:50.902 com.system.bgim.BgimApplication - Started BgimApplication in 2.662 seconds (JVM running for 3.738)
+[INFO ] 11:47:50.904 com.system.bgim.AppRunner - ===========
+[INFO ] 11:47:50.904 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:47:50.904 com.system.bgim.AppRunner - ===========
+[TRACE] 11:47:50.904 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:47:50.904 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:47:50.904 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:47:50.905 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:47:50.905 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:47:50.905 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:47:51.723 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:47:51.802 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:47:51.802 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:47:51.885 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:47:51.885 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:47:51.886 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:47:51.886 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:47:51.887 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:47:51.888 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:47:51.893 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:47:51.894 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:47:51.894 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:47:51.895 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:47:51.895 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:47:51.895 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:47:51.896 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:47:51.896 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:47:51.897 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 11:48:36.780 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 6916 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:48:36.782 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:48:36.782 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:48:38.771 com.system.bgim.BgimApplication - Started BgimApplication in 2.399 seconds (JVM running for 3.437)
+[INFO ] 11:48:38.773 com.system.bgim.AppRunner - ===========
+[INFO ] 11:48:38.773 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:48:38.773 com.system.bgim.AppRunner - ===========
+[TRACE] 11:48:38.773 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:48:38.773 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:48:38.773 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:48:38.773 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:48:38.773 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:48:38.774 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:48:45.832 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:48:45.921 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:48:45.921 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:48:46.036 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:48:46.037 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:48:46.038 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:48:46.039 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:48:46.040 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:48:46.040 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:48:46.046 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:48:46.047 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:48:46.047 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:48:46.048 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:48:46.049 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:48:46.049 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:48:46.049 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:48:46.050 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:48:46.051 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 11:49:36.868 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 20392 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:49:36.870 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:49:36.870 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:49:39.006 com.system.bgim.BgimApplication - Started BgimApplication in 2.538 seconds (JVM running for 3.456)
+[INFO ] 11:49:39.008 com.system.bgim.AppRunner - ===========
+[INFO ] 11:49:39.008 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:49:39.008 com.system.bgim.AppRunner - ===========
+[TRACE] 11:49:39.008 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:49:39.008 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:49:39.008 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:49:39.008 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:49:39.008 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:49:39.009 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:49:40.299 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:49:40.394 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:49:40.394 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:49:40.498 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:49:40.498 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:49:40.500 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:49:40.500 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:49:40.501 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:49:40.502 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:49:40.506 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:49:40.506 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:49:40.507 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:49:40.509 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:49:40.509 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:49:40.509 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:49:40.509 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:49:40.510 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:49:40.510 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:49:51.412 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:49:51.412 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:49:51.413 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:49:51.414 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:49:51.415 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:49:51.415 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:49:51.416 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:49:51.417 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:49:51.417 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:49:51.417 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:49:51.417 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:49:51.417 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:49:51.418 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:49:51.418 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:49:51.418 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:49:51.419 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:49:51.420 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:49:51.421 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 11:49:59.434 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 16616 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:49:59.436 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:49:59.437 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:50:01.556 com.system.bgim.BgimApplication - Started BgimApplication in 2.522 seconds (JVM running for 3.656)
+[INFO ] 11:50:01.558 com.system.bgim.AppRunner - ===========
+[INFO ] 11:50:01.558 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:50:01.558 com.system.bgim.AppRunner - ===========
+[TRACE] 11:50:01.558 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:50:01.559 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:50:01.559 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:50:01.559 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:50:01.559 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:50:01.559 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:50:02.452 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:50:02.533 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:50:02.533 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:50:02.607 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:50:02.608 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:50:02.609 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:50:02.609 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:50:02.610 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:50:02.610 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:50:02.615 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:50:02.616 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:50:02.616 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:50:02.618 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:50:02.618 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:50:02.618 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:50:02.619 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:50:02.620 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:50:02.620 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 11:52:40.591 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 18200 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:52:40.593 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:52:40.593 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:52:42.766 com.system.bgim.BgimApplication - Started BgimApplication in 2.543 seconds (JVM running for 3.585)
+[INFO ] 11:52:42.768 com.system.bgim.AppRunner - ===========
+[INFO ] 11:52:42.768 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:52:42.768 com.system.bgim.AppRunner - ===========
+[TRACE] 11:52:42.768 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:52:42.768 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:52:42.768 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:52:42.768 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:52:42.768 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:52:42.769 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:52:44.213 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:52:44.296 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:52:44.296 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:52:44.403 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:52:44.404 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:52:44.406 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:52:44.407 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:52:44.409 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:52:44.409 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:52:44.415 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:52:44.415 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:52:44.416 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:52:44.417 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:52:44.417 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:52:44.418 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:52:44.418 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:52:44.418 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:52:44.418 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 11:53:58.070 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 21700 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:53:58.072 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:53:58.072 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:54:00.289 com.system.bgim.BgimApplication - Started BgimApplication in 2.643 seconds (JVM running for 3.652)
+[INFO ] 11:54:00.291 com.system.bgim.AppRunner - ===========
+[INFO ] 11:54:00.291 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:54:00.291 com.system.bgim.AppRunner - ===========
+[TRACE] 11:54:00.291 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:54:00.291 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:54:00.291 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:54:00.291 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:54:00.291 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:54:00.292 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:54:01.309 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:54:01.389 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:54:01.390 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:54:01.473 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:54:01.473 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:54:01.475 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:54:01.475 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:54:01.477 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:54:01.478 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:54:01.482 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:54:01.483 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:54:01.483 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:54:01.484 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:54:01.484 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:54:01.484 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:54:01.485 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:54:01.485 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:54:01.485 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 11:54:50.640 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 10108 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:54:50.641 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:54:50.642 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:54:52.964 com.system.bgim.BgimApplication - Started BgimApplication in 2.679 seconds (JVM running for 3.561)
+[INFO ] 11:54:52.969 com.system.bgim.AppRunner - ===========
+[INFO ] 11:54:52.969 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:54:52.969 com.system.bgim.AppRunner - ===========
+[TRACE] 11:54:52.969 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:54:52.969 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:54:52.969 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:54:52.969 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:54:52.969 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:54:52.970 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:54:53.732 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:54:53.814 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:54:53.814 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:54:53.890 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:54:53.891 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:54:53.892 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:54:53.893 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:54:53.895 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:54:53.895 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:54:53.901 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:54:53.901 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:54:53.901 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:54:53.902 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:54:53.902 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:54:53.903 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:54:53.903 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:54:53.904 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:54:53.904 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 11:55:18.675 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 24496 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:55:18.677 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:55:18.677 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:55:20.678 com.system.bgim.BgimApplication - Started BgimApplication in 2.345 seconds (JVM running for 3.217)
+[INFO ] 11:55:20.679 com.system.bgim.AppRunner - ===========
+[INFO ] 11:55:20.680 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:55:20.680 com.system.bgim.AppRunner - ===========
+[TRACE] 11:55:20.680 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:55:20.680 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:55:20.680 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:55:20.680 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:55:20.680 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:55:20.680 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:55:23.760 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:55:23.844 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:55:23.845 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:55:23.930 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:55:23.930 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:55:23.932 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:55:23.932 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:55:23.934 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:55:23.934 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:55:23.941 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:55:23.941 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:55:23.941 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:55:23.942 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:55:23.942 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:55:23.943 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:55:23.943 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:55:23.944 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:55:23.944 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 11:55:47.208 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 13208 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:55:47.211 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:55:47.211 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:55:49.125 com.system.bgim.BgimApplication - Started BgimApplication in 2.318 seconds (JVM running for 3.201)
+[INFO ] 11:55:49.126 com.system.bgim.AppRunner - ===========
+[INFO ] 11:55:49.126 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:55:49.127 com.system.bgim.AppRunner - ===========
+[TRACE] 11:55:49.127 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:55:49.127 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:55:49.127 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:55:49.127 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:55:49.127 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:55:49.128 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:55:53.746 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:55:53.827 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:55:53.827 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:55:53.905 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:55:53.906 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:55:53.908 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:55:53.908 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:55:53.909 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:55:53.910 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:55:53.915 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:55:53.916 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:55:53.916 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:55:53.918 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:55:53.918 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:55:53.918 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:55:53.919 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:55:53.920 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:55:53.920 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 11:56:57.152 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 3636 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 11:56:57.155 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 11:56:57.156 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 11:56:59.363 com.system.bgim.BgimApplication - Started BgimApplication in 2.628 seconds (JVM running for 4.021)
+[INFO ] 11:56:59.365 com.system.bgim.AppRunner - ===========
+[INFO ] 11:56:59.365 com.system.bgim.AppRunner - logger.info
+[INFO ] 11:56:59.365 com.system.bgim.AppRunner - ===========
+[TRACE] 11:56:59.366 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 11:56:59.366 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 11:56:59.366 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 11:56:59.366 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 11:56:59.366 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 11:56:59.367 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 11:57:02.689 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:57:02.788 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:57:02.789 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:57:02.879 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:57:02.879 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:57:02.880 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:57:02.881 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:57:02.881 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:57:02.881 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 11:57:02.887 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 11:57:02.887 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 11:57:02.887 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 11:57:02.888 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 11:57:02.888 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 11:57:02.888 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 11:57:02.888 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 11:57:02.890 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 11:57:02.890 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 13:58:39.871 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 21760 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 13:58:39.873 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 13:58:39.874 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 13:58:42.379 com.system.bgim.BgimApplication - Started BgimApplication in 3.044 seconds (JVM running for 4.203)
+[INFO ] 13:58:42.381 com.system.bgim.AppRunner - ===========
+[INFO ] 13:58:42.381 com.system.bgim.AppRunner - logger.info
+[INFO ] 13:58:42.381 com.system.bgim.AppRunner - ===========
+[TRACE] 13:58:42.382 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 13:58:42.382 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 13:58:42.382 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 13:58:42.382 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 13:58:42.382 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 13:58:42.382 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 13:58:48.983 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 13:58:49.062 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 13:58:49.063 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 13:58:49.148 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 13:58:49.149 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 13:58:49.150 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 13:58:49.150 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 13:58:49.152 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 13:58:49.152 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 13:58:49.159 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 13:58:49.159 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 13:58:49.159 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 13:58:49.160 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 13:58:49.160 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 13:58:49.161 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 13:58:49.161 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 13:58:49.161 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 13:58:49.162 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 14:00:37.239 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 14:00:37.239 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 14:00:37.240 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 14:00:37.243 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 14:00:37.244 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 14:00:37.244 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 14:00:37.245 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 14:00:37.246 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 14:00:37.246 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 14:00:37.246 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 14:00:37.247 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 14:00:37.247 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 14:00:37.248 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 14:00:37.248 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 14:00:37.249 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 14:00:37.249 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 14:00:37.250 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 14:00:37.251 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 14:00:50.819 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 14:00:50.821 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 14:00:50.821 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 14:00:50.823 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 14:00:50.823 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 14:00:50.823 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 14:00:50.824 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 14:00:50.825 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 14:00:50.825 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 14:00:50.825 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 14:00:50.826 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 14:00:50.826 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 14:00:50.827 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 14:00:50.827 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 14:00:50.827 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 14:00:50.828 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 14:00:50.829 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 14:00:50.829 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 14:03:28.476 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 23308 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 14:03:28.478 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 14:03:28.478 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 14:03:30.569 com.system.bgim.BgimApplication - Started BgimApplication in 2.494 seconds (JVM running for 3.465)
+[INFO ] 14:03:30.571 com.system.bgim.AppRunner - ===========
+[INFO ] 14:03:30.571 com.system.bgim.AppRunner - logger.info
+[INFO ] 14:03:30.571 com.system.bgim.AppRunner - ===========
+[TRACE] 14:03:30.571 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 14:03:30.571 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 14:03:30.571 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 14:03:30.571 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 14:03:30.571 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 14:03:30.572 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 14:03:36.714 c.s.b.mapper.MemberMapper.readUser - ==>  Preparing: SELECT * FROM login_user WHERE username = ? 
+[DEBUG] 14:03:36.806 c.s.b.mapper.MemberMapper.readUser - ==> Parameters: abc(String)
+[INFO ] 14:03:36.807 jdbc.sqlonly - SELECT * FROM login_user WHERE username = 'abc'
+
+[TRACE] 14:03:36.894 c.s.b.mapper.MemberMapper.readUser - <==    Columns: USERNAME, PASSWORD, NAME, ISACCOUNTNONEXPIRED, ISACCOUNTNONLOCKED, ISCREDENTIALSNONEXPIRED, ISENABLED
+[TRACE] 14:03:36.896 c.s.b.mapper.MemberMapper.readUser - <==        Row: abc, $2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G, ABC, 1, 1, 1, 1
+[INFO ] 14:03:36.902 jdbc.resultsettable - 
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+|username |password                                                     |name |isaccountnonexpired |isaccountnonlocked |iscredentialsnonexpired |isenabled |
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+|abc      |$2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G |ABC  |true                |true               |true                    |true      |
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+
+[DEBUG] 14:03:36.902 c.s.b.mapper.MemberMapper.readUser - <==      Total: 1
+[DEBUG] 14:03:36.908 c.s.b.m.MemberMapper.readAuthority - ==>  Preparing: SELECT authority_name FROM authority WHERE username = ? 
+[DEBUG] 14:03:36.909 c.s.b.m.MemberMapper.readAuthority - ==> Parameters: abc(String)
+[INFO ] 14:03:36.909 jdbc.sqlonly - SELECT authority_name FROM authority WHERE username = 'abc'
+
+[TRACE] 14:03:36.915 c.s.b.m.MemberMapper.readAuthority - <==    Columns: AUTHORITY_NAME
+[TRACE] 14:03:36.915 c.s.b.m.MemberMapper.readAuthority - <==        Row: ADMIN
+[TRACE] 14:03:36.916 c.s.b.m.MemberMapper.readAuthority - <==        Row: USER
+[INFO ] 14:03:36.916 jdbc.resultsettable - 
+|---------------|
+|authority_name |
+|---------------|
+|ADMIN          |
+|USER           |
+|---------------|
+
+[DEBUG] 14:03:36.916 c.s.b.m.MemberMapper.readAuthority - <==      Total: 2
+[DEBUG] 14:03:37.053 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 14:03:37.053 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 14:03:37.053 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 14:03:37.055 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 14:03:37.056 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 14:03:37.056 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 14:03:37.057 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 14:03:37.057 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 14:03:37.058 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 14:03:37.058 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 14:03:37.058 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 14:03:37.058 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 14:03:37.059 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 14:03:37.059 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 14:03:37.060 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 14:03:37.060 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 14:03:37.061 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 14:03:37.061 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 14:05:32.065 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 13328 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 14:05:32.068 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 14:05:32.069 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 14:05:34.122 com.system.bgim.BgimApplication - Started BgimApplication in 2.491 seconds (JVM running for 3.579)
+[INFO ] 14:05:34.123 com.system.bgim.AppRunner - ===========
+[INFO ] 14:05:34.123 com.system.bgim.AppRunner - logger.info
+[INFO ] 14:05:34.123 com.system.bgim.AppRunner - ===========
+[TRACE] 14:05:34.123 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 14:05:34.124 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 14:05:34.124 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 14:05:34.124 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 14:05:34.124 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 14:05:34.124 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 14:06:02.195 c.s.b.mapper.MemberMapper.readUser - ==>  Preparing: SELECT * FROM login_user WHERE username = ? 
+[DEBUG] 14:06:02.281 c.s.b.mapper.MemberMapper.readUser - ==> Parameters: abc(String)
+[INFO ] 14:06:02.281 jdbc.sqlonly - SELECT * FROM login_user WHERE username = 'abc'
+
+[TRACE] 14:06:02.356 c.s.b.mapper.MemberMapper.readUser - <==    Columns: USERNAME, PASSWORD, NAME, ISACCOUNTNONEXPIRED, ISACCOUNTNONLOCKED, ISCREDENTIALSNONEXPIRED, ISENABLED
+[TRACE] 14:06:02.359 c.s.b.mapper.MemberMapper.readUser - <==        Row: abc, $2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G, ABC, 1, 1, 1, 1
+[INFO ] 14:06:02.366 jdbc.resultsettable - 
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+|username |password                                                     |name |isaccountnonexpired |isaccountnonlocked |iscredentialsnonexpired |isenabled |
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+|abc      |$2a$10$zNM1N.WnfC1Sq.vkqieCnuEfE3sZ3Hwo6.ytaSBtFTyg33qr2oI2G |ABC  |true                |true               |true                    |true      |
+|---------|-------------------------------------------------------------|-----|--------------------|-------------------|------------------------|----------|
+
+[DEBUG] 14:06:02.366 c.s.b.mapper.MemberMapper.readUser - <==      Total: 1
+[DEBUG] 14:06:02.370 c.s.b.m.MemberMapper.readAuthority - ==>  Preparing: SELECT authority_name FROM authority WHERE username = ? 
+[DEBUG] 14:06:02.370 c.s.b.m.MemberMapper.readAuthority - ==> Parameters: abc(String)
+[INFO ] 14:06:02.371 jdbc.sqlonly - SELECT authority_name FROM authority WHERE username = 'abc'
+
+[TRACE] 14:06:02.372 c.s.b.m.MemberMapper.readAuthority - <==    Columns: AUTHORITY_NAME
+[TRACE] 14:06:02.372 c.s.b.m.MemberMapper.readAuthority - <==        Row: ADMIN
+[TRACE] 14:06:02.373 c.s.b.m.MemberMapper.readAuthority - <==        Row: USER
+[INFO ] 14:06:02.374 jdbc.resultsettable - 
+|---------------|
+|authority_name |
+|---------------|
+|ADMIN          |
+|USER           |
+|---------------|
+
+[DEBUG] 14:06:02.374 c.s.b.m.MemberMapper.readAuthority - <==      Total: 2
+[DEBUG] 14:06:02.505 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 14:06:02.505 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 14:06:02.505 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 14:06:02.507 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 14:06:02.507 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 14:06:02.508 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 14:06:02.508 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 14:06:02.509 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 14:06:02.509 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 14:06:02.510 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 14:06:02.510 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 14:06:02.510 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 14:06:02.511 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 14:06:02.511 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 14:06:02.512 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 14:06:02.512 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 14:06:02.512 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 14:06:02.512 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 14:14:25.836 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 18440 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 14:14:25.837 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 14:14:25.838 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 14:14:27.831 com.system.bgim.BgimApplication - Started BgimApplication in 2.332 seconds (JVM running for 3.184)
+[INFO ] 14:14:27.834 com.system.bgim.AppRunner - ===========
+[INFO ] 14:14:27.834 com.system.bgim.AppRunner - logger.info
+[INFO ] 14:14:27.834 com.system.bgim.AppRunner - ===========
+[TRACE] 14:14:27.834 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 14:14:27.834 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 14:14:27.834 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 14:14:27.834 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 14:14:27.834 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 14:14:27.835 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 16:13:42.801 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 25036 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 16:13:42.802 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 16:13:42.803 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 16:13:45.084 com.system.bgim.BgimApplication - Started BgimApplication in 2.688 seconds (JVM running for 3.724)
+[INFO ] 16:13:45.087 com.system.bgim.AppRunner - ===========
+[INFO ] 16:13:45.087 com.system.bgim.AppRunner - logger.info
+[INFO ] 16:13:45.087 com.system.bgim.AppRunner - ===========
+[TRACE] 16:13:45.087 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 16:13:45.087 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 16:13:45.087 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 16:13:45.087 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 16:13:45.087 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 16:13:45.088 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 16:14:12.612 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 6604 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 16:14:12.614 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 16:14:12.614 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 16:14:14.577 com.system.bgim.BgimApplication - Started BgimApplication in 2.355 seconds (JVM running for 3.243)
+[INFO ] 16:14:14.579 com.system.bgim.AppRunner - ===========
+[INFO ] 16:14:14.580 com.system.bgim.AppRunner - logger.info
+[INFO ] 16:14:14.580 com.system.bgim.AppRunner - ===========
+[TRACE] 16:14:14.580 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 16:14:14.580 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 16:14:14.580 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 16:14:14.580 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 16:14:14.580 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 16:14:14.581 com.system.bgim.AppRunner - slf4j since 20201012
+[INFO ] 16:14:51.926 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 7940 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 16:14:51.928 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 16:14:51.929 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 16:14:53.946 com.system.bgim.BgimApplication - Started BgimApplication in 2.418 seconds (JVM running for 3.405)
+[INFO ] 16:14:53.948 com.system.bgim.AppRunner - ===========
+[INFO ] 16:14:53.948 com.system.bgim.AppRunner - logger.info
+[INFO ] 16:14:53.948 com.system.bgim.AppRunner - ===========
+[TRACE] 16:14:53.948 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 16:14:53.948 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 16:14:53.948 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 16:14:53.949 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 16:14:53.949 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 16:14:53.949 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 16:15:02.220 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:15:02.301 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:15:02.302 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:15:02.387 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:15:02.388 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:15:02.390 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:15:02.391 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:15:02.393 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:15:02.393 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:15:02.399 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:15:02.400 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:15:02.400 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:15:02.401 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:15:02.402 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:15:02.402 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:15:02.402 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:15:02.403 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:15:02.403 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 16:36:20.977 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 19516 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 16:36:20.979 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 16:36:20.980 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 16:36:22.961 com.system.bgim.BgimApplication - Started BgimApplication in 2.336 seconds (JVM running for 3.209)
+[INFO ] 16:36:22.963 com.system.bgim.AppRunner - ===========
+[INFO ] 16:36:22.963 com.system.bgim.AppRunner - logger.info
+[INFO ] 16:36:22.963 com.system.bgim.AppRunner - ===========
+[TRACE] 16:36:22.963 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 16:36:22.964 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 16:36:22.964 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 16:36:22.964 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 16:36:22.964 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 16:36:22.964 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 16:37:11.574 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:37:11.671 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:37:11.672 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:37:11.781 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:37:11.782 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:37:11.784 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:37:11.784 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:37:11.786 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:37:11.787 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:37:11.797 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:37:11.797 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:37:11.797 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:37:11.799 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:37:11.799 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:37:11.799 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:37:11.799 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:37:11.800 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:37:11.800 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 16:38:02.301 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 16056 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 16:38:02.306 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 16:38:02.306 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 16:38:04.371 com.system.bgim.BgimApplication - Started BgimApplication in 2.513 seconds (JVM running for 3.6)
+[INFO ] 16:38:04.373 com.system.bgim.AppRunner - ===========
+[INFO ] 16:38:04.373 com.system.bgim.AppRunner - logger.info
+[INFO ] 16:38:04.373 com.system.bgim.AppRunner - ===========
+[TRACE] 16:38:04.373 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 16:38:04.373 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 16:38:04.373 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 16:38:04.373 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 16:38:04.373 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 16:38:04.374 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 16:38:05.313 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:38:05.396 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:38:05.396 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:38:05.463 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:38:05.463 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:38:05.464 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:38:05.465 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:38:05.466 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:38:05.466 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:38:05.471 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:38:05.472 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:38:05.472 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:38:05.473 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:38:05.473 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:38:05.473 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:38:05.474 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:38:05.474 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:38:05.474 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:38:49.647 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:38:49.648 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:38:49.648 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:38:49.651 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:38:49.652 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:38:49.653 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:38:49.653 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:38:49.654 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:38:49.654 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:38:49.655 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:38:49.655 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:38:49.656 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:38:49.657 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:38:49.657 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:38:49.658 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:38:49.658 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:38:49.659 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:38:49.659 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 16:40:46.376 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 22840 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 16:40:46.381 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 16:40:46.381 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 16:40:53.594 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:40:53.594 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:40:53.594 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:40:53.614 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:40:53.614 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:40:53.614 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:40:53.614 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:40:53.615 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:40:53.615 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:40:53.615 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:40:53.615 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:40:53.615 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:40:53.616 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:40:53.616 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:40:53.617 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:40:53.617 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:40:53.619 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:40:53.619 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 16:43:16.058 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 17140 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 16:43:16.063 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 16:43:16.063 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 16:43:18.980 com.system.bgim.BgimApplication - Started BgimApplication in 3.504 seconds (JVM running for 4.685)
+[INFO ] 16:43:18.983 com.system.bgim.AppRunner - ===========
+[INFO ] 16:43:18.983 com.system.bgim.AppRunner - logger.info
+[INFO ] 16:43:18.983 com.system.bgim.AppRunner - ===========
+[TRACE] 16:43:18.983 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 16:43:18.983 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 16:43:18.984 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 16:43:18.984 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 16:43:18.984 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 16:43:18.985 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 16:43:20.398 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:43:20.528 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:43:20.529 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:43:20.648 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:43:20.649 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:43:20.651 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:43:20.651 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:43:20.653 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:43:20.653 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:43:20.660 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:43:20.660 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:43:20.660 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:43:20.661 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:43:20.661 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:43:20.662 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:43:20.662 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:43:20.663 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:43:20.663 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:44:05.716 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:44:05.717 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:44:05.717 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:44:05.718 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:44:05.719 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:44:05.719 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:44:05.720 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:44:05.722 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:44:05.722 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:44:05.724 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:44:05.725 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:44:05.725 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:44:05.726 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:44:05.726 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:44:05.726 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:44:05.726 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:44:05.727 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:44:05.727 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 16:45:10.422 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 22896 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 16:45:10.427 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 16:45:10.428 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 16:45:13.269 com.system.bgim.BgimApplication - Started BgimApplication in 3.313 seconds (JVM running for 4.481)
+[INFO ] 16:45:13.272 com.system.bgim.AppRunner - ===========
+[INFO ] 16:45:13.272 com.system.bgim.AppRunner - logger.info
+[INFO ] 16:45:13.272 com.system.bgim.AppRunner - ===========
+[TRACE] 16:45:13.272 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 16:45:13.272 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 16:45:13.272 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 16:45:13.272 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 16:45:13.273 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 16:45:13.274 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 16:45:20.058 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:45:20.161 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:45:20.161 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:45:20.266 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:45:20.267 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:45:20.269 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:45:20.270 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:45:20.272 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:45:20.273 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:45:20.278 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:45:20.278 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:45:20.279 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:45:20.280 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:45:20.280 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:45:20.280 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:45:20.280 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:45:20.281 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:45:20.281 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:45:55.755 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:45:55.756 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:45:55.756 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:45:55.758 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:45:55.758 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:45:55.758 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:45:55.759 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:45:55.761 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:45:55.761 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:45:55.762 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:45:55.762 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:45:55.762 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:45:55.763 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:45:55.763 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:45:55.764 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:45:55.764 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:45:55.766 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:45:55.767 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:45:56.528 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:45:56.528 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:45:56.528 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:45:56.529 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:45:56.529 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:45:56.530 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:45:56.530 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:45:56.531 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:45:56.531 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:45:56.531 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:45:56.532 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:45:56.532 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:45:56.534 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:45:56.534 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:45:56.535 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:45:56.536 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:45:56.537 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:45:56.537 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:45:56.769 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:45:56.769 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:45:56.769 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:45:56.772 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:45:56.772 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:45:56.773 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:45:56.773 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:45:56.774 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:45:56.774 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:45:56.775 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:45:56.775 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:45:56.776 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:45:56.777 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:45:56.777 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:45:56.778 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:45:56.778 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:45:56.779 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:45:56.779 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 16:46:38.571 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 20068 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 16:46:38.574 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 16:46:38.574 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 16:46:41.231 com.system.bgim.BgimApplication - Started BgimApplication in 3.21 seconds (JVM running for 4.339)
+[INFO ] 16:46:41.235 com.system.bgim.AppRunner - ===========
+[INFO ] 16:46:41.235 com.system.bgim.AppRunner - logger.info
+[INFO ] 16:46:41.235 com.system.bgim.AppRunner - ===========
+[TRACE] 16:46:41.236 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 16:46:41.236 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 16:46:41.236 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 16:46:41.236 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 16:46:41.236 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 16:46:41.238 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 16:46:42.200 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:46:42.375 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:46:42.376 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:46:42.521 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:46:42.521 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:46:42.523 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:46:42.524 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:46:42.526 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:46:42.526 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:46:42.534 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:46:42.534 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:46:42.534 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:46:42.535 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:46:42.536 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:46:42.536 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:46:42.536 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:46:42.537 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:46:42.537 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:47:47.880 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:47:47.880 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:47:47.881 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:47:47.902 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:47:47.903 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:47:47.904 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:47:47.905 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:47:47.907 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:47:47.907 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:47:47.908 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:47:47.908 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:47:47.908 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:47:47.909 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:47:47.909 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:47:47.909 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:47:47.910 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:47:47.910 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:47:47.911 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 16:50:43.248 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 17724 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 16:50:43.252 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 16:50:43.253 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 16:50:46.086 com.system.bgim.BgimApplication - Started BgimApplication in 3.354 seconds (JVM running for 4.45)
+[INFO ] 16:50:46.093 com.system.bgim.AppRunner - ===========
+[INFO ] 16:50:46.094 com.system.bgim.AppRunner - logger.info
+[INFO ] 16:50:46.094 com.system.bgim.AppRunner - ===========
+[TRACE] 16:50:46.094 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 16:50:46.094 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 16:50:46.095 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 16:50:46.095 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 16:50:46.095 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 16:50:46.097 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 16:50:47.110 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:50:47.212 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:50:47.213 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:50:47.334 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:50:47.335 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:50:47.337 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:50:47.337 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:50:47.340 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:50:47.340 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:50:47.345 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:50:47.345 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:50:47.345 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:50:47.346 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:50:47.346 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:50:47.347 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:50:47.347 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:50:47.347 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:50:47.347 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 16:53:11.111 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 13540 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 16:53:11.115 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 16:53:11.116 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 16:53:13.760 com.system.bgim.BgimApplication - Started BgimApplication in 3.065 seconds (JVM running for 4.203)
+[INFO ] 16:53:13.762 com.system.bgim.AppRunner - ===========
+[INFO ] 16:53:13.762 com.system.bgim.AppRunner - logger.info
+[INFO ] 16:53:13.762 com.system.bgim.AppRunner - ===========
+[TRACE] 16:53:13.763 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 16:53:13.763 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 16:53:13.763 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 16:53:13.763 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 16:53:13.763 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 16:53:13.764 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 16:53:14.692 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:53:14.805 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:53:14.806 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:53:14.928 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:53:14.928 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:53:14.930 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:53:14.931 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:53:14.932 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:53:14.933 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:53:14.938 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:53:14.938 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:53:14.939 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:53:14.940 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:53:14.940 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:53:14.940 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:53:14.940 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:53:14.941 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:53:14.941 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 16:56:53.364 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 9556 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 16:56:53.367 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 16:56:53.368 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 16:56:55.815 com.system.bgim.BgimApplication - Started BgimApplication in 2.901 seconds (JVM running for 4.013)
+[INFO ] 16:56:55.816 com.system.bgim.AppRunner - ===========
+[INFO ] 16:56:55.817 com.system.bgim.AppRunner - logger.info
+[INFO ] 16:56:55.817 com.system.bgim.AppRunner - ===========
+[TRACE] 16:56:55.817 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 16:56:55.817 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 16:56:55.817 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 16:56:55.817 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 16:56:55.817 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 16:56:55.818 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 16:57:15.284 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:57:15.390 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:57:15.391 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:57:15.502 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:57:15.502 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:57:15.504 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:57:15.504 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:57:15.505 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:57:15.506 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:57:15.511 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:57:15.511 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:57:15.512 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:57:15.513 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:57:15.514 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:57:15.514 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:57:15.514 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:57:15.515 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:57:15.515 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:57:16.980 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:57:16.981 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:57:16.981 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:57:16.983 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:57:16.983 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:57:16.983 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:57:16.983 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:57:16.984 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:57:16.984 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:57:16.985 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:57:16.985 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:57:16.985 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:57:16.986 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:57:16.986 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:57:16.986 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:57:16.986 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:57:16.987 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:57:16.987 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 16:57:41.574 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 19004 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 16:57:41.581 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 16:57:41.583 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 16:57:44.527 com.system.bgim.BgimApplication - Started BgimApplication in 3.531 seconds (JVM running for 4.662)
+[INFO ] 16:57:44.824 com.system.bgim.AppRunner - ===========
+[INFO ] 16:57:44.824 com.system.bgim.AppRunner - logger.info
+[INFO ] 16:57:44.824 com.system.bgim.AppRunner - ===========
+[TRACE] 16:57:44.824 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 16:57:44.825 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 16:57:44.825 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 16:57:44.825 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 16:57:44.825 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 16:57:44.829 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 16:57:45.444 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:57:45.558 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:57:45.558 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:57:45.680 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:57:45.680 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:57:45.682 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:57:45.682 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:57:45.683 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:57:45.683 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:57:45.688 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:57:45.688 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:57:45.688 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:57:45.690 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:57:45.690 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:57:45.690 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:57:45.690 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:57:45.691 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:57:45.691 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:57:46.611 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:57:46.611 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:57:46.612 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:57:46.613 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:57:46.613 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:57:46.614 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:57:46.615 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:57:46.616 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:57:46.616 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:57:46.617 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:57:46.617 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:57:46.617 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:57:46.618 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:57:46.619 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:57:46.619 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:57:46.620 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:57:46.622 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:57:46.622 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[INFO ] 16:58:31.129 com.system.bgim.BgimApplication - Starting BgimApplication on DESKTOP-TPI5MRV with PID 16424 (D:\git_src\bgim\target\classes started by inufu in D:\git_src\bgim)
+[DEBUG] 16:58:31.132 com.system.bgim.BgimApplication - Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+[INFO ] 16:58:31.132 com.system.bgim.BgimApplication - No active profile set, falling back to default profiles: default
+[INFO ] 16:58:34.259 com.system.bgim.BgimApplication - Started BgimApplication in 3.595 seconds (JVM running for 4.705)
+[INFO ] 16:58:34.262 com.system.bgim.AppRunner - ===========
+[INFO ] 16:58:34.262 com.system.bgim.AppRunner - logger.info
+[INFO ] 16:58:34.262 com.system.bgim.AppRunner - ===========
+[TRACE] 16:58:34.262 com.system.bgim.AppRunner - A TRACE Message
+[DEBUG] 16:58:34.262 com.system.bgim.AppRunner - A DEBUG Message
+[INFO ] 16:58:34.262 com.system.bgim.AppRunner - An INFO Message
+[WARN ] 16:58:34.262 com.system.bgim.AppRunner - A WARN Message
+[ERROR] 16:58:34.263 com.system.bgim.AppRunner - An ERROR Message
+[INFO ] 16:58:34.263 com.system.bgim.AppRunner - slf4j since 20201012
+[DEBUG] 16:58:35.141 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:58:35.248 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:58:35.249 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:58:35.362 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:58:35.362 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:58:35.364 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:58:35.365 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:58:35.366 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:58:35.366 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3
+[DEBUG] 16:58:35.372 c.s.b.mapper.DomainMapper.domainList - ==>  Preparing: SELECT * FROM presync_domain 
+[DEBUG] 16:58:35.373 c.s.b.mapper.DomainMapper.domainList - ==> Parameters: 
+[INFO ] 16:58:35.373 jdbc.sqlonly - SELECT
+            *
+        FROM presync_domain
+
+[TRACE] 16:58:35.374 c.s.b.mapper.DomainMapper.domainList - <==    Columns: COMPANYCODE, COMPANYNAME
+[TRACE] 16:58:35.374 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGSPACE, BG space
+[TRACE] 16:58:35.375 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGAGRICULTURE, BG agriculture
+[TRACE] 16:58:35.375 c.s.b.mapper.DomainMapper.domainList - <==        Row: BGCOMMERCE, BG commerce
+[INFO ] 16:58:35.376 jdbc.resultsettable - 
+|--------------|---------------|
+|companycode   |companyname    |
+|--------------|---------------|
+|BGSPACE       |BG space       |
+|BGAGRICULTURE |BG agriculture |
+|BGCOMMERCE    |BG commerce    |
+|--------------|---------------|
+
+[DEBUG] 16:58:35.376 c.s.b.mapper.DomainMapper.domainList - <==      Total: 3

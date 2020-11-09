@@ -84,102 +84,20 @@
 							</div>
 						</div>
 					</div>
-					<div class="main-header-fullscreen fullscreen-button">
+					<div>
+						<a href="/user/logout" class="header-link">
+							<i class="si si-logout header-icons" data-toggle="tooltip" title="si-logout"></i>
+						</a>
+					</div>
+					<div>
 						<a href="#" class="header-link">
-							<i class="header-icons" data-eva="expand-outline"></i>
+							<i class="si si-login header-icons" data-toggle="tooltip" title="si-login"></i>
 						</a>
 					</div>
-					<div class="dropdown main-header-notification">
-						<a class="new header-link" href="">
-							<i class="header-icons" data-eva="bell-outline"></i>
-							<span class="pulse bg-danger"></span>
-						</a>
-						<div class="dropdown-menu">
-							<div class="p-3 border-bottom text-center">
-								<h6 class="main-notification-title">Notifications</h6>
-							</div>
-							<div class="main-notification-list">
-								<a href="#" class="dropdown-item d-flex">
-									<div class="text-primary tx-18 mr-3 ">
-										<i class="fe fe-mail"></i>
-									</div>
-									<div>
-										<h6 class="mb-1">Commented on your post.</h6>
-										<div class="small text-muted">3 hours ago</div>
-									</div>
-								</a>
-								<a href="#" class="dropdown-item d-flex border-top">
-									<div class="text-pink tx-18 mr-3 ">
-										<i class="fe fe-user"></i>
-									</div>
-									<div>
-										<h6 class="mb-1">New User Registered</h6>
-										<div class="small text-muted">1 day ago</div>
-									</div>
-								</a>
-								<a href="#" class="dropdown-item d-flex  border-top">
-									<div class="text-success tx-18 mr-3 ">
-										<i class="fe fe-thumbs-up"></i>
-									</div>
-									<div>
-										<h6 class="mb-1">Someone likes our posts</h6>
-										<div class="small text-muted">5 mins ago</div>
-									</div>
-								</a>
-								<a href="#" class="dropdown-item d-flex border-top">
-									<div class="text-purple tx-18 mr-3 ">
-										<i class="fe fe-upload"></i>
-									</div>
-									<div>
-										<h6 class="mb-1">New file has been uploaded</h6>
-										<div class="small text-muted">50 sec ago</div>
-									</div>
-								</a>
-								<a href="#" class="dropdown-item d-flex border-top">
-									<div class="text-danger tx-18 mr-3 ">
-										<i class="fe fe-alert-circle"></i>
-									</div>
-									<div>
-										<h6 class="mb-1">System alert</h6>
-										<div class="small text-muted">2 days ago</div>
-									</div>
-								</a>
-								<a href="#" class="dropdown-item d-flex border-top">
-									<div class="text-warning tx-18 mr-3 ">
-										<i class="fe fe-server"></i>
-									</div>
-									<div>
-										<h6 class="mb-1">Server Rebooted</h6>
-										<div class="small text-muted">45 mins ago</div>
-									</div>
-								</a>
-							</div>
-							<div class="dropdown-footer">
-								<a href="">View All Notifications</a>
-							</div>
-						</div>
-					</div>
-					<div class="dropdown main-profile-menu">
-						<a class="main-img-user" href="">
-							<img alt="" src="../resources/img/users/male/15.jpg">
-						</a>
-						<div class="dropdown-menu">
-							<div class="main-header-profile">
-								<h6>User Info</h6>
-								<span>Administrator</span>
-							</div>
-							<a class="dropdown-item" href="#"><i class="si si-user"></i> Profile</a>
-							<a class="dropdown-item" href="#"><i class="si si-envelope-open"></i> Inbox</a>
-							<a class="dropdown-item" href="#"><i class="si si-calendar"></i> Activity</a>
-							<a class="dropdown-item" href="#"><i class="si si-bubbles"></i> Chat</a>
-							<a class="dropdown-item" href="#"><i class="si si-settings"></i> Settings</a>
-							<a class="dropdown-item" href="#"><i class="si si-power"></i> Logo Out</a>
-						</div>
-					</div>
-					<div class="main-header-sidebar-notification">
-						<a href="#" class="header-link" data-toggle="sidebar-right" data-target=".sidebar-right">
-							<i class="header-icons" data-eva="options-2-outline"></i>
-						</a>
+					<div class="main-chat-msg-name">
+						<small>Welcome, admin <br>
+						</small>
+						
 					</div>
 				</div>
 			</div>
@@ -238,6 +156,10 @@
 		</div>
 		<!--Horizontal-main -->
 		<script>
+		$(document).ready(function(){
+			alert(loginUserName());
+		});
+
 		$(document).off(); //모든 이벤트를 해제해고, 다시 이벤트를 동적으로 할당해 준다.
 		
 		var companycode
@@ -257,6 +179,21 @@
  			userListbyDomain(companycode);
  			}); 
 		
+		
+		function loginUserName(code){
+			console.log("loginUserName function starts");
+			 $.ajax({
+		        url : '/loginUserName',
+		        type : 'get',
+		        async: false,
+		        success : function(data){
+		        	var result = data;
+		        }
+		    });  
+			 return result;
+		}
+		
+		
  		function changeSerialize( values, k, v ) {
  		    var found = false;
  		    for (i = 0; i < values.length && !found; i++) {
@@ -272,8 +209,7 @@
  		    return values;
  		}
 
- 		
-		
+	
 		function userListbyDomain(companycode){
 			  
 				 $.ajax({
