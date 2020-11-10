@@ -4,6 +4,9 @@ import java.security.Principal;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -39,12 +42,11 @@ public class MemberController {
 	    }
 	 
 	 @RequestMapping("/loginUserName")
-	 @ResponseBody
-	 public String loginUserName(Principal principal) throws Exception {
- 		 System.out.println(1);
-		 System.out.println("name"+principal.getName());
-		  return principal.getName().toString();
-	 }
-	 
+	 @ResponseBody public String currentUserName() { 
+		 Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		 String username = authentication.getName();
+
+		 return username; 
+		 }	 
 	
 }

@@ -95,9 +95,7 @@
 						</a>
 					</div>
 					<div class="main-chat-msg-name">
-						<small>Welcome, admin <br>
-						</small>
-						
+						<small>Welcome, </small><small id="loginuser"></small>	
 					</div>
 				</div>
 			</div>
@@ -157,7 +155,7 @@
 		<!--Horizontal-main -->
 		<script>
 		$(document).ready(function(){
-			alert(loginUserName());
+			loginUserName();
 		});
 
 		$(document).off(); //모든 이벤트를 해제해고, 다시 이벤트를 동적으로 할당해 준다.
@@ -180,17 +178,16 @@
  			}); 
 		
 		
-		function loginUserName(code){
+		function loginUserName(){
 			console.log("loginUserName function starts");
 			 $.ajax({
 		        url : '/loginUserName',
 		        type : 'get',
 		        async: false,
 		        success : function(data){
-		        	var result = data;
+		        	 $("#loginuser").html(data);
 		        }
-		    });  
-			 return result;
+		    }); 
 		}
 		
 		

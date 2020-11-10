@@ -1,0 +1,6 @@
+1. procedure
+	1) create executable war
+	 -  Run As > Maven Install
+	2) create docker file
+	3) build docker image
+	4) run docker container

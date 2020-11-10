@@ -7,6 +7,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -22,7 +23,7 @@ public class DeptController {
     DeptService deptService;
 	
 	
-	@RequestMapping("/deptlist")
+	@RequestMapping(path="/deptlist",method=RequestMethod.GET)
 	private String deptList(Model model) throws Exception {
 		DeptDTO dept = new DeptDTO();
 		dept.setTablename("org_dept");
