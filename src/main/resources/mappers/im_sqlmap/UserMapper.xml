@@ -9,7 +9,10 @@
     </select>
     
     <select id="userList" resultType="com.system.bgim.dto.UserDTO">
-        SELECT * FROM org_user
+        SELECT * FROM (
+        SELECT ROWNUM AS RNUM, T1.*
+        FROM org_user T1) WHERE
+        RNUM BETWEEN ${startData} AND ${endData}    
     </select>
     
     <select id="userListbyDomain" parameterType="com.system.bgim.dto.UserDTO" resultType="com.system.bgim.dto.UserDTO">

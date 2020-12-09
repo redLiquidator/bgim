@@ -2,7 +2,7 @@
     pageEncoding="EUC-KR"%>
 <%@ include file="bootstrap.jsp" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<%@ taglib prefix="layoutTag" tagdir="/WEB-INF/tags"%>
+
 
 
 

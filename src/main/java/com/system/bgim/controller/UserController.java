@@ -38,6 +38,13 @@ public class UserController {
 		System.out.println("/list");
 		List<UserDTO> list = userService.userListService();
 		model.addAttribute("list", list);
+		
+		PageMaker pagemaker = new PageMaker();
+		UserDTO user = new UserDTO();
+		user.setTablename("org_user");
+		pagemaker.setTotalCount(userService.countUserService(user));
+		
+		
 		return "list";
 	}
 	

@@ -23,10 +23,7 @@ public class BgimApplication extends SpringBootServletInitializer{
 	public static void main(String[] args){
 		SpringApplication.run(BgimApplication.class, args);
 		System.out.println("bgimapplication");
-
-		/* 포르젝트실행시 콘솔 로그 메시지
-		 * AppRunner runner= new AppRunner(); runner.run(args);
-		 */
+		System.setProperty("spring.profiles.default", "local");
 		 	
 	}
 	
