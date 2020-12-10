@@ -3,12 +3,12 @@
  
 <mapper namespace="com.system.bgim.mapper.UserMapper">
  
- <select id="userCount" resultType="int">
+ <select id="userCount" parameterType="com.system.bgim.dto.UserDTO" resultType="int">
         SELECT count(*)
-          FROM org_user
+          FROM ${tablename}
     </select>
     
-    <select id="userList" resultType="com.system.bgim.dto.UserDTO">
+    <select id="userList" parameterType="com.system.bgim.dto.PageMakerDTO" resultType="com.system.bgim.dto.UserDTO">
         SELECT * FROM (
         SELECT ROWNUM AS RNUM, T1.*
         FROM org_user T1) WHERE

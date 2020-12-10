@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.system.bgim.dto.DeptDTO;
 import com.system.bgim.dto.DomainDTO;
 import com.system.bgim.dto.HistoryDTO;
+import com.system.bgim.dto.PageMakerDTO;
 import com.system.bgim.dto.UserDTO;
 import com.system.bgim.service.DeptService;
 import com.system.bgim.service.DomainService;
@@ -34,18 +35,23 @@ public class UserController {
 
 	
 	@RequestMapping("/list")
-	private String userList(Model model) throws Exception {
-		System.out.println("/list");
-		List<UserDTO> list = userService.userListService();
-		model.addAttribute("list", list);
-		
-		PageMaker pagemaker = new PageMaker();
-		UserDTO user = new UserDTO();
-		user.setTablename("org_user");
-		pagemaker.setTotalCount(userService.countUserService(user));
-		
-		
-		return "list";
+	private String userList(Model model) throws Exception {	
+				  
+		  UserDTO user = new UserDTO();
+		  user.setTablename("org_user");
+		  
+		  //페이징처리시 계산한 startData와 endData값을 가져와서 리스트를 불러온다.
+		  System.out.println("/list"); 
+		  PageMaker DoPageMaker= new PageMaker();
+		  DoPageMaker.calcData();
+		/*
+		 * 
+		 * System.out.println(pageMaker.getStartData()); List<UserDTO> list =
+		 * userService.userListService(pageMaker); model.addAttribute("list", list);
+		 */
+		 	  
+		  return "list_test";		 
+
 	}
 	
 

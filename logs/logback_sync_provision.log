@@ -1,152 +1,96 @@
-[DEBUG] 11:21:55.954 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 11:21:55.958 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 11:21:56.257 c.s.bgim.mapper.UserMapper.userList - <==      Total: 4
-[DEBUG] 11:22:20.707 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 11:22:20.709 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 11:22:20.715 c.s.bgim.mapper.UserMapper.userList - <==      Total: 4
-[DEBUG] 11:34:20.630 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 11:34:20.630 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 11:34:20.639 c.s.bgim.mapper.UserMapper.userList - <==      Total: 4
-[DEBUG] 11:35:49.842 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 11:35:49.926 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 11:35:50.022 c.s.bgim.mapper.UserMapper.userList - <==      Total: 4
-[DEBUG] 11:35:56.893 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 11:35:56.893 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 11:35:56.904 c.s.bgim.mapper.UserMapper.userList - <==      Total: 4
-[DEBUG] 13:05:46.303 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 13:05:46.385 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 13:05:46.528 c.s.bgim.mapper.UserMapper.userList - <==      Total: 51
-[DEBUG] 13:33:05.420 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 13:33:05.420 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 13:33:05.450 c.s.bgim.mapper.UserMapper.userList - <==      Total: 51
-[DEBUG] 13:38:38.021 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 13:38:38.106 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 13:38:38.246 c.s.bgim.mapper.UserMapper.userList - <==      Total: 51
-[DEBUG] 13:38:38.267 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 13:38:38.267 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 13:38:38.274 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 13:38:38.275 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 13:38:38.275 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 13:38:38.276 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 13:42:31.009 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 13:42:31.116 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 13:42:31.296 c.s.bgim.mapper.UserMapper.userList - <==      Total: 51
-[DEBUG] 13:42:31.319 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 13:42:31.320 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 13:42:31.324 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 13:42:31.325 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 13:42:31.325 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 13:42:31.327 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 13:43:12.451 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 13:43:12.545 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 13:43:12.685 c.s.bgim.mapper.UserMapper.userList - <==      Total: 51
-[DEBUG] 13:43:12.711 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 13:43:12.711 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 13:43:12.716 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 13:43:12.717 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 13:43:12.717 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 13:43:12.718 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 13:45:50.306 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 13:45:50.383 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 13:45:50.507 c.s.bgim.mapper.UserMapper.userList - <==      Total: 51
-[DEBUG] 13:45:50.524 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 13:45:50.525 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 13:45:50.530 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 13:45:50.530 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 13:45:50.530 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 13:45:50.532 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 13:47:01.009 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 13:47:01.087 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 13:47:01.300 c.s.bgim.mapper.UserMapper.userList - <==      Total: 51
-[DEBUG] 13:47:01.331 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 13:47:01.332 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 13:47:01.336 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 13:47:01.336 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 13:47:01.337 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 13:47:01.338 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 13:56:47.760 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 13:56:47.842 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 13:56:47.999 c.s.bgim.mapper.UserMapper.userList - <==      Total: 51
-[DEBUG] 13:56:48.017 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 13:56:48.018 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 13:56:48.021 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 13:56:48.022 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 13:56:48.022 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 13:56:48.025 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 14:02:06.603 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 14:02:06.723 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 14:02:06.923 c.s.bgim.mapper.UserMapper.userList - <==      Total: 51
-[DEBUG] 14:02:06.949 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 14:02:06.950 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 14:02:06.954 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 14:02:06.955 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 14:02:06.955 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 14:02:06.957 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 14:02:57.618 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 14:02:57.699 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 14:02:57.824 c.s.bgim.mapper.UserMapper.userList - <==      Total: 51
-[DEBUG] 14:02:57.844 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 14:02:57.844 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 14:02:57.847 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 14:02:57.847 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 14:02:57.847 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 14:02:57.848 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 14:03:22.818 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 14:03:22.897 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 14:03:23.031 c.s.bgim.mapper.UserMapper.userList - <==      Total: 51
-[DEBUG] 14:03:23.049 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 14:03:23.049 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 14:03:23.052 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 14:03:23.053 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 14:03:23.053 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 14:03:23.054 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 15:40:39.570 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 15:40:39.701 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 15:40:39.906 c.s.bgim.mapper.UserMapper.userList - <==      Total: 51
-[DEBUG] 15:40:39.941 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 15:40:39.942 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 15:40:39.950 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 15:40:39.951 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 15:40:39.951 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 15:40:39.953 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 15:42:03.460 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 15:42:03.589 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 15:42:03.773 c.s.bgim.mapper.UserMapper.userList - <==      Total: 51
-[DEBUG] 15:42:03.796 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 15:42:03.796 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 15:42:03.801 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 15:42:03.801 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 15:42:03.801 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 15:42:03.802 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 15:57:18.397 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 15:57:18.481 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 15:57:18.617 c.s.bgim.mapper.UserMapper.userList - <==      Total: 51
-[DEBUG] 15:57:18.636 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 15:57:18.636 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 15:57:18.641 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 16:08:12.796 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 16:08:12.873 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 16:08:13.008 c.s.bgim.mapper.UserMapper.userList - <==      Total: 51
-[DEBUG] 16:08:13.025 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 16:08:13.026 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 16:08:13.030 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 16:09:15.059 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 16:09:15.184 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 16:09:15.438 c.s.bgim.mapper.UserMapper.userList - <==      Total: 51
-[DEBUG] 16:09:15.462 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 16:09:15.464 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 16:09:15.469 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 16:48:42.675 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 16:48:42.676 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 16:48:42.696 c.s.bgim.mapper.UserMapper.userList - <==      Total: 51
-[DEBUG] 16:48:42.696 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
-[DEBUG] 16:48:42.696 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
-[DEBUG] 16:48:42.698 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
-[DEBUG] 17:01:48.065 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM org_user 
-[DEBUG] 17:01:48.159 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 17:01:48.316 c.s.bgim.mapper.UserMapper.userList - <==      Total: 51
-[DEBUG] 17:04:51.743 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM ( SELECT ROWNUM AS RNUM, T1.* FROM org_user T1 ) WHERE RNUM BETWEEN 3 AND 5; 
-[DEBUG] 17:04:51.816 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 17:11:11.065 c.s.bgim.mapper.UserMapper.userList - ==>  Preparing: SELECT * FROM ( SELECT ROWNUM AS RNUM, T1.* FROM org_user T1) WHERE RNUM BETWEEN 3 AND 5 
-[DEBUG] 17:11:11.154 c.s.bgim.mapper.UserMapper.userList - ==> Parameters: 
-[DEBUG] 17:11:11.257 c.s.bgim.mapper.UserMapper.userList - <==      Total: 3
+[DEBUG] 14:44:49.047 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 15:57:31.397 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 15:57:33.667 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:07:11.239 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:07:12.970 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:15:36.800 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:15:37.728 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:30:08.031 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:37:51.222 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:37:52.507 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:41:11.757 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:41:12.331 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:41:13.092 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:46:17.723 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:46:19.111 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:46:19.672 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:46:19.860 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:46:20.049 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:46:20.234 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:46:49.873 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:48:41.977 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:48:43.242 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:48:43.450 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:48:43.657 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:51:12.635 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:51:13.373 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:51:13.820 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:51:14.050 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:51:14.266 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:51:14.496 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:51:14.717 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:51:14.955 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:51:15.185 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:51:15.415 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:51:15.640 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:51:15.880 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:51:22.880 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:52:28.973 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
+[DEBUG] 16:52:28.975 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGSPACE(String)
+[DEBUG] 16:52:28.997 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 1
+[DEBUG] 16:52:32.707 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
+[DEBUG] 16:52:32.707 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGAGRICULTURE(String)
+[DEBUG] 16:52:32.711 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 0
+[DEBUG] 16:52:33.565 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
+[DEBUG] 16:52:33.566 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGCOMMERCE(String)
+[DEBUG] 16:52:33.568 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 2
+[DEBUG] 16:52:36.368 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
+[DEBUG] 16:52:36.368 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGAGRICULTURE(String)
+[DEBUG] 16:52:36.370 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 0
+[DEBUG] 16:52:37.042 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
+[DEBUG] 16:52:37.043 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGSPACE(String)
+[DEBUG] 16:52:37.044 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 1
+[DEBUG] 16:52:40.146 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:52:40.147 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGSPACE.hoxy000(String)
+[DEBUG] 16:52:40.167 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 16:52:40.168 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 16:52:40.169 c.s.b.m.UserMapper.countUserService - ==> Parameters: BGSPACE.hoxy000(String)
+[DEBUG] 16:52:40.170 c.s.b.m.UserMapper.countUserService - <==      Total: 1
+[DEBUG] 16:52:42.191 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
+[DEBUG] 16:52:42.191 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGSPACE(String)
+[DEBUG] 16:52:42.194 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 1
+[DEBUG] 16:57:12.887 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
+[DEBUG] 16:57:12.888 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGAGRICULTURE(String)
+[DEBUG] 16:57:12.889 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 0
+[DEBUG] 16:57:15.772 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
+[DEBUG] 16:57:15.772 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGCOMMERCE(String)
+[DEBUG] 16:57:15.774 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 2
+[DEBUG] 16:57:16.653 c.s.b.m.UserMapper.userListbyDomain - ==>  Preparing: SELECT * FROM presync_user where companycode= ? 
+[DEBUG] 16:57:16.654 c.s.b.m.UserMapper.userListbyDomain - ==> Parameters: BGSPACE(String)
+[DEBUG] 16:57:16.656 c.s.b.m.UserMapper.userListbyDomain - <==      Total: 1
+[DEBUG] 16:59:53.468 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 17:07:37.594 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 17:07:39.287 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 17:08:06.875 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 17:09:30.108 c.s.b.m.UserMapper.countUserService - ==>  Preparing: SELECT count(*) FROM org_user WHERE CODE = ? 
+[DEBUG] 17:11:05.413 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
+[DEBUG] 17:11:05.490 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
+[DEBUG] 17:11:05.577 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
+[DEBUG] 17:16:22.681 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
+[DEBUG] 17:16:22.814 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
+[DEBUG] 17:16:22.952 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
+[DEBUG] 17:22:18.449 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
+[DEBUG] 17:22:18.525 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
+[DEBUG] 17:22:18.601 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
+[DEBUG] 17:24:37.430 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
+[DEBUG] 17:24:37.504 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
+[DEBUG] 17:24:37.576 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
+[DEBUG] 17:25:04.677 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
+[DEBUG] 17:25:04.754 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
+[DEBUG] 17:25:04.820 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
+[DEBUG] 17:26:03.602 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
+[DEBUG] 17:26:03.704 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
+[DEBUG] 17:26:03.803 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1
+[DEBUG] 17:26:03.925 c.s.bgim.mapper.UserMapper.userCount - ==>  Preparing: SELECT count(*) FROM org_user 
+[DEBUG] 17:26:03.926 c.s.bgim.mapper.UserMapper.userCount - ==> Parameters: 
+[DEBUG] 17:26:03.930 c.s.bgim.mapper.UserMapper.userCount - <==      Total: 1

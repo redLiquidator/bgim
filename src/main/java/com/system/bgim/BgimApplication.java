@@ -23,8 +23,7 @@ public class BgimApplication extends SpringBootServletInitializer{
 	public static void main(String[] args){
 		SpringApplication.run(BgimApplication.class, args);
 		System.out.println("bgimapplication");
-		System.setProperty("spring.profiles.default", "local");
-		 	
+	    System.setProperty("spring.profiles.default", "local");	 	
 	}
 	
 	@Override
