@@ -2,6 +2,16 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
 <mapper namespace="com.system.bgim.mapper.DeptMapper">
+	<select id="countDept" parameterType="com.system.bgim.dto.DeptDTO" resultType="int">
+        SELECT count(*)
+          FROM ${tablename}
+    </select>
+      <select id="deptList_pagination" parameterType="com.system.bgim.dto.PageMakerDTO" resultType="com.system.bgim.dto.DeptDTO">
+        SELECT * FROM (
+        SELECT ROWNUM AS RNUM, T1.*
+        FROM org_dept T1) WHERE
+        RNUM BETWEEN ${startData} AND ${endData}    
+    </select>
 	<select id="deptList" resultType="com.system.bgim.dto.DeptDTO">
         SELECT
             *

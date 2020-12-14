@@ -105,70 +105,7 @@
 							<i class="header-icons" data-eva="bell-outline"></i>
 							<span class="pulse bg-danger"></span>
 						</a>
-						<div class="dropdown-menu">
-							<div class="p-3 border-bottom text-center">
-								<h6 class="main-notification-title">Notifications</h6>
-							</div>
-							<div class="main-notification-list">
-								<a href="#" class="dropdown-item d-flex">
-									<div class="text-primary tx-18 mr-3 ">
-										<i class="fe fe-mail"></i>
-									</div>
-									<div>
-										<h6 class="mb-1">Commented on your post.</h6>
-										<div class="small text-muted">3 hours ago</div>
-									</div>
-								</a>
-								<a href="#" class="dropdown-item d-flex border-top">
-									<div class="text-pink tx-18 mr-3 ">
-										<i class="fe fe-user"></i>
-									</div>
-									<div>
-										<h6 class="mb-1">New User Registered</h6>
-										<div class="small text-muted">1 day ago</div>
-									</div>
-								</a>
-								<a href="#" class="dropdown-item d-flex  border-top">
-									<div class="text-success tx-18 mr-3 ">
-										<i class="fe fe-thumbs-up"></i>
-									</div>
-									<div>
-										<h6 class="mb-1">Someone likes our posts</h6>
-										<div class="small text-muted">5 mins ago</div>
-									</div>
-								</a>
-								<a href="#" class="dropdown-item d-flex border-top">
-									<div class="text-purple tx-18 mr-3 ">
-										<i class="fe fe-upload"></i>
-									</div>
-									<div>
-										<h6 class="mb-1">New file has been uploaded</h6>
-										<div class="small text-muted">50 sec ago</div>
-									</div>
-								</a>
-								<a href="#" class="dropdown-item d-flex border-top">
-									<div class="text-danger tx-18 mr-3 ">
-										<i class="fe fe-alert-circle"></i>
-									</div>
-									<div>
-										<h6 class="mb-1">System alert</h6>
-										<div class="small text-muted">2 days ago</div>
-									</div>
-								</a>
-								<a href="#" class="dropdown-item d-flex border-top">
-									<div class="text-warning tx-18 mr-3 ">
-										<i class="fe fe-server"></i>
-									</div>
-									<div>
-										<h6 class="mb-1">Server Rebooted</h6>
-										<div class="small text-muted">45 mins ago</div>
-									</div>
-								</a>
-							</div>
-							<div class="dropdown-footer">
-								<a href="">View All Notifications</a>
-							</div>
-						</div>
+						
 					</div>
 					<div class="dropdown main-profile-menu">
 						<a class="main-img-user" href="">
@@ -209,15 +146,15 @@
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="cube-outline"></i> Data management <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
 								    <li aria-haspopup="true"><a href="/presyncdomainlist">presync data</a></li>
-									<li aria-haspopup="true"><a href="/domainlist">domain</a></li>
-									<li aria-haspopup="true"><a href="/deptlist">department</a></li>
+									<li aria-haspopup="true"><a href="/domainlist/1">domain</a></li>
+									<li aria-haspopup="true"><a href="/deptlist/1">department</a></li>
 									<li aria-haspopup="true"><a href="/detail">user</a></li>
 								</ul>
 							</li>
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="bar-chart-2-outline"></i> Synchronization <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
 									<li aria-haspopup="true"><a href="/syncresource">resource</a></li>
-									<li aria-haspopup="true"><a href="/synchistory">sync history</a></li>
+									<li aria-haspopup="true"><a href="/synchistory/1">sync history</a></li>
 									<li aria-haspopup="true"><a href="/webservice">webservice</a></li>
 								</ul>
 							</li>
@@ -225,13 +162,13 @@
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="file-text-outline"></i>Provision<i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
 									<li aria-haspopup="true"><a href="/provisionresource">resource</a></li>
-									<li aria-haspopup="true"><a href="/provisionhistory">provision history</a></li>
-									<li aria-haspopup="true"><a href="/provisionerror">provision error</a></li>
+									<li aria-haspopup="true"><a href="/provisionhistory/1">provision history</a></li>
+									<li aria-haspopup="true"><a href="/provisionerror/1">provision error</a></li>
 								</ul>
 							</li>
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="book-outline"></i> System Management <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
-									<li aria-haspopup="true"><a href="/sync_provision_log">log files</a></li>
+									<li aria-haspopup="true"><a href="/sync_provision_log/1">log files</a></li>
 									<li aria-haspopup="true" class="sub-menu-sub"><a href="#">account</a></li>
 									<li aria-haspopup="true"><a href="page-invoice.html">database</a></li>
 									<li aria-haspopup="true"><a href="blog.html">release info</a></li>
@@ -582,7 +519,7 @@
 											</tr>
 											<tr>
 												<td>083</td>
-												<td>Maintenance & Repair</td>
+												<td>Maintenance  Repair</td>
 												<td>$4,987</td>
 												<td><i class="mdi mdi-trending-up text-success mr-1"></i> 52.17%</td>
 											</tr>
@@ -828,13 +765,7 @@
 									</div>
 								</div>
 								<div class="tab-pane" id="side-3">
-									<div class="d-flex p-3 border-bottom">
-										<label class="ckbox"><input checked="" type="checkbox"><span>Do something more</span></label>
-										<span class="ml-auto">
-											<i class="si si-pencil text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
-											<i class="si si-trash text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
-										</span>
-									</div>
+									
 									<div class="d-flex p-3 border-bottom">
 										<label class="ckbox"><input type="checkbox"><span>Find an idea</span></label>
 										<span class="ml-auto">
@@ -870,13 +801,7 @@
 											<i class="si si-trash text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
 										</span>
 									</div>
-									<div class="d-flex p-3 border-bottom">
-										<label class="ckbox"><input checked=""  type="checkbox"><span>Payment reminders</span></label>
-										<span class="ml-auto">
-											<i class="si si-pencil text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
-											<i class="si si-trash text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
-										</span>
-									</div>
+									
 									<div class="d-flex p-3 border-bottom">
 										<label class="ckbox"><input type="checkbox"><span>Finsh Something more</span></label>
 										<span class="ml-auto">

@@ -5,8 +5,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -18,9 +16,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.system.bgim.dto.FileDTO;
+import com.system.bgim.dto.DeptDTO;
 import com.system.bgim.dto.HistoryDTO;
-import com.system.bgim.dto.LogFilesDTO;
+import com.system.bgim.dto.PageMakerDTO;
 import com.system.bgim.service.HistoryService;
 
 @Controller
@@ -36,21 +34,46 @@ public class HistoryController {
 		HistoryDTO history = new HistoryDTO();
 		history.setHistorytablename("provision_history_user");
 		List<HistoryDTO> userhistorylist = historyService.userHistoryListService(history);
-
 		model.addAttribute("userhistorylist", userhistorylist);
 		return "provisionhistory";
 	}
 
-	@RequestMapping("/synchistory")
-	private String syncUserList(Model model) throws Exception {
+	@RequestMapping("/synchistory/{presentPage}")
+	private String syncUserList(@PathVariable int presentPage,Model model) throws Exception {
 		System.out.println("/synchistory");
 		HistoryDTO history = new HistoryDTO();
 		history.setHistorytablename("sync_history_user");
-		List<HistoryDTO> userhistorylist = historyService.userHistoryListService(history);
-
-		model.addAttribute("userhistorylist", userhistorylist);
-		return "synchistory";
-
+		
+		int totalNumber = historyService.countHistoryService(history);	 
+		System.out.println("totalHistory | "+totalNumber);
+		
+		PageMaker DoPageMaker= new PageMaker();
+		DoPageMaker.calcData(totalNumber,presentPage);
+		System.out.println(DoPageMaker.calcData(totalNumber,presentPage));
+		  
+		PageMakerDTO pageMaker = new PageMakerDTO();
+		  
+		pageMaker.setStartData((int)
+		DoPageMaker.calcData(totalNumber,presentPage).get(0));
+		pageMaker.setEndData((int)
+		DoPageMaker.calcData(totalNumber,presentPage).get(1));
+		pageMaker.setStartPage((int)
+		DoPageMaker.calcData(totalNumber,presentPage).get(2));
+		pageMaker.setEndPage((int)
+		DoPageMaker.calcData(totalNumber,presentPage).get(3));
+		pageMaker.setNext((boolean)
+		DoPageMaker.calcData(totalNumber,presentPage).get(4));
+		pageMaker.setPrev((boolean)
+		DoPageMaker.calcData(totalNumber,presentPage).get(5));
+		pageMaker.setPresentPage(presentPage);
+		  
+		  
+		  //페이징처리시 계산한 startData와 endData값을 가져와서 리스트를 불러온다.
+		  System.out.println("/historylist"); 
+		  List<HistoryDTO> userhistorylist = historyService.historyListService_pagination(pageMaker);
+		  model.addAttribute("userhistorylist",userhistorylist);
+		  model.addAttribute("pageMaker",pageMaker); 
+		  return "synchistory";
 	}
 
 	// 인사동기화&프로비전 쿼리로그파일 다운로드 메뉴

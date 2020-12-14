@@ -5,8 +5,18 @@ public class PageMakerDTO {
 	private int endPage;
 	private int startData;
 	private int endData;
-	
+	private boolean prev;
+	private boolean next;
 	private int totalCount;
+	private int presentPage;
+	
+	public boolean isNext() {
+		return next;
+	}
+	public void setNext(boolean next) {
+		this.next = next;
+	}
+	
 	
 	public int getStartData() {
 		return startData;
@@ -37,6 +47,18 @@ public class PageMakerDTO {
 	}
 	public void setTotalCount(int totalCount) {
 		this.totalCount = totalCount;
+	}
+	public boolean isPrev() {
+		return prev;
+	}
+	public void setPrev(boolean prev) {
+		this.prev = prev;
+	}
+	public int getPresentPage() {
+		return presentPage;
+	}
+	public void setPresentPage(int presentPage) {
+		this.presentPage = presentPage;
 	}
 		
 }

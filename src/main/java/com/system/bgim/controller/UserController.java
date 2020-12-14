@@ -34,24 +34,34 @@ public class UserController {
 	HistoryService historyService;
 
 	
-	@RequestMapping("/list")
-	private String userList(Model model) throws Exception {	
+	@RequestMapping("/list/{presentPage}")
+	private String userList(@PathVariable int presentPage,Model model) throws Exception {	
 				  
 		  UserDTO user = new UserDTO();
 		  user.setTablename("org_user");
+		  int totalNumber = userService.countUserService(user);	  
+
+		  PageMaker DoPageMaker= new PageMaker();
+		  DoPageMaker.calcData(totalNumber,presentPage);  
+		  System.out.println(DoPageMaker.calcData(totalNumber,presentPage));
+		  
+		  PageMakerDTO pageMaker = new PageMakerDTO();
+		  
+		  pageMaker.setStartData((int) DoPageMaker.calcData(totalNumber,presentPage).get(0));
+		  pageMaker.setEndData((int) DoPageMaker.calcData(totalNumber,presentPage).get(1));
+		  pageMaker.setStartPage((int) DoPageMaker.calcData(totalNumber,presentPage).get(2));
+		  pageMaker.setEndPage((int) DoPageMaker.calcData(totalNumber,presentPage).get(3));
+		  pageMaker.setNext((boolean) DoPageMaker.calcData(totalNumber,presentPage).get(4));
+		  pageMaker.setPrev((boolean) DoPageMaker.calcData(totalNumber,presentPage).get(5));
+		  pageMaker.setPresentPage(presentPage);
 		  
 		  //페이징처리시 계산한 startData와 endData값을 가져와서 리스트를 불러온다.
 		  System.out.println("/list"); 
-		  PageMaker DoPageMaker= new PageMaker();
-		  DoPageMaker.calcData();
-		/*
-		 * 
-		 * System.out.println(pageMaker.getStartData()); List<UserDTO> list =
-		 * userService.userListService(pageMaker); model.addAttribute("list", list);
-		 */
-		 	  
-		  return "list_test";		 
-
+		  List<UserDTO> list = userService.userListService(pageMaker); 
+		  model.addAttribute("list", list);
+		  model.addAttribute("pageMaker",pageMaker);
+		 	 	  
+		  return "list";		
 	}
 	
 

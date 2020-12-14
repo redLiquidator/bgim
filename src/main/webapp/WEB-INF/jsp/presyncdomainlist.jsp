@@ -113,15 +113,15 @@
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="cube-outline"></i> Data management <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
 									<li aria-haspopup="true"><a href="/presyncdomainlist">presync data</a></li>
-									<li aria-haspopup="true"><a href="/domainlist">domain</a></li>
-									<li aria-haspopup="true"><a href="/deptlist">department</a></li>
-									<li aria-haspopup="true"><a href="/list">user</a></li>
+									<li aria-haspopup="true"><a href="/domainlist/1">domain</a></li>
+									<li aria-haspopup="true"><a href="/deptlist/1">department</a></li>
+									<li aria-haspopup="true"><a href="/list/1">user</a></li>
 								</ul>
 							</li>
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="bar-chart-2-outline"></i> Synchronization <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
 									<li aria-haspopup="true"><a href="/syncresource">resource</a></li>
-									<li aria-haspopup="true"><a href="/synchistory">sync history</a></li>
+									<li aria-haspopup="true"><a href="/synchistory/1">sync history</a></li>
 									<li aria-haspopup="true"><a href="/webservice">webservice</a></li>
 								</ul>
 							</li>
@@ -129,13 +129,13 @@
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="file-text-outline"></i>Provision<i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
 									<li aria-haspopup="true"><a href="/provisionresource">resource</a></li>
-									<li aria-haspopup="true"><a href="/provisionhistory">provision history</a></li>
-									<li aria-haspopup="true"><a href="/provisionerror">provision error</a></li>
+									<li aria-haspopup="true"><a href="/provisionhistory/1">provision history</a></li>
+									<li aria-haspopup="true"><a href="/provisionerror/1">provision error</a></li>
 								</ul>
 							</li>
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="book-outline"></i> System Management <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
-									<li aria-haspopup="true"><a href="/sync_provision_log">log files</a></li>
+									<li aria-haspopup="true"><a href="/sync_provision_log/1">log files</a></li>
 									<li aria-haspopup="true" class="sub-menu-sub"><a href="#">account</a></li>
 									<li aria-haspopup="true"><a href="page-invoice.html">database</a></li>
 									<li aria-haspopup="true"><a href="blog.html">release info</a></li>
@@ -732,13 +732,7 @@
 									</div>
 								</div>
 								<div class="tab-pane" id="side-3">
-									<div class="d-flex p-3 border-bottom">
-										<label class="ckbox"><input checked="" type="checkbox"><span>Do something more</span></label>
-										<span class="ml-auto">
-											<i class="si si-pencil text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
-											<i class="si si-trash text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
-										</span>
-									</div>
+									
 									<div class="d-flex p-3 border-bottom">
 										<label class="ckbox"><input type="checkbox"><span>Find an idea</span></label>
 										<span class="ml-auto">
@@ -774,13 +768,7 @@
 											<i class="si si-trash text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
 										</span>
 									</div>
-									<div class="d-flex p-3 border-bottom">
-										<label class="ckbox"><input checked=""  type="checkbox"><span>Payment reminders</span></label>
-										<span class="ml-auto">
-											<i class="si si-pencil text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
-											<i class="si si-trash text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
-										</span>
-									</div>
+									
 									<div class="d-flex p-3 border-bottom">
 										<label class="ckbox"><input type="checkbox"><span>Finsh Something more</span></label>
 										<span class="ml-auto">

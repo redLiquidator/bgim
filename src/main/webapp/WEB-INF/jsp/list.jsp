@@ -61,7 +61,15 @@
 
 		<!--Flag Css -->
 		<link href="../resources/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
-
+		<!-- 페이징처리 part1/2 컨트롤러 부분도 추가해야 함-->
+         <style>
+         .pageNumber{
+         position:absolute;
+         top:50%;
+         left:50%;
+         transform:translate(-50%,750%);}
+         </style>
+         <!-- 페이징처리 part1/2 -->
 	</head>
 	
 	<body class="main-body">
@@ -108,70 +116,7 @@
 							<i class="header-icons" data-eva="bell-outline"></i>
 							<span class="pulse bg-danger"></span>
 						</a>
-						<div class="dropdown-menu">
-							<div class="p-3 border-bottom text-center">
-								<h6 class="main-notification-title">Notifications</h6>
-							</div>
-							<div class="main-notification-list">
-								<a href="#" class="dropdown-item d-flex">
-									<div class="text-primary tx-18 mr-3 ">
-										<i class="fe fe-mail"></i>
-									</div>
-									<div>
-										<h6 class="mb-1">Commented on your post.</h6>
-										<div class="small text-muted">3 hours ago</div>
-									</div>
-								</a>
-								<a href="#" class="dropdown-item d-flex border-top">
-									<div class="text-pink tx-18 mr-3 ">
-										<i class="fe fe-user"></i>
-									</div>
-									<div>
-										<h6 class="mb-1">New User Registered</h6>
-										<div class="small text-muted">1 day ago</div>
-									</div>
-								</a>
-								<a href="#" class="dropdown-item d-flex  border-top">
-									<div class="text-success tx-18 mr-3 ">
-										<i class="fe fe-thumbs-up"></i>
-									</div>
-									<div>
-										<h6 class="mb-1">Someone likes our posts</h6>
-										<div class="small text-muted">5 mins ago</div>
-									</div>
-								</a>
-								<a href="#" class="dropdown-item d-flex border-top">
-									<div class="text-purple tx-18 mr-3 ">
-										<i class="fe fe-upload"></i>
-									</div>
-									<div>
-										<h6 class="mb-1">New file has been uploaded</h6>
-										<div class="small text-muted">50 sec ago</div>
-									</div>
-								</a>
-								<a href="#" class="dropdown-item d-flex border-top">
-									<div class="text-danger tx-18 mr-3 ">
-										<i class="fe fe-alert-circle"></i>
-									</div>
-									<div>
-										<h6 class="mb-1">System alert</h6>
-										<div class="small text-muted">2 days ago</div>
-									</div>
-								</a>
-								<a href="#" class="dropdown-item d-flex border-top">
-									<div class="text-warning tx-18 mr-3 ">
-										<i class="fe fe-server"></i>
-									</div>
-									<div>
-										<h6 class="mb-1">Server Rebooted</h6>
-										<div class="small text-muted">45 mins ago</div>
-									</div>
-								</a>
-							</div>
-							<div class="dropdown-footer">
-								<a href="">View All Notifications</a>
-							</div>
-						</div>
+					
 					</div>
 					<div class="dropdown main-profile-menu">
 						<a class="main-img-user" href="">
@@ -211,15 +156,15 @@
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="cube-outline"></i> Data management <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
 									<li aria-haspopup="true"><a href="/presyncdomainlist">presync data</a></li>
-									<li aria-haspopup="true"><a href="/domainlist">domain</a></li>
-									<li aria-haspopup="true"><a href="/deptlist">department</a></li>
-									<li aria-haspopup="true"><a href="/list">user</a></li>
+									<li aria-haspopup="true"><a href="/domainlist/1">domain</a></li>
+									<li aria-haspopup="true"><a href="/deptlist/1">department</a></li>
+									<li aria-haspopup="true"><a href="/list/1">user</a></li>
 								</ul>
 							</li>
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="bar-chart-2-outline"></i> Synchronization <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
 									<li aria-haspopup="true"><a href="/syncresource">resource</a></li>
-									<li aria-haspopup="true"><a href="/synchistory">sync history</a></li>
+									<li aria-haspopup="true"><a href="/synchistory/1">sync history</a></li>
 									<li aria-haspopup="true"><a href="/webservice">webservice</a></li>
 								</ul>
 							</li>
@@ -227,13 +172,13 @@
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="file-text-outline"></i>Provision<i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
 									<li aria-haspopup="true"><a href="/provisionresource">resource</a></li>
-									<li aria-haspopup="true"><a href="/provisionhistory">provision history</a></li>
-									<li aria-haspopup="true"><a href="/provisionerror">provision error</a></li>
+									<li aria-haspopup="true"><a href="/provisionhistory/1">provision history</a></li>
+									<li aria-haspopup="true"><a href="/provisionerror/1">provision error</a></li>
 								</ul>
 							</li>
 							<li aria-haspopup="true"><a href="#" class="sub-icon"><i class="hor-icon" data-eva="book-outline"></i> System Management <i class="fe fe-chevron-down horizontal-icon"></i></a>
 								<ul class="sub-menu">
-									<li aria-haspopup="true"><a href="/sync_provision_log">log files</a></li>
+									<li aria-haspopup="true"><a href="/sync_provision_log/1">log files</a></li>
 									<li aria-haspopup="true"><a href="#">account</a></li>
 									<li aria-haspopup="true"><a href="#">batch scheduler</a></li>
 									<li aria-haspopup="true"><a href="page-invoice.html">database</a></li>
@@ -331,10 +276,41 @@
 				</tbody>
 			</table>
 				</div><!-- bd -->
+					<!-- 페이징처리 part2/2-->	
+					<ul class="btn-group pagination pageNumber">
+				    <c:if test="${pageMaker.prev eq true}">
+				    <li>
+				        <a href='<c:url value="/list/${pageMaker.startPage-1}"/>'><i class="fa fa-chevron-left"></i></a>
+				    </li>
+				    </c:if>
+				    
+				    <c:forEach begin="${pageMaker.startPage}" end="${pageMaker.endPage}" var="pageNum">	   
+				    <c:choose>
+				    <c:when test="${pageMaker.presentPage eq pageNum}">			        
+				    <li>
+				        <a href='<c:url value="/list/${pageNum}"/>'><i class="fa" style="color:OrangeRed;">${pageNum}</i></a>
+				    </li>	    
+				    </c:when>    
+				    <c:otherwise>		       
+				    <li>
+				        <a href='<c:url value="/list/${pageNum}"/>'><i class="fa">${pageNum}</i></a>
+				    </li>			    
+				    </c:otherwise>
+					</c:choose>	    
+				    </c:forEach>
+				    <c:if test="${pageMaker.next && pageMaker.endPage >0 }">
+				    <li>
+				        <a href='<c:url value="/list/${pageMaker.endPage+1}"/>'><i class="fa fa-chevron-right"></i></a>
+				    </li>
+				    </c:if>
+					</ul>
+					
+					<!-- 페이징처리 part2/2-->	
+					
 			</div>
 
 			</div>
-			
+				
 	
 						
 			
@@ -557,13 +533,7 @@
 					</div>
 				</div>
 				<div class="tab-pane" id="side-3">
-					<div class="d-flex p-3 border-bottom">
-						<label class="ckbox"><input checked="" type="checkbox"><span>Do something more</span></label>
-						<span class="ml-auto">
-							<i class="si si-pencil text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
-							<i class="si si-trash text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
-						</span>
-					</div>
+					
 					<div class="d-flex p-3 border-bottom">
 						<label class="ckbox"><input type="checkbox"><span>Find an idea</span></label>
 						<span class="ml-auto">
@@ -599,13 +569,7 @@
 							<i class="si si-trash text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
 						</span>
 					</div>
-					<div class="d-flex p-3 border-bottom">
-						<label class="ckbox"><input checked=""  type="checkbox"><span>Payment reminders</span></label>
-						<span class="ml-auto">
-							<i class="si si-pencil text-primary mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Edit"></i>
-							<i class="si si-trash text-danger mr-2" data-toggle="tooltip" title="" data-placement="top" data-original-title="Delete"></i>
-						</span>
-					</div>
+					
 					<div class="d-flex p-3 border-bottom">
 						<label class="ckbox"><input type="checkbox"><span>Finsh Something more</span></label>
 						<span class="ml-auto">

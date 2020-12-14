@@ -2,7 +2,15 @@
 	<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
 <mapper namespace="com.system.bgim.mapper.HistoryMapper">
-  
+	<select id="countHistory" parameterType="com.system.bgim.dto.HistoryDTO" resultType="int">
+		SELECT count(*) FROM ${historytablename}
+    </select>     
+    <select id="historyList_pagination" parameterType="com.system.bgim.dto.HistoryDTO" resultType="com.system.bgim.dto.HistoryDTO">
+         SELECT * FROM (
+        SELECT ROWNUM AS RNUM, T1.*
+        FROM sync_history_user T1) WHERE
+        RNUM BETWEEN ${startData} AND ${endData}    
+	</select> 
     <select id="userHistoryList" parameterType="com.system.bgim.dto.HistoryDTO" resultType="com.system.bgim.dto.HistoryDTO">
 		SELECT * FROM ${historytablename}
     </select>

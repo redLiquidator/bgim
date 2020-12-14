@@ -9,18 +9,27 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-import com.system.bgim.dto.DomainDTO;
+
 import com.system.bgim.dto.HistoryDTO;
 import com.system.bgim.dto.LogFilesDTO;
-import com.system.bgim.dto.UserDTO;
+import com.system.bgim.dto.PageMakerDTO;
 import com.system.bgim.mapper.HistoryMapper;
-import com.system.bgim.mapper.UserMapper;
 
 @Service("com.system.bgim.service.HistoryService")
 public class HistoryService {
 	
 	@Resource(name="com.system.bgim.mapper.HistoryMapper")
     HistoryMapper historyMapper;
+	
+	public List<HistoryDTO> historyListService_pagination(PageMakerDTO pageMaker) throws Exception{
+		 System.out.println("historyListService_pagination");
+		 return historyMapper.historyList_pagination(pageMaker);
+	}
+	
+	public int countHistoryService(HistoryDTO history) throws Exception{
+		System.out.println("countHistoryService");
+		 return historyMapper.countHistory(history);
+	}
 	
 	 public List<HistoryDTO> userHistoryListService(HistoryDTO history) throws Exception{
 		 System.out.println("userHistoryListService");

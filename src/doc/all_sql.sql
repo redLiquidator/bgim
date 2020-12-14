@@ -139,6 +139,14 @@ INSERT INTO org_domain (companycode,companyname,reg_date) VALUES ('BGCOMMERCE','
 INSERT INTO org_domain (companycode,companyname,reg_date) VALUES ('BGAGRICULTURE','BG agriculture','11-DEC-2000');
 INSERT INTO org_domain (companycode,companyname,reg_date) VALUES ('BGSPACE','BG space','11-SEP-1990');
 INSERT INTO org_domain (companycode,companyname,reg_date) VALUES ('BGFOOD','BG food','01-AUG-2000');
+INSERT INTO org_domain (companycode,companyname,reg_date) VALUES ('BGCOMPUTER','BG computer','11-DEC-2000');
+INSERT INTO org_domain (companycode,companyname,reg_date) VALUES ('BGINVESTMENT','BG investment','10-SEP-2000');
+INSERT INTO org_domain (companycode,companyname,reg_date) VALUES ('BGWATER','BG water','26-DEC-2000');
+INSERT INTO org_domain (companycode,companyname,reg_date) VALUES ('BGENERGY','BG energy','08-SEP-1990');
+INSERT INTO org_domain (companycode,companyname,reg_date) VALUES ('BGPHARMACY','BG phaymacy','09-AUG-2000');
+INSERT INTO org_domain (companycode,companyname,reg_date) VALUES ('BGPHYSICS','BG physics','10-SEP-2000');
+INSERT INTO org_domain (companycode,companyname,reg_date) VALUES ('BGEDUCATION','BG education','26-DEC-2000');
+INSERT INTO org_domain (companycode,companyname,reg_date) VALUES ('BGPENSION','BG pension','08-SEP-1990');
 
 CREATE TABLE org_dept  
 ( 
@@ -153,6 +161,18 @@ INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('BIOCHEM1'
 INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('SEOULSUPPORT','seoul support','BGCOMMERCE','11-SEP-2000');
 INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('BIOCHEM2','biochemistry2','BGLAB','11-SEP-2001');
 INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('INCHEONSUPPORT','incheon support','BGCOMMERCE','11-SEP-2001');
+INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('PUBLISHMENT','publishment','BGEDUCATION','11-SEP-2000');
+INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('BUSANSUPPORT','busan support','BGCOMMERCE','11-SEP-2000');
+INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('WIND','wind','BGENERGY','11-SEP-2001');
+INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('SEJONGSUPPORT','sejong support','BGENERGY','11-SEP-2001');
+INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('ATOMIC','atomic','BGENERGY','11-SEP-2000');
+INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('KANGWONSUPPORT','kangwon support','BGCOMMERCE','11-SEP-2000');
+INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('BIOCHEM3','biochem3','BGLAB','11-SEP-2001');
+INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('MANUFACTURE','manufacture','BGWATER','11-SEP-2001');
+INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('DELIVERY','delivery','BGWATER','11-SEP-2000');
+INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('INSECTS','insects','BGFOOD','11-SEP-2000');
+INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('SANITARY','sanitary','BGFOOD','11-SEP-2001');
+INSERT INTO org_dept (deptcode,deptname,companycode,reg_date) VALUES ('GRAIN','grain','BGFOOD','11-SEP-2001');
 
 CREATE TABLE presync_domain  
 ( 
